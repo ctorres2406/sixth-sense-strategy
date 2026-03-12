@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,7 +45,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          git reset --hard origin/main
+          git checkout main
+          git pull origin main --rebase
           git add data/
           git diff --staged --quiet || git commit -m "auto: data refresh $(date -u +%Y-%m-%d)"
           git push origin main
