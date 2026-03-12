@@ -5,6 +5,11 @@ on:
     - cron: '0 12 * * *'
     - cron: '0 3 * * *'
   workflow_dispatch:
+    inputs:
+      scrape_mode:
+        description: 'Set to "historical" to run full ATS scrape (run once only)'
+        required: false
+        default: 'daily'
 
 jobs:
   fetch-data:
@@ -26,10 +31,12 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/fetch_data.py
-        
+
       - name: Scrape ATS game logs
+        env:
+          SCRAPE_MODE: ${{ github.event.inputs.scrape_mode || 'daily' }}
         run: python scripts/scrape_ats.py
-        
+
       - name: Commit and push updated data
         run: |
           git config user.name  "github-actions[bot]"
