@@ -36,6 +36,9 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/fetch_data.py
 
+      - name: Generate model picks
+        run: python scripts/generate_picks.py
+
       - name: Scrape ATS game logs
         env:
           SCRAPE_MODE: ${{ github.event.inputs.scrape_mode || 'daily' }}
