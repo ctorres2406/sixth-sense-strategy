@@ -1,0 +1,47 @@
+team,conf_wins,conf_losses,conf_games,conf_champ,avg_win_margin,avg_loss_margin,momentum_score,hot,cold,last_updated
+Iowa State,1,0,1,False,49.0,0.0,49.0,False,False,20260312
+Florida,3,0,3,True,6.7,0.0,20.0,False,False,20260312
+BYU,1,0,1,False,20.0,0.0,20.0,False,False,20260312
+Auburn,1,0,1,False,18.0,0.0,18.0,False,False,20260312
+Ole Miss,1,0,1,False,10.0,0.0,10.0,False,False,20260312
+Clemson,1,0,1,False,9.0,0.0,9.0,False,False,20260312
+Missouri,1,0,1,False,8.0,0.0,8.0,False,False,20260312
+Houston,1,0,1,False,8.0,0.0,8.0,False,False,20260312
+TCU,1,0,1,False,7.0,0.0,7.0,False,False,20260312
+Kentucky,1,0,1,False,5.0,0.0,5.0,False,False,20260312
+Colorado State,1,0,1,False,4.0,0.0,4.0,False,False,20260312
+Louisville,1,0,1,False,4.0,0.0,4.0,False,False,20260312
+Duke,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Alabama,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Michigan,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Illinois,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Wisconsin,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Texas Tech,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+St. John's,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Michigan State,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Tennessee,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Purdue,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+North Carolina,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Baylor,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+VCU,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Saint Mary's,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Kansas,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Gonzaga,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Texas A&M,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Connecticut,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Oregon,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+UCLA,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Georgia,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Vanderbilt,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Creighton,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Drake,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Arkansas,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Utah State,0,0,0,False,0.0,0.0,0.0,False,False,20260312
+Cincinnati,0,1,1,False,0.0,1.0,-2.0,False,False,20260312
+Oklahoma,1,1,2,False,12.0,7.0,-2.0,False,False,20260312
+Marquette,0,1,1,False,0.0,2.0,-4.0,False,False,20260312
+New Mexico,0,1,1,False,0.0,8.0,-16.0,False,False,20260312
+Maryland,0,1,1,False,0.0,11.0,-22.0,False,True,20260312
+Memphis,0,1,1,False,0.0,12.0,-24.0,False,True,20260312
+Mississippi State,0,1,1,False,0.0,18.0,-36.0,False,True,20260312
+Arizona,0,1,1,False,0.0,49.0,-98.0,False,True,20260312
