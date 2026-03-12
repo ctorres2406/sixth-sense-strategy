@@ -1,7 +1,7 @@
 """
 scrape_ats.py
 Scrapes game-level ATS data from covers.com for NCAAB.
-Pulls every tournament team's game log for 2022-23 through current season.
+Pulls every tournament team's game log for 2006 through current season.
 Saves to data/ats_game_log.csv
 """
 
