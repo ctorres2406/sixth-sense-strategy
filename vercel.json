@@ -1,9 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "oracle-march-madness-5.html", "use": "@vercel/static" }
+    { "src": "oracle-march-madness-6.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/oracle-march-madness-5.html" }
+    { "src": "/(.*)", "dest": "/oracle-march-madness-6.html" }
   ]
 }
