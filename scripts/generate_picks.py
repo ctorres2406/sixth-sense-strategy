@@ -5,9 +5,9 @@ Runs the v7 GBM model on every matchup in the current bracket and writes
 data/espn_scores.csv with all columns the dashboard expects.
 
 Column contract (must match normalizeGame() in the dashboard):
-  team1, seed1, team2, seed2, region, round, status, winner,
+  team1, seed1, team2, seed2, region, round, game_time, status, winner,
   score1, score2, ml_pick, ml_confidence, ml_odds, spread,
-  ats_pick, ats_confidence
+  ats_pick, ats_confidence, ml_result, ats_result, result
 
 ml_odds  = American moneyline for the PICK TEAM (not necessarily the favorite).
            Derived from live_odds.csv h2h market.
@@ -15,8 +15,17 @@ spread   = consensus spread from the pick team's perspective
            (positive = underdog, negative = favorite).
 
 Run order in GitHub Actions:
-  1. fetch_data.py   → populates live_odds.csv with raw h2h + spread rows
+  1. fetch_data.py   → populates live_odds.csv + espn_raw.csv
   2. generate_picks.py → reads live_odds.csv + bracket.csv, writes espn_scores.csv
+
+Fixes vs original:
+  - round stored as string ('R64', 'R32', 'S16', 'E8', 'FF', 'CHAMP')
+    to match dashboard filter logic
+  - ml_result, ats_result, result columns computed from winner vs ml_pick
+    so scorekeeping and record-tracking work on the dashboard
+  - game_time passed through from bracket.csv to output
+  - espn_raw.csv (not espn_scores.csv) used as the scores source, since
+    fetch_data.py now writes raw ESPN data there
 """
 
 import os
@@ -29,14 +38,22 @@ from pathlib import Path
 warnings.filterwarnings("ignore")
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-ROOT     = Path(__file__).parent.parent
-DATA_DIR = ROOT / "data"
+ROOT        = Path(__file__).parent.parent
+DATA_DIR    = ROOT / "data"
 MODEL_PATH  = ROOT / "model" / "model_v7.pkl"
 BRACKET_CSV = DATA_DIR / "bracket.csv"       # populated after Selection Sunday
 ODDS_CSV    = DATA_DIR / "live_odds.csv"
-OUT_CSV     = DATA_DIR / "espn_scores.csv"
+RAW_CSV     = DATA_DIR / "espn_raw.csv"      # raw ESPN scores from fetch_data.py
+OUT_CSV     = DATA_DIR / "espn_scores.csv"   # dashboard output — owned by this script
 
 YEAR = 2026   # update each season
+
+# ── Round label mapping ────────────────────────────────────────────────────────
+# bracket.csv stores numeric round (64, 32, 16, 8, 4, 2)
+# dashboard expects string keys ('R64', 'R32', 'S16', 'E8', 'FF', 'CHAMP')
+ROUND_LABEL = {64: "R64", 32: "R32", 16: "S16", 8: "E8", 4: "FF", 2: "CHAMP"}
+# Inverse map used when reading back existing espn_scores.csv
+ROUND_NUM   = {"R64": 64, "R32": 32, "S16": 16, "E8": 8, "FF": 4, "CHAMP": 2}
 
 # ── Load model ─────────────────────────────────────────────────────────────────
 with open(MODEL_PATH, "rb") as f:
@@ -367,12 +384,90 @@ def ats_confidence(ml_conf, spread_lkp, pick_team, t1, t2):
     return round(min(ml_conf * adj, 95.0), 1)
 
 
+# ── Result reconciliation ──────────────────────────────────────────────────────
+def compute_results(t1, t2, ml_pick, ats_pick, score1, score2, spread_str):
+    """
+    Given final scores and picks, return (result, ml_result, ats_result).
+
+    result     = 'win'/'loss'/'pending'  — did ml_pick win the game?
+    ml_result  = same as result (ML pick == game winner)
+    ats_result = 'win'/'loss'/'push'/'pending' — did pick cover the spread?
+
+    If scores are blank the game hasn't been played yet → all 'pending'.
+    """
+    # Scores must be present and non-empty to compute a result
+    try:
+        s1 = int(score1)
+        s2 = int(score2)
+        has_score = True
+    except (ValueError, TypeError):
+        has_score = False
+
+    if not has_score:
+        return "pending", "pending", "pending"
+
+    # Who won the game?
+    actual_winner = t1 if s1 > s2 else t2
+
+    # ML result — did our pick match the actual winner?
+    ml_result = "win" if norm(ml_pick) == norm(actual_winner) else "loss"
+    result    = ml_result  # top-level result mirrors ML result
+
+    # ATS result — did the pick team cover the spread?
+    # spread_str is from t1's perspective (e.g. '-7.5' means t1 is -7.5)
+    ats_result = "pending"
+    try:
+        if spread_str:
+            t1_spread = float(spread_str)
+            # Adjusted margin: t1 score + spread vs t2 score
+            # t1 covers if (s1 + t1_spread) > s2
+            # t2 covers if (s1 + t1_spread) < s2
+            adjusted = s1 + t1_spread - s2
+
+            pick_is_t1 = norm(ml_pick) == norm(t1)
+
+            if abs(adjusted) < 0.5:
+                ats_result = "push"
+            else:
+                t1_covered = adjusted > 0
+                if pick_is_t1:
+                    ats_result = "win" if t1_covered else "loss"
+                else:
+                    ats_result = "win" if not t1_covered else "loss"
+    except (ValueError, TypeError):
+        ats_result = "pending"
+
+    return result, ml_result, ats_result
+
+
+# ── Load ESPN raw scores for result lookup ─────────────────────────────────────
+def load_raw_scores():
+    """
+    Load espn_raw.csv and build a lookup:
+      (norm(winner), norm(loser)) → {winner_score, loser_score, margin}
+    Used to back-fill scores and compute results for finished games.
+    """
+    if not RAW_CSV.exists():
+        return {}
+    df = pd.read_csv(RAW_CSV)
+    lkp = {}
+    for _, row in df.iterrows():
+        w = norm(str(row.get("winner", "")))
+        l = norm(str(row.get("loser",  "")))
+        if w and l:
+            lkp[(w, l)] = {
+                "winner_score": int(row.get("winner_score", 0)),
+                "loser_score":  int(row.get("loser_score",  0)),
+            }
+    return lkp
+
+
 # ── Main prediction loop ───────────────────────────────────────────────────────
 def generate_picks():
     if not BRACKET_CSV.exists():
         print(f"  bracket.csv not found at {BRACKET_CSV}")
         print("  Create data/bracket.csv after Selection Sunday with columns:")
-        print("  team1,seed1,team2,seed2,region,round")
+        print("  team1,seed1,team2,seed2,region,round,game_time")
         return
 
     bracket = pd.read_csv(BRACKET_CSV)
@@ -381,73 +476,105 @@ def generate_picks():
     h2h_lkp, spread_lkp = load_odds_lookup()
     print(f"  Odds loaded: {len(h2h_lkp)} teams with ML odds, {len(spread_lkp)} with spreads")
 
-    # Load existing espn_scores to preserve already-completed game scores/winners
+    raw_scores = load_raw_scores()
+    print(f"  Raw ESPN scores: {len(raw_scores)} completed games found")
+
+    # Load existing espn_scores to preserve manually-set fields if needed
     existing = pd.DataFrame()
     if OUT_CSV.exists():
         existing = pd.read_csv(OUT_CSV)
 
     rows = []
-    round_map = {64: 64, 32: 32, 16: 16, 8: 8, 4: 4, 2: 2}
 
     for _, g in bracket.iterrows():
-        t1   = str(g["team1"]);   t2   = str(g["team2"])
-        s1   = int(g["seed1"]);   s2   = int(g["seed2"])
-        region = str(g.get("region",""))
-        rnd  = int(g.get("round", 64))
+        t1     = str(g["team1"]);   t2     = str(g["team2"])
+        s1     = int(g["seed1"]);   s2     = int(g["seed2"])
+        region = str(g.get("region", ""))
+        rnd_num = int(g.get("round", 64))
+        rnd_str = ROUND_LABEL.get(rnd_num, f"R{rnd_num}")  # 'R64', 'R32', etc.
+        game_time = str(g.get("game_time", ""))
 
-        # Look up existing result for this matchup
+        # ── Look up existing row (keyed on string round label now) ─────────────
         ex_row = None
-        if not existing.empty:
+        if not existing.empty and "round" in existing.columns:
             mask = (
                 (existing["team1"].astype(str).apply(norm) == norm(t1)) &
                 (existing["team2"].astype(str).apply(norm) == norm(t2)) &
-                (existing["round"].astype(str) == str(rnd))
+                (existing["round"].astype(str) == rnd_str)
             )
             if mask.any():
                 ex_row = existing[mask].iloc[0]
 
-        # Build features
+        # ── Build features ─────────────────────────────────────────────────────
         try:
-            f1 = get_features(t1, YEAR, rnd)
-            f2 = get_features(t2, YEAR, rnd)
+            f1 = get_features(t1, YEAR, rnd_num)
+            f2 = get_features(t2, YEAR, rnd_num)
         except Exception as e:
             print(f"  Feature error {t1} vs {t2}: {e}")
-            f1 = get_features("dummy", YEAR, rnd)
-            f2 = get_features("dummy", YEAR, rnd)
+            f1 = get_features("dummy", YEAR, rnd_num)
+            f2 = get_features("dummy", YEAR, rnd_num)
 
-        feat_row = build_feat_row(f1, f2, rnd)
+        feat_row = build_feat_row(f1, f2, rnd_num)
         feat_df  = pd.DataFrame([feat_row])
 
-        # Fill missing columns with 0
         for col in FEAT_COLS:
             if col not in feat_df.columns:
                 feat_df[col] = 0.0
 
         feat_df = feat_df[FEAT_COLS].fillna(0)
 
-        # Model prediction
+        # ── Model prediction ───────────────────────────────────────────────────
         try:
-            prob = model.predict_proba(feat_df)[0]  # [p_t2_wins, p_t1_wins] or [p_loss, p_win]
-            # prob[1] = P(t1 wins) based on how training was set up
+            prob = model.predict_proba(feat_df)[0]  # [p_loss, p_win] for t1
             p_t1 = float(prob[1])
         except Exception as e:
             print(f"  Predict error {t1} vs {t2}: {e}")
             p_t1 = 0.5
 
-        pick   = t1 if p_t1 >= 0.5 else t2
+        pick    = t1 if p_t1 >= 0.5 else t2
         ml_conf = round(max(p_t1, 1 - p_t1) * 100, 1)
 
-        # Odds — keyed to the pick team
+        # ── Odds ───────────────────────────────────────────────────────────────
         ml_odds  = get_pick_odds(pick, h2h_lkp)
         spread   = get_spread_str(t1, t2, spread_lkp)
         ats_pick = get_ats_pick(pick, t1, t2, spread_lkp)
         ats_conf = ats_confidence(ml_conf, spread_lkp, pick, t1, t2)
 
-        # Preserve completed game data if it exists
-        score1  = int(ex_row["score1"])  if ex_row is not None and pd.notna(ex_row.get("score1")) else ""
-        score2  = int(ex_row["score2"])  if ex_row is not None and pd.notna(ex_row.get("score2")) else ""
-        winner  = str(ex_row["winner"])  if ex_row is not None and pd.notna(ex_row.get("winner")) else ""
-        status  = str(ex_row["status"])  if ex_row is not None and pd.notna(ex_row.get("status")) else "upcoming"
+        # ── Scores and winner ──────────────────────────────────────────────────
+        # Priority: existing espn_scores row → ESPN raw lookup → blank
+        score1 = score2 = winner = ""
+        status = "upcoming"
+
+        if ex_row is not None:
+            # Already have a processed row — preserve its score/winner/status
+            score1  = ex_row.get("score1", "")
+            score2  = ex_row.get("score2", "")
+            winner  = str(ex_row.get("winner", ""))
+            status  = str(ex_row.get("status", "upcoming"))
+        else:
+            # Try to match from raw ESPN scores
+            t1n = norm(t1); t2n = norm(t2)
+            raw = raw_scores.get((t1n, t2n)) or raw_scores.get((t2n, t1n))
+            if raw:
+                if raw_scores.get((t1n, t2n)):
+                    score1 = raw["winner_score"]; score2 = raw["loser_score"]
+                    winner = t1
+                else:
+                    score1 = raw["loser_score"];  score2 = raw["winner_score"]
+                    winner = t2
+                status = "final"
+
+        # ── Compute result columns ─────────────────────────────────────────────
+        # If we already have result columns stored (from a previous run), keep them.
+        # Otherwise derive from scores + picks.
+        if ex_row is not None and "ml_result" in ex_row and str(ex_row.get("ml_result","")) not in ("","nan","pending"):
+            result     = str(ex_row.get("result",     "pending"))
+            ml_result  = str(ex_row.get("ml_result",  "pending"))
+            ats_result = str(ex_row.get("ats_result", "pending"))
+        else:
+            result, ml_result, ats_result = compute_results(
+                t1, t2, pick, ats_pick, score1, score2, spread
+            )
 
         rows.append({
             "team1":          t1,
@@ -455,28 +582,37 @@ def generate_picks():
             "team2":          t2,
             "seed2":          s2,
             "region":         region,
-            "round":          rnd,
+            "round":          rnd_str,       # ← string label, e.g. 'R64'
+            "game_time":      game_time,     # ← passed through from bracket.csv
             "status":         status,
             "winner":         winner,
             "score1":         score1,
             "score2":         score2,
             "ml_pick":        pick,
             "ml_confidence":  ml_conf,
-            "ml_odds":        ml_odds,   # pick team's moneyline (e.g. '+350' for underdog)
-            "spread":         spread,    # from t1's perspective
-            "ats_pick":       ats_pick,  # e.g. 'Colorado St. +8.5'
+            "ml_odds":        ml_odds,
+            "spread":         spread,
+            "ats_pick":       ats_pick,
             "ats_confidence": ats_conf,
+            "result":         result,        # ← NEW: win/loss/pending
+            "ml_result":      ml_result,     # ← NEW: win/loss/pending
+            "ats_result":     ats_result,    # ← NEW: win/loss/push/pending
         })
 
-        fav_label = f"(fav)" if pick == (t1 if s1 < s2 else t2) else "(UPSET)"
-        print(f"  #{s1} {t1:20} vs #{s2} {t2:20} → {pick} {ml_conf:.0f}% {ml_odds or '?':>6} {fav_label}")
+        fav_label = "(fav)" if pick == (t1 if s1 < s2 else t2) else "(UPSET)"
+        res_label = f"[{ml_result.upper()}]" if ml_result != "pending" else ""
+        print(f"  #{s1} {t1:20} vs #{s2} {t2:20} → {pick} {ml_conf:.0f}% {ml_odds or '?':>6} {fav_label} {res_label}")
 
     out_df = pd.DataFrame(rows)
     out_df.to_csv(OUT_CSV, index=False)
     print(f"\n  ✅ Wrote {len(out_df)} picks → {OUT_CSV}")
+
+    wins   = out_df[out_df["ml_result"] == "win"]
+    losses = out_df[out_df["ml_result"] == "loss"]
     upsets = out_df[out_df.apply(
         lambda r: (int(r["seed1"]) > int(r["seed2"]) if norm(r["ml_pick"]) == norm(r["team1"])
                    else int(r["seed2"]) > int(r["seed1"])), axis=1)]
+    print(f"  📊 Record: {len(wins)}-{len(losses)} ({len(out_df) - len(wins) - len(losses)} pending)")
     print(f"  🔥 {len(upsets)} upset picks")
 
 
