@@ -2,8 +2,8 @@ name: Daily March Madness Data Fetch
 
 on:
   schedule:
-    - cron: '0 12 * * *'
-    - cron: '0 3 * * *'
+    - cron: '0 12 * * *'   # 8:00 AM ET
+    - cron: '0 5 * * *'    # 1:00 AM ET (catches all late games)
   workflow_dispatch:
     inputs:
       scrape_mode:
@@ -29,7 +29,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests pandas beautifulsoup4 lxml
+        run: pip install requests pandas beautifulsoup4 lxml scikit-learn numpy
 
       - name: Fetch ESPN scores + odds + momentum
         env:
