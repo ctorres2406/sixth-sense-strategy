@@ -1,0 +1,3056 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sixth Sense Strategy | AI Sports Picks — NCAAM · MLB · NBA · NHL · NFL · NCAAF</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,400&f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        neon: '#00FF41',
+        magenta: '#FF006E',
+        surface: '#0a0a0a',
+        card: '#111111',
+        card2: '#161616',
+      },
+      fontFamily: {
+        display: ['"Clash Display"', 'sans-serif'],
+        body: ['"Satoshi"', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+  :root {
+    --neon: #00FF41;
+    --sport: #00FF41;
+    --magenta: #FF006E;
+    --bg: #050505;
+    --glass: rgba(14,14,14,0.75);
+  }
+  /* Sport accent transitions */
+  .sport-accent { color: var(--sport) !important; }
+  .sport-border { border-color: var(--sport) !important; }
+  .sport-bg { background: rgba(var(--sport-rgb),0.1) !important; }
+  /* Sport switcher bar */
+  .sport-tab {
+    padding: 6px 14px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    color: #555;
+    background: transparent;
+    font-family: 'Clash Display', sans-serif;
+  }
+  .sport-tab:hover { color: #999; }
+  .sport-tab.active {
+    color: var(--sport);
+    border-color: var(--sport);
+    background: rgba(var(--sport-rgb), 0.08);
+    box-shadow: 0 0 12px rgba(var(--sport-rgb), 0.15);
+  }
+  .sport-tab .badge {
+    font-size: 7px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-family: 'Satoshi', sans-serif;
+    letter-spacing: 0.1em;
+  }
+  .sport-tab .badge.live { background: rgba(0,255,65,0.15); color: var(--neon); }
+  .sport-tab .badge.soon { background: rgba(255,165,0,0.15); color: orange; }
+  .sport-tab .badge.off  { background: rgba(255,255,255,0.05); color: #444; }
+  /* Inner view tabs */
+  .view-tab {
+    padding: 7px 14px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #444;
+    font-family: 'Satoshi', sans-serif;
+  }
+  .view-tab:hover { color: #888; }
+  .view-tab.active { color: var(--sport); border-bottom-color: var(--sport); }
+  /* Season status badge */
+  .status-chip {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 8px; font-weight: 700; letter-spacing: 0.15em;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 3px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Satoshi', sans-serif;
+    background: var(--bg);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  h1,h2,h3,h4,.font-display { font-family: 'Clash Display', sans-serif; }
+
+  /* ── GLOW EFFECTS ── */
+  .glow-green { box-shadow: 0 0 30px rgba(0,255,65,0.2); }
+  .glow-magenta { box-shadow: 0 0 30px rgba(255,0,110,0.2); }
+  .text-glow { text-shadow: 0 0 20px rgba(0,255,65,0.4); }
+  .text-glow-m { text-shadow: 0 0 20px rgba(255,0,110,0.4); }
+
+  /* ── GLASS ── */
+  .glass {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* ── ANIMATED GRADIENT BORDER ── */
+  .gradient-border {
+    position: relative;
+    overflow: hidden;
+  }
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--neon), transparent 40%, transparent 60%, var(--magenta));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* ── SCANNING LINE ── */
+  .scan-line::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0,255,65,0.04), transparent);
+    animation: scan 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes scan { 0%{left:-50%} 100%{left:150%} }
+
+  /* ── PULSE RING ── */
+  .pulse-ring {
+    position: relative;
+  }
+  .pulse-ring::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--neon);
+    opacity: 0;
+    animation: ring-pulse 2s ease-out infinite;
+  }
+  @keyframes ring-pulse {
+    0% { transform: scale(0.8); opacity: 0.6; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+
+  /* ── CONFIDENCE BAR ── */
+  .conf-bar {
+    height: 3px;
+    border-radius: 2px;
+    background: #1a1a1a;
+    overflow: hidden;
+  }
+  .conf-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    background: linear-gradient(90deg, var(--neon), #00cc33);
+  }
+  .conf-fill.high { background: linear-gradient(90deg, var(--neon), #00ff88); }
+  .conf-fill.med  { background: linear-gradient(90deg, #ffa500, #ffcc00); }
+  .conf-fill.low  { background: linear-gradient(90deg, var(--magenta), #ff4488); }
+
+  /* ── SMOOTH ENTRANCE ANIMATIONS ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up-delay-1 { animation-delay: 0.08s; }
+  .fade-up-delay-2 { animation-delay: 0.16s; }
+  .fade-up-delay-3 { animation-delay: 0.24s; }
+  .fade-up-delay-4 { animation-delay: 0.32s; }
+  .fade-up-delay-5 { animation-delay: 0.40s; }
+  .fade-up-delay-6 { animation-delay: 0.48s; }
+
+  /* ── SLIDE IN ── */
+  .slide-in-left {
+    opacity: 0; transform: translateX(-30px);
+    animation: slideInL 0.5s cubic-bezier(0.16,1,0.3,1) forwards;
+  }
+  .slide-in-right {
+    opacity: 0; transform: translateX(30px);
+    animation: slideInR 0.5s cubic-bezier(0.16,1,0.3,1) forwards;
+  }
+  @keyframes slideInL { to { opacity:1; transform:translateX(0); } }
+  @keyframes slideInR { to { opacity:1; transform:translateX(0); } }
+
+  /* ── COUNTER ROLL ── */
+  .counter-roll {
+    display: inline-block;
+    animation: counterRoll 0.8s cubic-bezier(0.16,1,0.3,1);
+  }
+  @keyframes counterRoll {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  /* ── TICKER SCROLL ── */
+  .ticker-track {
+    display: flex;
+    animation: ticker 30s linear infinite;
+    width: max-content;
+  }
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── TAB UNDERLINE ── */
+  .tab-active {
+    color: var(--neon);
+    border-bottom: 2px solid var(--neon);
+  }
+
+  /* ── BET BUTTON HOVER ── */
+  .bet-btn {
+    transition: all 0.2s cubic-bezier(0.16,1,0.3,1);
+  }
+  .bet-btn:hover {
+    background: rgba(0,255,65,0.08);
+    border-color: rgba(0,255,65,0.4);
+    transform: translateY(-1px);
+  }
+  .bet-btn:active { transform: scale(0.97); }
+  .bet-btn.selected {
+    background: rgba(0,255,65,0.12);
+    border-color: var(--neon);
+    box-shadow: 0 0 15px rgba(0,255,65,0.15);
+  }
+
+  /* ── CIRCULAR GAUGE ── */
+  .gauge-ring {
+    transition: stroke-dashoffset 1.5s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  /* ── MESH BG ── */
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 0% 0%, rgba(0,255,65,0.06) 0, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(255,0,110,0.06) 0, transparent 50%);
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #222; border-radius: 4px; }
+
+  /* ── BRACKET CONNECTOR ── */
+  .bracket-line {
+    position: absolute;
+    border-color: rgba(255,255,255,0.08);
+  }
+
+  /* ── NUMBER TICKER ── */
+  .num-tick {
+    display: inline-block;
+    overflow: hidden;
+    height: 1em;
+    line-height: 1;
+  }
+  .num-tick span {
+    display: block;
+    animation: numTick 0.6s cubic-bezier(0.16,1,0.3,1) forwards;
+  }
+  @keyframes numTick {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  /* ── HOVER CARD LIFT ── */
+  .card-lift {
+    transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  }
+
+  /* ── SHIMMER LOADING ── */
+  .shimmer {
+    background: linear-gradient(90deg, #111 25%, #1a1a1a 50%, #111 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* ── ROUND PILL SLIDER ── */
+  .round-pill {
+    transition: all 0.25s cubic-bezier(0.16,1,0.3,1);
+  }
+  .round-pill:hover { background: rgba(255,255,255,0.06); }
+  .round-pill.active {
+    background: var(--neon);
+    color: #000;
+    box-shadow: 0 0 20px rgba(0,255,65,0.3);
+  }
+
+  /* Fix for view transitions */
+  .view-enter { animation: fadeUp 0.4s cubic-bezier(0.16,1,0.3,1) forwards; }
+</style>
+</head>
+<body>
+<div class="min-h-screen bg-mesh flex flex-col">
+
+<!-- ═══ AMBIENT GLOWS ═══ -->
+<div class="fixed top-[-20%] left-[-10%] w-[600px] h-[600px] bg-neon/5 blur-[150px] rounded-full pointer-events-none z-0"></div>
+<div class="fixed bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-magenta/5 blur-[150px] rounded-full pointer-events-none z-0"></div>
+
+<!-- ═══ TOP NAV ═══ -->
+<nav class="fixed top-0 w-full z-50 px-4 lg:px-8 py-0 glass border-b border-white/5">
+  <!-- Row 1: Brand + record + status -->
+  <div class="flex items-center justify-between h-12 gap-4">
+    <div class="flex items-center gap-4 shrink-0">
+      <a href="#" onclick="setView('home')" class="text-xl font-display font-bold tracking-tighter select-none">
+        SIXTH&nbsp;<span class="text-glow" id="brand-accent" style="color:var(--sport)">SENSE</span>
+      </a>
+      <button onclick="setView('home')" id="nav-home-btn"
+        class="hidden md:flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-[0.18em] px-3 py-1.5 rounded border border-white/10 text-zinc-500 hover:text-white hover:border-white/20 transition-all">
+        ⌂ Home
+      </button>
+    </div>
+    <!-- Sport switcher — desktop inline -->
+    <div class="hidden lg:flex items-center gap-1 overflow-x-auto" id="sport-tabs-desktop"></div>
+    <div class="flex items-center gap-3">
+      <button onclick="setView('pro')" class="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-yellow-500/50 text-yellow-400 hover:bg-yellow-400/10 transition-all shrink-0">
+        ⚡ Pro
+      </button>
+      <div class="h-6 w-px bg-white/10 hidden md:block"></div>
+      <div class="hidden md:flex flex-col items-end">
+        <span class="text-[9px] uppercase text-zinc-600 font-bold tracking-widest" id="nav-model-label">Model v7</span>
+        <span class="font-display font-bold text-sm" id="nav-record" style="color:var(--sport)">--</span>
+      </div>
+      <div class="h-6 w-px bg-white/10 hidden md:block"></div>
+      <div class="hidden md:flex items-center gap-2 text-xs text-zinc-500">
+        <span class="w-1.5 h-1.5 rounded-full animate-pulse" id="nav-dot"></span>
+        <span id="nav-status">Loading</span>
+      </div>
+      <!-- Mobile sport menu trigger -->
+      <button onclick="toggleSportMenu()" class="lg:hidden text-zinc-400 hover:text-white" id="sport-menu-btn">
+        <span id="sport-menu-label" class="text-[10px] font-bold uppercase tracking-widest" style="color:var(--sport)">NCAAM ▾</span>
+      </button>
+    </div>
+  </div>
+  <!-- Row 2: View tabs for active sport -->
+  <div class="flex items-center gap-0 overflow-x-auto border-t border-white/5 -mx-4 px-4 lg:-mx-8 lg:px-8 hide-scrollbar" id="view-tabs-bar"></div>
+</nav>
+
+<!-- Mobile sport dropdown -->
+<div id="sport-menu-mobile" class="fixed top-[84px] left-0 right-0 z-50 glass border-b border-white/10 p-3 hidden">
+  <div class="flex flex-wrap gap-2" id="sport-tabs-mobile"></div>
+</div>
+
+<!-- ═══ EMAIL CAPTURE BANNER ═══ -->
+<div id="email-banner" class="fixed top-[52px] left-0 right-0 z-40 bg-gradient-to-r from-yellow-500/10 via-yellow-400/5 to-transparent border-b border-yellow-500/20 px-6 py-2.5 flex items-center justify-between gap-4">
+  <div class="flex items-center gap-3 min-w-0">
+    <span class="text-yellow-400 text-sm flex-shrink-0">⚡</span>
+    <span class="text-[11px] text-zinc-300 font-medium truncate">Get Sixth Sense picks delivered before tip-off — <span class="text-yellow-400 font-bold">free newsletter</span></span>
+  </div>
+  <div class="flex items-center gap-2 flex-shrink-0">
+    <input id="email-input" type="email" placeholder="your@email.com"
+      class="bg-black/40 border border-white/10 rounded px-3 py-1.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-yellow-500/50 w-44 hidden md:block">
+    <button onclick="handleEmailSignup()" class="text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded bg-yellow-400 text-black hover:bg-yellow-300 transition-colors flex-shrink-0">
+      Subscribe
+    </button>
+    <button onclick="document.getElementById('email-banner').remove()" class="text-zinc-600 hover:text-zinc-400 transition-colors ml-1 text-lg leading-none">&times;</button>
+  </div>
+</div>
+
+<main class="flex-1 pt-[100px] pb-28 px-4 lg:px-8 max-w-[1440px] mx-auto w-full" id="app">
+  <!-- Content injected by JS -->
+</main>
+
+<!-- ═══ BOTTOM ACTION BAR — mobile sport quick-switch ═══ -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 lg:hidden glass border border-white/10 px-4 py-2 rounded-full flex items-center gap-3 shadow-2xl" id="bottom-bar">
+</div>
+
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════════════════
+// SIXTH SENSE STRATEGY — PREDICTIVE TRACKER ENGINE
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const GITHUB_BASE = 'https://raw.githubusercontent.com/ctorres2406/sixth-sense-strategy/main/data';
+const ROUND_MAP = { 64:'R64', 32:'R32', 16:'S16', 8:'E8', 4:'FF', 2:'CHAMP' };
+const ROUND_LABELS = { R64:'Round of 64', R32:'Round of 32', S16:'Sweet 16', E8:'Elite Eight', FF:'Final Four', CHAMP:'Championship' };
+const ROUND_ORDER = ['R64','R32','S16','E8','FF','CHAMP'];
+
+// ── SPORT CONFIGURATION ───────────────────────────────────────────────────────
+const SPORTS = {
+  ncaam: {
+    key: 'ncaam',
+    label: 'NCAAM',
+    fullName: 'NCAA Basketball',
+    emoji: '🏀',
+    color: '#00FF41',
+    colorRGB: '0,255,65',
+    model: 'v7 GBM',
+    season: '2025-26',
+    status: 'live',         // live | soon | offseason
+    statusLabel: 'LIVE',
+    dataPath: `${GITHUB_BASE}/espn_scores.csv`,
+    views: ['dashboard','picks','bestbets','upsets','bracket','scores'],
+    defaultView: 'dashboard',
+    betTypes: ['ML','ATS'],
+    description: 'March Madness · 60-3 in 2025',
+  },
+  mlb: {
+    key: 'mlb',
+    label: 'MLB',
+    fullName: 'Major League Baseball',
+    emoji: '⚾',
+    color: '#3b82f6',
+    colorRGB: '59,130,246',
+    model: 'Coming Soon',
+    season: '2026',
+    status: 'soon',
+    statusLabel: 'APRIL',
+    dataPath: `${GITHUB_BASE}/mlb/picks.csv`,
+    views: ['dashboard','picks','bestbets','scores'],
+    defaultView: 'dashboard',
+    betTypes: ['ML','Runline','O/U','Props'],
+    description: 'Season starts April 3',
+  },
+  nba: {
+    key: 'nba',
+    label: 'NBA',
+    fullName: 'NBA Basketball',
+    emoji: '🏀',
+    color: '#f97316',
+    colorRGB: '249,115,22',
+    model: 'Coming Soon',
+    season: '2025-26',
+    status: 'soon',
+    statusLabel: 'PLAYOFFS',
+    dataPath: `${GITHUB_BASE}/nba/picks.csv`,
+    views: ['dashboard','picks','bestbets','scores'],
+    defaultView: 'dashboard',
+    betTypes: ['ML','ATS','O/U','Props'],
+    description: 'Playoffs start April 19',
+  },
+  nhl: {
+    key: 'nhl',
+    label: 'NHL',
+    fullName: 'National Hockey League',
+    emoji: '🏒',
+    color: '#06b6d4',
+    colorRGB: '6,182,212',
+    model: 'Coming Soon',
+    season: '2025-26',
+    status: 'soon',
+    statusLabel: 'PLAYOFFS',
+    dataPath: `${GITHUB_BASE}/nhl/picks.csv`,
+    views: ['dashboard','picks','bestbets','scores'],
+    defaultView: 'dashboard',
+    betTypes: ['ML','Puck Line','O/U','Props'],
+    description: 'Playoffs start April 19',
+  },
+  nfl: {
+    key: 'nfl',
+    label: 'NFL',
+    fullName: 'NFL Football',
+    emoji: '🏈',
+    color: '#a855f7',
+    colorRGB: '168,85,247',
+    model: 'Coming Soon',
+    season: '2026',
+    status: 'offseason',
+    statusLabel: 'SEPT',
+    dataPath: `${GITHUB_BASE}/nfl/picks.csv`,
+    views: ['dashboard','picks','bestbets','scores'],
+    defaultView: 'dashboard',
+    betTypes: ['ML','ATS','O/U','Props'],
+    description: 'Season starts September 2026',
+  },
+  ncaaf: {
+    key: 'ncaaf',
+    label: 'NCAAF',
+    fullName: 'College Football',
+    emoji: '🏈',
+    color: '#f43f5e',
+    colorRGB: '244,63,94',
+    model: 'Coming Soon',
+    season: '2026',
+    status: 'offseason',
+    statusLabel: 'SEPT',
+    dataPath: `${GITHUB_BASE}/ncaaf/picks.csv`,
+    views: ['dashboard','picks','bestbets','scores'],
+    defaultView: 'dashboard',
+    betTypes: ['ML','ATS','O/U','Props'],
+    description: 'Season starts August 2026',
+  },
+};
+
+const SPORT_ORDER = ['ncaam','mlb','nba','nhl','nfl','ncaaf'];
+
+// Per-sport data cache
+const CACHE = {};
+SPORT_ORDER.forEach(k => { CACHE[k] = { picks:[], odds:{}, momentum:{}, loaded:false }; });
+
+// Global app state
+let S = {
+  sport: 'ncaam',
+  picks:[], odds:{}, momentum:{},
+  view:'home', roundFilter:'ALL', loaded:false
+};
+
+// ── ESPN TEAM LOGO CDN ───────────────────────────────────────────────────────
+// https://a.espncdn.com/i/teamlogos/ncaa/500/{id}.png
+const ESPN_IDS = {
+  duke:150, alabama:333, houston:248, kansas:2305, purdue:2509, tennessee:2633,
+  uconn:41, connecticut:41, arizona:12, marquette:269, kentucky:96, baylor:239,
+  gonzaga:2250, creighton:156, auburn:2, illinois:356, iowast:66, iowastate:66,
+  florida:57, michiganst:127, michiganstate:127, texasam:245, sandiegost:21,
+  sandiegostate:21, ncstate:152, northcarolinast:152, oregon:2483, clemson:228,
+  byu:252, brighamyoung:252, wisconsin:275, saintmarys:2608, stmarys:2608,
+  northwestern:77, drake:2181, newmexico:167, colorado:38, dayton:2168,
+  memphis:235, yale:43, vermont:261, grandcanyon:2253, colgate:2142, mcneese:2377,
+  mcneesest:2377, mcneesestate:2377, highpoint:2314, montanast:149, montanastate:149,
+  lipscomb:288, grambling:2755, gramblingst:2755, wagner:2911, stetson:56,
+  longwood:2344, oakland:2473, moreheadst:97, moreheadstate:97, howard:47,
+  fdu:161, fairleighdickinson:161, longbeachst:299, longbeachstate:299,
+  nkentucky:94, northernkentucky:94, troy:2653, southdakotast:2571,
+  southdakotastate:2571, samford:2572, wkentucky:98, westernkentucky:98,
+  uab:5, akron:2006, jamesmadison:256, nevada:2440, ucsb:2540,
+  ucsantabarbara:2540, iona:314, robertmorris:2523, quinnipiac:2514,
+  semissouri:2546, semissourist:2546, texassouthern:2640,
+  // Power conference teams
+  northcarolina:153, unc:153, ucla:26, michigan:130, ohiost:194, ohiostate:194,
+  virginiatech:259, virginia:258, iowa:2294, maryland:120, indiana:84,
+  pittsburgh:221, pitt:221, syracuse:183, louisville:97, notredame:87,
+  wakeforest:154, georgiatech:59, miamifl:2390, miami:2390, fsu:52,
+  floridast:52, floridastate:52, texastech:2641, tcu:2628, okst:197,
+  oklahomast:197, oklahomastate:197, oklahoma:201, westvirginia:277,
+  cincinnati:2132, ucf:2116, arizonast:9, arizonastate:9, utah:254,
+  coloradost:36, coloradostate:36, arkansas:8, mississippist:344,
+  mississippistate:344, olemiss:145, mississippi:145, lsu:99, missouri:142,
+  vanderbilt:238, georgia:61, southcarolina:2579, texasstate:326,
+  temple:218, smu:2567, tulane:2655, tulsa:2638, wichitast:2724,
+  wichitastate:2724, xavier:2920, butler:2086, villanova:222,
+  providence:2507, seton:2550, setonhall:2550, stjohns:2599,
+  depaultl:2166, depaul:2166, georgetown:46, usc:30, stanford:24,
+  washingtonst:265, washingtonstate:265, washington:264, oregonst:204,
+  oregonstate:204, cal:25, california:25, rutgers:164, nebraska:158,
+  minnesota:135, pennst:213, pennstate:213, princeton:163, harvard:108,
+  columbia:171, cornell:172, brown:225, dartmouth:159, penn:219,
+  stpeters:2612, stpeterspier:2612, furman:231, charleston:232,
+  collegeofcharleston:232, vcu:2670, richmond:257, davidson:2166,
+  loyolachicago:2341, umbc:2378, norfolkst:2450, norfolkstate:2450,
+  texassou:2640, alcornst:2010, alabamast:2011, alabamastate:2011,
+  jacksonst:2294, jacksonstate:2294, coppin:2154, coppinst:2154,
+  morganst:116, morganstate:116, hampton:2022, northcarolinaat:2448,
+  ncat:2448, delawarest:48, delawarestate:48, marylandeasternshore:2029,
+  umes:2029, southcarolinast:2569, southcarolinastate:2569,
+  floridaam:50, bethunecookman:2065, prairie:79, prairieview:79,
+  southern:2582, southernu:2582, mvsu:2400, mississippivalleyst:2400,
+  arklittlerock:2031, arkansaslittlerock:2031, arkansasst:2032,
+  arkansasstate:2032, coastal:324, coastalcarolina:324, marshall:276,
+  wku:98, utep:2638, charlotte:2429, fiu:2229, floridaatlantic:2226, fau:2226,
+  northtexas:249, unt:249, rice:242, utsa:2636, westernmichigan:2711,
+  centralmichigan:2117, eastermichigan:2199, toledo:2649, bowlinggreen:189,
+  ohio:195, kent:2309, kentst:2309, kentstate:2309, ballst:2050, ballstate:2050,
+  miamoh:193, miamioh:193, buffalo:2084, connecticut:41,
+  // 2025-2026 tournament likely teams
+  stmarys:2608, saintmarys:2608, colorado:38, coloradost:36,
+  northcarolina:153, duke:150, kansas:2305,
+  // Additional common names / abbreviations
+  uva:258, vt:259, gt:59, bc:103, bostonc:103, bostoncollege:103,
+  ohiou:195, marshall:276, app:2026, appst:2026, appalachianst:2026,
+  appalachianstate:2026, georgiast:290, georgiastate:290, georgias:290,
+  drexel:2182, northeastern:111, hofstra:2275, towson:119, elon:2210,
+  uncw:350, uncwilmington:350, jmu:256, liberty:2335, kennesaw:338,
+  kennesawst:338, kennesawstate:338, belmont:2057, murray:93, murrayst:93,
+  murraystate:93, morehead:97, easternky:2198, easternkentucky:2198,
+  midtennessee:2393, midtennst:2393, wku:98, utmartin:2630, tenn:2633,
+  tennst:2590, tennesseestate:2590, tenntech:2618, tennesseetech:2618,
+  nwstate:2466, nicholls:2447, nichollsst:2447, sela:2545, selouisiana:2545,
+  southeasternlouisiana:2545, ull:309, louisianalafayette:309, lamar:2320,
+  sfaustin:2617, stephenfa:2617, stephenf:2617, tamucc:357,
+  texasamcorpuschristi:357, incarnateword:2916, incarnate:2916,
+};
+
+function teamLogo(name, size=24) {
+  const key = norm(name);
+  const id = ESPN_IDS[key];
+  if (!id) return `<div class="rounded-full bg-zinc-800 flex items-center justify-center shrink-0 overflow-hidden" style="width:${size}px;height:${size}px;">
+    <span class="text-[8px] font-bold text-zinc-500 uppercase">${(name||'?').substring(0,2)}</span>
+  </div>`;
+  return `<img src="https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png"
+    alt="${name}" style="width:${size}px;height:${size}px;"
+    class="rounded-full bg-zinc-800 shrink-0 object-contain"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="rounded-full bg-zinc-800 items-center justify-center shrink-0 overflow-hidden" style="width:${size}px;height:${size}px;display:none">
+      <span class="text-[8px] font-bold text-zinc-500 uppercase">${(name||'?').substring(0,2)}</span>
+    </div>`;
+}
+
+function teamLogoLg(name, size=48) {
+  const key = norm(name);
+  const id = ESPN_IDS[key];
+  if (!id) return `<div class="rounded-full bg-zinc-800/60 border border-zinc-700 flex items-center justify-center shrink-0" style="width:${size}px;height:${size}px;">
+    <span class="text-xs font-bold text-zinc-500 uppercase">${(name||'?').substring(0,3)}</span>
+  </div>`;
+  return `<img src="https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png"
+    alt="${name}" style="width:${size}px;height:${size}px;"
+    class="rounded-full bg-zinc-800/60 border border-zinc-700 shrink-0 object-contain p-1"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="rounded-full bg-zinc-800/60 border border-zinc-700 items-center justify-center shrink-0" style="width:${size}px;height:${size}px;display:none">
+      <span class="text-xs font-bold text-zinc-500 uppercase">${(name||'?').substring(0,3)}</span>
+    </div>`;
+}
+
+// ── CSV PARSING ──────────────────────────────────────────────────────────────
+
+function smartSplit(line) {
+  const r=[]; let c='',q=false;
+  for(const ch of line){ if(ch==='"')q=!q; else if(ch===','&&!q){r.push(c);c='';} else c+=ch; }
+  r.push(c); return r;
+}
+function parseCSV(text) {
+  const lines = text.trim().split('\n').filter(l=>l.trim());
+  if(lines.length<2) return [];
+  const hdr = lines[0].split(',').map(h=>h.trim().replace(/^"|"$/g,''));
+  return lines.slice(1).map(l => {
+    const v=smartSplit(l), o={};
+    hdr.forEach((h,i)=> o[h]=(v[i]||'').trim().replace(/^"|"$/g,''));
+    return o;
+  });
+}
+
+// ── DATA LOADING ─────────────────────────────────────────────────────────────
+
+async function fetchCSV(url) {
+  const r = await fetch(url+'?t='+Date.now());
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  return parseCSV(await r.text());
+}
+
+// ── SPORT SWITCHER ───────────────────────────────────────────────────────────
+
+function setSport(key) {
+  if (!SPORTS[key]) return;
+  S.sport = key;
+  const sp = SPORTS[key];
+
+  // Update CSS sport color vars
+  document.documentElement.style.setProperty('--sport', sp.color);
+  document.documentElement.style.setProperty('--sport-rgb', sp.colorRGB);
+
+  // Default view for this sport
+  S.view = sp.defaultView;
+
+  // Update nav labels
+  document.getElementById('nav-model-label').textContent = sp.model;
+  document.getElementById('sport-menu-label').textContent = sp.label + ' ▾';
+
+  // Load data for this sport if not cached
+  loadSportData(key).then(() => {
+    updateNav();
+    render();
+  });
+
+  buildSportTabs();
+  buildViewTabs();
+  closeSportMenu();
+}
+
+function toggleSportMenu() {
+  const m = document.getElementById('sport-menu-mobile');
+  m.classList.toggle('hidden');
+}
+function closeSportMenu() {
+  document.getElementById('sport-menu-mobile').classList.add('hidden');
+}
+
+function buildSportTabs() {
+  const html = SPORT_ORDER.map(k => {
+    const sp = SPORTS[k];
+    const isActive = k === S.sport;
+    const badgeCls = sp.status === 'live' ? 'live' : sp.status === 'soon' ? 'soon' : 'off';
+    return `<button class="sport-tab ${isActive?'active':''}" onclick="setSport('${k}')" style="${isActive?`color:${sp.color};border-color:${sp.color};background:rgba(${sp.colorRGB},0.08)`:''}">
+      ${sp.emoji} ${sp.label}
+      <span class="badge ${badgeCls}">${sp.statusLabel}</span>
+    </button>`;
+  }).join('');
+  const d = document.getElementById('sport-tabs-desktop');
+  const m = document.getElementById('sport-tabs-mobile');
+  if (d) d.innerHTML = html;
+  if (m) m.innerHTML = html;
+
+  // Bottom bar: sport pills for mobile
+  const bb = document.getElementById('bottom-bar');
+  if (bb) {
+    bb.innerHTML = SPORT_ORDER.map((k,i) => {
+      const sp = SPORTS[k];
+      const isActive = k === S.sport;
+      return `${i>0?'<div class="w-px h-4 bg-white/10"></div>':''}
+        <button onclick="setSport('${k}')" class="text-[9px] font-bold uppercase tracking-widest transition-colors"
+          style="color:${isActive?sp.color:'#555'}">${sp.emoji} ${sp.label}</button>`;
+    }).join('');
+  }
+}
+
+function buildViewTabs() {
+  const sp = SPORTS[S.sport];
+  const viewMeta = {
+    home:      { label:'Home',      icon:'⌂' },
+    dashboard: { label:'Dashboard', icon:'◈' },
+    picks:     { label:'All Picks', icon:'◎' },
+    bestbets:  { label:'Best Bets', icon:'★' },
+    upsets:    { label:'Upsets',    icon:'⚡' },
+    bracket:   { label:'Bracket',   icon:'⌥' },
+    scores:    { label:'Scores',    icon:'●' },
+    wheretobet:{ label:'Where to Bet', icon:'💰' },
+    pro:       { label:'Go Pro',    icon:'⚡' },
+  };
+  const alwaysLast  = ['wheretobet','pro'];
+  const tabs = [...sp.views, ...alwaysLast];
+  const bar = document.getElementById('view-tabs-bar');
+  if (!bar) return;
+
+  // Hide the view-tabs row entirely when on Home — it belongs to sports only
+  if (S.view === 'home') {
+    bar.innerHTML = '';
+    bar.style.display = 'none';
+    // Highlight the Home button in nav row 1
+    const hb = document.getElementById('nav-home-btn');
+    if (hb) { hb.style.color='#fff'; hb.style.borderColor='rgba(255,255,255,0.3)'; }
+    return;
+  }
+  bar.style.display = '';
+  const hb = document.getElementById('nav-home-btn');
+  if (hb) { hb.style.color=''; hb.style.borderColor=''; }
+
+  bar.innerHTML = tabs.map(v => {
+    const m = viewMeta[v] || { label: v, icon: '·' };
+    const isActive = v === S.view;
+    const isMonet  = v === 'wheretobet' || v === 'pro';
+    let style = '';
+    if (isActive && isMonet) style = 'color:#eab308;border-bottom-color:#eab308;';
+    else if (isActive)       style = `color:${sp.color};border-bottom-color:${sp.color};`;
+    else if (isMonet)        style = 'color:#555;';
+    return `<button class="view-tab ${isActive?'active':''}" style="${style}" onclick="setView('${v}')">${m.icon} ${m.label}</button>`;
+  }).join('');
+}
+
+async function loadSportData(key) {
+  const sp = SPORTS[key];
+  const cache = CACHE[key];
+
+  // NCAAM: use existing demoData fallback
+  if (key === 'ncaam') {
+    try {
+      const [p,o,m] = await Promise.allSettled([
+        fetchCSV(`${GITHUB_BASE}/espn_scores.csv`),
+        fetchCSV(`${GITHUB_BASE}/live_odds.csv`),
+        fetchCSV(`${GITHUB_BASE}/momentum_profiles.csv`),
+      ]);
+      if (p.status==='fulfilled' && p.value.length>0) {
+        cache.picks = p.value; cache.loaded = true;
+        o.value && o.value.forEach(r => cache.odds[norm(r.team||r.Team||'')] = r);
+        m.value && m.value.forEach(r => cache.momentum[norm(r.team||r.Team||'')] = r);
+        setLiveStatus(true);
+      } else throw new Error('no data');
+    } catch(e) {
+      cache.picks = demoData(); cache.loaded = false;
+      setLiveStatus(false);
+    }
+  } else {
+    // Other sports: try GitHub, fall back to demo
+    try {
+      const rows = await fetchCSV(sp.dataPath);
+      if (rows.length > 0) { cache.picks = rows; cache.loaded = true; setLiveStatus(true); }
+      else throw new Error('empty');
+    } catch(e) {
+      cache.picks = demoDataForSport(key);
+      cache.loaded = false;
+      setLiveStatus(false);
+    }
+  }
+
+  // Sync active cache into S
+  S.picks = cache.picks;
+  S.odds = cache.odds || {};
+  S.momentum = cache.momentum || {};
+  S.loaded = cache.loaded;
+}
+
+function setLiveStatus(live) {
+  const dot = document.getElementById('nav-dot');
+  const lbl = document.getElementById('nav-status');
+  if (dot) dot.className = `w-1.5 h-1.5 rounded-full ${live?'bg-neon animate-pulse':'bg-zinc-600'}`;
+  if (lbl) lbl.textContent = live ? 'Live' : 'Demo';
+}
+
+function demoDataForSport(key) {
+  // Returns placeholder picks for non-NCAAM sports (shows "coming soon" state)
+  return [];
+}
+
+async function loadData() {
+  await loadSportData(S.sport);
+  buildSportTabs();
+  buildViewTabs();
+  updateNav();
+  render();
+}
+
+// ── NORMALIZATION ────────────────────────────────────────────────────────────
+
+function norm(s){ return (s||'').trim().toLowerCase().replace(/[^a-z0-9]/g,''); }
+function gf(row,...keys){ for(const k of keys) if(row[k]!==undefined&&row[k]!=='') return row[k]; return ''; }
+function pct(v){ const n=parseFloat(v); return isNaN(n)?0:n; }
+
+function normalizeGame(row) {
+  const t1=gf(row,'team1','home_team','Home','Team1','home');
+  const t2=gf(row,'team2','away_team','Away','Team2','away');
+  const s1=parseInt(gf(row,'seed1','home_seed','Seed1'))||0;
+  const s2=parseInt(gf(row,'seed2','away_seed','Seed2'))||0;
+  const sc1=parseInt(gf(row,'score1','home_score','Score1'))||0;
+  const sc2=parseInt(gf(row,'score2','away_score','Score2'))||0;
+  const region=gf(row,'region','Region','bracket_region')||'';
+  const rn=parseInt(gf(row,'round','Round','round_num'))||64;
+  const rk=ROUND_MAP[rn]||'R64';
+  const time=gf(row,'game_time','time','Time','date','Date')||'';
+  const status=gf(row,'status','Status','game_status')||'';
+  const winner=gf(row,'winner','Winner','winning_team')||'';
+  const mlPick=gf(row,'ml_pick','model_pick','Pick','pick','predicted_winner')||'';
+  let mlConf=pct(gf(row,'ml_confidence','confidence','Confidence','win_probability'));
+  if(mlConf>0&&mlConf<=1) mlConf=mlConf*100;
+  const mlOdds=gf(row,'ml_odds','odds','Odds')||'';
+  const spread=gf(row,'spread','Spread','line')||'';
+  const atsPick=gf(row,'ats_pick','ATS','ats','spread_pick')||'';
+  let atsConf=pct(gf(row,'ats_confidence','ats_conf','ATS_Confidence'));
+  if(atsConf>0&&atsConf<=1) atsConf=atsConf*100;
+
+  const isFinal=/final|completed|closed/i.test(status)||(sc1>0&&sc2>0&&!!winner);
+  const isLive=/live|in.?progress|halftime/i.test(status);
+  let mlRes='pending', atsRes='pending';
+  if(isFinal&&winner){
+    mlRes=norm(winner)===norm(mlPick)?'win':'loss';
+    if(atsPick){
+      const sn=parseFloat((spread||'').replace(/[^-\d.]/g,''))||0;
+      const pi=norm(atsPick).startsWith(norm(t1).slice(0,5));
+      const mg=pi?(sc1-sc2):(sc2-sc1);
+      atsRes=mg+sn>0?'win':mg+sn===0?'push':'loss';
+    }
+  }
+  const pickSeed=norm(mlPick)===norm(t1)?s1:s2;
+  const oppSeed=norm(mlPick)===norm(t1)?s2:s1;
+  const isUpset=pickSeed>oppSeed&&!!mlPick;
+
+  // Implied probability & edge from ml_odds
+  let impliedPct=null, edgePct=null;
+  if(mlOdds){
+    const o=parseInt(mlOdds.replace(/[^-\d]/g,''))||0;
+    if(o>0) impliedPct=Math.round(100/(o+100)*100);
+    else if(o<0) impliedPct=Math.round(Math.abs(o)/(Math.abs(o)+100)*100);
+    if(impliedPct!==null) edgePct=Math.round(mlConf-impliedPct);
+  }
+
+  return {t1,t2,s1,s2,sc1,sc2,region,rk,rn,time,status,winner,
+    mlPick,mlConf,mlOdds,spread,atsPick,atsConf,impliedPct,edgePct,
+    isFinal,isLive,isPending:!isFinal&&!isLive,mlRes,atsRes,isUpset,pickSeed,oppSeed};
+}
+
+function games(){ return S.picks.map(normalizeGame); }
+
+// ── STATS ────────────────────────────────────────────────────────────────────
+
+function stats(gg) {
+  if(!gg) gg=games();
+  const done=gg.filter(g=>g.isFinal);
+  const mw=done.filter(g=>g.mlRes==='win').length;
+  const ml=done.filter(g=>g.mlRes==='loss').length;
+  const aw=done.filter(g=>g.atsRes==='win').length;
+  const al=done.filter(g=>g.atsRes==='loss').length;
+  const ap=done.filter(g=>g.atsRes==='push').length;
+  const tot=mw+ml;
+  const pctW=tot>0?(mw/tot*100):0;
+  // streak
+  let streak=0, streakType='';
+  for(let i=done.length-1;i>=0;i--){
+    if(i===done.length-1) streakType=done[i].mlRes;
+    if(done[i].mlRes===streakType) streak++; else break;
+  }
+  return {mw,ml,aw,al,ap,tot,pctW,streak,streakType,done:done.length,total:gg.length,live:gg.filter(g=>g.isLive).length,pending:gg.filter(g=>g.isPending).length};
+}
+
+function updateNav(){
+  const s = stats();
+  const rec = document.getElementById('nav-record');
+  if (rec) rec.textContent = s.tot>0 ? `${s.mw}-${s.ml} (${s.pctW.toFixed(0)}%)` : '--';
+}
+
+// ── RENDERING ────────────────────────────────────────────────────────────────
+
+function setView(v){
+  S.view = v;
+  buildViewTabs();
+  render();
+}
+
+function render(){
+  const app = document.getElementById('app');
+  const sp = SPORTS[S.sport];
+
+  // Global views always available
+  if (S.view === 'home')       { app.innerHTML=renderHome(); return; }
+  if (S.view === 'wheretobet') { app.innerHTML=renderWhereToBet(); return; }
+  if (S.view === 'pro')        { app.innerHTML=renderPro(); return; }
+
+  // Non-NCAAM sports: show coming soon if no data
+  if (S.sport !== 'ncaam' && S.picks.length === 0) {
+    app.innerHTML = renderComingSoon(sp);
+    return;
+  }
+
+  switch(S.view){
+    case 'dashboard': app.innerHTML=renderDashboard(); break;
+    case 'picks':     app.innerHTML=renderPicks(); break;
+    case 'bestbets':  app.innerHTML=renderBestBets(); break;
+    case 'upsets':    app.innerHTML=renderUpsets(); break;
+    case 'bracket':   app.innerHTML=renderBracket(); break;
+    case 'scores':    app.innerHTML=renderScores(); break;
+    default:          app.innerHTML=renderDashboard();
+  }
+  // Trigger entrance animations
+  requestAnimationFrame(()=>{
+    app.querySelectorAll('.conf-fill').forEach(el=>{
+      const w=el.dataset.width;
+      if(w) el.style.width=w+'%';
+    });
+    app.querySelectorAll('.gauge-ring').forEach(el=>{
+      const v=parseFloat(el.dataset.value)||0;
+      const circ=2*Math.PI*44;
+      el.style.strokeDashoffset=circ-(circ*v/100);
+    });
+  });
+}
+
+// ── GAUGE SVG ────────────────────────────────────────────────────────────────
+
+function gauge(value, size=100, color='var(--neon)') {
+  const r=44, circ=2*Math.PI*r;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" class="transform -rotate-90">
+    <circle cx="50" cy="50" r="${r}" fill="none" stroke="#1a1a1a" stroke-width="6"/>
+    <circle cx="50" cy="50" r="${r}" fill="none" stroke="${color}" stroke-width="6"
+      stroke-linecap="round" stroke-dasharray="${circ}" stroke-dashoffset="${circ}"
+      class="gauge-ring" data-value="${value}"/>
+  </svg>`;
+}
+
+// ── CONFIDENCE COLOR ─────────────────────────────────────────────────────────
+
+function confColor(v){ return v>=75?'var(--neon)':v>=60?'#ffa500':'var(--magenta)'; }
+function confClass(v){ return v>=75?'high':v>=60?'med':'low'; }
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: DASHBOARD
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderDashboard() {
+  const gg=games(), s=stats(gg);
+  const best=gg.filter(g=>g.mlConf>0).sort((a,b)=>b.mlConf-a.mlConf);
+  const topPicks=best.slice(0,6);
+  const upsets=gg.filter(g=>g.isUpset&&g.mlConf>0).sort((a,b)=>b.mlConf-a.mlConf).slice(0,4);
+  const live=gg.filter(g=>g.isLive);
+  const recent=gg.filter(g=>g.isFinal).slice(-5).reverse();
+  const byRound={};
+  ROUND_ORDER.forEach(rk=>{ byRound[rk]=gg.filter(g=>g.rk===rk); });
+
+  return `
+  <div class="grid grid-cols-12 gap-6 lg:gap-8">
+
+    <!-- ── LEFT: HERO + FEED ── -->
+    <div class="col-span-12 xl:col-span-8 space-y-6">
+
+      <!-- STATS RIBBON -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3 fade-up">
+        ${statCard('MODEL RECORD', s.tot>0?`${s.mw}-${s.ml}`:'--', s.pctW>0?`${s.pctW.toFixed(1)}%`:'', 'lucide:target', true)}
+        ${statCard('WIN RATE', s.pctW>0?s.pctW.toFixed(1)+'%':'--', '', 'lucide:trending-up')}
+        ${statCard('ATS RECORD', s.aw+s.al>0?`${s.aw}-${s.al}${s.ap?'-'+s.ap:''}`:'--', '', 'lucide:bar-chart-2')}
+        ${statCard('STREAK', s.streak>0?`${s.streak}${s.streakType==='win'?'W':'L'}`:'--', '', s.streakType==='win'?'lucide:flame':'lucide:snowflake')}
+        ${statCard('GAMES', `${s.done}/${s.total}`, s.live>0?`${s.live} Live`:'', 'lucide:activity')}
+      </div>
+
+      <!-- HERO: FEATURED PICK -->
+      ${topPicks.length>0 ? renderHeroPick(topPicks[0]) : ''}
+
+      <!-- ROUND PILLS -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 fade-up fade-up-delay-3">
+        <button onclick="setRoundFilter('ALL')" class="round-pill px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap ${S.roundFilter==='ALL'?'active':'text-zinc-500 hover:text-white'}">All Rounds</button>
+        ${ROUND_ORDER.map(rk=>{
+          const cnt=byRound[rk]?.length||0;
+          if(!cnt) return '';
+          return `<button onclick="setRoundFilter('${rk}')" class="round-pill px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap ${S.roundFilter===rk?'active':'text-zinc-500 hover:text-white'}">${rk} <span class="opacity-50 ml-1">${cnt}</span></button>`;
+        }).join('')}
+      </div>
+
+      <!-- BEST PICKS GRID -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-display font-bold flex items-center gap-2 fade-up fade-up-delay-3">
+            <iconify-icon icon="lucide:zap" class="text-neon"></iconify-icon>
+            TOP MODEL PICKS
+          </h3>
+          <span class="text-[9px] font-bold text-zinc-600 uppercase tracking-widest">Sorted by confidence</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          ${filterByRound(best).slice(0,8).map((g,i)=>renderPickCard(g,i)).join('')}
+        </div>
+      </div>
+
+      <!-- RECENT RESULTS -->
+      ${recent.length>0?`
+      <div class="space-y-3 fade-up fade-up-delay-5">
+        <h3 class="text-lg font-display font-bold flex items-center gap-2">
+          <iconify-icon icon="lucide:clock" class="text-zinc-500"></iconify-icon>
+          RECENT RESULTS
+        </h3>
+        <div class="space-y-2">
+          ${recent.map(g=>renderResultRow(g)).join('')}
+        </div>
+      </div>`:''}
+    </div>
+
+    <!-- ── RIGHT SIDEBAR ── -->
+    <aside class="col-span-12 xl:col-span-4 space-y-6">
+
+      <!-- MODEL PERFORMANCE GAUGE -->
+      <div class="glass rounded-xl p-6 gradient-border fade-up slide-in-right">
+        <div class="flex items-center justify-between mb-5">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-zinc-400">Model Performance</h4>
+          <div class="text-right">
+            <div class="text-[9px] font-bold text-neon uppercase">v7 Engine</div>
+            <div class="text-[8px] text-zinc-600">60/63 in 2025</div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-6 mb-4">
+          <div class="relative flex items-center justify-center">
+            ${gauge(s.pctW, 120)}
+            <div class="absolute inset-0 flex items-center justify-center flex-col">
+              <span class="text-2xl font-display font-bold text-neon text-glow">${s.pctW>0?s.pctW.toFixed(0):'--'}%</span>
+              <span class="text-[8px] text-zinc-500 font-bold uppercase">Win Rate</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div>
+            <div class="text-lg font-display font-bold">${s.mw}</div>
+            <div class="text-[8px] text-zinc-500 font-bold uppercase tracking-wider">Wins</div>
+          </div>
+          <div>
+            <div class="text-lg font-display font-bold text-magenta">${s.ml}</div>
+            <div class="text-[8px] text-zinc-500 font-bold uppercase tracking-wider">Losses</div>
+          </div>
+          <div>
+            <div class="text-lg font-display font-bold">${s.streak}${s.streakType==='win'?'W':'L'}</div>
+            <div class="text-[8px] text-zinc-500 font-bold uppercase tracking-wider">Streak</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROUND BREAKDOWN -->
+      <div class="glass rounded-xl p-6 fade-up fade-up-delay-2 slide-in-right">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">Round Breakdown</h4>
+        <div class="space-y-3">
+          ${ROUND_ORDER.map(rk=>{
+            const rg=gg.filter(g=>g.rk===rk);
+            const rd=rg.filter(g=>g.isFinal);
+            const w=rd.filter(g=>g.mlRes==='win').length;
+            const l=rd.filter(g=>g.mlRes==='loss').length;
+            const pctV=rd.length>0?(w/rd.length*100):0;
+            if(rg.length===0) return '';
+            return `<div class="flex items-center gap-3">
+              <span class="text-[10px] font-bold text-zinc-500 w-12 shrink-0">${rk}</span>
+              <div class="conf-bar flex-1"><div class="conf-fill ${confClass(pctV)}" data-width="${pctV}" style="width:0%"></div></div>
+              <span class="text-[10px] font-bold ${pctV>=70?'text-neon':pctV>=50?'text-yellow-400':'text-magenta'} w-16 text-right">${rd.length>0?`${w}-${l}`:`0/${rg.length}`}</span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+
+      <!-- UPSET ALERTS -->
+      ${upsets.length>0?`
+      <div class="glass rounded-xl p-6 border-l-2 border-magenta fade-up fade-up-delay-3 slide-in-right">
+        <div class="flex items-center gap-2 mb-4">
+          <iconify-icon icon="lucide:alert-triangle" class="text-magenta text-lg"></iconify-icon>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-magenta">Upset Alerts</h4>
+        </div>
+        <div class="space-y-3">
+          ${upsets.map(g=>`
+          <div class="flex items-center gap-3 group">
+            <div class="relative shrink-0">
+              ${teamLogo(g.mlPick, 32)}
+              <div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-magenta flex items-center justify-center text-[7px] font-bold text-white">${g.pickSeed}</div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="text-sm font-bold truncate">${g.mlPick}</div>
+              <div class="text-[10px] text-zinc-500">vs ${g.s1} ${g.t1} / ${g.s2} ${g.t2}</div>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="text-xs font-bold" style="color:${confColor(g.mlConf)}">${g.mlConf.toFixed(0)}%</div>
+              ${g.isFinal?`<div class="text-[9px] font-bold ${g.mlRes==='win'?'text-neon':'text-magenta'}">${g.mlRes.toUpperCase()}</div>`:''}
+            </div>
+          </div>`).join('')}
+        </div>
+      </div>`:''}
+
+      <!-- CONFIDENCE DISTRIBUTION -->
+      <div class="glass rounded-xl p-6 fade-up fade-up-delay-4 slide-in-right">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">Confidence Distribution</h4>
+        ${renderConfDistribution(gg)}
+      </div>
+    </aside>
+  </div>`;
+}
+
+function statCard(label, value, sub, icon, highlight=false) {
+  return `<div class="glass rounded-lg p-4 ${highlight?'border-l-2 border-neon glow-green':''} card-lift">
+    <div class="flex items-center gap-2 mb-2">
+      <iconify-icon icon="${icon}" class="text-sm ${highlight?'text-neon':'text-zinc-600'}"></iconify-icon>
+      <span class="text-[8px] font-bold uppercase tracking-widest text-zinc-500">${label}</span>
+    </div>
+    <div class="text-xl font-display font-bold ${highlight?'text-neon text-glow':''}">${value}</div>
+    ${sub?`<div class="text-[10px] font-bold text-zinc-500 mt-0.5">${sub}</div>`:''}
+  </div>`;
+}
+
+function renderHeroPick(g) {
+  const t1Picked=norm(g.mlPick)===norm(g.t1);
+  const pickTeam=t1Picked?g.t1:g.t2;
+  const oppTeam=t1Picked?g.t2:g.t1;
+  const pickSeed=t1Picked?g.s1:g.s2;
+  const oppSeed=t1Picked?g.s2:g.s1;
+  return `
+  <section class="relative glass rounded-xl overflow-hidden scan-line fade-up fade-up-delay-1 card-lift" style="min-height:300px;">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
+    <div class="absolute inset-0 opacity-20">
+      <div class="w-full h-full" style="background:linear-gradient(135deg,rgba(0,255,65,0.1),transparent 50%,rgba(255,0,110,0.05))"></div>
+    </div>
+    <div class="relative z-20 p-8 flex flex-col justify-between h-full" style="min-height:300px;">
+      <div class="flex justify-between items-start">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-neon/10 border border-neon/30 rounded-full text-[9px] font-bold text-neon uppercase tracking-widest">
+              <iconify-icon icon="lucide:crown" class="text-xs"></iconify-icon>Top Pick
+            </span>
+            <span class="px-3 py-1 bg-white/5 rounded-full text-[9px] font-bold text-zinc-400 uppercase tracking-widest">${g.region||g.rk}</span>
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="relative inline-flex items-center justify-center">
+            ${gauge(g.mlConf, 80)}
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="text-xl font-display font-bold text-neon">${g.mlConf.toFixed(0)}%</span>
+            </div>
+          </div>
+          <div class="text-[8px] text-zinc-500 font-bold uppercase mt-1">Confidence</div>
+        </div>
+      </div>
+
+      <!-- Matchup visual with logos -->
+      <div class="flex items-center justify-center gap-6 md:gap-10 my-4">
+        <div class="flex flex-col items-center gap-2 flex-1">
+          <div class="relative">
+            ${teamLogoLg(pickTeam, 64)}
+            <div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-neon flex items-center justify-center">
+              <iconify-icon icon="lucide:check" class="text-[10px] text-black"></iconify-icon>
+            </div>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-display font-bold tracking-tight leading-none text-center text-neon text-glow">${pickTeam}</h2>
+          <span class="text-[10px] font-bold text-zinc-500">#${pickSeed} Seed</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 shrink-0">
+          ${g.isFinal||g.isLive?`
+          <div class="text-3xl font-display font-black tracking-tight flex items-center gap-3">
+            <span class="${t1Picked?(g.sc1>g.sc2?'text-neon':'text-zinc-500'):(g.sc2>g.sc1?'text-neon':'text-zinc-500')}">${t1Picked?g.sc1:g.sc2}</span>
+            <span class="text-zinc-700">:</span>
+            <span class="${t1Picked?(g.sc2>g.sc1?'text-magenta':'text-zinc-500'):(g.sc1>g.sc2?'text-magenta':'text-zinc-500')}">${t1Picked?g.sc2:g.sc1}</span>
+          </div>`:`
+          <div class="text-xl font-display font-bold text-zinc-600 tracking-widest">VS</div>`}
+          <span class="text-[9px] font-bold text-zinc-600 uppercase">${ROUND_LABELS[g.rk]||g.rk}</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 flex-1">
+          ${teamLogoLg(oppTeam, 64)}
+          <h2 class="text-2xl md:text-3xl font-display font-bold tracking-tight leading-none text-center text-zinc-400">${oppTeam}</h2>
+          <span class="text-[10px] font-bold text-zinc-500">#${oppSeed} Seed</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 flex-wrap">
+        ${g.spread?`<div class="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded">
+          <span class="text-[9px] font-bold text-zinc-500 uppercase">Spread ${g.spread}</span>
+        </div>`:''}
+        ${g.isFinal?`<div class="px-4 py-2 rounded font-bold text-[10px] uppercase tracking-widest ${g.mlRes==='win'?'bg-neon/10 text-neon border border-neon/30':'bg-magenta/10 text-magenta border border-magenta/30'}">${g.mlRes==='win'?'CORRECT':'MISS'}</div>`:''}
+      </div>
+    </div>
+  </section>`;
+}
+
+function renderPickCard(g, idx) {
+  const delay = Math.min(idx, 6);
+  const t1Picked=norm(g.mlPick)===norm(g.t1);
+  const opp = t1Picked?g.t2:g.t1;
+  const oppSeed = t1Picked?g.s2:g.s1;
+  const pickSeed = t1Picked?g.s1:g.s2;
+  let statusBadge = '';
+  if(g.isFinal) statusBadge=g.mlRes==='win'
+    ?'<span class="px-2 py-0.5 bg-neon/10 text-neon text-[8px] font-bold rounded uppercase">W</span>'
+    :'<span class="px-2 py-0.5 bg-magenta/10 text-magenta text-[8px] font-bold rounded uppercase">L</span>';
+  else if(g.isLive) statusBadge='<span class="px-2 py-0.5 bg-yellow-500/10 text-yellow-400 text-[8px] font-bold rounded uppercase flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-yellow-400 animate-pulse"></span>LIVE</span>';
+
+  return `
+  <div class="glass rounded-lg p-4 card-lift fade-up fade-up-delay-${delay} ${g.isFinal?(g.mlRes==='win'?'border-l-2 border-neon':'border-l-2 border-magenta'):'border-l-2 border-white/10'}">
+    <div class="flex items-start gap-3 mb-3">
+      <div class="mt-1 shrink-0">${teamLogo(g.mlPick, 32)}</div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-[9px] font-bold text-zinc-600 uppercase">${g.region||''} &middot; ${g.rk}</span>
+          ${statusBadge}
+        </div>
+        <div class="font-display font-bold text-base leading-tight truncate">${g.mlPick}</div>
+        <div class="text-[11px] text-zinc-500 mt-0.5">${pickSeed} seed vs ${oppSeed} ${opp}</div>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="text-lg font-display font-bold" style="color:${confColor(g.mlConf)}">${g.mlConf.toFixed(0)}%</div>
+        ${g.spread?`<div class="text-[9px] text-zinc-500 font-bold">${g.spread}</div>`:''}
+      </div>
+    </div>
+    <div class="conf-bar"><div class="conf-fill ${confClass(g.mlConf)}" data-width="${g.mlConf}" style="width:0%"></div></div>
+    ${g.isFinal?`<div class="flex items-center justify-between mt-2.5 text-[10px]">
+      <div class="flex items-center gap-1.5">${teamLogo(g.t1,16)}<span class="text-zinc-500">${g.s1} ${g.t1} ${g.sc1}</span></div>
+      <span class="text-zinc-600">-</span>
+      <div class="flex items-center gap-1.5"><span class="text-zinc-500">${g.sc2} ${g.t2} ${g.s2}</span>${teamLogo(g.t2,16)}</div>
+    </div>`:''}
+  </div>`;
+}
+
+function renderResultRow(g) {
+  const w=g.mlRes==='win';
+  return `
+  <div class="glass rounded-lg px-4 py-3 flex items-center gap-3 card-lift ${w?'border-l-2 border-neon':'border-l-2 border-magenta'}">
+    <div class="w-7 h-7 rounded flex items-center justify-center text-[10px] font-bold shrink-0 ${w?'bg-neon/10 text-neon':'bg-magenta/10 text-magenta'}">${w?'W':'L'}</div>
+    <div class="flex items-center gap-2 shrink-0">
+      ${teamLogo(g.t1, 22)}
+      <span class="text-xs font-bold text-zinc-400">${g.sc1}</span>
+      <span class="text-[10px] text-zinc-600">-</span>
+      <span class="text-xs font-bold text-zinc-400">${g.sc2}</span>
+      ${teamLogo(g.t2, 22)}
+    </div>
+    <div class="flex-1 min-w-0">
+      <div class="text-sm font-bold truncate">${g.s1} ${g.t1} vs ${g.s2} ${g.t2}</div>
+      <div class="text-[10px] text-zinc-500">${g.region||''} &middot; ${ROUND_LABELS[g.rk]||g.rk}</div>
+    </div>
+    <div class="text-right shrink-0">
+      <div class="flex items-center gap-1.5">${teamLogo(g.mlPick, 16)}<span class="text-xs font-bold ${w?'text-neon':'text-magenta'}">${g.mlPick}</span></div>
+      <div class="text-[10px] text-zinc-500">${g.mlConf.toFixed(0)}% conf</div>
+    </div>
+  </div>`;
+}
+
+function renderConfDistribution(gg) {
+  const buckets = [{l:'90-100%',lo:90,hi:100},{l:'80-89%',lo:80,hi:90},{l:'70-79%',lo:70,hi:80},{l:'60-69%',lo:60,hi:70},{l:'50-59%',lo:50,hi:60},{l:'<50%',lo:0,hi:50}];
+  const withConf=gg.filter(g=>g.mlConf>0);
+  const max=Math.max(...buckets.map(b=>withConf.filter(g=>g.mlConf>=b.lo&&g.mlConf<b.hi).length),1);
+  return `<div class="space-y-2">${buckets.map(b=>{
+    const count=withConf.filter(g=>g.mlConf>=b.lo&&g.mlConf<b.hi).length;
+    const w=count/max*100;
+    const wins=withConf.filter(g=>g.mlConf>=b.lo&&g.mlConf<b.hi&&g.mlRes==='win').length;
+    const losses=withConf.filter(g=>g.mlConf>=b.lo&&g.mlConf<b.hi&&g.mlRes==='loss').length;
+    return `<div class="flex items-center gap-2">
+      <span class="text-[9px] font-bold text-zinc-500 w-14 shrink-0">${b.l}</span>
+      <div class="flex-1 h-5 bg-white/5 rounded overflow-hidden relative">
+        <div class="h-full rounded transition-all duration-700" style="width:${w}%;background:${b.lo>=70?'var(--neon)':b.lo>=50?'#ffa500':'var(--magenta)'};opacity:0.4"></div>
+        <span class="absolute inset-0 flex items-center justify-center text-[9px] font-bold">${count}${wins+losses>0?` (${wins}W-${losses}L)`:''}</span>
+      </div>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+function setRoundFilter(rk) { S.roundFilter=rk; render(); }
+function filterByRound(gg) { return S.roundFilter==='ALL'?gg:gg.filter(g=>g.rk===S.roundFilter); }
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: ALL PICKS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderPicks() {
+  const gg=games();
+  const s=stats(gg);
+  let html=`<div class="space-y-6">
+    <div class="flex items-center justify-between fade-up">
+      <h2 class="text-2xl font-display font-bold">All Model Picks</h2>
+      <span class="text-xs font-bold text-zinc-500">${gg.length} total games</span>
+    </div>
+    <div class="flex items-center gap-2 overflow-x-auto pb-1 fade-up fade-up-delay-1">
+      <button onclick="setRoundFilter('ALL')" class="round-pill px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap ${S.roundFilter==='ALL'?'active':'text-zinc-500'}">All</button>
+      ${ROUND_ORDER.map(rk=>{
+        const cnt=gg.filter(g=>g.rk===rk).length;
+        if(!cnt) return '';
+        return `<button onclick="setRoundFilter('${rk}')" class="round-pill px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest whitespace-nowrap ${S.roundFilter===rk?'active':'text-zinc-500'}">${rk} (${cnt})</button>`;
+      }).join('')}
+    </div>`;
+
+  const filtered=filterByRound(gg).sort((a,b)=>b.mlConf-a.mlConf);
+
+  // Table view
+  html+=`<div class="glass rounded-xl overflow-hidden fade-up fade-up-delay-2">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 border-b border-white/5">
+          <th class="text-left px-4 py-3">Matchup</th>
+          <th class="text-left px-4 py-3 hidden md:table-cell">Round</th>
+          <th class="text-left px-4 py-3 hidden md:table-cell">Region</th>
+          <th class="text-center px-4 py-3">ML Pick</th>
+          <th class="text-center px-4 py-3">Conf</th>
+          <th class="text-center px-4 py-3 hidden md:table-cell">Spread</th>
+          <th class="text-center px-4 py-3 hidden md:table-cell">Score</th>
+          <th class="text-center px-4 py-3">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${filtered.map((g,i)=>{
+          const w=g.mlRes==='win';
+          return `<tr class="border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors ${g.isFinal?(w?'':'opacity-70'):''}">
+            <td class="px-4 py-3">
+              <div class="flex items-center gap-2">
+                ${teamLogo(g.t1, 20)}
+                <div>
+                  <div class="font-bold">${g.s1} ${g.t1}</div>
+                  <div class="text-zinc-500 text-xs flex items-center gap-1">vs ${teamLogo(g.t2,14)} ${g.s2} ${g.t2}</div>
+                </div>
+              </div>
+            </td>
+            <td class="px-4 py-3 text-zinc-400 text-xs hidden md:table-cell">${ROUND_LABELS[g.rk]||g.rk}</td>
+            <td class="px-4 py-3 text-zinc-400 text-xs hidden md:table-cell">${g.region||'--'}</td>
+            <td class="px-4 py-3 text-center">
+              <div class="flex items-center justify-center gap-1.5">${teamLogo(g.mlPick,18)}<span class="font-bold text-neon">${g.mlPick||'--'}</span></div>
+            </td>
+            <td class="px-4 py-3 text-center">
+              <span class="font-bold" style="color:${confColor(g.mlConf)}">${g.mlConf>0?g.mlConf.toFixed(0)+'%':'--'}</span>
+            </td>
+            <td class="px-4 py-3 text-center text-zinc-400 text-xs hidden md:table-cell">${g.spread||'--'}</td>
+            <td class="px-4 py-3 text-center text-xs hidden md:table-cell">${g.isFinal||g.isLive?`${g.sc1}-${g.sc2}`:g.time||'--'}</td>
+            <td class="px-4 py-3 text-center">
+              ${g.isFinal?`<span class="inline-block px-2 py-0.5 rounded text-[9px] font-bold ${w?'bg-neon/10 text-neon':'bg-magenta/10 text-magenta'}">${w?'WIN':'LOSS'}</span>`
+              :g.isLive?'<span class="inline-flex items-center gap-1 text-[9px] font-bold text-yellow-400"><span class="w-1 h-1 rounded-full bg-yellow-400 animate-pulse"></span>LIVE</span>'
+              :'<span class="text-[9px] text-zinc-600">--</span>'}
+            </td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>
+  </div></div>`;
+  return html;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: BRACKET
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderBracket() {
+  const gg = games();
+
+  // Organise by region+round
+  const byRR = {};
+  gg.forEach(g => {
+    const k = (g.region||'') + '|' + g.rk;
+    if (!byRR[k]) byRR[k] = [];
+    byRR[k].push(g);
+  });
+
+  // Official 2026 layout:
+  //   LEFT side:  South (top) + West (bottom)
+  //   RIGHT side: East (top)  + Midwest (bottom)
+  // Rounds left→right on left side: R64 R32 S16 E8
+  // Rounds right→left on right side: E8 S16 R32 R64
+  const LEFT_REGIONS  = ['South','West'];
+  const RIGHT_REGIONS = ['East','Midwest'];
+  const LEFT_ROUNDS   = ['R64','R32','S16','E8'];
+  const RIGHT_ROUNDS  = ['E8','S16','R32','R64'];
+  const ROUND_HDR = {
+    R64:'First Round', R32:'Second Round', S16:'Sweet 16', E8:'Elite 8',
+    FF:'Semifinals', CHAMP:'Championship'
+  };
+  const ROUND_DATE = {
+    R64:'March 19-20', R32:'March 21-22', S16:'March 26-27',
+    E8:'March 28-29', FF:'April 4', CHAMP:'April 6'
+  };
+
+  // Check if we have any data
+  const hasData = gg.length > 0;
+
+  // ── single matchup slot ──────────────────────────────────────────────────
+  function slot(g, side) {
+    if (!g) return `<div class="b-slot b-slot-empty"><div class="b-team"><span class="b-seed"></span><span class="b-name text-zinc-700">TBD</span></div><div class="b-team"><span class="b-seed"></span><span class="b-name text-zinc-700">TBD</span></div></div>`;
+
+    const wn = g.winner ? norm(g.winner) : '';
+    function teamCls(t) {
+      const picked = norm(g.mlPick) === norm(t);
+      const won    = wn === norm(t);
+      if (!g.isFinal) return picked ? 'b-picked' : '';
+      if (picked && won)  return 'b-correct';
+      if (picked && !won) return 'b-wrong';
+      if (won)            return 'b-winner';
+      return 'b-loser';
+    }
+    function scoreStr(sc, t) {
+      return g.isFinal ? `<span class="b-score ${norm(g.winner||'')==norm(t)?'b-score-hi':''}">${sc}</span>` : '';
+    }
+    const isPick1 = norm(g.mlPick) === norm(g.t1);
+    const isPick2 = norm(g.mlPick) === norm(g.t2);
+
+    return `<div class="b-slot">
+      <div class="b-team ${teamCls(g.t1)}">
+        <span class="b-seed">${g.s1||''}</span>
+        ${teamLogo(g.t1,14)}
+        <span class="b-name">${g.t1||'TBD'}</span>
+        ${isPick1?'<span class="b-pick-dot"></span>':''}
+        ${scoreStr(g.sc1,g.t1)}
+      </div>
+      <div class="b-team ${teamCls(g.t2)}">
+        <span class="b-seed">${g.s2||''}</span>
+        ${teamLogo(g.t2,14)}
+        <span class="b-name">${g.t2||'TBD'}</span>
+        ${isPick2?'<span class="b-pick-dot"></span>':''}
+        ${scoreStr(g.sc2,g.t2)}
+      </div>
+    </div>`;
+  }
+
+  // ── one round column ─────────────────────────────────────────────────────
+  function roundCol(region, rk, align) {
+    const gs = byRR[region+'|'+rk] || [];
+    // Pad to expected count so spacing stays consistent even with missing data
+    const expected = {R64:8,R32:4,S16:2,E8:1}[rk] || 1;
+    const padded   = Array.from({length:expected}, (_,i) => gs[i]||null);
+
+    // Vertical gap multiplier doubles each round so games align with their pairs
+    const gapMult  = {R64:1,R32:2,S16:4,E8:8}[rk] || 1;
+    const slotH    = 56; // px — base slot height at R64
+    const halfGap  = ((gapMult-1) * slotH) / 2;
+    const fullGap  = (gapMult-1) * slotH;
+
+    const slots = padded.map((g,i) => {
+      const mt = i===0 ? halfGap : fullGap;
+      return `<div style="margin-top:${mt}px">${slot(g, align)}</div>`;
+    }).join('');
+
+    return `<div class="b-round-col">
+      <div class="b-round-hdr" style="text-align:${align};">
+        <div class="b-round-name">${ROUND_HDR[rk]||rk}</div>
+        <div class="b-round-date">${ROUND_DATE[rk]||''}</div>
+      </div>
+      <div class="b-slots">${slots}</div>
+    </div>`;
+  }
+
+  // ── one half (left or right) containing two regions ──────────────────────
+  function half(regions, rounds, align) {
+    return regions.map(region => {
+      const cols = rounds.map(rk => roundCol(region, rk, align)).join('');
+      return `<div class="b-region-block">
+        <div class="b-region-label" style="text-align:${align}">${region.toUpperCase()}</div>
+        <div class="b-half-cols" style="flex-direction:row">${cols}</div>
+      </div>`;
+    }).join('');
+  }
+
+  // ── Final Four center ────────────────────────────────────────────────────
+  function ffSlot(g) {
+    if (!g) return `<div class="b-slot b-ff-slot"><div class="b-team"><span class="b-seed"></span><span class="b-name text-zinc-600">TBD</span></div><div class="b-team"><span class="b-seed"></span><span class="b-name text-zinc-600">TBD</span></div></div>`;
+    return slot(g, 'center');
+  }
+
+  const ffGames   = gg.filter(g => g.rk === 'FF');
+  const champGame = gg.filter(g => g.rk === 'CHAMP');
+  const ff1 = ffGames[0]||null, ff2 = ffGames[1]||null;
+  const champ = champGame[0]||null;
+
+  // Champion display
+  function champBox() {
+    if (!champ) return `<div class="b-champ-box"><div class="b-champ-trophy">🏆</div><div class="b-champ-label">Champion</div><div class="b-champ-name text-zinc-600">TBD</div><div class="b-champ-sub">April 6 · Indianapolis</div></div>`;
+    const pick = champ.mlPick||'TBD';
+    const conf = champ.mlConf>0?champ.mlConf.toFixed(0)+'%':'';
+    const won  = champ.isFinal && norm(champ.winner)===norm(pick);
+    const lost = champ.isFinal && norm(champ.winner)!==norm(pick);
+    return `<div class="b-champ-box ${won?'b-champ-win':lost?'b-champ-loss':''}">
+      <div class="b-champ-trophy">🏆</div>
+      <div class="b-champ-label">${champ.isFinal?'Champion':'Predicted Champion'}</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:4px;">
+        ${teamLogo(pick,28)}
+        <div class="b-champ-name ${won?'text-neon':lost?'text-magenta':''}">${pick}</div>
+      </div>
+      ${conf?`<div class="b-champ-conf">${conf} confidence</div>`:''}
+      ${champ.isFinal?`<div style="font-size:10px;color:#666;margin-top:2px;">${champ.sc1}–${champ.sc2}</div>`:''}
+      <div class="b-champ-sub">April 6 · Indianapolis</div>
+    </div>`;
+  }
+
+  const centerCol = `<div class="b-center">
+    <div class="b-ff-label">National<br>Semifinals</div>
+    <div style="margin-bottom:8px">${ffSlot(ff1)}</div>
+    ${champBox()}
+    <div style="margin-top:8px">${ffSlot(ff2)}</div>
+    <div class="b-ff-label">National<br>Semifinals</div>
+  </div>`;
+
+  // Split regions individually for grid layout
+  const leftTop     = half(['South'],   LEFT_ROUNDS,  'left');
+  const leftBottom  = half(['West'],    LEFT_ROUNDS,  'left');
+  const rightTop    = half(['East'],    RIGHT_ROUNDS, 'right');
+  const rightBottom = half(['Midwest'], RIGHT_ROUNDS, 'right');
+  // ── bracket CSS ──────────────────────────────────────────────────────────
+  const css = `<style>
+  .b-wrap { overflow-x:auto; overflow-y:visible; padding-bottom:2rem; }
+  .b-header { font-family:'Clash Display',sans-serif; font-size:13px; letter-spacing:3px; text-align:center;
+    color:#444; text-transform:uppercase; padding:8px 0 12px; border-bottom:1px solid rgba(0,255,65,0.15);
+    margin-bottom:16px; }
+  .b-layout {
+    display: grid;
+    grid-template-columns: 1fr 160px 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    min-width: 1100px;
+    align-items: start;
+  }
+  .b-layout-left-top    { grid-column: 1; grid-row: 1; }
+  .b-layout-left-bottom { grid-column: 1; grid-row: 2; }
+  .b-layout-center      { grid-column: 2; grid-row: 1 / 3; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; padding-top:40px; }
+  .b-layout-right-top   { grid-column: 3; grid-row: 1; }
+  .b-layout-right-bottom{ grid-column: 3; grid-row: 2; }
+  .b-region-block { display:flex; flex-direction:column; }
+  .b-region-label { font-family:'Clash Display',sans-serif; font-size:10px; letter-spacing:3px;
+    color:var(--neon); padding:0 4px 6px; }
+  .b-half-cols { display:flex; gap:2px; align-items:flex-start; }
+  .b-round-col { display:flex; flex-direction:column; width:130px; flex-shrink:0; }
+  .b-round-hdr { padding:0 4px 8px; }
+  .b-round-name { font-size:8px; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:#555; }
+  .b-round-date { font-size:7px; color:#3a3a3a; margin-top:1px; letter-spacing:0.5px; }
+  .b-slots { display:flex; flex-direction:column; }
+  .b-slot { border:1px solid rgba(255,255,255,0.06); border-radius:3px; background:rgba(14,14,14,0.8);
+    overflow:hidden; margin:1px 3px; }
+  .b-slot-empty { opacity:0.3; }
+  .b-ff-slot { min-width:140px; }
+  .b-team { display:flex; align-items:center; gap:4px; padding:4px 6px; height:26px;
+    border-bottom:1px solid rgba(255,255,255,0.04); font-size:10px; transition:background 0.1s; }
+  .b-team:last-child { border-bottom:none; }
+  .b-seed { font-size:8px; color:#444; min-width:12px; text-align:right; font-family:monospace; flex-shrink:0; }
+  .b-name { flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#888; font-size:9.5px; }
+  .b-score { font-family:'Clash Display',sans-serif; font-size:12px; color:#555; margin-left:auto; padding-left:4px; flex-shrink:0; }
+  .b-score-hi { color:#fff; }
+  .b-pick-dot { width:4px; height:4px; border-radius:50%; background:var(--neon); flex-shrink:0; }
+  /* result states */
+  .b-correct .b-name { color:var(--neon); }
+  .b-correct { background:rgba(0,255,65,0.06); }
+  .b-wrong .b-name { color:var(--magenta); }
+  .b-wrong { background:rgba(255,0,110,0.06); opacity:0.7; }
+  .b-winner .b-name { color:#fff; font-weight:600; }
+  .b-loser .b-name { color:#333; }
+  .b-picked .b-name { color:var(--neon); }
+  .b-picked { background:rgba(0,255,65,0.04); }
+  /* FF + champ */
+  .b-ff-label { font-family:'Clash Display',sans-serif; font-size:9px; letter-spacing:2px;
+    color:var(--neon); text-align:center; padding:8px 0 4px; text-transform:uppercase; line-height:1.3; }
+  .b-champ-box { background:linear-gradient(135deg,rgba(0,255,65,0.05),rgba(0,0,0,0));
+    border:1px solid rgba(0,255,65,0.2); border-radius:6px; padding:14px 16px; text-align:center;
+    min-width:140px; margin:6px 0; }
+  .b-champ-win { border-color:var(--neon); box-shadow:0 0 20px rgba(0,255,65,0.15); }
+  .b-champ-loss { border-color:var(--magenta); }
+  .b-champ-trophy { font-size:24px; margin-bottom:6px; }
+  .b-champ-label { font-size:7px; letter-spacing:2px; text-transform:uppercase; color:var(--neon); margin-bottom:6px; }
+  .b-champ-name { font-family:'Clash Display',sans-serif; font-size:14px; color:#fff; line-height:1; }
+  .b-champ-conf { font-size:9px; color:#555; margin-top:3px; }
+  .b-champ-sub { font-size:8px; color:#333; margin-top:6px; letter-spacing:0.5px; }
+  /* legend */
+  .b-legend { display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+  .b-legend-item { display:flex; align-items:center; gap:5px; font-size:9px; color:#555; }
+  .b-legend-dot { width:8px; height:8px; border-radius:50%; }
+  </style>`;
+
+  if (!hasData) {
+    return `${css}<div class="b-wrap fade-up">
+      <div class="b-header">2026 NCAA Division I Men's Basketball Championship · Sixth Sense Predicted Bracket</div>
+      <div class="glass rounded-xl p-16 text-center">
+        <iconify-icon icon="lucide:calendar" class="text-5xl text-zinc-700 mb-4 block"></iconify-icon>
+        <h3 class="text-xl font-display font-bold text-zinc-400 mb-2">Bracket Pending</h3>
+        <p class="text-sm text-zinc-600">Will populate after Selection Sunday, March 15</p>
+      </div>
+    </div>`;
+  }
+
+  return `${css}
+  <div class="b-wrap fade-up">
+    <div class="b-header">2026 NCAA Division I Men's Basketball Championship · Sixth Sense Predicted Bracket</div>
+
+    <!-- Legend -->
+    <div class="b-legend mb-4">
+      <div class="b-legend-item"><div class="b-legend-dot" style="background:var(--neon)"></div>Sixth Sense pick / correct</div>
+      <div class="b-legend-item"><div class="b-legend-dot" style="background:var(--magenta)"></div>Sixth Sense miss</div>
+      <div class="b-legend-item"><div class="b-legend-dot" style="background:#fff"></div>Actual winner</div>
+      <div class="b-legend-item"><div class="b-legend-dot" style="background:#555"></div>TBD / upcoming</div>
+    </div>
+
+    <div class="b-layout">
+      <div class="b-layout-left-top">${leftTop}</div>
+      <div class="b-layout-center">${centerCol}</div>
+      <div class="b-layout-right-top">${rightTop}</div>
+      <div class="b-layout-left-bottom">${leftBottom}</div>
+      <div class="b-layout-right-bottom">${rightBottom}</div>
+    </div>
+  </div>`;
+}
+
+function bracketTeamRow(name,seed,score,isWinner,isFinal,isPicked) {
+  // kept for legacy callers — not used by new bracket
+  let cls = isPicked ? (isFinal ? (isWinner?'text-neon':'text-magenta opacity-60') : 'text-neon') : (isFinal ? (isWinner?'text-white':'text-zinc-600') : 'text-zinc-400');
+  return `<div class="flex items-center gap-1.5 ${cls}">
+    ${teamLogo(name,16)}
+    <span class="text-[9px] text-zinc-600 w-3 text-right">${seed||''}</span>
+    <span class="flex-1 truncate text-[10px]">${name}</span>
+    ${isFinal?`<span class="text-[10px] font-bold">${score}</span>`:''}
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: SCORES
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderScores() {
+  const gg=games();
+  const s=stats(gg);
+  const live=gg.filter(g=>g.isLive);
+  const done=gg.filter(g=>g.isFinal).reverse();
+  const upcoming=gg.filter(g=>g.isPending);
+
+  let html=`<div class="space-y-6 fade-up">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl font-display font-bold flex items-center gap-3">
+        <iconify-icon icon="lucide:activity" class="text-neon"></iconify-icon>
+        Live Scores & Results
+      </h2>
+    </div>
+
+    <!-- Summary -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-neon">
+        <div class="text-2xl font-display font-bold text-neon">${s.mw}-${s.ml}</div>
+        <div class="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">ML Record</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <div class="text-2xl font-display font-bold">${s.pctW>0?s.pctW.toFixed(1)+'%':'--'}</div>
+        <div class="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">Win Rate</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <div class="text-2xl font-display font-bold">${s.aw}-${s.al}</div>
+        <div class="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">ATS Record</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <div class="text-2xl font-display font-bold">${s.total}</div>
+        <div class="text-[9px] text-zinc-500 font-bold uppercase tracking-widest">Total Games</div>
+      </div>
+    </div>`;
+
+  // Live
+  if(live.length>0){
+    html+=`<div class="space-y-3"><h3 class="text-sm font-bold uppercase tracking-widest text-yellow-400 flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>Live Now (${live.length})</h3>`;
+    live.forEach(g=>{ html+=scoreCard(g); });
+    html+=`</div>`;
+  }
+
+  // Completed by round
+  ROUND_ORDER.slice().reverse().forEach(rk=>{
+    const rGames=done.filter(g=>g.rk===rk);
+    if(!rGames.length) return;
+    const w=rGames.filter(g=>g.mlRes==='win').length;
+    const l=rGames.filter(g=>g.mlRes==='loss').length;
+    html+=`<div class="space-y-3">
+      <div class="flex items-center justify-between border-b border-white/5 pb-2">
+        <h3 class="text-sm font-display font-bold uppercase tracking-wider">${ROUND_LABELS[rk]||rk}</h3>
+        <span class="text-[10px] font-bold ${w>l?'text-neon':'text-magenta'}">${w}-${l}</span>
+      </div>`;
+    rGames.forEach(g=>{ html+=scoreCard(g); });
+    html+=`</div>`;
+  });
+
+  // Upcoming
+  if(upcoming.length>0){
+    html+=`<div class="space-y-3"><h3 class="text-sm font-bold uppercase tracking-widest text-zinc-500">Upcoming (${upcoming.length})</h3>`;
+    upcoming.slice(0,12).forEach(g=>{ html+=scoreCard(g); });
+    html+=`</div>`;
+  }
+
+  html+=`</div>`;
+  return html;
+}
+
+function scoreCard(g) {
+  const t1Win=g.isFinal&&g.sc1>g.sc2;
+  const t2Win=g.isFinal&&g.sc2>g.sc1;
+  const mlW=g.isFinal&&g.mlRes==='win';
+  const mlL=g.isFinal&&g.mlRes==='loss';
+
+  return `
+  <div class="glass rounded-lg overflow-hidden card-lift ${g.isFinal?(mlW?'border-l-2 border-neon':'border-l-2 border-magenta'):g.isLive?'border-l-2 border-yellow-400':''}">
+    <div class="p-4">
+      <div class="flex items-center justify-between mb-3">
+        <div class="flex items-center gap-2 text-[9px] font-bold text-zinc-500 uppercase tracking-widest">
+          ${g.region||''} ${g.region?'&middot;':''} ${g.rk}
+        </div>
+        ${g.isLive?'<span class="flex items-center gap-1 text-[9px] font-bold text-yellow-400"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>LIVE</span>'
+        :g.isFinal?`<span class="text-[9px] font-bold ${mlW?'text-neon':'text-magenta'}">${mlW?'MODEL CORRECT':'MODEL MISS'}</span>`
+        :`<span class="text-[9px] text-zinc-600">${g.time||'TBD'}</span>`}
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            ${teamLogo(g.t1, 24)}
+            <span class="text-[10px] text-zinc-600 font-bold">${g.s1}</span>
+            <span class="font-bold ${t1Win?'text-white':g.isFinal?'text-zinc-600':'text-zinc-300'} ${norm(g.mlPick)===norm(g.t1)?'text-neon':''}">${g.t1}</span>
+            ${norm(g.mlPick)===norm(g.t1)?'<iconify-icon icon="lucide:chevron-left" class="text-neon text-[10px]"></iconify-icon>':''}
+          </div>
+          <span class="font-display font-bold text-lg ${t1Win?'text-white':'text-zinc-600'}">${g.isFinal||g.isLive?g.sc1:''}</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            ${teamLogo(g.t2, 24)}
+            <span class="text-[10px] text-zinc-600 font-bold">${g.s2}</span>
+            <span class="font-bold ${t2Win?'text-white':g.isFinal?'text-zinc-600':'text-zinc-300'} ${norm(g.mlPick)===norm(g.t2)?'text-neon':''}">${g.t2}</span>
+            ${norm(g.mlPick)===norm(g.t2)?'<iconify-icon icon="lucide:chevron-left" class="text-neon text-[10px]"></iconify-icon>':''}
+          </div>
+          <span class="font-display font-bold text-lg ${t2Win?'text-white':'text-zinc-600'}">${g.isFinal||g.isLive?g.sc2:''}</span>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/5 px-4 py-2.5 flex items-center gap-3 bg-white/[0.02] flex-wrap">
+      <div class="flex-1 flex items-center gap-2 min-w-0">
+        <span class="text-[8px] text-zinc-600 font-bold uppercase shrink-0">ML Pick</span>
+        ${teamLogo(g.mlPick, 16)}
+        <span class="text-xs font-bold text-neon truncate">${g.mlPick||'--'}</span>
+        <span class="text-[10px] text-zinc-500 shrink-0">${g.mlConf>0?g.mlConf.toFixed(0)+'%':''}</span>
+        ${g.mlOdds?`<span class="text-[9px] font-bold text-zinc-600 shrink-0">${g.mlOdds}</span>`:''}
+        ${g.edgePct!==null&&g.edgePct>5?`<span class="text-[8px] font-bold px-1.5 py-0.5 rounded shrink-0" style="background:rgba(0,255,65,0.12);color:var(--neon)">+${g.edgePct}%</span>`:''}
+      </div>
+      ${g.spread?`<div class="flex items-center gap-1.5 shrink-0">
+        <span class="text-[8px] text-zinc-600 font-bold uppercase">Spread</span>
+        <span class="text-xs font-bold text-zinc-300">${g.spread}</span>
+        ${g.atsConf>0?`<span class="text-[9px] text-zinc-500">${g.atsConf.toFixed(0)}%</span>`:''}
+      </div>`:''}
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: UPSETS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderUpsets() {
+  const gg = games();
+
+  // An upset pick = model picks the higher seed (worse team) to win
+  const upsets = gg.filter(g => g.mlPick && g.s1 > 0 && g.s2 > 0 && g.isUpset);
+
+  // Sort: pending first (upcoming upsets to watch), then by seed gap descending (biggest upset calls)
+  upsets.sort((a,b) => {
+    if (a.isPending !== b.isPending) return a.isPending ? -1 : 1;
+    return (b.pickSeed - b.oppSeed) - (a.pickSeed - a.oppSeed);
+  });
+
+  // Stats
+  const done   = upsets.filter(u => u.isFinal);
+  const won    = done.filter(u => u.mlRes === 'win');
+  const lost   = done.filter(u => u.mlRes === 'loss');
+  const pending= upsets.filter(u => u.isPending || u.isLive);
+  const biggest= done.filter(u => u.mlRes==='win').sort((a,b)=>(b.pickSeed-b.oppSeed)-(a.pickSeed-a.oppSeed));
+
+  // Seed difference buckets
+  const brackets = [
+    { label: '1-seed killers',  min: 7, desc: '8-16 over 1-9 seeds' },
+    { label: 'Mid-major magic', min: 4, max: 6, desc: '10-13 seeds' },
+    { label: 'Minor upsets',    min: 1, max: 3, desc: '9-11 over 6-8 seeds' },
+  ];
+
+  function seedDiff(u) { return u.pickSeed - u.oppSeed; }
+
+  function upsetCard(u) {
+    const sd = seedDiff(u);
+    const oddsColor = u.mlOdds && u.mlOdds.startsWith('+') ? '#f97316' : '#f97316';
+    const resultDot = u.isFinal
+      ? (u.mlRes==='win'
+          ? `<span class="flex items-center gap-1 text-[9px] font-bold uppercase" style="color:var(--neon)"><span class="w-1.5 h-1.5 rounded-full bg-neon inline-block"></span>Hit</span>`
+          : `<span class="flex items-center gap-1 text-[9px] font-bold uppercase" style="color:var(--magenta)"><span class="w-1.5 h-1.5 rounded-full bg-magenta inline-block" style="background:var(--magenta)"></span>Miss</span>`)
+      : u.isLive
+      ? `<span class="flex items-center gap-1 text-[9px] font-bold uppercase text-yellow-400"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse inline-block"></span>Live</span>`
+      : `<span class="text-[9px] font-bold uppercase text-zinc-600">Upcoming</span>`;
+
+    const borderColor = u.isFinal
+      ? (u.mlRes==='win' ? 'border-neon' : 'border-magenta')
+      : 'border-red-500/40';
+
+    const scoreLine = u.isFinal
+      ? `<div class="mt-2 pt-2 border-t border-white/5 flex items-center justify-between text-[11px]">
+          <span class="text-zinc-500">${u.s1} ${u.t1} <span class="font-bold ${u.sc1>u.sc2?'text-white':'text-zinc-600'}">${u.sc1}</span></span>
+          <span class="text-zinc-700 text-[9px]">FINAL</span>
+          <span class="text-zinc-500"><span class="font-bold ${u.sc2>u.sc1?'text-white':'text-zinc-600'}">${u.sc2}</span> ${u.t2} ${u.s2}</span>
+        </div>`
+      : '';
+
+    // Upset magnitude visual — number of seed slots
+    const magnitude = Math.min(sd, 15);
+    const bolts = Math.ceil(magnitude / 3); // 1-5 bolts
+
+    const fav = u.mlPick === u.t1 ? u.t2 : u.t1;
+    // ml_odds is the underdog's (our pick's) odds. Derive the favorite's odds by flipping.
+    const favOdds = u.mlOdds ? (()=>{
+      const o = parseInt(u.mlOdds.replace(/[^-\d]/g,''));
+      if (!o) return null;
+      // underdog implied prob → favorite implied prob = 1 - underdog_imp
+      const dogImp = o > 0 ? 100/(o+100) : Math.abs(o)/(Math.abs(o)+100);
+      const favImp = 1 - dogImp;
+      // convert back to American odds (always negative for the favorite)
+      return '-' + Math.round(favImp/(1-favImp)*100);
+    })() : null;
+    const imp = u.mlOdds ? (()=>{ const o=parseInt(u.mlOdds.replace(/[^-\d]/g,'')); return o>0?Math.round(100/(o+100)*100):Math.round(Math.abs(o)/(Math.abs(o)+100)*100); })() : null;
+    const edge = imp !== null ? u.mlConf.toFixed(0) - imp : null;
+
+    return `<div class="glass rounded-lg p-4 card-lift border-l-2 ${borderColor}">
+      <!-- Header row -->
+      <div class="flex items-center justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-[8px] font-bold uppercase tracking-widest text-zinc-500">${u.region} · ${ROUND_LABELS[u.rk]||u.rk}</span>
+        </div>
+        ${resultDot}
+      </div>
+
+      <!-- Matchup -->
+      <div class="flex items-center justify-between gap-2 mb-3">
+        <!-- Underdog (our pick) -->
+        <div class="flex items-center gap-2 min-w-0">
+          ${teamLogo(u.mlPick, 32)}
+          <div class="min-w-0">
+            <div class="font-display font-bold text-base leading-none text-red-400 truncate">${u.mlPick}</div>
+            <div class="text-[10px] text-zinc-500 mt-0.5">#${u.pickSeed} seed · underdog</div>
+          </div>
+        </div>
+        <div class="text-[10px] text-zinc-600 font-bold shrink-0">over</div>
+        <!-- Favorite -->
+        <div class="flex items-center gap-2 min-w-0 justify-end">
+          <div class="min-w-0 text-right">
+            <div class="font-display font-bold text-base leading-none text-zinc-400 truncate">${fav}</div>
+            <div class="text-[10px] text-zinc-600 mt-0.5">#${u.oppSeed} seed · fav</div>
+          </div>
+          ${teamLogo(fav, 32)}
+        </div>
+      </div>
+
+      <!-- Odds + Spread pills -->
+      <div class="flex items-center gap-2 mb-3 flex-wrap">
+        ${favOdds ? `<div class="flex flex-col items-center px-3 py-1.5 rounded" style="background:rgba(249,115,22,0.12);">
+          <span class="font-display font-bold text-lg leading-none text-orange-400">${favOdds}</span>
+          <span class="text-[8px] font-bold uppercase tracking-wider text-zinc-600 mt-0.5">${fav} odds</span>
+        </div>` : ''}
+        ${u.spread ? `<div class="flex flex-col items-center px-3 py-1.5 rounded bg-white/5">
+          <span class="font-display font-bold text-lg leading-none text-blue-400">${u.spread}</span>
+          <span class="text-[8px] font-bold uppercase tracking-wider text-zinc-600 mt-0.5">Spread</span>
+        </div>` : ''}
+        <div class="flex flex-col items-center px-3 py-1.5 rounded bg-white/5 ml-auto">
+          <span class="font-display font-bold text-lg leading-none" style="color:${confColor(u.mlConf)}">${u.mlConf.toFixed(0)}%</span>
+          <span class="text-[8px] font-bold uppercase tracking-wider text-zinc-600 mt-0.5">Model</span>
+        </div>
+        ${imp !== null ? `<div class="flex flex-col items-center px-3 py-1.5 rounded bg-white/5">
+          <span class="font-display font-bold text-lg leading-none text-zinc-400">${imp}%</span>
+          <span class="text-[8px] font-bold uppercase tracking-wider text-zinc-600 mt-0.5">Implied</span>
+        </div>` : ''}
+        ${edge !== null && edge > 0 ? `<div class="flex flex-col items-center px-3 py-1.5 rounded" style="background:rgba(0,255,65,0.08);">
+          <span class="font-display font-bold text-lg leading-none text-neon">+${edge}%</span>
+          <span class="text-[8px] font-bold uppercase tracking-wider text-zinc-600 mt-0.5">Edge</span>
+        </div>` : ''}
+      </div>
+
+      <!-- Confidence bar -->
+      <div class="conf-bar"><div class="conf-fill ${confClass(u.mlConf)}" data-width="${u.mlConf}" style="width:0%"></div></div>
+      ${scoreLine}
+    </div>`;
+  }
+
+  // Group by round for the "by round" section
+  const byRound = {};
+  ROUND_ORDER.forEach(rk => { byRound[rk] = upsets.filter(u => u.rk===rk); });
+
+  const upsetRate = done.length > 0 ? Math.round(won.length/done.length*100) : null;
+
+  let html = `<div class="space-y-10 fade-up">
+
+    <!-- PAGE HEADER -->
+    <div class="flex items-start justify-between flex-wrap gap-4">
+      <div>
+        <h2 class="text-3xl font-display font-bold flex items-center gap-3">
+          <iconify-icon icon="lucide:zap" class="text-red-400"></iconify-icon>
+          Upset Picks
+        </h2>
+        <p class="text-sm text-zinc-500 mt-1">Games where the model backs the higher seed to pull off the upset</p>
+      </div>
+    </div>
+
+    <!-- SUMMARY STRIP -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-red-500">
+        <div class="text-2xl font-display font-bold text-red-400">${upsets.length}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">Total Upsets Called</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-neon">
+        <div class="text-2xl font-display font-bold text-neon">${won.length}-${lost.length}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">Hit / Miss Record</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-orange-400">
+        <div class="text-2xl font-display font-bold text-orange-400">${upsetRate !== null ? upsetRate+'%' : '--'}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">Upset Hit Rate</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-zinc-600">
+        <div class="text-2xl font-display font-bold text-zinc-300">${pending.length}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">Still Pending</div>
+      </div>
+    </div>
+
+    ${pending.length > 0 ? `
+    <!-- UPCOMING UPSETS — watch list -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-3 border-b border-white/5">
+        <div class="w-1 h-7 rounded-full bg-red-500"></div>
+        <div>
+          <h3 class="text-xl font-display font-bold text-red-400">Watch List</h3>
+          <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">Pending upset calls</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        ${pending.map(upsetCard).join('')}
+      </div>
+    </section>` : ''}
+
+    ${won.length > 0 ? `
+    <!-- HITS — confirmed upsets -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-3 border-b border-white/5">
+        <div class="w-1 h-7 rounded-full bg-neon"></div>
+        <div>
+          <h3 class="text-xl font-display font-bold">Upset Hits ✓</h3>
+          <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">${won.length} called correctly</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        ${won.map(upsetCard).join('')}
+      </div>
+    </section>` : ''}
+
+    ${lost.length > 0 ? `
+    <!-- MISSES -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-3 pb-3 border-b border-white/5">
+        <div class="w-1 h-7 rounded-full" style="background:var(--magenta)"></div>
+        <div>
+          <h3 class="text-xl font-display font-bold text-zinc-400">Misses</h3>
+          <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">${lost.length} didn't convert</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        ${lost.map(upsetCard).join('')}
+      </div>
+    </section>` : ''}
+
+    ${upsets.length === 0 ? `
+    <div class="glass rounded-xl p-16 text-center">
+      <iconify-icon icon="lucide:zap-off" class="text-5xl text-zinc-700 mb-4"></iconify-icon>
+      <h3 class="text-xl font-display font-bold text-zinc-400 mb-2">No Upset Picks Yet</h3>
+      <p class="text-sm text-zinc-600">Upset calls will appear after the bracket is set on Selection Sunday.</p>
+    </div>` : ''}
+
+  </div>`;
+
+  return html;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: BEST BETS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function impliedPct(oddsStr) {
+  if (!oddsStr) return null;
+  const o = parseInt((oddsStr+'').replace(/[^-\d]/g,'')) || 0;
+  if (o === 0) return null;
+  if (o > 0) return 100 / (o + 100);
+  return Math.abs(o) / (Math.abs(o) + 100);
+}
+
+function buildBestBets(gg) {
+  // Returns { ml: [], spread: [], value: [] } per round
+  const ML_THRESH = 62;    // min ml_confidence to show as best ML pick
+  const ATS_THRESH = 58;   // min ats_confidence to show as best spread pick
+  const EDGE_THRESH = 0.07; // min model-vs-market edge (7pp) for value bets
+
+  const byRound = {};
+  ROUND_ORDER.forEach(rk => { byRound[rk] = { ml:[], spread:[], value:[] }; });
+
+  gg.forEach(g => {
+    if (!g.mlPick) return;
+    const rk = g.rk;
+    if (!byRound[rk]) return;
+
+    // ── ML best picks ──
+    if (g.mlConf >= ML_THRESH) {
+      byRound[rk].ml.push(g);
+    }
+
+    // ── Best spread picks ──
+    if (g.atsConf >= ATS_THRESH && g.atsPick && g.spread) {
+      byRound[rk].spread.push(g);
+    }
+
+    // ── Value bets (model vs market implied) ──
+    const imp = impliedPct(g.mlOdds);
+    if (imp !== null) {
+      const edge = g.mlConf / 100 - imp;
+      if (edge >= EDGE_THRESH) {
+        byRound[rk].value.push({ ...g, imp: Math.round(imp * 100), edge: Math.round(edge * 100) });
+      }
+    }
+  });
+
+  // Sort each bucket
+  ROUND_ORDER.forEach(rk => {
+    byRound[rk].ml.sort((a,b) => b.mlConf - a.mlConf);
+    byRound[rk].spread.sort((a,b) => b.atsConf - a.atsConf);
+    byRound[rk].value.sort((a,b) => b.edge - a.edge);
+  });
+
+  return byRound;
+}
+
+function bbResultBadge(g, type) {
+  const res = type === 'ml' ? g.mlRes : g.atsRes;
+  if (res === 'win')  return `<span class="text-[8px] font-bold px-1.5 py-0.5 rounded uppercase" style="background:rgba(0,255,65,0.12);color:var(--neon)">W</span>`;
+  if (res === 'loss') return `<span class="text-[8px] font-bold px-1.5 py-0.5 rounded uppercase" style="background:rgba(255,0,110,0.12);color:var(--magenta)">L</span>`;
+  if (res === 'push') return `<span class="text-[8px] font-bold px-1.5 py-0.5 rounded uppercase bg-white/10 text-zinc-400">P</span>`;
+  return `<span class="text-[8px] text-zinc-600 font-bold uppercase">TBD</span>`;
+}
+
+function mlBetCard(g) {
+  return `
+  <div class="glass rounded-lg p-4 card-lift border-l-2 ${g.isFinal?(g.mlRes==='win'?'border-neon':'border-magenta'):'border-neon/30'}">
+    <div class="flex items-start gap-3">
+      <div class="shrink-0 mt-0.5">${teamLogo(g.mlPick, 32)}</div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-0.5">
+          <span class="text-[8px] font-bold uppercase tracking-widest text-zinc-500">${g.region} · ${ROUND_LABELS[g.rk]||g.rk}</span>
+          ${bbResultBadge(g, 'ml')}
+        </div>
+        <div class="font-display font-bold text-base leading-tight text-neon truncate">${g.mlPick}</div>
+        <div class="text-[11px] text-zinc-500 mt-0.5">${g.s1} ${g.t1} vs ${g.s2} ${g.t2}</div>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="text-xl font-display font-bold" style="color:${confColor(g.mlConf)}">${g.mlConf.toFixed(0)}%</div>
+        ${g.mlOdds ? `<div class="text-[10px] font-bold text-zinc-500 mt-0.5">${g.mlOdds}</div>` : ''}
+      </div>
+    </div>
+    <div class="mt-3 conf-bar"><div class="conf-fill ${confClass(g.mlConf)}" data-width="${g.mlConf}" style="width:0%"></div></div>
+    ${g.isFinal ? `<div class="flex items-center justify-between mt-2 text-[10px] text-zinc-500">
+      <span>${g.s1} ${g.t1} <span class="font-bold text-white">${g.sc1}</span></span>
+      <span class="text-zinc-700">·</span>
+      <span><span class="font-bold text-white">${g.sc2}</span> ${g.t2} ${g.s2}</span>
+    </div>` : ''}
+  </div>`;
+}
+
+function spreadBetCard(g) {
+  const borderCol = g.isFinal ? (g.atsRes==='win' ? 'border-blue-400' : g.atsRes==='push' ? 'border-zinc-600' : 'border-magenta') : 'border-blue-400/30';
+  return `
+  <div class="glass rounded-lg p-4 card-lift border-l-2 ${borderCol}">
+    <div class="flex items-start gap-3">
+      <div class="shrink-0 mt-0.5">${teamLogo(g.atsPick.split(' ')[0]||g.mlPick, 32)}</div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-0.5">
+          <span class="text-[8px] font-bold uppercase tracking-widest text-zinc-500">${g.region} · ${ROUND_LABELS[g.rk]||g.rk}</span>
+          ${bbResultBadge(g, 'ats')}
+        </div>
+        <div class="font-display font-bold text-base leading-tight text-blue-400 truncate">${g.atsPick}</div>
+        <div class="text-[11px] text-zinc-500 mt-0.5">${g.s1} ${g.t1} vs ${g.s2} ${g.t2}</div>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="text-xl font-display font-bold text-blue-400">${g.atsConf.toFixed(0)}%</div>
+        <div class="text-[10px] font-bold text-zinc-500 mt-0.5">-110</div>
+      </div>
+    </div>
+    <div class="mt-3 h-[3px] rounded bg-white/5 overflow-hidden"><div class="h-full rounded bg-blue-400 transition-all duration-1000" style="width:${g.atsConf}%"></div></div>
+    ${g.isFinal ? `<div class="flex items-center justify-between mt-2 text-[10px] text-zinc-500">
+      <span>${g.s1} ${g.t1} <span class="font-bold text-white">${g.sc1}</span></span>
+      <span class="text-zinc-700">·</span>
+      <span><span class="font-bold text-white">${g.sc2}</span> ${g.t2} ${g.s2}</span>
+    </div>` : ''}
+  </div>`;
+}
+
+function valueBetCard(v) {
+  const edgeColor = v.edge >= 20 ? 'var(--neon)' : v.edge >= 12 ? '#ffa500' : '#ff7c5c';
+  const barW = Math.min(Math.round(v.edge / 35 * 100), 100);
+  return `
+  <div class="glass rounded-lg p-4 card-lift" style="border-left:2px solid ${edgeColor};">
+    <div class="flex items-start gap-3">
+      <div class="shrink-0 mt-0.5">${teamLogo(v.mlPick, 32)}</div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-0.5">
+          <span class="text-[8px] font-bold uppercase tracking-widest text-zinc-500">${v.region} · ${ROUND_LABELS[v.rk]||v.rk}</span>
+          ${bbResultBadge(v, 'ml')}
+        </div>
+        <div class="font-display font-bold text-base leading-tight truncate" style="color:${edgeColor}">${v.mlPick}</div>
+        <div class="text-[11px] text-zinc-500 mt-0.5">${v.s1} ${v.t1} vs ${v.s2} ${v.t2}</div>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="text-xl font-display font-bold" style="color:${edgeColor}">+${v.edge}%</div>
+        <div class="text-[9px] text-zinc-500 font-bold mt-0.5">edge</div>
+      </div>
+    </div>
+    <!-- Model vs Market -->
+    <div class="mt-3 grid grid-cols-3 gap-2 text-center text-[9px]">
+      <div class="bg-white/5 rounded py-1.5">
+        <div class="font-display font-bold text-sm" style="color:${edgeColor}">${v.mlConf.toFixed(0)}%</div>
+        <div class="text-zinc-600 font-bold uppercase tracking-wider">Model</div>
+      </div>
+      <div class="bg-white/5 rounded py-1.5">
+        <div class="font-display font-bold text-sm text-zinc-400">${v.imp}%</div>
+        <div class="text-zinc-600 font-bold uppercase tracking-wider">Implied</div>
+      </div>
+      <div class="bg-white/5 rounded py-1.5">
+        <div class="font-display font-bold text-sm text-zinc-300">${v.mlOdds||'--'}</div>
+        <div class="text-zinc-600 font-bold uppercase tracking-wider">Odds</div>
+      </div>
+    </div>
+    <div class="mt-2.5 h-[3px] rounded bg-white/5 overflow-hidden">
+      <div class="h-full rounded transition-all duration-1000" style="width:${barW}%;background:${edgeColor};"></div>
+    </div>
+    ${v.isFinal ? `<div class="flex items-center justify-between mt-2 text-[10px] text-zinc-500">
+      <span>${v.s1} ${v.t1} <span class="font-bold text-white">${v.sc1}</span></span>
+      <span class="text-zinc-700">·</span>
+      <span><span class="font-bold text-white">${v.sc2}</span> ${v.t2} ${v.s2}</span>
+    </div>` : ''}
+  </div>`;
+}
+
+function renderBestBets() {
+  const gg = games();
+  const bets = buildBestBets(gg);
+
+  // Overall summary stats across all rounds
+  const allML    = ROUND_ORDER.flatMap(rk => bets[rk].ml);
+  const allSpread= ROUND_ORDER.flatMap(rk => bets[rk].spread);
+  const allValue = ROUND_ORDER.flatMap(rk => bets[rk].value);
+  const mlW  = allML.filter(g=>g.mlRes==='win').length;
+  const mlP  = allML.filter(g=>g.mlRes!=='pending').length;
+  const atsW = allSpread.filter(g=>g.atsRes==='win').length;
+  const atsP = allSpread.filter(g=>g.atsRes!=='pending'&&g.atsRes!=='push').length;
+  const valW = allValue.filter(g=>g.mlRes==='win').length;
+  const valP = allValue.filter(g=>g.mlRes!=='pending').length;
+  const avgEdge = allValue.length ? Math.round(allValue.reduce((s,v)=>s+v.edge,0)/allValue.length) : 0;
+
+  let html = `<div class="space-y-10 fade-up">
+
+    <!-- PAGE HEADER -->
+    <div class="flex items-start justify-between flex-wrap gap-4">
+      <div>
+        <h2 class="text-3xl font-display font-bold flex items-center gap-3">
+          <iconify-icon icon="lucide:star" class="text-yellow-400"></iconify-icon>
+          Best Bets
+        </h2>
+        <p class="text-sm text-zinc-500 mt-1">Top picks by round — ML confidence, spread value, and market edge</p>
+      </div>
+    </div>
+
+    <!-- SUMMARY STRIP -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-neon">
+        <div class="text-2xl font-display font-bold text-neon">${mlP>0?`${mlW}-${mlP-mlW}`:'--'}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">ML Picks Record</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-blue-400">
+        <div class="text-2xl font-display font-bold text-blue-400">${atsP>0?`${atsW}-${atsP-atsW}`:'--'}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">ATS Record</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-orange-400">
+        <div class="text-2xl font-display font-bold text-orange-400">${valP>0?`${valW}-${valP-valW}`:'--'}</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">Value Bets Record</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center border-t-2 border-zinc-600">
+        <div class="text-2xl font-display font-bold text-zinc-300">+${avgEdge}%</div>
+        <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mt-1">Avg Edge</div>
+      </div>
+    </div>`;
+
+  // One section per round that has any bets
+  ROUND_ORDER.forEach(rk => {
+    const rb = bets[rk];
+    const anyBets = rb.ml.length || rb.spread.length || rb.value.length;
+    if (!anyBets) return;
+
+    const roundGames = gg.filter(g=>g.rk===rk);
+    const roundDone  = roundGames.filter(g=>g.isFinal).length;
+
+    html += `
+    <section class="space-y-5">
+      <!-- Round header -->
+      <div class="flex items-center gap-4 pb-3 border-b border-white/5">
+        <div class="w-1 h-7 rounded-full bg-neon"></div>
+        <div>
+          <h3 class="text-xl font-display font-bold">${ROUND_LABELS[rk]||rk}</h3>
+          <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-widest">${roundDone}/${roundGames.length} games complete</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- ── ML PICKS ── -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 mb-1">
+            <div class="w-2 h-2 rounded-full bg-neon"></div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-neon">Best ML Picks</span>
+            <span class="text-[9px] text-zinc-600 ml-auto">≥62% conf</span>
+          </div>
+          ${rb.ml.length ? rb.ml.slice(0,4).map(mlBetCard).join('') : `<div class="glass rounded-lg p-6 text-center text-zinc-600 text-sm">No high-confidence picks this round</div>`}
+        </div>
+
+        <!-- ── SPREAD PICKS ── -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 mb-1">
+            <div class="w-2 h-2 rounded-full bg-blue-400"></div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Best Spread Picks</span>
+            <span class="text-[9px] text-zinc-600 ml-auto">≥58% ATS conf</span>
+          </div>
+          ${rb.spread.length ? rb.spread.slice(0,4).map(spreadBetCard).join('') : `<div class="glass rounded-lg p-6 text-center text-zinc-600 text-sm">No qualified spread picks this round</div>`}
+        </div>
+
+        <!-- ── VALUE BETS ── -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 mb-1">
+            <div class="w-2 h-2 rounded-full bg-orange-400"></div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-orange-400">Value Bets</span>
+            <span class="text-[9px] text-zinc-600 ml-auto">Model vs market ≥7%</span>
+          </div>
+          ${rb.value.length ? rb.value.slice(0,4).map(valueBetCard).join('') : `<div class="glass rounded-lg p-6 text-center text-zinc-600 text-sm">No value edges found this round</div>`}
+        </div>
+
+      </div>
+    </section>`;
+  });
+
+  if (!ROUND_ORDER.some(rk=>bets[rk].ml.length||bets[rk].spread.length||bets[rk].value.length)) {
+    html += `<div class="glass rounded-xl p-16 text-center">
+      <iconify-icon icon="lucide:calendar" class="text-5xl text-zinc-700 mb-4"></iconify-icon>
+      <h3 class="text-xl font-display font-bold text-zinc-400 mb-2">Bets Pending</h3>
+      <p class="text-sm text-zinc-600">Best bets will populate once picks are loaded after Selection Sunday.</p>
+    </div>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// DEMO DATA
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// Real 2025 NCAA Tournament results · Sixth Sense v7 model · 60/63 (95.2%)
+// All scores from ESPN. ml_pick/ml_confidence = v7 GBM predictions.
+function demoData() {
+  function g(team1,seed1,team2,seed2,ml_pick,ml_confidence,ml_odds,spread,ats_pick,ats_confidence,region,round,score1,score2,winner){
+    return {team1,seed1:String(seed1),team2,seed2:String(seed2),ml_pick,ml_confidence:String(ml_confidence),
+      ml_odds,spread,ats_pick,ats_confidence:String(ats_confidence),region,round:String(round),
+      score1:String(score1),score2:String(score2),winner,status:winner?'Final':'upcoming'};
+  }
+  return [
+  // ── ROUND OF 64 ─────────────────────────────────────────────────────────────
+  // SOUTH (32/32 correct ✓)
+  g('Auburn',1,'Alabama St.',16,'Auburn',95,'-4500','-29','Auburn -29',54,'South',64,83,63,'Auburn'),
+  g('Louisville',8,'Creighton',9,'Creighton',58,'+130','+1','Creighton +1',62,'South',64,75,89,'Creighton'),
+  g('Michigan',5,'UC San Diego',12,'Michigan',62,'-210','+8','UC San Diego +8',58,'South',64,68,65,'Michigan'),
+  g('Texas A&M',4,'Yale',13,'Texas A&M',78,'-900','-14','Texas A&M -14',57,'South',64,80,71,'Texas A&M'),
+  g('Ole Miss',6,'N. Carolina',11,'Ole Miss',51,'-180','-3','Ole Miss -3',52,'South',64,71,64,'Ole Miss'),
+  g('Iowa St.',3,'Lipscomb',14,'Iowa St.',92,'-4800','-25','Iowa St. -25',55,'South',64,82,55,'Iowa St.'),
+  g('Marquette',7,'New Mexico',10,'New Mexico',60,'-195','+5','New Mexico +5',61,'South',64,66,75,'New Mexico'),
+  g('Michigan St.',2,'Bryant',15,'Michigan St.',100,'-5500','-28','Michigan St. -28',53,'South',64,87,62,'Michigan St.'),
+  // EAST
+  g('Duke',1,'Mt. St. Marys',16,'Duke',100,'-6000','-32','Duke -32',52,'East',64,93,49,'Duke'),
+  g('Miss. State',8,'Baylor',9,'Baylor',65,'+130','+1.5','Baylor +1.5',63,'East',64,72,75,'Baylor'),
+  g('Oregon',5,'Liberty',12,'Oregon',70,'-280','+8','Liberty +8',60,'East',64,81,52,'Oregon'),
+  g('Arizona',4,'Akron',13,'Arizona',92,'-1200','-16','Arizona -16',58,'East',64,93,65,'Arizona'),
+  g('BYU',6,'VCU',11,'BYU',63,'-195','+4.5','VCU +4.5',59,'East',64,80,71,'BYU'),
+  g('Wisconsin',3,'Montana',14,'Wisconsin',97,'-4000','-22','Wisconsin -22',54,'East',64,85,66,'Wisconsin'),
+  g("Saint Mary's",7,'Vanderbilt',10,"Saint Mary's",68,'-210','-4',"Saint Mary's -4",58,'East',64,59,56,"Saint Mary's"),
+  g('Alabama',2,'Robert Morris',15,'Alabama',88,'-4200','-26','Alabama -26',55,'East',64,90,81,'Alabama'),
+  // WEST
+  g('Florida',1,'Norfolk St.',16,'Florida',98,'-5500','-32','Florida -32',54,'West',64,95,69,'Florida'),
+  g('UConn',8,'Oklahoma',9,'UConn',57,'-220','-2.5','UConn -2.5',57,'West',64,67,59,'UConn'),
+  g('Memphis',5,'Colorado St.',12,'Colorado St.',52,'-230','+7','Colorado St. +7',66,'West',64,70,78,'Colorado St.'),
+  g('Maryland',4,'Grand Canyon',13,'Maryland',96,'-1100','-15','Maryland -15',57,'West',64,81,49,'Maryland'),
+  g('Missouri',6,'Drake',11,'Drake',69,'-195','+4.5','Drake +4.5',64,'West',64,57,67,'Drake'),
+  g('Texas Tech',3,'UNC Wilm.',14,'Texas Tech',96,'-3800','-20','Texas Tech -20',53,'West',64,82,72,'Texas Tech'),
+  g('Kansas',7,'Arkansas',10,'Arkansas',72,'-180','+4.5','Arkansas +4.5',65,'West',64,72,79,'Arkansas'),
+  g("St. John's",2,'Omaha',15,"St. John's",90,'-3500','-24',"St. John's -24",55,'West',64,83,53,"St. John's"),
+  // MIDWEST
+  g('Houston',1,'SIU Edwards.',16,'Houston',96,'-6000','-33','Houston -33',53,'Midwest',64,95,58,'Houston'),
+  g('Gonzaga',8,'Georgia',9,'Gonzaga',72,'-225','-2.5','Gonzaga -2.5',58,'Midwest',64,89,68,'Gonzaga'),
+  g('Clemson',5,'McNeese St.',12,'McNeese St.',50,'-320','+9','McNeese St. +9',60,'Midwest',64,67,69,'McNeese St.'),
+  g('Purdue',4,'High Point',13,'Purdue',73,'-950','-14','Purdue -14',58,'Midwest',64,81,59,'Purdue'),
+  g('Illinois',6,'Xavier',11,'Illinois',59,'-225','-3','Illinois -3',57,'Midwest',64,88,72,'Illinois'),
+  g('Kentucky',3,'Troy',14,'Kentucky',89,'-3200','-22','Kentucky -22',55,'Midwest',64,82,57,'Kentucky'),
+  g('UCLA',7,'Utah St.',10,'UCLA',77,'-205','-3','UCLA -3',56,'Midwest',64,75,64,'UCLA'),
+  g('Tennessee',2,'Wofford',15,'Tennessee',98,'-5500','-30','Tennessee -30',54,'Midwest',64,97,62,'Tennessee'),
+  // ── ROUND OF 32 ─────────────────────────────────────────────────────────────
+  // SOUTH
+  g('Auburn',1,'Creighton',9,'Auburn',91,'-1600','-5.5','Auburn -5.5',63,'South',32,82,70,'Auburn'),
+  g('Michigan',5,'Texas A&M',4,'Michigan',56,'-175','-2','Texas A&M -2',52,'South',32,91,79,'Michigan'),   // ✗ miss
+  g('Ole Miss',6,'Iowa St.',3,'Ole Miss',54,'-240','-4','Iowa St. -4',55,'South',32,91,78,'Ole Miss'),
+  g('Michigan St.',2,'New Mexico',10,'Michigan St.',82,'-650','-12','Michigan St. -12',60,'South',32,71,63,'Michigan St.'),
+  // EAST
+  g('Duke',1,'Baylor',9,'Duke',92,'-2400','-9','Duke -9',65,'East',32,89,66,'Duke'),
+  g('Oregon',5,'Arizona',4,'Arizona',52,'-190','-2','Arizona -2',53,'East',32,83,87,'Arizona'),
+  g('BYU',6,'Wisconsin',3,'Wisconsin',76,'+230','+7.5','BYU +7.5',66,'East',32,91,89,'BYU'),             // ✗ miss
+  g("Saint Mary's",7,'Alabama',2,'Alabama',74,'-410','-5.5','Alabama -5.5',60,'East',32,66,80,'Alabama'),
+  // WEST
+  g('Florida',1,'UConn',8,'Florida',91,'-720','-7','Florida -7',62,'West',32,77,75,'Florida'),
+  g('Colorado St.',12,'Maryland',4,'Maryland',73,'-440','+9','Colorado St. +9',68,'West',32,71,72,'Maryland'),
+  g('Drake',11,'Texas Tech',3,'Texas Tech',87,'-880','-9.5','Texas Tech -9.5',64,'West',32,64,77,'Texas Tech'),
+  g('Arkansas',10,"St. John's",2,"St. John's",62,'-350','-6',"St. John's -6",58,'West',32,75,66,'Arkansas'), // ✗ miss
+  // MIDWEST
+  g('Houston',1,'Gonzaga',8,'Houston',78,'-780','-7.5','Houston -7.5',63,'Midwest',32,95,68,'Houston'),
+  g('McNeese St.',12,'Purdue',4,'Purdue',78,'-550','-7','Purdue -7',60,'Midwest',32,75,68,'McNeese St.'),  // ✗ miss
+  g('Illinois',6,'Kentucky',3,'Kentucky',60,'-245','-4','Kentucky -4',57,'Midwest',32,88,75,'Kentucky'),
+  g('UCLA',7,'Tennessee',2,'Tennessee',71,'-460','-6.5','Tennessee -6.5',61,'Midwest',32,68,82,'Tennessee'),
+  // ── SWEET 16 ────────────────────────────────────────────────────────────────
+  g('Auburn',1,'Michigan',5,'Auburn',77,'-550','-5','Auburn -5',61,'South',16,78,65,'Auburn'),
+  g('Ole Miss',6,'Michigan St.',2,'Michigan St.',70,'-270','-5','Michigan St. -5',57,'South',16,73,70,'Michigan St.'),
+  g('Duke',1,'Arizona',4,'Duke',87,'-880','-6','Duke -6',65,'East',16,100,93,'Duke'),
+  g('BYU',6,'Alabama',2,'Alabama',73,'-620','-6','Alabama -6',63,'East',16,88,113,'Alabama'),
+  g('Florida',1,'Maryland',4,'Florida',75,'-510','-5.5','Florida -5.5',61,'West',16,87,71,'Florida'),
+  g('Texas Tech',3,'Arkansas',10,'Texas Tech',70,'-250','-4','Texas Tech -4',56,'West',16,85,83,'Texas Tech'),
+  g('Houston',1,'McNeese St.',12,'Houston',91,'-1050','-9','Houston -9',62,'Midwest',16,62,60,'Houston'),
+  g('Kentucky',3,'Tennessee',2,'Tennessee',73,'+185','-2','Tennessee -2',53,'Midwest',16,65,79,'Tennessee'),
+  // ── ELITE EIGHT ─────────────────────────────────────────────────────────────
+  g('Auburn',1,'Michigan St.',2,'Auburn',61,'-380','-6','Auburn -6',57,'South',8,70,64,'Auburn'),
+  g('Duke',1,'Alabama',2,'Duke',69,'-420','-4','Duke -4',60,'East',8,85,65,'Duke'),
+  g('Florida',1,'Texas Tech',3,'Florida',69,'-320','-4.5','Florida -4.5',58,'West',8,84,79,'Florida'),
+  g('Houston',1,'Tennessee',2,'Houston',51,'-220','-2.5','Houston -2.5',54,'Midwest',8,69,50,'Houston'),
+  // ── FINAL FOUR ──────────────────────────────────────────────────────────────
+  g('Auburn',1,'Florida',1,'Florida',73,'+130','-1','Florida -1',54,'Final Four',4,73,79,'Florida'),
+  g('Duke',1,'Houston',1,'Houston',59,'+175','-2','Houston -2',54,'Final Four',4,67,70,'Houston'),
+  // ── CHAMPIONSHIP ────────────────────────────────────────────────────────────
+  g('Florida',1,'Houston',1,'Houston',50,'-115','-1.5','Florida -1.5',51,'Championship',2,65,63,'Florida'), // ✗ miss (coin flip)
+  ];
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// EMAIL CAPTURE
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function handleEmailSignup(inputId) {
+  const input = document.getElementById(inputId || 'email-input');
+  const email = input ? input.value.trim() : '';
+  if (!email || !email.includes('@')) {
+    // On mobile where input is hidden, open mailto
+    window.open('https://your-substack-url.substack.com/subscribe', '_blank');
+    return;
+  }
+  // TODO: Replace with your actual email capture endpoint (Substack, ConvertKit, etc.)
+  window.open(`https://your-substack-url.substack.com/subscribe?email=${encodeURIComponent(email)}`, '_blank');
+  document.getElementById('email-banner').innerHTML = `
+    <div class="w-full text-center py-0.5 text-[11px] text-neon font-bold">✓ You're in! Check your inbox for Sixth Sense picks.</div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: WHERE TO BET
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderWhereToBet() {
+  const books = [
+    {
+      name: 'DraftKings',
+      logo: '🟩',
+      promo: 'Bet $5, Get $200 in Bonus Bets',
+      promoSub: 'New users only. Must win first bet.',
+      rating: 5,
+      features: ['Best mobile app', 'Same-game parlays', 'Live betting'],
+      badge: 'BEST OVERALL',
+      badgeColor: 'neon',
+      url: 'https://www.draftkings.com', // TODO: replace with your affiliate link
+      cta: 'Claim Offer',
+    },
+    {
+      name: 'FanDuel',
+      logo: '🔵',
+      promo: 'Bet $5, Get $150 in Bonus Bets',
+      promoSub: 'No deposit required to claim.',
+      rating: 5,
+      features: ['Fastest payouts', 'Great odds boosts', 'Easy deposit'],
+      badge: 'TOP RATED',
+      badgeColor: 'blue',
+      url: 'https://www.fanduel.com', // TODO: replace with your affiliate link
+      cta: 'Claim Offer',
+    },
+    {
+      name: 'BetMGM',
+      logo: '🦁',
+      promo: 'First Bet Offer up to $1,500',
+      promoSub: 'If you lose, get bonus bets back.',
+      rating: 4,
+      features: ['Huge first bet offer', 'Extensive markets', 'M life rewards'],
+      badge: 'BIGGEST BONUS',
+      badgeColor: 'yellow',
+      url: 'https://www.betmgm.com', // TODO: replace with your affiliate link
+      cta: 'Claim Offer',
+    },
+    {
+      name: 'ESPN Bet',
+      logo: '📺',
+      promo: 'Bet $10, Get $150 in Bonus Bets',
+      promoSub: 'Instantly credited. No wagering requirement.',
+      rating: 4,
+      features: ['ESPN integration', 'Easy to use', 'Daily boosts'],
+      badge: 'EASIEST SIGNUP',
+      badgeColor: 'red',
+      url: 'https://www.espnbet.com', // TODO: replace with your affiliate link
+      cta: 'Claim Offer',
+    },
+    {
+      name: 'Caesars',
+      logo: '🏛️',
+      promo: 'First Bet on Caesars up to $1,000',
+      promoSub: 'Receive a bonus bet equal to your first bet.',
+      rating: 4,
+      features: ['Loyalty rewards', 'Great props', 'Live streaming'],
+      badge: 'BEST LOYALTY',
+      badgeColor: 'purple',
+      url: 'https://www.caesars.com/sportsbook', // TODO: replace with your affiliate link
+      cta: 'Claim Offer',
+    },
+    {
+      name: 'PrizePicks',
+      logo: '🎯',
+      promo: 'Get a 100% Deposit Match up to $100',
+      promoSub: 'Works in most US states. No sportsbook license needed.',
+      rating: 4,
+      features: ['DFS-style, more states', 'Player props focus', 'Easy payouts'],
+      badge: 'MOST STATES',
+      badgeColor: 'magenta',
+      url: 'https://www.prizepicks.com', // TODO: replace with your affiliate link
+      cta: 'Claim Offer',
+    },
+  ];
+
+  const badgeStyles = {
+    neon:    'background:rgba(0,255,65,0.15);color:var(--neon);border:1px solid rgba(0,255,65,0.3)',
+    blue:    'background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3)',
+    yellow:  'background:rgba(234,179,8,0.15);color:#facc15;border:1px solid rgba(234,179,8,0.3)',
+    red:     'background:rgba(239,68,68,0.15);color:#f87171;border:1px solid rgba(239,68,68,0.3)',
+    purple:  'background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3)',
+    magenta: 'background:rgba(255,0,110,0.15);color:var(--magenta);border:1px solid rgba(255,0,110,0.3)',
+  };
+
+  const accentStyles = {
+    neon:    'border-color:rgba(0,255,65,0.25)',
+    blue:    'border-color:rgba(59,130,246,0.25)',
+    yellow:  'border-color:rgba(234,179,8,0.25)',
+    red:     'border-color:rgba(239,68,68,0.25)',
+    purple:  'border-color:rgba(168,85,247,0.25)',
+    magenta: 'border-color:rgba(255,0,110,0.25)',
+  };
+
+  const ctaStyles = {
+    neon:    'background:var(--neon);color:#000',
+    blue:    'background:#3b82f6;color:#fff',
+    yellow:  'background:#eab308;color:#000',
+    red:     'background:#ef4444;color:#fff',
+    purple:  'background:#a855f7;color:#fff',
+    magenta: 'background:var(--magenta);color:#fff',
+  };
+
+  const stars = n => Array.from({length:5},(_,i)=>
+    `<span style="color:${i<n?'#facc15':'#333'};font-size:11px;">★</span>`
+  ).join('');
+
+  const cards = books.map((b,i) => `
+    <div class="glass rounded-xl overflow-hidden card-lift border border-white/5" style="${accentStyles[b.badgeColor]}">
+      <div class="p-5">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">${b.logo}</span>
+            <div>
+              <div class="font-display font-bold text-lg">${b.name}</div>
+              <div>${stars(b.rating)}</div>
+            </div>
+          </div>
+          <span class="text-[8px] font-bold uppercase tracking-widest px-2 py-1 rounded" style="${badgeStyles[b.badgeColor]}">${b.badge}</span>
+        </div>
+        <div class="rounded-lg p-3 mb-4" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06)">
+          <div class="font-bold text-sm text-white mb-1">${b.promo}</div>
+          <div class="text-[10px] text-zinc-500">${b.promoSub}</div>
+        </div>
+        <div class="space-y-1.5 mb-5">
+          ${b.features.map(f=>`<div class="flex items-center gap-2 text-[11px] text-zinc-400">
+            <span style="color:var(--neon)">✓</span> ${f}
+          </div>`).join('')}
+        </div>
+        <a href="${b.url}" target="_blank" rel="noopener noreferrer"
+          class="block w-full text-center text-[11px] font-bold uppercase tracking-widest py-2.5 rounded-lg transition-opacity hover:opacity-80"
+          style="${ctaStyles[b.badgeColor]}">${b.cta} →</a>
+      </div>
+      <div class="px-5 py-2.5 border-t border-white/5 flex items-center justify-between">
+        <span class="text-[9px] text-zinc-600">Sponsored · 21+ only · Gamble responsibly</span>
+        <span class="text-[9px] text-zinc-600">T&Cs apply</span>
+      </div>
+    </div>
+  `).join('');
+
+  return `<div class="space-y-8 fade-up">
+    <div>
+      <h2 class="text-2xl font-display font-bold mb-1 flex items-center gap-3">
+        💰 Where to Bet
+      </h2>
+      <p class="text-sm text-zinc-500">Sixth Sense Strategy recommends these sportsbooks. Sign up through our links to claim exclusive offers — and fund your March Madness picks.</p>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="rounded-lg px-4 py-3 text-[11px] text-zinc-500 border border-white/5 flex items-start gap-2" style="background:rgba(255,255,255,0.02)">
+      <span class="text-yellow-500 flex-shrink-0 mt-0.5">⚠</span>
+      <span>Must be 21+ to bet. Gambling involves risk. Sixth Sense picks are for informational purposes only — never bet more than you can afford to lose. If you or someone you know has a gambling problem, call 1-800-GAMBLER.</span>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="glass rounded-xl p-4 border border-white/5 flex flex-wrap items-center gap-6">
+      <div class="flex flex-col">
+        <span class="text-[9px] uppercase text-zinc-600 font-bold tracking-widest">2025 Tournament</span>
+        <span class="text-neon font-display font-bold text-xl text-glow">60-3</span>
+        <span class="text-[10px] text-zinc-500">Overall picks</span>
+      </div>
+      <div class="w-px h-10 bg-white/10 hidden sm:block"></div>
+      <div class="flex flex-col">
+        <span class="text-[9px] uppercase text-zinc-600 font-bold tracking-widest">Model accuracy</span>
+        <span class="text-neon font-display font-bold text-xl">95.2%</span>
+        <span class="text-[10px] text-zinc-500">Win rate</span>
+      </div>
+      <div class="w-px h-10 bg-white/10 hidden sm:block"></div>
+      <div class="flex flex-col">
+        <span class="text-[9px] uppercase text-zinc-600 font-bold tracking-widest">Round 1</span>
+        <span class="text-neon font-display font-bold text-xl">32/32</span>
+        <span class="text-[10px] text-zinc-500">Perfect</span>
+      </div>
+      <div class="ml-auto hidden md:block text-[10px] text-zinc-600 italic max-w-xs text-right">
+        Sixth Sense Strategy's track record speaks for itself. These are the books we trust to place our picks.
+      </div>
+    </div>
+
+    <!-- Sportsbook grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">${cards}</div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: GO PRO
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderPro() {
+  const gg = games();
+  const s = stats(gg);
+
+  // "Locked" premium picks — show top 3 best bets blurred
+  const topPicks = gg
+    .filter(g => g.isPending && g.mlConf >= 70)
+    .sort((a,b) => b.mlConf - a.mlConf)
+    .slice(0, 3);
+
+  const lockedCards = topPicks.length > 0 ? topPicks.map(g => `
+    <div class="relative rounded-xl overflow-hidden border border-white/5" style="background:rgba(14,14,14,0.9)">
+      <!-- Blurred content -->
+      <div style="filter:blur(6px);pointer-events:none;user-select:none;" class="p-4">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-[9px] font-bold uppercase tracking-widest text-zinc-500">${g.region} · ${ROUND_LABELS[g.rk]||g.rk}</span>
+          <span class="text-[9px] font-bold px-2 py-0.5 rounded" style="background:rgba(0,255,65,0.15);color:var(--neon)">${g.mlConf.toFixed(0)}% CONF</span>
+        </div>
+        <div class="text-lg font-display font-bold text-neon mb-1">${g.mlPick}</div>
+        <div class="text-xs text-zinc-400">${g.t1} vs ${g.t2}</div>
+        <div class="mt-2 text-[11px] text-zinc-500">${g.mlOdds} · Edge: +${g.edgePct}%</div>
+      </div>
+      <!-- Lock overlay -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center" style="background:rgba(0,0,0,0.5)">
+        <div class="text-2xl mb-1">🔒</div>
+        <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Pro Only</div>
+      </div>
+    </div>
+  `).join('') : `<div class="col-span-3 text-center py-8 text-zinc-600 text-sm">No upcoming high-confidence picks yet — check back as games are announced.</div>`;
+
+  const tiers = [
+    {
+      name: 'Free',
+      price: '$0',
+      period: 'forever',
+      color: 'zinc',
+      borderStyle: 'border:1px solid rgba(255,255,255,0.08)',
+      features: [
+        { text: 'All Sixth Sense picks (ML + ATS)', included: true },
+        { text: 'Confidence percentages', included: true },
+        { text: 'Bracket tracker', included: true },
+        { text: 'Best Bets tab', included: true },
+        { text: 'Value Bets (model vs market edge)', included: false },
+        { text: 'Sharp money signals', included: false },
+        { text: 'Email alerts before tip-off', included: false },
+        { text: 'Private Discord access', included: false },
+      ],
+      cta: 'Current Plan',
+      ctaStyle: 'background:rgba(255,255,255,0.05);color:#666;cursor:default',
+      ctaOnClick: '',
+    },
+    {
+      name: 'Sixth Sense Pro',
+      price: '$19',
+      period: '/month',
+      color: 'neon',
+      borderStyle: 'border:1px solid rgba(0,255,65,0.3);box-shadow:0 0 40px rgba(0,255,65,0.08)',
+      badge: 'MOST POPULAR',
+      features: [
+        { text: 'Everything in Free', included: true },
+        { text: 'Value Bets (model vs market edge)', included: true },
+        { text: 'Sharp money signals', included: true },
+        { text: 'Email alerts before tip-off', included: true },
+        { text: 'Private Discord access', included: true },
+        { text: 'ATS deep analysis', included: true },
+        { text: '1-on-1 DM support', included: false },
+        { text: 'Custom parlays', included: false },
+      ],
+      cta: 'Get Sixth Sense Pro →',
+      ctaStyle: 'background:var(--neon);color:#000;font-weight:700',
+      ctaOnClick: "window.open('https://whop.com/your-page','_blank')", // TODO: replace with Whop link
+    },
+    {
+      name: 'Sixth Sense Sharp',
+      price: '$49',
+      period: '/month',
+      color: 'yellow',
+      borderStyle: 'border:1px solid rgba(234,179,8,0.3)',
+      features: [
+        { text: 'Everything in Pro', included: true },
+        { text: '1-on-1 DM support', included: true },
+        { text: 'Custom parlays', included: true },
+        { text: 'Model explained per pick', included: true },
+        { text: 'Early access to picks', included: true },
+        { text: 'Monthly model performance report', included: true },
+        { text: 'Exclusive Sharp Discord channel', included: true },
+        { text: 'Priority requests', included: true },
+      ],
+      cta: 'Get Sixth Sense Sharp →',
+      ctaStyle: 'background:#eab308;color:#000;font-weight:700',
+      ctaOnClick: "window.open('https://whop.com/your-page','_blank')", // TODO: replace with Whop link
+    },
+  ];
+
+  const colorMap = {
+    zinc:   { text: '#666',     sub: '#333' },
+    neon:   { text: 'var(--neon)', sub: 'rgba(0,255,65,0.6)' },
+    yellow: { text: '#eab308',  sub: 'rgba(234,179,8,0.6)' },
+  };
+
+  const tierCards = tiers.map(t => {
+    const c = colorMap[t.color];
+    const featureRows = t.features.map(f => `
+      <div class="flex items-center gap-2.5 py-1.5 border-b border-white/[0.04]">
+        <span style="color:${f.included ? 'var(--neon)' : '#333'};font-size:12px;flex-shrink:0">${f.included ? '✓' : '✗'}</span>
+        <span class="text-[11px] ${f.included ? 'text-zinc-300' : 'text-zinc-600'}">${f.text}</span>
+      </div>
+    `).join('');
+
+    return `
+    <div class="glass rounded-xl overflow-hidden flex flex-col" style="${t.borderStyle}">
+      ${t.badge ? `<div class="text-center py-1.5 text-[9px] font-bold uppercase tracking-widest" style="background:rgba(0,255,65,0.1);color:var(--neon)">${t.badge}</div>` : ''}
+      <div class="p-6 flex flex-col flex-1">
+        <div class="mb-5">
+          <div class="text-[9px] font-bold uppercase tracking-widest mb-1" style="color:${c.sub}">${t.name}</div>
+          <div class="flex items-baseline gap-1">
+            <span class="font-display font-bold text-4xl" style="color:${c.text}">${t.price}</span>
+            <span class="text-zinc-500 text-sm">${t.period}</span>
+          </div>
+        </div>
+        <div class="flex-1 space-y-0 mb-6">${featureRows}</div>
+        <button onclick="${t.ctaOnClick}"
+          class="w-full py-3 rounded-lg text-[11px] uppercase tracking-widest transition-opacity hover:opacity-80"
+          style="${t.ctaStyle}" ${!t.ctaOnClick ? 'disabled' : ''}>${t.cta}</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `<div class="space-y-10 fade-up">
+
+    <!-- Hero -->
+    <div class="text-center py-8">
+      <div class="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4" style="background:rgba(0,255,65,0.08);border:1px solid rgba(0,255,65,0.2);color:var(--neon)">
+        ⚡ Sixth Sense Pro Access
+      </div>
+      <h2 class="text-4xl md:text-5xl font-display font-bold mb-3">
+        The model went <span class="text-neon text-glow">60-3</span> last year.
+      </h2>
+      <p class="text-zinc-400 text-lg max-w-xl mx-auto">Unlock the full edge — value bets, sharp money signals, and email alerts before every tip-off.</p>
+    </div>
+
+    <!-- Locked picks preview -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="text-sm font-bold uppercase tracking-widest text-zinc-500">🔒 Pro Picks Preview</div>
+        <div class="flex-1 h-px bg-white/5"></div>
+        <div class="text-[10px] text-zinc-600">Unlock with Sixth Sense Pro</div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">${lockedCards}</div>
+    </div>
+
+    <!-- Pricing tiers -->
+    <div>
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-display font-bold mb-2">Choose your edge</h3>
+        <p class="text-sm text-zinc-500">Cancel anytime. No contracts.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">${tierCards}</div>
+    </div>
+
+    <!-- Social proof -->
+    <div class="glass rounded-xl p-6 border border-white/5">
+      <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-600 mb-4">Why trust Sixth Sense?</div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="text-3xl font-display font-bold text-neon">60-3</div>
+          <div class="text-[10px] text-zinc-500 mt-1">2025 Tournament</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-display font-bold text-neon">95.2%</div>
+          <div class="text-[10px] text-zinc-500 mt-1">Win rate</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-display font-bold text-neon">32/32</div>
+          <div class="text-[10px] text-zinc-500 mt-1">Perfect Round 1</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-display font-bold text-neon">v7</div>
+          <div class="text-[10px] text-zinc-500 mt-1">Gradient Boost model</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="text-[10px] text-zinc-600 text-center leading-relaxed max-w-2xl mx-auto">
+      Past performance does not guarantee future results. Sports betting involves risk. Sixth Sense picks are for informational and entertainment purposes only. 21+ only. Please gamble responsibly. If you have a gambling problem, call 1-800-GAMBLER.
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: HOME
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderHome() {
+  const sportCards = SPORT_ORDER.map(k => {
+    const sp = SPORTS[k];
+    const isActive = k === S.sport;
+    const statusMeta = {
+      live:      { bg:'rgba(0,255,65,0.09)',   text:'#00FF41', label:'LIVE' },
+      soon:      { bg:'rgba(255,165,0,0.09)',   text:'orange',  label: sp.statusLabel || 'SOON' },
+      offseason: { bg:'rgba(255,255,255,0.04)', text:'#444',    label:'OFF' },
+    };
+    const sm = statusMeta[sp.status] || statusMeta.offseason;
+    return `<button onclick="setSport('${k}');setView('dashboard')"
+      style="text-align:left;background:rgba(${sp.colorRGB},0.04);border:1px solid ${isActive ? sp.color : 'rgba(255,255,255,0.07)'};border-radius:8px;padding:14px;cursor:pointer;transition:all 0.15s;${isActive?`box-shadow:0 0 18px rgba(${sp.colorRGB},0.1)`:''}" >
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+        <span style="font-size:18px;">${sp.emoji}</span>
+        <span style="font-size:8px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:${sm.bg};color:${sm.text};padding:2px 7px;border-radius:4px;">${sm.label}</span>
+      </div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.05em;color:${isActive?sp.color:'#888'};margin-bottom:2px;">${sp.label}</div>
+      <div style="font-size:9px;color:#444;">${sp.fullName}</div>
+    </button>`;
+  }).join('');
+
+  const steps = [
+    { n:'01', icon:'⚙', title:'Model runs daily',    desc:'Our Gradient Boosting model ingests live stats, odds, and lineup data every morning and before tip-off.' },
+    { n:'02', icon:'◎', title:'Picks are generated', desc:'The model outputs win probability, confidence %, moneyline edge, and ATS recommendation for every game.' },
+    { n:'03', icon:'★', title:'Best Bets surfaced',  desc:'Picks above the confidence threshold where our model meaningfully beats the market are flagged as Best Bets and Value Bets.' },
+    { n:'04', icon:'$', title:'You place the bet',   desc:"Use the Where to Bet page to claim a sportsbook bonus, then follow Sixth Sense picks. Results update in real time." },
+  ];
+
+  const tiers = [
+    { name:'Free',         price:'$0',     color:'#555',    priceDim:'#444',   perks:['All ML & ATS picks','Confidence %','Bracket tracker','Best Bets tab','Live scores'],                                 cta:"You're here",  ctaStyle:'background:#1a1a1a;color:#555;cursor:default;',              ctaAction:'',              badge:'' },
+    { name:'Sixth Sense Pro',   price:'$19',    color:'#00FF41', priceDim:'rgba(0,255,65,0.4)',  perks:['Everything in Free','Value Bets (model vs market)','Sharp money signals','Email alerts pre-tipoff','Private Discord'],  cta:'Get Pro →',    ctaStyle:'background:#00FF41;color:#000;font-weight:700;cursor:pointer;', ctaAction:"setView('pro')", badge:'Most Popular' },
+    { name:'Sixth Sense Sharp', price:'$49',    color:'#eab308', priceDim:'rgba(234,179,8,0.4)', perks:['Everything in Pro','1-on-1 DM support','Custom parlays','Model explained per pick','Early pick access'],  cta:'Get Sharp →',  ctaStyle:'background:#eab308;color:#000;font-weight:700;cursor:pointer;', ctaAction:"setView('pro')", badge:'' },
+  ];
+
+  const books = [
+    { name:'DraftKings', color:'#53d337' },
+    { name:'FanDuel',    color:'#1493ff' },
+    { name:'BetMGM',     color:'#c9a84c' },
+    { name:'ESPN Bet',   color:'#ff4040' },
+    { name:'Caesars',    color:'#9b6e2c' },
+    { name:'PrizePicks', color:'#7c3aed' },
+  ];
+
+  return `<div style="animation:fadeUp 0.4s ease forwards;">
+
+  <!-- HERO -->
+  <div style="border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:44px 40px;margin-bottom:24px;position:relative;overflow:hidden;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,0.025) 0,rgba(255,255,255,0.025) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,rgba(255,255,255,0.025) 0,rgba(255,255,255,0.025) 1px,transparent 1px,transparent 40px);">
+    <div style="position:absolute;top:-80px;left:-80px;width:300px;height:300px;border-radius:50%;background:rgba(0,255,65,0.04);filter:blur(60px);pointer-events:none;"></div>
+    <div style="position:relative;">
+      <div style="display:inline-flex;align-items:center;gap:6px;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:5px 12px;border-radius:100px;background:rgba(0,255,65,0.07);border:1px solid rgba(0,255,65,0.2);color:#00FF41;margin-bottom:18px;">
+        <span style="width:5px;height:5px;border-radius:50%;background:#00FF41;animation:pulse 2s infinite;"></span>
+        AI-Powered Sports Picks · v7 Gradient Boost Model
+      </div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1.05;letter-spacing:1px;margin-bottom:14px;">
+        SIXTH SENSE<br><span style="color:#00FF41;">STRATEGY.</span>
+      </div>
+      <p style="color:#7a7870;font-size:15px;line-height:1.7;max-width:520px;margin-bottom:28px;">
+        A machine learning model that went <strong style="color:#f0ede8;">60-3 (95.2%)</strong> in the 2025 NCAA Tournament — including a perfect 32/32 in Round 1. Now expanding to MLB, NBA, NHL, NFL, and NCAAF.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <button onclick="setSport('ncaam');setView('dashboard')" style="background:#00FF41;color:#000;font-size:11px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:11px 22px;border-radius:6px;border:none;cursor:pointer;">View Picks →</button>
+        <button onclick="setView('wheretobet')" style="background:transparent;color:#b0aca4;font-size:11px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:11px 22px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);cursor:pointer;">Where to Bet</button>
+        <button onclick="setView('pro')" style="background:transparent;color:#eab308;font-size:11px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:11px 22px;border-radius:6px;border:1px solid rgba(234,179,8,0.3);cursor:pointer;">⚡ Go Pro</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CREDIBILITY STRIP -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px;">
+    ${[
+      { val:'60-3',    sub:'2025 NCAA Tournament', color:'#00FF41' },
+      { val:'95.2%',   sub:'Overall win rate',      color:'#00FF41' },
+      { val:'32/32',   sub:'Perfect Round 1',       color:'#00FF41' },
+      { val:'6 Sports',sub:'Coverage expanding',    color:'#eab308' },
+    ].map(c=>`<div style="background:#111114;border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:18px;text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:${c.color};line-height:1;margin-bottom:4px;">${c.val}</div>
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#555;">${c.sub}</div>
+    </div>`).join('')}
+  </div>
+
+  <!-- HOW IT WORKS + SPORTS GRID -->
+  <div style="display:grid;grid-template-columns:1fr 320px;gap:16px;margin-bottom:24px;align-items:start;">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="width:3px;height:20px;background:#00FF41;border-radius:2px;flex-shrink:0;"></div>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;">How It Works</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        ${steps.map(s=>`<div style="background:#111114;border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:14px 16px;display:flex;align-items:flex-start;gap:14px;">
+          <div style="width:34px;height:34px;border-radius:7px;background:rgba(0,255,65,0.07);border:1px solid rgba(0,255,65,0.14);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;">${s.icon}</div>
+          <div style="flex:1;">
+            <div style="font-size:13px;font-weight:600;margin-bottom:3px;">${s.title}</div>
+            <div style="font-size:11px;color:#7a7870;line-height:1.6;">${s.desc}</div>
+          </div>
+          <div style="font-family:'DM Mono',monospace;font-size:9px;color:#2a2a2a;flex-shrink:0;padding-top:2px;">${s.n}</div>
+        </div>`).join('')}
+      </div>
+    </div>
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="width:3px;height:20px;background:#00FF41;border-radius:2px;flex-shrink:0;"></div>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;">Sports Coverage</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">${sportCards}</div>
+      <p style="font-size:10px;color:#444;margin-top:10px;line-height:1.6;">Click any sport to switch the dashboard. New models drop before each season.</p>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div style="margin-bottom:24px;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+      <div style="width:3px;height:20px;background:#eab308;border-radius:2px;flex-shrink:0;"></div>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;">Free vs Pro</span>
+    </div>
+    <p style="font-size:12px;color:#555;margin-bottom:14px;padding-left:13px;">All picks are free. Pro unlocks the full edge — value bets, sharp signals, email alerts, and Discord.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+      ${tiers.map(t=>`<div style="background:#111114;border:1px solid ${t.name==='Sixth Sense Pro'?'rgba(0,255,65,0.3)':t.name==='Sixth Sense Sharp'?'rgba(234,179,8,0.2)':'rgba(255,255,255,0.07)'};border-radius:10px;overflow:hidden;display:flex;flex-direction:column;">
+        ${t.badge?`<div style="background:rgba(0,255,65,0.07);color:#00FF41;font-size:8px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;text-align:center;padding:5px;">${t.badge}</div>`:''}
+        <div style="padding:20px;flex:1;display:flex;flex-direction:column;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:${t.color}80;margin-bottom:6px;">${t.name}</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:${t.color};margin-bottom:16px;">${t.price}<span style="font-size:14px;color:${t.priceDim||'#444'}">${t.price!=='$0'?'/mo':''}</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:8px;margin-bottom:18px;">
+            ${t.perks.map(p=>`<div style="font-size:11px;color:#b0aca4;display:flex;gap:8px;align-items:flex-start;"><span style="color:${t.color};flex-shrink:0;margin-top:1px;">✓</span>${p}</div>`).join('')}
+          </div>
+          <button onclick="${t.ctaAction}" style="width:100%;padding:10px;border-radius:6px;border:none;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;${t.ctaStyle}">${t.cta}</button>
+        </div>
+      </div>`).join('')}
+    </div>
+  </div>
+
+  <!-- WHERE TO BET + DISCORD -->
+  <div style="display:grid;grid-template-columns:1fr 360px;gap:16px;margin-bottom:24px;">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+        <div style="width:3px;height:20px;background:#3b82f6;border-radius:2px;flex-shrink:0;"></div>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;">Where to Bet</span>
+      </div>
+      <p style="font-size:12px;color:#555;margin-bottom:14px;padding-left:13px;">Sign up through our links to claim exclusive welcome bonuses.</p>
+      <div style="background:#111114;border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:18px;">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;">
+          ${books.map(b=>`<div style="background:#0a0a0b;border:1px solid rgba(255,255,255,0.06);border-radius:6px;padding:10px 8px;text-align:center;font-size:10px;font-weight:700;color:${b.color};">${b.name}</div>`).join('')}
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:10px;color:#333;">21+ only. Gamble responsibly.</span>
+          <button onclick="setView('wheretobet')" style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#3b82f6;background:none;border:none;cursor:pointer;">View All Offers →</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+        <div style="width:3px;height:20px;background:#5865f2;border-radius:2px;flex-shrink:0;"></div>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;">Community</span>
+      </div>
+      <p style="font-size:12px;color:#555;margin-bottom:14px;padding-left:13px;">Live picks discussion, bet tracking, and strategy.</p>
+      <div style="background:rgba(88,101,242,0.05);border:1px solid rgba(88,101,242,0.2);border-radius:8px;padding:22px;text-align:center;">
+        <div style="font-size:28px;margin-bottom:8px;">💬</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;margin-bottom:6px;">Join the Discord</div>
+        <div style="font-size:12px;color:#7a7870;margin-bottom:18px;line-height:1.6;">Get picks before tip-off, discuss strategy, and track results with other members. Free to join.</div>
+        <a href="https://discord.gg/your-invite" target="_blank" rel="noopener"
+          style="display:block;background:rgba(88,101,242,0.85);color:#fff;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:11px 22px;border-radius:6px;text-decoration:none;">
+          Join Discord →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div style="text-align:center;padding-top:16px;border-top:1px solid rgba(255,255,255,0.05);">
+    <p style="font-size:10px;color:#2a2a2a;line-height:1.8;">Sixth Sense Strategy is for informational and entertainment purposes only. Past performance does not guarantee future results.<br>21+ only. Please gamble responsibly. If you have a problem, call 1-800-GAMBLER.</p>
+  </div>
+
+</div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// VIEW: COMING SOON (non-NCAAM sports pending model build)
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function renderComingSoon(sp) {
+  const roadmap = {
+    mlb:   { eta:'April 2026', items:['Starting pitcher model (ERA/FIP/WHIP/xFIP)','Lineup & bullpen features','Park factor adjustments','Run line + O/U + props'] },
+    nba:   { eta:'April 2026', items:['Net rating + pace model','Back-to-back & rest flags','Injury report integration','ATS + O/U + player props'] },
+    nhl:   { eta:'April 2026', items:['Corsi/Fenwick + xG model','Goalie SV% features','Power play / penalty kill','Puck line + O/U + props'] },
+    nfl:   { eta:'September 2026', items:['DVOA-based team model','Weather & travel features','Quarterback rating system','ATS + O/U + player props'] },
+    ncaaf: { eta:'August 2026', items:['SP+ / PFF-based model','Recruiting & roster turnover','Conference strength ratings','ATS + O/U + player props'] },
+  };
+  const rm = roadmap[sp.key] || { eta:'Coming soon', items:[] };
+
+  return `<div class="fade-up max-w-2xl mx-auto py-12">
+    <div class="text-center mb-10">
+      <div class="text-6xl mb-4">${sp.emoji}</div>
+      <h2 class="text-4xl font-display font-bold mb-2" style="color:${sp.color}">${sp.fullName}</h2>
+      <p class="text-zinc-500 text-sm">${sp.description}</p>
+    </div>
+
+    <!-- Status card -->
+    <div class="glass rounded-xl p-6 mb-6 border" style="border-color:${sp.color}30">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-2 h-2 rounded-full animate-pulse" style="background:${sp.color}"></div>
+        <span class="text-[10px] font-bold uppercase tracking-widest" style="color:${sp.color}">Model In Development</span>
+        <span class="ml-auto text-[10px] text-zinc-500 font-bold uppercase">${rm.eta}</span>
+      </div>
+      <div class="space-y-2.5">
+        ${rm.items.map((item,i) => `
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded flex items-center justify-center flex-shrink-0 text-[10px] font-bold" style="background:rgba(${sp.colorRGB},0.1);color:${sp.color}">${i+1}</div>
+            <span class="text-sm text-zinc-300">${item}</span>
+          </div>`).join('')}
+      </div>
+    </div>
+
+    <!-- Track record teaser -->
+    <div class="glass rounded-xl p-6 mb-6 border border-white/5">
+      <div class="text-[9px] font-bold uppercase tracking-widest text-zinc-600 mb-3">Why trust Sixth Sense?</div>
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div>
+          <div class="text-2xl font-display font-bold text-neon">60-3</div>
+          <div class="text-[9px] text-zinc-500 mt-1">2025 NCAAM</div>
+        </div>
+        <div>
+          <div class="text-2xl font-display font-bold text-neon">95.2%</div>
+          <div class="text-[9px] text-zinc-500 mt-1">Win rate</div>
+        </div>
+        <div>
+          <div class="text-2xl font-display font-bold text-neon">32/32</div>
+          <div class="text-[9px] text-zinc-500 mt-1">Perfect R1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email capture -->
+    <div class="rounded-xl p-6 text-center" style="background:rgba(${sp.colorRGB},0.05);border:1px solid rgba(${sp.colorRGB},0.2)">
+      <div class="font-display font-bold text-lg mb-1">Get notified when ${sp.label} picks go live</div>
+      <p class="text-sm text-zinc-500 mb-4">Be first when the model drops. Free email alert.</p>
+      <div class="flex items-center gap-2 max-w-sm mx-auto">
+        <input type="email" id="cs-email-${sp.key}" placeholder="your@email.com"
+          class="flex-1 bg-black/40 border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-opacity-50">
+        <button onclick="handleEmailSignup('cs-email-${sp.key}')"
+          class="px-5 py-2.5 rounded-lg text-sm font-bold transition-opacity hover:opacity-80"
+          style="background:${sp.color};color:${sp.key==='mlb'||sp.key==='nfl'||sp.key==='ncaaf'?'#fff':'#000'}">
+          Notify Me
+        </button>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// Set initial sport color
+document.documentElement.style.setProperty('--sport', SPORTS['ncaam'].color);
+document.documentElement.style.setProperty('--sport-rgb', SPORTS['ncaam'].colorRGB);
+
+loadData();
+setInterval(loadData, 120000);
+</script>
+</body>
+</html>
