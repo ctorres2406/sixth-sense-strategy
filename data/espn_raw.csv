@@ -1,0 +1,21 @@
+date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_score,margin,is_tournament,is_neutral,is_conf,tournament_note,conference,winner_record,loser_record,winner_fg_pct,winner_3p_pct,winner_ft_pct,loser_fg_pct,loser_3p_pct,loser_ft_pct
+20260314,401851183,Virginia Cavaliers at Duke Blue Devils,Duke Blue Devils,DUKE,Virginia Cavaliers,UVA,74,70,4,True,True,True,,,32-2,29-5,38.5,32.0,80.0,44.4,33.3,87.5
+20260314,401851306,Houston Cougars at Arizona Wildcats,Arizona Wildcats,ARIZ,Houston Cougars,HOU,79,74,5,True,True,True,,,32-2,28-6,46.3,46.2,85.2,43.8,38.1,71.4
+20260314,401851384,Wisconsin Badgers at Michigan Wolverines,Michigan Wolverines,MICH,Wisconsin Badgers,WIS,68,65,3,True,True,True,,,31-2,24-10,43.1,32.0,83.3,37.7,42.1,60.0
+20260314,401851569,Vanderbilt Commodores at Florida Gators,Vanderbilt Commodores,VAN,Florida Gators,FLA,91,74,17,True,True,True,,,26-7,26-7,54.5,47.6,91.3,45.6,29.4,73.9
+20260314,401851317,UConn Huskies at St. John's Red Storm,St. John's Red Storm,SJU,UConn Huskies,CONN,72,52,20,True,False,True,,,28-6,29-5,48.2,25.0,76.5,33.9,15.8,78.6
+20260314,401851570,Ole Miss Rebels at Arkansas Razorbacks,Arkansas Razorbacks,ARK,Ole Miss Rebels,MISS,93,90,3,True,True,True,,,25-8,15-20,46.4,31.6,74.2,50.0,31.0,78.6
+20260314,401851386,Purdue Boilermakers at UCLA Bruins,Purdue Boilermakers,PUR,UCLA Bruins,UCLA,73,66,7,True,True,True,,,26-8,23-11,46.3,35.7,68.4,43.9,35.0,81.8
+20260314,401851435,Cornell Big Red at Yale Bulldogs,Yale Bulldogs,YALE,Cornell Big Red,COR,88,76,12,True,True,True,,,24-5,15-13,54.7,40.0,57.1,43.5,29.7,62.5
+20260314,401851206,Vermont Catamounts at UMBC Retrievers,UMBC Retrievers,UMBC,Vermont Catamounts,UVM,74,59,15,True,False,True,,,24-8,22-12,41.2,38.5,84.6,42.4,18.5,40.0
+20260314,401851477,North Carolina Central Eagles at Howard Bison,Howard Bison,HOW,North Carolina Central Eagles,NCCU,70,63,7,True,True,True,,,23-10,14-18,36.5,26.3,77.1,38.0,30.0,82.6
+20260314,401851275,Dayton Flyers at Saint Louis Billikens,Dayton Flyers,DAY,Saint Louis Billikens,SLU,70,69,1,True,True,True,,,23-10,28-5,34.5,33.3,82.8,43.1,35.7,88.2
+20260314,401851436,Pennsylvania Quakers at Harvard Crimson,Pennsylvania Quakers,PENN,Harvard Crimson,HARV,62,60,2,True,True,True,,,17-11,17-12,38.5,35.0,62.5,40.3,25.8,100.0
+20260314,401851227,Charlotte 49ers at South Florida Bulls,South Florida Bulls,USF,Charlotte 49ers,CLT,86,64,22,True,True,True,,,24-8,17-17,46.4,41.4,76.9,33.9,24.1,67.9
+20260314,401851276,Saint Joseph's Hawks at VCU Rams,VCU Rams,VCU,Saint Joseph's Hawks,JOES,77,64,13,True,True,True,,,26-7,22-11,45.3,33.3,78.6,38.8,35.7,40.0
+20260314,401851228,Tulsa Golden Hurricane at Wichita State Shockers,Wichita State Shockers,WICH,Tulsa Golden Hurricane,TLSA,81,68,13,True,True,True,,,22-10,26-7,47.5,46.2,72.2,36.5,38.7,66.7
+20260314,401851505,San Diego State Aztecs at Utah State Aggies,Utah State Aggies,USU,San Diego State Aztecs,SDSU,73,62,11,True,True,True,,,28-6,22-11,46.2,28.6,53.8,40.8,31.3,70.8
+20260314,401851726,Prairie View A&M Panthers at Southern Jaguars,Prairie View A&M Panthers,PV,Southern Jaguars,SOU,72,66,6,True,True,True,,,18-17,17-17,45.0,50.0,75.0,37.1,26.3,78.9
+20260314,401858192,Toledo Rockets at Akron Zips,Akron Zips,AKR,Toledo Rockets,TOL,79,76,3,True,True,True,,,29-5,19-15,46.5,29.4,33.3,50.0,41.7,76.9
+20260314,401851415,Kennesaw State Owls at Louisiana Tech Bulldogs,Kennesaw State Owls,KENN,Louisiana Tech Bulldogs,LT,71,60,11,True,True,True,,,21-13,20-14,43.1,26.3,69.6,30.6,7.1,73.7
+20260314,401851398,Hawai'i Rainbow Warriors at UC Irvine Anteaters,Hawai'i Rainbow Warriors,HAW,UC Irvine Anteaters,UCI,71,64,7,True,True,True,,,24-8,23-11,40.9,30.8,60.0,36.1,45.5,88.2
