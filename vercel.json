@@ -1,9 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "oracle-march-madness-6.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/oracle-march-madness-6.html" }
-  ]
+  "cleanUrls": true
 }
