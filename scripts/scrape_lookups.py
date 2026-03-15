@@ -8,8 +8,9 @@ Sources:
   - barttorvik.com  → KenPom_Barttorvik.csv, Resumes.csv,
                       INT___KenPom___Height.csv, ats_team_profiles.csv
   - evanmiya.com    → EvanMiya.csv
-  - sports-reference.com → AP_Poll_Data.csv, Coach_Results.csv,
-                           REF___Current_NCAAM_Coaches.csv
+  - sports-reference.com → AP_Poll_Data.csv, REF___Current_NCAAM_Coaches.csv
+
+All Barttorvik data fetched via JSON API endpoints — bypasses bot detection.
 
 Usage:
   python scripts/scrape_lookups.py
@@ -33,21 +34,51 @@ YEAR       = 2026
 LOOKUP_DIR = Path(__file__).parent.parent / "data" / "lookups"
 LOOKUP_DIR.mkdir(parents=True, exist_ok=True)
 
+# Barttorvik JSON endpoints — these return raw JSON, no JS challenge
+# getadvstats.php is the main data dump: ratings + resume + height all in one
+BART_JSON_URL = "https://barttorvik.com/getadvstats.php"
+BART_ATS_URL  = "https://barttorvik.com/getteamstats.php"
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/122.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://barttorvik.com/",
 }
 
-def get(url, params=None, retries=3, delay=2.0):
-    """Polite fetch with retries."""
+SR_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/122.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+
+def get_json(url, params=None, retries=3, delay=2.0):
+    """Fetch JSON endpoint with retries."""
     for attempt in range(retries):
         try:
             resp = requests.get(url, params=params, headers=HEADERS, timeout=20)
+            resp.raise_for_status()
+            time.sleep(delay)
+            return resp.json()
+        except Exception as e:
+            print(f"    Attempt {attempt+1} failed: {e}")
+            time.sleep(delay * (attempt + 1))
+    raise RuntimeError(f"Failed to fetch {url} after {retries} attempts")
+
+
+def get_html(url, params=None, retries=3, delay=3.0):
+    """Fetch HTML page with retries (used for Sports Reference)."""
+    for attempt in range(retries):
+        try:
+            resp = requests.get(url, params=params, headers=SR_HEADERS, timeout=25)
             resp.raise_for_status()
             time.sleep(delay)
             return resp
@@ -58,7 +89,6 @@ def get(url, params=None, retries=3, delay=2.0):
 
 
 def load_existing(fname):
-    """Load existing CSV, return empty DataFrame if missing."""
     p = LOOKUP_DIR / fname
     if p.exists():
         return pd.read_csv(p, low_memory=False)
@@ -66,10 +96,7 @@ def load_existing(fname):
 
 
 def save_merged(fname, existing, new_df, year_col="YEAR", team_col="TEAM"):
-    """
-    Merge new 2026 rows into existing CSV.
-    Drops any existing 2026 rows first to avoid duplication on re-runs.
-    """
+    """Merge new 2026 rows into existing CSV, dropping any old 2026 rows first."""
     p = LOOKUP_DIR / fname
     if not existing.empty and year_col in existing.columns:
         existing = existing[existing[year_col].astype(str) != str(YEAR)]
@@ -80,351 +107,312 @@ def save_merged(fname, existing, new_df, year_col="YEAR", team_col="TEAM"):
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 1. BARTTORVIK — T-Rank ratings → KenPom_Barttorvik.csv
+# BARTTORVIK — single JSON fetch for ALL team data
+# getadvstats.php returns one row per team with every stat column
 # ═══════════════════════════════════════════════════════════════════════════════
-def scrape_barttorvik_trank():
+def fetch_barttorvik_json():
     """
-    Scrapes Barttorvik T-Rank page for current season ratings.
-    Maps columns to match KenPom_Barttorvik.csv schema.
-
-    Barttorvik BADJ EM ≈ KenPom KADJ EM (r > 0.97 historically).
-    We populate both KADJ EM and BADJ EM from Barttorvik's adjusted EM.
+    Fetches the main Barttorvik JSON endpoint which contains all team stats
+    in one call: efficiency, resume, height, ATS, tempo, etc.
+    Returns raw list of dicts.
     """
-    print("\n[1/7] Scraping Barttorvik T-Rank...")
-
-    url = "https://barttorvik.com/trank.php"
-    params = {"year": YEAR, "json": 1}
-
+    print("\n  Fetching Barttorvik JSON (all stats)...")
+    params = {
+        "year":     YEAR,
+        "top":      400,
+        "type":     "All",
+        "mingames": 10,
+    }
     try:
-        resp = get(url, params=params)
-        data = resp.json()
+        data = get_json(BART_JSON_URL, params=params)
+        # Response is either a list or {"data": [...]}
+        if isinstance(data, dict):
+            data = data.get("data", data.get("teams", []))
+        print(f"  Fetched {len(data)} teams from Barttorvik JSON")
+        return data
+    except Exception as e:
+        print(f"  ⚠️  Barttorvik JSON failed: {e}")
+        return []
+
+
+def parse_float(val, default=np.nan):
+    try:
+        return float(val) if val not in (None, "", "null") else default
     except Exception:
-        # Fallback: try the HTML table
-        print("  JSON endpoint failed, trying HTML table...")
-        return scrape_barttorvik_trank_html()
+        return default
+
+
+def parse_int(val, default=0):
+    try:
+        return int(float(val)) if val not in (None, "", "null") else default
+    except Exception:
+        return default
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1. KenPom_Barttorvik.csv
+# ═══════════════════════════════════════════════════════════════════════════════
+def scrape_barttorvik_trank(data):
+    print("\n[1/7] Building KenPom_Barttorvik.csv...")
+    if not data:
+        print("  ⚠️  No data — skipping")
+        return pd.DataFrame()
 
     rows = []
-    for team in data:
+    for t in data:
         try:
+            # Barttorvik field names vary — try multiple known keys
+            adjoe = parse_float(t.get("adjoe") or t.get("adj_oe") or t.get("AdjOE"))
+            adjde = parse_float(t.get("adjde") or t.get("adj_de") or t.get("AdjDE"))
+            adj_em = (adjoe - adjde) if not (np.isnan(adjoe) or np.isnan(adjde)) else np.nan
             rows.append({
-                "YEAR":     YEAR,
-                "TEAM":     team.get("team", ""),
-                "CONF":     team.get("conf", ""),
-                "SEED":     team.get("seed", np.nan),
-                "KADJ EM":  float(team.get("adjoe", 0)) - float(team.get("adjde", 0)),
-                "KADJ O":   float(team.get("adjoe", 0)),
-                "KADJ D":   float(team.get("adjde", 0)),
-                "BADJ EM":  float(team.get("adjoe", 0)) - float(team.get("adjde", 0)),
-                "BARTHAG":  float(team.get("barthag", np.nan)),
-                "TALENT":   float(team.get("talent", np.nan)),
-                "EXP":      float(team.get("exp", np.nan)),
-                "TEMPO":    float(team.get("tempo", np.nan)),
-                "RANK":     int(team.get("rk", 999)),
+                "YEAR":    YEAR,
+                "TEAM":    t.get("team") or t.get("Team") or t.get("teamname", ""),
+                "CONF":    t.get("conf") or t.get("Conf", ""),
+                "SEED":    parse_float(t.get("seed") or t.get("Seed")),
+                "KADJ EM": adj_em,
+                "KADJ O":  adjoe,
+                "KADJ D":  adjde,
+                "BADJ EM": adj_em,
+                "BARTHAG": parse_float(t.get("barthag") or t.get("Barthag")),
+                "TALENT":  parse_float(t.get("talent") or t.get("Talent")),
+                "EXP":     parse_float(t.get("exp") or t.get("experience")),
+                "TEMPO":   parse_float(t.get("tempo") or t.get("adj_tempo")),
+                "RANK":    parse_int(t.get("rk") or t.get("rank") or t.get("Rk"), 999),
             })
         except Exception as e:
             print(f"    Row error: {e}")
-            continue
 
     df = pd.DataFrame(rows)
-    print(f"  Fetched {len(df)} teams from Barttorvik JSON")
-
+    df = df[df["TEAM"].astype(str).str.strip() != ""]
+    print(f"  Parsed {len(df)} teams")
     existing = load_existing("KenPom_Barttorvik.csv")
     return save_merged("KenPom_Barttorvik.csv", existing, df)
 
 
-def scrape_barttorvik_trank_html():
-    """HTML fallback for Barttorvik T-Rank."""
-    url = f"https://barttorvik.com/trank.php?year={YEAR}"
-    resp = get(url)
-    tables = pd.read_html(resp.text)
-    if not tables:
-        raise RuntimeError("No tables found on Barttorvik T-Rank page")
-
-    df_raw = tables[0]
-    df_raw.columns = [str(c).strip() for c in df_raw.columns]
-    print(f"  HTML table columns: {list(df_raw.columns)}")
-
-    # Flexible column mapping — Barttorvik occasionally renames columns
-    col_map = {
-        "team": "TEAM", "Team": "TEAM",
-        "conf": "CONF", "Conf": "CONF",
-        "adjoe": "KADJ O", "AdjOE": "KADJ O", "Adj OE": "KADJ O",
-        "adjde": "KADJ D", "AdjDE": "KADJ D", "Adj DE": "KADJ D",
-        "barthag": "BARTHAG", "Barthag": "BARTHAG",
-        "talent": "TALENT", "Talent": "TALENT",
-        "exp": "EXP", "Exp": "EXP",
-        "tempo": "TEMPO", "Tempo": "TEMPO",
-        "seed": "SEED", "Seed": "SEED",
-        "rk": "RANK", "Rk": "RANK", "Rank": "RANK",
-    }
-    df_raw = df_raw.rename(columns={k: v for k, v in col_map.items() if k in df_raw.columns})
-
-    if "KADJ O" in df_raw.columns and "KADJ D" in df_raw.columns:
-        df_raw["KADJ EM"] = pd.to_numeric(df_raw["KADJ O"], errors="coerce") - \
-                            pd.to_numeric(df_raw["KADJ D"], errors="coerce")
-        df_raw["BADJ EM"] = df_raw["KADJ EM"]
-
-    df_raw["YEAR"] = YEAR
-    df_raw = df_raw[df_raw["TEAM"].notna() & (df_raw["TEAM"].astype(str) != "Team")]
-
-    existing = load_existing("KenPom_Barttorvik.csv")
-    return save_merged("KenPom_Barttorvik.csv", existing, df_raw)
-
-
 # ═══════════════════════════════════════════════════════════════════════════════
-# 2. BARTTORVIK — Resumes → Resumes.csv
+# 2. Resumes.csv
 # ═══════════════════════════════════════════════════════════════════════════════
-def scrape_barttorvik_resumes():
-    """Scrapes Barttorvik resume page for ELO, Q1/Q2 records, WAB, B Power."""
-    print("\n[2/7] Scraping Barttorvik Resumes...")
+def scrape_barttorvik_resumes(data):
+    print("\n[2/7] Building Resumes.csv...")
+    if not data:
+        print("  ⚠️  No data — skipping")
+        return pd.DataFrame()
 
-    url = f"https://barttorvik.com/team-tables.php#"
-    params = {"year": YEAR, "sort": "WAB", "top": 400, "mingames": 25}
-
-    try:
-        resp = get("https://barttorvik.com/team-tables.php", params=params)
-        tables = pd.read_html(resp.text)
-        if not tables:
-            raise RuntimeError("No tables found")
-        df_raw = tables[0]
-    except Exception as e:
-        print(f"  Resume scrape failed: {e}")
-        print("  Trying resume JSON endpoint...")
-        return scrape_barttorvik_resumes_json()
-
-    df_raw.columns = [str(c).strip() for c in df_raw.columns]
-    print(f"  Resume table columns: {list(df_raw.columns)}")
-
-    col_map = {
-        "team": "TEAM", "Team": "TEAM",
-        "elo": "ELO", "ELO": "ELO",
-        "q1 w": "Q1 W", "Q1 W": "Q1 W", "q1w": "Q1 W",
-        "q2 w": "Q2 W", "Q2 W": "Q2 W", "q2w": "Q2 W",
-        "wab": "WAB RANK", "WAB": "WAB RANK",
-        "b power": "B POWER", "B Power": "B POWER", "bpower": "B POWER",
-    }
-    df_raw = df_raw.rename(columns={k: v for k, v in col_map.items() if k in df_raw.columns})
-    df_raw["YEAR"] = YEAR
-    df_raw = df_raw[df_raw["TEAM"].notna() & (df_raw["TEAM"].astype(str) != "Team")]
-
-    # Ensure required columns exist
-    for col in ["ELO", "Q1 W", "Q2 W", "WAB RANK", "B POWER"]:
-        if col not in df_raw.columns:
-            df_raw[col] = np.nan
-
-    keep = ["YEAR", "TEAM", "ELO", "Q1 W", "Q2 W", "WAB RANK", "B POWER"]
-    df_out = df_raw[[c for c in keep if c in df_raw.columns]].copy()
-
-    existing = load_existing("Resumes.csv")
-    return save_merged("Resumes.csv", existing, df_out)
-
-
-def scrape_barttorvik_resumes_json():
-    """JSON fallback for resumes."""
-    url = "https://barttorvik.com/trank.php"
-    resp = get(url, params={"year": YEAR, "json": 1})
-    data = resp.json()
     rows = []
-    for team in data:
+    for t in data:
         try:
             rows.append({
-                "YEAR":    YEAR,
-                "TEAM":    team.get("team", ""),
-                "ELO":     float(team.get("elo", np.nan)),
-                "Q1 W":    int(team.get("q1_w", 0)),
-                "Q2 W":    int(team.get("q2_w", 0)),
-                "WAB RANK":float(team.get("wab", np.nan)),
-                "B POWER": float(team.get("bpower", np.nan)),
+                "YEAR":     YEAR,
+                "TEAM":     t.get("team") or t.get("Team", ""),
+                "ELO":      parse_float(t.get("elo") or t.get("ELO")),
+                "Q1 W":     parse_int(t.get("q1w") or t.get("q1_w") or t.get("Q1W")),
+                "Q2 W":     parse_int(t.get("q2w") or t.get("q2_w") or t.get("Q2W")),
+                "WAB RANK": parse_float(t.get("wab") or t.get("WAB")),
+                "B POWER":  parse_float(t.get("bpower") or t.get("b_power") or t.get("BPower")),
             })
-        except Exception:
-            continue
+        except Exception as e:
+            print(f"    Row error: {e}")
+
     df = pd.DataFrame(rows)
+    df = df[df["TEAM"].astype(str).str.strip() != ""]
+    print(f"  Parsed {len(df)} teams")
     existing = load_existing("Resumes.csv")
     return save_merged("Resumes.csv", existing, df)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 3. BARTTORVIK — Height/Experience → INT___KenPom___Height.csv
+# 3. INT___KenPom___Height.csv
 # ═══════════════════════════════════════════════════════════════════════════════
-def scrape_barttorvik_height():
-    """Scrapes Barttorvik for height and experience data."""
-    print("\n[3/7] Scraping Barttorvik Height/Experience...")
-
-    url = "https://barttorvik.com/trank.php"
-    try:
-        resp = get(url, params={"year": YEAR, "json": 1})
-        data = resp.json()
-    except Exception as e:
-        print(f"  Height JSON failed: {e} — skipping")
+def scrape_barttorvik_height(data):
+    print("\n[3/7] Building INT___KenPom___Height.csv...")
+    if not data:
+        print("  ⚠️  No data — skipping")
         return pd.DataFrame()
 
     rows = []
-    for team in data:
+    for t in data:
         try:
             rows.append({
                 "Season":          YEAR,
-                "TeamName":        team.get("team", ""),
-                "AvgHeight":       float(team.get("hgt", np.nan)),
-                "EffectiveHeight": float(team.get("eff_hgt", np.nan)),
-                "Experience":      float(team.get("exp", np.nan)),
+                "TeamName":        t.get("team") or t.get("Team", ""),
+                "AvgHeight":       parse_float(t.get("hgt") or t.get("avg_hgt") or t.get("AvgHeight")),
+                "EffectiveHeight": parse_float(t.get("eff_hgt") or t.get("EffHgt") or t.get("EffectiveHeight")),
+                "Experience":      parse_float(t.get("exp") or t.get("experience")),
             })
-        except Exception:
-            continue
+        except Exception as e:
+            print(f"    Row error: {e}")
 
     df = pd.DataFrame(rows)
-    print(f"  Fetched height data for {len(df)} teams")
-
+    df = df[df["TeamName"].astype(str).str.strip() != ""]
+    print(f"  Parsed {len(df)} teams")
     existing = load_existing("INT___KenPom___Height.csv")
     return save_merged("INT___KenPom___Height.csv", existing, df,
                        year_col="Season", team_col="TeamName")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 4. BARTTORVIK — ATS Profiles → ats_team_profiles.csv
+# 4. ats_team_profiles.csv
 # ═══════════════════════════════════════════════════════════════════════════════
-def scrape_barttorvik_ats():
-    """Scrapes Barttorvik ATS page for team cover percentages."""
-    print("\n[4/7] Scraping Barttorvik ATS profiles...")
+def scrape_barttorvik_ats(data):
+    """
+    ATS data from the same JSON payload — Barttorvik includes cover pct fields.
+    Falls back to prior year if fields aren't present.
+    """
+    print("\n[4/7] Building ats_team_profiles.csv...")
+    season_str = f"{YEAR-1}-{YEAR}"
 
-    season_str = f"{YEAR-1}-{YEAR}"  # e.g. "2025-2026"
+    rows = []
+    if data:
+        for t in data:
+            try:
+                ats_pct = parse_float(
+                    t.get("ats_pct") or t.get("atspct") or t.get("cover_pct")
+                )
+                dog_cover = parse_float(
+                    t.get("dog_cover") or t.get("dog_cover_pct") or t.get("underdog_cover")
+                )
+                fav_cover = parse_float(
+                    t.get("fav_cover") or t.get("fav_cover_pct") or t.get("favorite_cover")
+                )
+                # Convert from percentage to decimal if needed
+                for val in [ats_pct, dog_cover, fav_cover]:
+                    if not np.isnan(val) and val > 1:
+                        val = val / 100
 
-    url = "https://barttorvik.com/ats-ratings.php"
-    try:
-        resp = get(url, params={"year": YEAR})
-        tables = pd.read_html(resp.text)
-        if not tables:
-            raise RuntimeError("No ATS tables found")
-        df_raw = tables[0]
-    except Exception as e:
-        print(f"  ATS scrape failed: {e} — will use prior year data")
-        return pd.DataFrame()
+                rows.append({
+                    "season":        season_str,
+                    "team":          t.get("team") or t.get("Team", ""),
+                    "ats_pct":       ats_pct / 100 if (not np.isnan(ats_pct) and ats_pct > 1) else ats_pct,
+                    "dog_cover_pct": dog_cover / 100 if (not np.isnan(dog_cover) and dog_cover > 1) else dog_cover,
+                    "fav_cover_pct": fav_cover / 100 if (not np.isnan(fav_cover) and fav_cover > 1) else fav_cover,
+                })
+            except Exception:
+                continue
 
-    df_raw.columns = [str(c).strip() for c in df_raw.columns]
-    print(f"  ATS table columns: {list(df_raw.columns)}")
-
-    col_map = {
-        "team": "team", "Team": "team",
-        "ats pct": "ats_pct", "ATS Pct": "ats_pct", "ATS%": "ats_pct",
-        "dog cover": "dog_cover_pct", "Dog Cover": "dog_cover_pct",
-        "fav cover": "fav_cover_pct", "Fav Cover": "fav_cover_pct",
-    }
-    df_raw = df_raw.rename(columns={k: v for k, v in col_map.items() if k in df_raw.columns})
-    df_raw["season"] = season_str
-    df_raw = df_raw[df_raw["team"].notna() & (df_raw["team"].astype(str) != "Team")]
-
-    # Convert pct strings to floats if needed
-    for col in ["ats_pct", "dog_cover_pct", "fav_cover_pct"]:
-        if col in df_raw.columns:
-            df_raw[col] = df_raw[col].astype(str).str.replace("%", "").str.strip()
-            df_raw[col] = pd.to_numeric(df_raw[col], errors="coerce")
-            # If values look like percentages (50-100) convert to decimal
-            if df_raw[col].median() > 1:
-                df_raw[col] = df_raw[col] / 100
-
-    keep = ["season", "team", "ats_pct", "dog_cover_pct", "fav_cover_pct"]
-    df_out = df_raw[[c for c in keep if c in df_raw.columns]].copy()
-
-    existing = load_existing("ats_team_profiles.csv")
-    # ATS uses season string not YEAR int — drop matching season rows
-    if not existing.empty and "season" in existing.columns:
-        existing = existing[existing["season"] != season_str]
-    combined = pd.concat([existing, df_out], ignore_index=True)
-    p = LOOKUP_DIR / "ats_team_profiles.csv"
-    combined.to_csv(p, index=False)
-    print(f"  ✅ Saved ats_team_profiles.csv ({len(df_out)} new rows, {len(combined)} total)")
-    return combined
+    # If we got meaningful ATS data, save it
+    valid = [r for r in rows if not np.isnan(r.get("ats_pct", np.nan))]
+    if valid:
+        df = pd.DataFrame(rows)
+        df = df[df["team"].astype(str).str.strip() != ""]
+        print(f"  Parsed {len(df)} ATS profiles from JSON")
+        existing = load_existing("ats_team_profiles.csv")
+        if not existing.empty and "season" in existing.columns:
+            existing = existing[existing["season"] != season_str]
+        combined = pd.concat([existing, df], ignore_index=True)
+        p = LOOKUP_DIR / "ats_team_profiles.csv"
+        combined.to_csv(p, index=False)
+        print(f"  ✅ Saved ats_team_profiles.csv ({len(df)} new rows, {len(combined)} total)")
+        return combined
+    else:
+        print("  ⚠️  No ATS fields in JSON — carrying forward prior year ATS data")
+        existing = load_existing("ats_team_profiles.csv")
+        if existing.empty:
+            print("  ⚠️  No prior ATS data found either — skipping")
+            return pd.DataFrame()
+        # Duplicate most recent season rows as current season
+        latest = existing.sort_values("season").iloc[-1]["season"]
+        prior = existing[existing["season"] == latest].copy()
+        prior["season"] = season_str
+        combined = pd.concat([existing, prior], ignore_index=True)
+        p = LOOKUP_DIR / "ats_team_profiles.csv"
+        combined.to_csv(p, index=False)
+        print(f"  ✅ Carried forward {len(prior)} ATS rows from {latest} → {season_str}")
+        return combined
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 5. EVANMIYA — Ratings → EvanMiya.csv
+# 5. EvanMiya.csv
 # ═══════════════════════════════════════════════════════════════════════════════
 def scrape_evanmiya():
-    """Scrapes EvanMiya.com for relative rating, offensive and defensive rates."""
     print("\n[5/7] Scraping EvanMiya...")
 
-    # EvanMiya exposes a public JSON endpoint
-    url = "https://evanmiya.com/api/ratings"
-    params = {"season": YEAR}
+    # Try known EvanMiya JSON endpoints
+    endpoints = [
+        f"https://evanmiya.com/api/ratings?season={YEAR}",
+        f"https://evanmiya.com/api/teams?season={YEAR}",
+        f"https://evanmiya.com/?season={YEAR}",
+    ]
 
-    try:
-        resp = get(url, params=params)
-        data = resp.json()
+    data = None
+    for url in endpoints:
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=20)
+            resp.raise_for_status()
+            ct = resp.headers.get("content-type", "")
+            if "json" in ct:
+                data = resp.json()
+                if isinstance(data, dict):
+                    data = data.get("teams") or data.get("data") or []
+                if data:
+                    print(f"  Got {len(data)} teams from {url}")
+                    break
+            time.sleep(2)
+        except Exception as e:
+            print(f"  Endpoint {url} failed: {e}")
+            continue
 
+    if data:
         rows = []
-        for team in (data.get("teams") or data if isinstance(data, list) else []):
+        for t in data:
             try:
                 rows.append({
                     "YEAR":            YEAR,
-                    "TEAM":            team.get("team") or team.get("name", ""),
-                    "RELATIVE RATING": float(team.get("relative_rating") or team.get("rating", np.nan)),
-                    "O RATE":          float(team.get("o_rate") or team.get("offense", np.nan)),
-                    "D RATE":          float(team.get("d_rate") or team.get("defense", np.nan)),
-                    "RANK":            int(team.get("rank", 999)),
+                    "TEAM":            t.get("team") or t.get("name") or t.get("Team", ""),
+                    "RELATIVE RATING": parse_float(t.get("relative_rating") or t.get("rating") or t.get("rel_rating")),
+                    "O RATE":          parse_float(t.get("o_rate") or t.get("offense") or t.get("ortg")),
+                    "D RATE":          parse_float(t.get("d_rate") or t.get("defense") or t.get("drtg")),
+                    "RANK":            parse_int(t.get("rank") or t.get("rk"), 999),
                 })
             except Exception:
                 continue
 
         if rows:
             df = pd.DataFrame(rows)
-            print(f"  Fetched {len(df)} teams from EvanMiya JSON")
+            df = df[df["TEAM"].astype(str).str.strip() != ""]
             existing = load_existing("EvanMiya.csv")
             return save_merged("EvanMiya.csv", existing, df)
 
-    except Exception as e:
-        print(f"  EvanMiya JSON failed: {e}")
-
-    # Fallback: scrape HTML table
-    print("  Trying EvanMiya HTML...")
+    # HTML fallback
+    print("  JSON failed — trying EvanMiya HTML table...")
     try:
-        resp = get("https://evanmiya.com/", params={"season": YEAR})
+        resp = requests.get("https://evanmiya.com/", headers=SR_HEADERS, timeout=20)
         tables = pd.read_html(resp.text)
-        if not tables:
-            raise RuntimeError("No tables on EvanMiya page")
-
-        df_raw = tables[0]
-        df_raw.columns = [str(c).strip() for c in df_raw.columns]
-        print(f"  EvanMiya HTML columns: {list(df_raw.columns)}")
-
-        col_map = {
-            "team": "TEAM", "Team": "TEAM",
-            "rating": "RELATIVE RATING", "Rating": "RELATIVE RATING",
-            "relative rating": "RELATIVE RATING",
-            "o rate": "O RATE", "O Rate": "O RATE", "offense": "O RATE",
-            "d rate": "D RATE", "D Rate": "D RATE", "defense": "D RATE",
-        }
-        df_raw = df_raw.rename(columns={k: v for k, v in col_map.items() if k in df_raw.columns})
-        df_raw["YEAR"] = YEAR
-        df_raw = df_raw[df_raw["TEAM"].notna() & (df_raw["TEAM"].astype(str) != "Team")]
-
-        for col in ["RELATIVE RATING", "O RATE", "D RATE"]:
-            if col not in df_raw.columns:
-                df_raw[col] = np.nan
-
-        existing = load_existing("EvanMiya.csv")
-        return save_merged("EvanMiya.csv", existing, df_raw)
-
+        if tables:
+            df_raw = tables[0]
+            df_raw.columns = [str(c).strip() for c in df_raw.columns]
+            col_map = {
+                "team": "TEAM", "Team": "TEAM",
+                "rating": "RELATIVE RATING", "Rating": "RELATIVE RATING",
+                "relative rating": "RELATIVE RATING", "Relative Rating": "RELATIVE RATING",
+                "o rate": "O RATE", "O Rate": "O RATE", "offense": "O RATE",
+                "d rate": "D RATE", "D Rate": "D RATE", "defense": "D RATE",
+            }
+            df_raw = df_raw.rename(columns={k: v for k, v in col_map.items() if k in df_raw.columns})
+            df_raw["YEAR"] = YEAR
+            for col in ["RELATIVE RATING", "O RATE", "D RATE"]:
+                if col not in df_raw.columns:
+                    df_raw[col] = np.nan
+            df_raw = df_raw[df_raw["TEAM"].notna() & (df_raw["TEAM"].astype(str) != "Team")]
+            existing = load_existing("EvanMiya.csv")
+            return save_merged("EvanMiya.csv", existing, df_raw)
     except Exception as e:
         print(f"  EvanMiya HTML also failed: {e}")
-        print("  ⚠️  EvanMiya skipped — model will use 0 for evan_rel/evan_o/evan_d")
-        return pd.DataFrame()
+
+    print("  ⚠️  EvanMiya skipped — model will use 0 for evan_rel/evan_o/evan_d")
+    return pd.DataFrame()
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 6. SPORTS REFERENCE — AP Poll → AP_Poll_Data.csv
+# 6. AP_Poll_Data.csv — Sports Reference
 # ═══════════════════════════════════════════════════════════════════════════════
 def scrape_ap_poll():
-    """
-    Scrapes Sports Reference for AP Poll weekly rankings.
-    Model uses weeks 6 and 18+ so we fetch the full season.
-    """
     print("\n[6/7] Scraping AP Poll from Sports Reference...")
 
-    # Sports-reference NCAAB poll page
-    season_yr = YEAR  # 2026 = 2025-26 season
-    url = f"https://www.sports-reference.com/cbb/seasons/men/{season_yr}-polls.html"
+    url = f"https://www.sports-reference.com/cbb/seasons/men/{YEAR}-polls.html"
 
     try:
-        resp = get(url)
+        resp = get_html(url)
         tables = pd.read_html(resp.text, header=1)
         if not tables:
             raise RuntimeError("No poll tables found")
@@ -436,17 +424,27 @@ def scrape_ap_poll():
     rows = []
     for week_num, table in enumerate(tables, start=1):
         table.columns = [str(c).strip() for c in table.columns]
-        # Drop rows that are header repeats
         table = table[table.iloc[:, 0].astype(str).str.strip() != "School"]
         table = table[table.iloc[:, 0].notna()]
 
+        # Find team and rank columns flexibly
+        team_col = next((c for c in table.columns if any(
+            k in c.lower() for k in ["school","team","name"])), None)
+        rank_col = next((c for c in table.columns if any(
+            k in c.lower() for k in ["rank","ap","poll"])), None)
+
+        if not team_col:
+            team_col = table.columns[0]
+        if not rank_col:
+            rank_col = table.columns[1] if len(table.columns) > 1 else table.columns[0]
+
         for _, row in table.iterrows():
             try:
-                team_col = [c for c in table.columns if "school" in c.lower() or "team" in c.lower()]
-                rank_col = [c for c in table.columns if "rank" in c.lower() or "ap" in c.lower()]
-                team = str(row[team_col[0]]).strip() if team_col else str(row.iloc[0]).strip()
-                rank_val = row[rank_col[0]] if rank_col else row.iloc[1]
-                rank = float(rank_val) if pd.notna(rank_val) and str(rank_val).strip() not in ("", "—", "NR") else np.nan
+                team = str(row[team_col]).strip()
+                if not team or team in ("nan", "School", "Team"):
+                    continue
+                rank_val = row[rank_col]
+                rank = float(rank_val) if pd.notna(rank_val) and str(rank_val).strip() not in ("", "—", "NR", "nan") else np.nan
                 rows.append({
                     "YEAR":    YEAR,
                     "WEEK":    week_num,
@@ -464,27 +462,20 @@ def scrape_ap_poll():
     df = pd.DataFrame(rows)
     df = df[df["TEAM"].str.strip() != ""]
     print(f"  Fetched {len(df)} AP Poll entries across {df['WEEK'].nunique()} weeks")
-
     existing = load_existing("AP_Poll_Data.csv")
     return save_merged("AP_Poll_Data.csv", existing, df)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 7. SPORTS REFERENCE — Coach lookup → REF___Current_NCAAM_Coaches.csv
+# 7. REF___Current_NCAAM_Coaches.csv — Sports Reference
 # ═══════════════════════════════════════════════════════════════════════════════
 def scrape_coaches():
-    """
-    Scrapes Sports Reference for current head coaches per team.
-    Updates REF___Current_NCAAM_Coaches.csv with 2026 coach assignments.
-    Coach tournament history (Coach_Results.csv) is historical and doesn't
-    need annual updates — only the team→coach mapping does.
-    """
     print("\n[7/7] Scraping current coaches from Sports Reference...")
 
     url = f"https://www.sports-reference.com/cbb/seasons/men/{YEAR}-coaches.html"
 
     try:
-        resp = get(url)
+        resp = get_html(url)
         tables = pd.read_html(resp.text)
         if not tables:
             raise RuntimeError("No coach tables found")
@@ -495,27 +486,23 @@ def scrape_coaches():
         return pd.DataFrame()
 
     df_raw.columns = [str(c).strip() for c in df_raw.columns]
-    print(f"  Coach table columns: {list(df_raw.columns)}")
 
     col_map = {
-        "school": "Join Team", "School": "Join Team", "team": "Join Team", "Team": "Join Team",
-        "coach": "Current Coach", "Coach": "Current Coach",
-        "head coach": "Current Coach", "Head Coach": "Current Coach",
+        "school": "Join Team", "School": "Join Team",
+        "team":   "Join Team", "Team":   "Join Team",
+        "coach":       "Current Coach", "Coach":       "Current Coach",
+        "head coach":  "Current Coach", "Head Coach":  "Current Coach",
     }
     df_raw = df_raw.rename(columns={k: v for k, v in col_map.items() if k in df_raw.columns})
 
     if "Join Team" not in df_raw.columns or "Current Coach" not in df_raw.columns:
-        # Try positional — usually school is col 0, coach is col 1 or 2
         cols = list(df_raw.columns)
         df_raw = df_raw.rename(columns={cols[0]: "Join Team", cols[1]: "Current Coach"})
 
-    df_raw = df_raw[["Join Team", "Current Coach"]].dropna()
+    df_raw = df_raw[["Join Team","Current Coach"]].dropna()
     df_raw = df_raw[df_raw["Join Team"].astype(str).str.strip() != "School"]
     df_raw["YEAR"] = YEAR
 
-    print(f"  Fetched {len(df_raw)} coach assignments")
-
-    # For this file we replace entirely rather than append — it's always current-year only
     p = LOOKUP_DIR / "REF___Current_NCAAM_Coaches.csv"
     df_raw.to_csv(p, index=False)
     print(f"  ✅ Saved REF___Current_NCAAM_Coaches.csv ({len(df_raw)} rows)")
@@ -523,57 +510,43 @@ def scrape_coaches():
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# Z RATING + HEAT CHECK — carry forward from most recent year
+# Carry-forward for Z Rating + Heat Check (no public source)
 # ═══════════════════════════════════════════════════════════════════════════════
-def carry_forward(fname, year_col="YEAR", team_col="TEAM"):
-    """
-    For files we can't scrape (Z_Rating, Heat_Check), find the most recent
-    year's rows and duplicate them with YEAR=2026. This gives the model
-    something to work with rather than zeros.
-    """
+def carry_forward(fname, year_col="YEAR"):
     existing = load_existing(fname)
     if existing.empty:
         print(f"  ⚠️  {fname} not found — skipping carry-forward")
         return
-
     if year_col not in existing.columns:
         print(f"  ⚠️  {fname} has no {year_col} column — skipping")
         return
-
-    # Already has 2026 rows?
     if str(YEAR) in existing[year_col].astype(str).values:
-        print(f"  {fname} already has {YEAR} rows — skipping carry-forward")
+        print(f"  {fname} already has {YEAR} rows — skipping")
         return
 
-    latest_yr = existing[year_col].astype(str).replace("nan","").pipe(
-        lambda s: s[s != ""]
-    ).astype(float).max()
-
-    prior_rows = existing[existing[year_col].astype(float) == latest_yr].copy()
-    prior_rows[year_col] = YEAR
-
-    combined = pd.concat([existing, prior_rows], ignore_index=True)
-    p = LOOKUP_DIR / fname
-    combined.to_csv(p, index=False)
-    print(f"  ✅ {fname} — carried forward {len(prior_rows)} rows from {int(latest_yr)} → {YEAR}")
+    latest_yr = (
+        existing[year_col].astype(str)
+        .replace("nan", "")
+        .pipe(lambda s: s[s != ""])
+        .astype(float).max()
+    )
+    prior = existing[existing[year_col].astype(float) == latest_yr].copy()
+    prior[year_col] = YEAR
+    combined = pd.concat([existing, prior], ignore_index=True)
+    (LOOKUP_DIR / fname).parent.mkdir(parents=True, exist_ok=True)
+    combined.to_csv(LOOKUP_DIR / fname, index=False)
+    print(f"  ✅ {fname} — carried {len(prior)} rows from {int(latest_yr)} → {YEAR}")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# KenPom_Preseason — derive from Barttorvik current ratings
+# KenPom_Preseason — derived from Barttorvik year-over-year delta
 # ═══════════════════════════════════════════════════════════════════════════════
 def build_preseason_from_barttorvik():
-    """
-    KenPom_Preseason.csv needs PRESEASON KADJ EM, KADJ EM RANK CHANGE, KADJ EM CHANGE.
-    Since we don't have KenPom access, we approximate:
-      - PRESEASON KADJ EM  = prior year's KADJ EM (best available proxy)
-      - KADJ EM CHANGE     = current KADJ EM - prior year KADJ EM
-      - KADJ EM RANK CHANGE = rank change year over year
-    """
-    print("\n  Building KenPom_Preseason from Barttorvik...")
+    print("\n  Building KenPom_Preseason.csv from Barttorvik delta...")
 
     kp = load_existing("KenPom_Barttorvik.csv")
     if kp.empty or "YEAR" not in kp.columns:
-        print("  ⚠️  KenPom_Barttorvik.csv not ready — skipping preseason build")
+        print("  ⚠️  KenPom_Barttorvik.csv not ready — skipping")
         return
 
     kp["YEAR"] = kp["YEAR"].astype(int)
@@ -581,30 +554,29 @@ def build_preseason_from_barttorvik():
     prev = kp[kp["YEAR"] == YEAR - 1].copy()
 
     if curr.empty:
-        print("  ⚠️  No 2026 Barttorvik data yet — skipping preseason build")
+        print("  ⚠️  No 2026 Barttorvik rows — skipping")
         return
 
     rows = []
     for _, row in curr.iterrows():
-        team = row["TEAM"]
-        curr_em = float(row.get("KADJ EM", np.nan))
-        curr_rank = int(row.get("RANK", 999)) if pd.notna(row.get("RANK")) else 999
+        team     = row["TEAM"]
+        curr_em  = parse_float(row.get("KADJ EM"))
+        curr_rank = parse_int(row.get("RANK"), 999)
 
-        # Find prior year
         prev_match = prev[prev["TEAM"] == team]
         if len(prev_match):
-            prev_em   = float(prev_match.iloc[0].get("KADJ EM", curr_em))
-            prev_rank = int(prev_match.iloc[0].get("RANK", curr_rank)) if pd.notna(prev_match.iloc[0].get("RANK")) else curr_rank
+            prev_em   = parse_float(prev_match.iloc[0].get("KADJ EM", curr_em))
+            prev_rank = parse_int(prev_match.iloc[0].get("RANK", curr_rank), 999)
         else:
             prev_em   = curr_em
             prev_rank = curr_rank
 
         rows.append({
-            "YEAR":               YEAR,
-            "TEAM":               team,
-            "PRESEASON KADJ EM":  prev_em,
-            "KADJ EM CHANGE":     round(curr_em - prev_em, 2) if not (np.isnan(curr_em) or np.isnan(prev_em)) else 0.0,
-            "KADJ EM RANK CHANGE":prev_rank - curr_rank,
+            "YEAR":                YEAR,
+            "TEAM":                team,
+            "PRESEASON KADJ EM":   prev_em,
+            "KADJ EM CHANGE":      round(curr_em - prev_em, 2) if not (np.isnan(curr_em) or np.isnan(prev_em)) else 0.0,
+            "KADJ EM RANK CHANGE": prev_rank - curr_rank,
         })
 
     df = pd.DataFrame(rows)
@@ -622,20 +594,23 @@ if __name__ == "__main__":
     print(f"Output: {LOOKUP_DIR}")
     print(f"{'='*60}")
 
-    # ── Barttorvik (free, most important) ─────────────────────────────────────
-    scrape_barttorvik_trank()
-    scrape_barttorvik_resumes()
-    scrape_barttorvik_height()
-    scrape_barttorvik_ats()
+    # Single Barttorvik JSON fetch — reused for all 4 files
+    bart_data = fetch_barttorvik_json()
 
-    # ── EvanMiya ───────────────────────────────────────────────────────────────
+    print("\n── Barttorvik ──────────────────────────────────────────")
+    scrape_barttorvik_trank(bart_data)
+    scrape_barttorvik_resumes(bart_data)
+    scrape_barttorvik_height(bart_data)
+    scrape_barttorvik_ats(bart_data)
+
+    print("\n── EvanMiya ────────────────────────────────────────────")
     scrape_evanmiya()
 
-    # ── Sports Reference ───────────────────────────────────────────────────────
+    print("\n── Sports Reference ────────────────────────────────────")
     scrape_ap_poll()
     scrape_coaches()
 
-    # ── Derived / carry-forward ────────────────────────────────────────────────
+    print("\n── Derived / carry-forward ─────────────────────────────")
     build_preseason_from_barttorvik()
     carry_forward("Z_Rating_Teams.csv")
     carry_forward("Heat_Check_Tournament_Index.csv")
@@ -647,5 +622,5 @@ if __name__ == "__main__":
     print(f"\nNext steps:")
     print(f"  1. Review data/lookups/ — spot-check team names match your bracket")
     print(f"  2. git add data/lookups/ && git commit -m 'feat: 2026 lookup data'")
-    print(f"  3. Run generate_picks.py once to verify predictions load correctly")
+    print(f"  3. Trigger manual workflow run to verify predictions are non-trivial")
     print(f"{'='*60}\n")
