@@ -1,0 +1,60 @@
+# .github/workflows/mlb_pipeline.yml
+# Sixth Sense Strategy — MLB Daily Pipeline
+# Runs: 8:00 AM ET (12:00 UTC) + 11:00 PM ET (03:00 UTC next day)
+# Requires: ODDS_API_KEY secret in repo settings
+
+name: MLB Daily Pipeline
+
+on:
+  schedule:
+    - cron: "0 12 * * *"    # 8:00 AM ET (UTC-4 during EDT)
+    - cron: "0 3 * * *"     # 11:00 PM ET (next day UTC)
+  workflow_dispatch:         # Allow manual trigger from Actions tab
+
+jobs:
+  run-mlb-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: mlb-pip-${{ hashFiles('requirements_mlb.txt') }}
+          restore-keys: mlb-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pybaseball lightgbm scikit-learn pandas numpy requests joblib
+
+      - name: Enable pybaseball cache
+        run: |
+          python -c "import pybaseball; pybaseball.cache.enable()"
+
+      - name: Fetch MLB data
+        run: python fetch_mlb_data.py
+
+      - name: Generate MLB picks
+        run: python generate_mlb_picks.py
+
+      - name: Scrape live odds & props
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scrape_mlb_odds.py
+
+      - name: Commit and push data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/mlb/picks.csv data/mlb/props.csv data/mlb/raw_games.json
+          git diff --staged --quiet || git commit -m "MLB picks update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
