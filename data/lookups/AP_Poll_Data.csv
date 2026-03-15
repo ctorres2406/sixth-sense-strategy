@@ -1,0 +1,451 @@
+YEAR,WEEK,TEAM,AP RANK,RANK?
+2026,0,Duke,6,1
+2026,1,Duke,4,1
+2026,2,Duke,5,1
+2026,3,Duke,4,1
+2026,4,Duke,4,1
+2026,5,Duke,3,1
+2026,6,Duke,3,1
+2026,7,Duke,6,1
+2026,8,Duke,6,1
+2026,10,Duke,6,1
+2026,11,Duke,5,1
+2026,12,Duke,4,1
+2026,13,Duke,4,1
+2026,14,Duke,4,1
+2026,15,Duke,3,1
+2026,16,Duke,1,1
+2026,17,Duke,1,1
+2026,18,Duke,1,1
+2026,0,Arizona,13,1
+2026,1,Arizona,5,1
+2026,2,Arizona,4,1
+2026,3,Arizona,2,1
+2026,4,Arizona,2,1
+2026,5,Arizona,1,1
+2026,6,Arizona,1,1
+2026,7,Arizona,1,1
+2026,8,Arizona,1,1
+2026,10,Arizona,1,1
+2026,11,Arizona,1,1
+2026,12,Arizona,1,1
+2026,13,Arizona,1,1
+2026,14,Arizona,1,1
+2026,15,Arizona,4,1
+2026,16,Arizona,2,1
+2026,17,Arizona,2,1
+2026,18,Arizona,2,1
+2026,0,Michigan,7,1
+2026,1,Michigan,6,1
+2026,2,Michigan,7,1
+2026,3,Michigan,7,1
+2026,4,Michigan,3,1
+2026,5,Michigan,2,1
+2026,6,Michigan,2,1
+2026,7,Michigan,2,1
+2026,8,Michigan,2,1
+2026,10,Michigan,4,1
+2026,11,Michigan,3,1
+2026,12,Michigan,3,1
+2026,13,Michigan,2,1
+2026,14,Michigan,2,1
+2026,15,Michigan,1,1
+2026,16,Michigan,3,1
+2026,17,Michigan,3,1
+2026,18,Michigan,3,1
+2026,0,Florida,3,1
+2026,1,Florida,10,1
+2026,2,Florida,10,1
+2026,3,Florida,10,1
+2026,4,Florida,15,1
+2026,5,Florida,18,1
+2026,6,Florida,23,1
+2026,7,Florida,22,1
+2026,10,Florida,19,1
+2026,11,Florida,16,1
+2026,12,Florida,19,1
+2026,13,Florida,17,1
+2026,14,Florida,14,1
+2026,15,Florida,12,1
+2026,16,Florida,7,1
+2026,17,Florida,5,1
+2026,18,Florida,4,1
+2026,0,Houston,2,1
+2026,1,Houston,1,1
+2026,2,Houston,2,1
+2026,3,Houston,3,1
+2026,4,Houston,8,1
+2026,5,Houston,7,1
+2026,6,Houston,8,1
+2026,7,Houston,8,1
+2026,8,Houston,7,1
+2026,10,Houston,7,1
+2026,11,Houston,6,1
+2026,12,Houston,10,1
+2026,13,Houston,8,1
+2026,14,Houston,3,1
+2026,15,Houston,2,1
+2026,16,Houston,5,1
+2026,17,Houston,7,1
+2026,18,Houston,5,1
+2026,0,Connecticut,4,1
+2026,1,Connecticut,3,1
+2026,2,Connecticut,3,1
+2026,3,Connecticut,5,1
+2026,4,Connecticut,5,1
+2026,5,Connecticut,5,1
+2026,6,Connecticut,5,1
+2026,7,Connecticut,4,1
+2026,8,Connecticut,4,1
+2026,10,Connecticut,3,1
+2026,11,Connecticut,2,1
+2026,12,Connecticut,2,1
+2026,13,Connecticut,3,1
+2026,14,Connecticut,6,1
+2026,15,Connecticut,5,1
+2026,16,Connecticut,6,1
+2026,17,Connecticut,4,1
+2026,18,Connecticut,6,1
+2026,0,Iowa St.,16,1
+2026,1,Iowa St.,16,1
+2026,2,Iowa St.,16,1
+2026,3,Iowa St.,15,1
+2026,4,Iowa St.,10,1
+2026,5,Iowa St.,4,1
+2026,6,Iowa St.,4,1
+2026,7,Iowa St.,3,1
+2026,8,Iowa St.,3,1
+2026,10,Iowa St.,2,1
+2026,11,Iowa St.,9,1
+2026,12,Iowa St.,8,1
+2026,13,Iowa St.,7,1
+2026,14,Iowa St.,5,1
+2026,15,Iowa St.,6,1
+2026,16,Iowa St.,4,1
+2026,17,Iowa St.,6,1
+2026,18,Iowa St.,7,1
+2026,0,Michigan St.,22,1
+2026,1,Michigan St.,17,1
+2026,2,Michigan St.,17,1
+2026,3,Michigan St.,11,1
+2026,4,Michigan St.,7,1
+2026,5,Michigan St.,9,1
+2026,6,Michigan St.,9,1
+2026,7,Michigan St.,9,1
+2026,8,Michigan St.,12,1
+2026,10,Michigan St.,12,1
+2026,11,Michigan St.,10,1
+2026,12,Michigan St.,7,1
+2026,13,Michigan St.,10,1
+2026,14,Michigan St.,10,1
+2026,15,Michigan St.,15,1
+2026,16,Michigan St.,13,1
+2026,17,Michigan St.,8,1
+2026,18,Michigan St.,8,1
+2026,0,Illinois,17,1
+2026,1,Illinois,14,1
+2026,2,Illinois,8,1
+2026,3,Illinois,13,1
+2026,4,Illinois,14,1
+2026,5,Illinois,13,1
+2026,6,Illinois,18,1
+2026,7,Illinois,20,1
+2026,8,Illinois,16,1
+2026,10,Illinois,13,1
+2026,11,Illinois,11,1
+2026,12,Illinois,9,1
+2026,13,Illinois,5,1
+2026,14,Illinois,8,1
+2026,15,Illinois,10,1
+2026,16,Illinois,10,1
+2026,17,Illinois,11,1
+2026,18,Illinois,9,1
+2026,5,Virginia,24,1
+2026,6,Virginia,23,1
+2026,7,Virginia,21,1
+2026,8,Virginia,23,1
+2026,10,Virginia,16,1
+2026,11,Virginia,14,1
+2026,12,Virginia,17,1
+2026,13,Virginia,18,1
+2026,14,Virginia,15,1
+2026,15,Virginia,14,1
+2026,16,Virginia,11,1
+2026,17,Virginia,13,1
+2026,18,Virginia,10,1
+2026,5,Nebraska,23,1
+2026,6,Nebraska,15,1
+2026,7,Nebraska,13,1
+2026,8,Nebraska,10,1
+2026,10,Nebraska,8,1
+2026,11,Nebraska,7,1
+2026,12,Nebraska,5,1
+2026,13,Nebraska,9,1
+2026,14,Nebraska,7,1
+2026,15,Nebraska,9,1
+2026,16,Nebraska,12,1
+2026,17,Nebraska,9,1
+2026,18,Nebraska,11,1
+2026,0,Gonzaga,21,1
+2026,1,Gonzaga,19,1
+2026,2,Gonzaga,13,1
+2026,3,Gonzaga,12,1
+2026,4,Gonzaga,11,1
+2026,5,Gonzaga,8,1
+2026,6,Gonzaga,7,1
+2026,7,Gonzaga,7,1
+2026,8,Gonzaga,8,1
+2026,10,Gonzaga,9,1
+2026,11,Gonzaga,8,1
+2026,12,Gonzaga,6,1
+2026,13,Gonzaga,6,1
+2026,14,Gonzaga,12,1
+2026,15,Gonzaga,11,1
+2026,16,Gonzaga,9,1
+2026,17,Gonzaga,12,1
+2026,18,Gonzaga,12,1
+2026,0,St. John's,5,1
+2026,1,St. John's,13,1
+2026,2,St. John's,14,1
+2026,3,St. John's,14,1
+2026,4,St. John's,23,1
+2026,5,St. John's,22,1
+2026,6,St. John's,22,1
+2026,12,St. John's,25,1
+2026,13,St. John's,22,1
+2026,14,St. John's,17,1
+2026,15,St. John's,17,1
+2026,16,St. John's,15,1
+2026,17,St. John's,18,1
+2026,18,St. John's,13,1
+2026,0,Kansas,19,1
+2026,1,Kansas,25,1
+2026,2,Kansas,24,1
+2026,4,Kansas,21,1
+2026,5,Kansas,19,1
+2026,6,Kansas,17,1
+2026,7,Kansas,17,1
+2026,8,Kansas,22,1
+2026,11,Kansas,19,1
+2026,12,Kansas,14,1
+2026,13,Kansas,11,1
+2026,14,Kansas,9,1
+2026,15,Kansas,8,1
+2026,16,Kansas,14,1
+2026,17,Kansas,14,1
+2026,18,Kansas,14,1
+2026,0,Alabama,15,1
+2026,1,Alabama,8,1
+2026,2,Alabama,11,1
+2026,3,Alabama,8,1
+2026,4,Alabama,12,1
+2026,5,Alabama,12,1
+2026,6,Alabama,16,1
+2026,7,Alabama,14,1
+2026,8,Alabama,13,1
+2026,10,Alabama,18,1
+2026,11,Alabama,17,1
+2026,12,Alabama,23,1
+2026,15,Alabama,25,1
+2026,16,Alabama,17,1
+2026,17,Alabama,16,1
+2026,18,Alabama,15,1
+2026,0,Texas Tech,10,1
+2026,1,Texas Tech,11,1
+2026,2,Texas Tech,15,1
+2026,3,Texas Tech,20,1
+2026,4,Texas Tech,19,1
+2026,5,Texas Tech,16,1
+2026,6,Texas Tech,19,1
+2026,7,Texas Tech,15,1
+2026,8,Texas Tech,14,1
+2026,10,Texas Tech,15,1
+2026,11,Texas Tech,12,1
+2026,12,Texas Tech,11,1
+2026,13,Texas Tech,13,1
+2026,14,Texas Tech,16,1
+2026,15,Texas Tech,13,1
+2026,16,Texas Tech,16,1
+2026,17,Texas Tech,10,1
+2026,18,Texas Tech,16,1
+2026,0,Arkansas,14,1
+2026,1,Arkansas,21,1
+2026,2,Arkansas,21,1
+2026,3,Arkansas,22,1
+2026,4,Arkansas,25,1
+2026,5,Arkansas,17,1
+2026,6,Arkansas,14,1
+2026,7,Arkansas,18,1
+2026,8,Arkansas,15,1
+2026,10,Arkansas,17,1
+2026,11,Arkansas,20,1
+2026,12,Arkansas,15,1
+2026,13,Arkansas,21,1
+2026,14,Arkansas,21,1
+2026,15,Arkansas,20,1
+2026,16,Arkansas,20,1
+2026,17,Arkansas,20,1
+2026,18,Arkansas,17,1
+2026,0,Purdue,1,1
+2026,1,Purdue,2,1
+2026,2,Purdue,1,1
+2026,3,Purdue,1,1
+2026,4,Purdue,1,1
+2026,5,Purdue,6,1
+2026,6,Purdue,6,1
+2026,7,Purdue,5,1
+2026,8,Purdue,5,1
+2026,10,Purdue,5,1
+2026,11,Purdue,4,1
+2026,12,Purdue,12,1
+2026,13,Purdue,12,1
+2026,14,Purdue,13,1
+2026,15,Purdue,7,1
+2026,16,Purdue,8,1
+2026,17,Purdue,15,1
+2026,18,Purdue,18,1
+2026,0,North Carolina,25,1
+2026,1,North Carolina,18,1
+2026,2,North Carolina,18,1
+2026,3,North Carolina,16,1
+2026,4,North Carolina,16,1
+2026,5,North Carolina,14,1
+2026,6,North Carolina,12,1
+2026,7,North Carolina,12,1
+2026,8,North Carolina,17,1
+2026,10,North Carolina,14,1
+2026,11,North Carolina,22,1
+2026,12,North Carolina,16,1
+2026,13,North Carolina,14,1
+2026,14,North Carolina,11,1
+2026,15,North Carolina,16,1
+2026,16,North Carolina,18,1
+2026,17,North Carolina,17,1
+2026,18,North Carolina,19,1
+2026,11,Miami OH,25,1
+2026,12,Miami OH,24,1
+2026,13,Miami OH,23,1
+2026,14,Miami OH,23,1
+2026,15,Miami OH,22,1
+2026,16,Miami OH,21,1
+2026,17,Miami OH,19,1
+2026,18,Miami OH,20,1
+2026,17,Saint Mary's,21,1
+2026,18,Saint Mary's,21,1
+2026,3,Vanderbilt,24,1
+2026,4,Vanderbilt,17,1
+2026,5,Vanderbilt,15,1
+2026,6,Vanderbilt,13,1
+2026,7,Vanderbilt,11,1
+2026,8,Vanderbilt,11,1
+2026,10,Vanderbilt,10,1
+2026,11,Vanderbilt,15,1
+2026,12,Vanderbilt,18,1
+2026,13,Vanderbilt,15,1
+2026,14,Vanderbilt,19,1
+2026,15,Vanderbilt,19,1
+2026,16,Vanderbilt,25,1
+2026,17,Vanderbilt,24,1
+2026,18,Vanderbilt,22,1
+2026,0,Wisconsin,24,1
+2026,1,Wisconsin,24,1
+2026,2,Wisconsin,23,1
+2026,15,Wisconsin,24,1
+2026,18,Wisconsin,23,1
+2026,0,Louisville,11,1
+2026,1,Louisville,12,1
+2026,2,Louisville,6,1
+2026,3,Louisville,6,1
+2026,4,Louisville,6,1
+2026,5,Louisville,11,1
+2026,6,Louisville,11,1
+2026,7,Louisville,16,1
+2026,8,Louisville,20,1
+2026,10,Louisville,20,1
+2026,11,Louisville,23,1
+2026,12,Louisville,20,1
+2026,13,Louisville,24,1
+2026,14,Louisville,24,1
+2026,15,Louisville,21,1
+2026,16,Louisville,24,1
+2026,18,Louisville,24,1
+2026,0,Tennessee,18,1
+2026,1,Tennessee,20,1
+2026,2,Tennessee,20,1
+2026,3,Tennessee,17,1
+2026,4,Tennessee,13,1
+2026,5,Tennessee,20,1
+2026,6,Tennessee,20,1
+2026,7,Tennessee,19,1
+2026,8,Tennessee,21,1
+2026,10,Tennessee,24,1
+2026,13,Tennessee,25,1
+2026,16,Tennessee,22,1
+2026,17,Tennessee,23,1
+2026,18,Tennessee,25,1
+2026,17,Miami FL,22,1
+2026,11,Saint Louis,24,1
+2026,12,Saint Louis,21,1
+2026,13,Saint Louis,19,1
+2026,14,Saint Louis,18,1
+2026,15,Saint Louis,18,1
+2026,16,Saint Louis,23,1
+2026,17,Saint Louis,25,1
+2026,0,BYU,8,1
+2026,1,BYU,7,1
+2026,2,BYU,9,1
+2026,3,BYU,9,1
+2026,4,BYU,9,1
+2026,5,BYU,10,1
+2026,6,BYU,10,1
+2026,7,BYU,10,1
+2026,8,BYU,9,1
+2026,10,BYU,11,1
+2026,11,BYU,13,1
+2026,12,BYU,13,1
+2026,13,BYU,16,1
+2026,14,BYU,22,1
+2026,15,BYU,23,1
+2026,16,BYU,19,1
+2026,10,Clemson,22,1
+2026,11,Clemson,18,1
+2026,12,Clemson,22,1
+2026,13,Clemson,20,1
+2026,14,Clemson,20,1
+2026,0,Kentucky,9,1
+2026,1,Kentucky,9,1
+2026,2,Kentucky,12,1
+2026,3,Kentucky,19,1
+2026,4,Kentucky,18,1
+2026,14,Kentucky,25,1
+2026,6,Georgia,25,1
+2026,7,Georgia,23,1
+2026,8,Georgia,18,1
+2026,10,Georgia,21,1
+2026,11,Georgia,21,1
+2026,10,Utah State,23,1
+2026,10,Seton Hall,25,1
+2026,7,Iowa,25,1
+2026,8,Iowa,19,1
+2026,8,SMU,24,1
+2026,8,UCF,25,1
+2026,4,USC,24,1
+2026,7,USC,24,1
+2026,0,Auburn,20,1
+2026,1,Auburn,22,1
+2026,2,Auburn,22,1
+2026,3,Auburn,21,1
+2026,4,Auburn,20,1
+2026,5,Auburn,21,1
+2026,6,Auburn,21,1
+2026,0,UCLA,12,1
+2026,1,UCLA,15,1
+2026,2,UCLA,19,1
+2026,3,UCLA,18,1
+2026,5,UCLA,25,1
+2026,3,Indiana,25,1
+2026,4,Indiana,22,1
+2026,2,N.C. State,25,1
+2026,3,N.C. State,23,1
+2026,0,Creighton,23,1
+2026,1,Creighton,23,1
