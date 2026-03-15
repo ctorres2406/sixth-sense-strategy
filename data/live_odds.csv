@@ -2029,10 +2029,10 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,spreads,Purdue Boilermakers,-110,6.5
 20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,totals,Over,-110,150.5
 20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,totals,Under,-110,150.5
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,h2h,Pennsylvania Quakers,380,
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,h2h,Yale Bulldogs,-500,
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,spreads,Pennsylvania Quakers,-105,9.5
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,spreads,Yale Bulldogs,-115,-9.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,h2h,Pennsylvania Quakers,390,
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,h2h,Yale Bulldogs,-520,
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,spreads,Pennsylvania Quakers,-108,9.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,spreads,Yale Bulldogs,-112,-9.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,totals,Over,-108,142.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,draftkings,totals,Under,-112,142.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,betmgm,h2h,Pennsylvania Quakers,375,
@@ -2041,101 +2041,111 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,betmgm,spreads,Yale Bulldogs,-110,-9.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,betmgm,totals,Over,-110,142.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,betmgm,totals,Under,-110,142.5
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,h2h,Pennsylvania Quakers,340,
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,h2h,Yale Bulldogs,-450,
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,spreads,Pennsylvania Quakers,-102,9.5
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,spreads,Yale Bulldogs,-120,-9.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,h2h,Pennsylvania Quakers,350,
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,h2h,Yale Bulldogs,-465,
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,spreads,Pennsylvania Quakers,-108,9.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,spreads,Yale Bulldogs,-112,-9.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,totals,Over,-110,142.5
 20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,fanduel,totals,Under,-110,142.5
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,spreads,Pennsylvania Quakers,-115,10.0
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,spreads,Yale Bulldogs,-105,-10.0
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,totals,Over,-111,142.5
-20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,totals,Under,-113,142.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,h2h,Arkansas Razorbacks,124,
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,h2h,Vanderbilt Commodores,-148,
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,spreads,Arkansas Razorbacks,-102,2.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,spreads,Vanderbilt Commodores,-118,-2.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,totals,Over,-115,165.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,totals,Under,-105,165.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,h2h,Arkansas Razorbacks,125,
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,h2h,Vanderbilt Commodores,-155,
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,spreads,Arkansas Razorbacks,-115,3.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,spreads,Vanderbilt Commodores,-105,-3.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,h2h,Pennsylvania Quakers,388,
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,h2h,Yale Bulldogs,-500,
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,spreads,Pennsylvania Quakers,-112,9.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,spreads,Yale Bulldogs,-104,-9.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,totals,Over,-106,141.5
+20260315,2026-03-15T16:00:00Z,Yale Bulldogs,Pennsylvania Quakers,pinnacle,totals,Under,-114,141.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,h2h,Arkansas Razorbacks,120,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,h2h,Vanderbilt Commodores,-142,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,spreads,Arkansas Razorbacks,-110,2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,spreads,Vanderbilt Commodores,-110,-2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,totals,Over,-112,166.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,draftkings,totals,Under,-108,166.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,h2h,Arkansas Razorbacks,118,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,h2h,Vanderbilt Commodores,-145,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,spreads,Arkansas Razorbacks,-110,2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,spreads,Vanderbilt Commodores,-110,-2.5
 20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,totals,Over,-110,166.5
 20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,betmgm,totals,Under,-110,166.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,h2h,Arkansas Razorbacks,126,
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,h2h,Vanderbilt Commodores,-152,
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,spreads,Arkansas Razorbacks,-106,2.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,spreads,Vanderbilt Commodores,-114,-2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,h2h,Arkansas Razorbacks,120,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,h2h,Vanderbilt Commodores,-144,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,spreads,Arkansas Razorbacks,-110,2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,spreads,Vanderbilt Commodores,-110,-2.5
 20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,totals,Over,-110,166.5
 20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,fanduel,totals,Under,-110,166.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,spreads,Arkansas Razorbacks,-102,2.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,spreads,Vanderbilt Commodores,-118,-2.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,totals,Over,-107,166.5
-20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,totals,Under,-117,166.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,h2h,Dayton Flyers,126,
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,h2h,VCU Rams,-152,
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,spreads,Dayton Flyers,-102,2.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,spreads,VCU Rams,-120,-2.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,totals,Over,-110,139.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,totals,Under,-110,139.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,h2h,Dayton Flyers,136,
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,h2h,VCU Rams,-162,
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,spreads,Dayton Flyers,-105,2.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,spreads,VCU Rams,-115,-2.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,totals,Over,-108,140.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,totals,Under,-112,140.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,spreads,Dayton Flyers,-105,2.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,spreads,VCU Rams,-115,-2.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,totals,Over,-120,139.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,totals,Under,-104,139.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,h2h,Dayton Flyers,135,
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,h2h,VCU Rams,-160,
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,spreads,Dayton Flyers,-115,3.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,spreads,VCU Rams,-105,-3.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,totals,Over,-110,140.5
-20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,totals,Under,-110,140.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,h2h,Arkansas Razorbacks,120,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,h2h,Vanderbilt Commodores,-140,
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,spreads,Arkansas Razorbacks,-108,2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,spreads,Vanderbilt Commodores,-108,-2.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,totals,Over,-111,165.5
+20260315,2026-03-15T17:00:00Z,Arkansas Razorbacks,Vanderbilt Commodores,pinnacle,totals,Under,-109,165.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,h2h,Dayton Flyers,140,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,h2h,VCU Rams,-170,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,spreads,Dayton Flyers,-110,3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,spreads,VCU Rams,-110,-3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,totals,Over,-105,139.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,fanduel,totals,Under,-115,139.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,h2h,Dayton Flyers,142,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,h2h,VCU Rams,-170,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,spreads,Dayton Flyers,-108,3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,spreads,VCU Rams,-112,-3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,totals,Over,-115,138.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,draftkings,totals,Under,-105,138.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,h2h,Dayton Flyers,146,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,h2h,VCU Rams,-172,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,spreads,Dayton Flyers,-106,3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,spreads,VCU Rams,-110,-3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,totals,Over,-115,139.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,pinnacle,totals,Under,-105,139.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,h2h,Dayton Flyers,145,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,h2h,VCU Rams,-175,
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,spreads,Dayton Flyers,-110,3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,spreads,VCU Rams,-110,-3.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,totals,Over,-115,138.5
+20260315,2026-03-15T17:00:37Z,VCU Rams,Dayton Flyers,betmgm,totals,Under,-105,138.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,draftkings,h2h,South Florida Bulls,-245,
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,draftkings,h2h,Wichita St Shockers,200,
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,draftkings,spreads,South Florida Bulls,-105,-6.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,draftkings,spreads,Wichita St Shockers,-115,6.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,draftkings,totals,Over,-110,150.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,draftkings,totals,Under,-110,150.5
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,h2h,South Florida Bulls,-240,
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,h2h,Wichita St Shockers,195,
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,spreads,South Florida Bulls,-104,-6.5
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,spreads,Wichita St Shockers,-118,6.5
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,totals,Over,-110,150.5
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,totals,Under,-110,150.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,h2h,South Florida Bulls,-250,
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,h2h,Wichita St Shockers,202,
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,spreads,South Florida Bulls,-115,-5.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,spreads,Wichita St Shockers,-105,5.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,totals,Over,-105,150.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,fanduel,totals,Under,-115,150.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,h2h,South Florida Bulls,-250,
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,h2h,Wichita St Shockers,200,
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,spreads,South Florida Bulls,-102,-6.5
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,spreads,Wichita St Shockers,-118,6.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,spreads,South Florida Bulls,-115,-5.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,spreads,Wichita St Shockers,-105,5.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,totals,Over,-110,150.5
 20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,betmgm,totals,Under,-110,150.5
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,spreads,South Florida Bulls,-109,-6.0
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,spreads,Wichita St Shockers,-111,6.0
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,totals,Over,-102,151.0
-20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,totals,Under,-123,151.0
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,h2h,Michigan Wolverines,-265,
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,h2h,Purdue Boilermakers,215,
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,spreads,Michigan Wolverines,-108,-6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,spreads,Purdue Boilermakers,-112,6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,totals,Over,-105,150.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,totals,Under,-115,150.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,h2h,Michigan Wolverines,-275,
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,h2h,Purdue Boilermakers,220,
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,spreads,Michigan Wolverines,-108,-6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,spreads,Purdue Boilermakers,-112,6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,totals,Over,-115,150.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,totals,Under,-105,150.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,spreads,Michigan Wolverines,-103,-6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,spreads,Purdue Boilermakers,-118,6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,totals,Over,-105,151.0
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,totals,Under,-120,151.0
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,h2h,Michigan Wolverines,-275,
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,h2h,Purdue Boilermakers,220,
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,spreads,Michigan Wolverines,-110,-6.5
-20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,spreads,Purdue Boilermakers,-110,6.5
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,h2h,South Florida Bulls,-255,
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,h2h,Wichita St Shockers,212,
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,spreads,South Florida Bulls,-107,-6.0
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,spreads,Wichita St Shockers,-109,6.0
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,totals,Over,100,150.0
+20260315,2026-03-15T19:15:00Z,South Florida Bulls,Wichita St Shockers,pinnacle,totals,Under,-121,150.0
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,h2h,Michigan Wolverines,-298,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,h2h,Purdue Boilermakers,240,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,spreads,Michigan Wolverines,-112,-6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,spreads,Purdue Boilermakers,-108,6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,totals,Over,-108,149.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,draftkings,totals,Under,-112,149.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,h2h,Michigan Wolverines,-300,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,h2h,Purdue Boilermakers,240,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,spreads,Michigan Wolverines,-118,-6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,spreads,Purdue Boilermakers,-104,6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,totals,Over,-110,149.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,fanduel,totals,Under,-110,149.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,h2h,Michigan Wolverines,-282,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,h2h,Purdue Boilermakers,233,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,spreads,Michigan Wolverines,-111,-6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,spreads,Purdue Boilermakers,-106,6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,totals,Over,-102,150.0
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,pinnacle,totals,Under,-119,150.0
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,h2h,Michigan Wolverines,-300,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,h2h,Purdue Boilermakers,240,
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,spreads,Michigan Wolverines,-115,-6.5
+20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,spreads,Purdue Boilermakers,-105,6.5
 20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,totals,Over,-110,149.5
 20260315,2026-03-15T19:30:00Z,Michigan Wolverines,Purdue Boilermakers,betmgm,totals,Under,-110,149.5

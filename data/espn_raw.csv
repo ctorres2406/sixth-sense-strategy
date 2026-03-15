@@ -19,6 +19,7 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260314,401858192,Toledo Rockets at Akron Zips,Akron Zips,AKR,Toledo Rockets,TOL,79,76,3,True,True,True,,,29-5,19-15,46.5,29.4,33.3,50.0,41.7,76.9
 20260314,401851415,Kennesaw State Owls at Louisiana Tech Bulldogs,Kennesaw State Owls,KENN,Louisiana Tech Bulldogs,LT,71,60,11,True,True,True,,,21-13,20-14,43.1,26.3,69.6,30.6,7.1,73.7
 20260314,401851398,Hawai'i Rainbow Warriors at UC Irvine Anteaters,Hawai'i Rainbow Warriors,HAW,UC Irvine Anteaters,UCI,71,64,7,True,True,True,,,24-8,23-11,40.9,30.8,60.0,36.1,45.5,88.2
+20260314,401851739,California Baptist Lancers at Utah Valley Wolverines,California Baptist Lancers,CBU,Utah Valley Wolverines,UVU,63,61,2,True,True,True,,,25-8,25-8,37.9,34.6,90.9,44.0,37.5,58.3
 20260314,401851183,Virginia Cavaliers at Duke Blue Devils,Duke Blue Devils,DUKE,Virginia Cavaliers,UVA,74,70,4,True,True,True,,,32-2,29-5,38.5,32.0,80.0,44.4,33.3,87.5
 20260314,401851306,Houston Cougars at Arizona Wildcats,Arizona Wildcats,ARIZ,Houston Cougars,HOU,79,74,5,True,True,True,,,32-2,28-6,46.3,46.2,85.2,43.8,38.1,71.4
 20260314,401851384,Wisconsin Badgers at Michigan Wolverines,Michigan Wolverines,MICH,Wisconsin Badgers,WIS,68,65,3,True,True,True,,,31-2,24-10,43.1,32.0,83.3,37.7,42.1,60.0
