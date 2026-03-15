@@ -1,37 +1,37 @@
 team1,seed1,team2,seed2,region,round,game_time,status,winner,score1,score2,ml_pick,ml_confidence,ml_odds,spread,ats_pick,ats_confidence,result,ml_result,ats_result
-TBD,11,TBD,11,First Four,R64,Tue Mar 17 6:40 PM ET,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,16,TBD,16,First Four,R64,Tue Mar 17 9:10 PM ET,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,11,TBD,11,First Four,R64,Wed Mar 18 6:40 PM ET,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,16,TBD,16,First Four,R64,Wed Mar 18 9:10 PM ET,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,South,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,East,R64,Thu Mar 19 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,West,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,Midwest,R64,Fri Mar 20 TBD,upcoming,,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,11,TBD,11,First Four,R64,Tue Mar 17 6:40 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,16,TBD,16,First Four,R64,Tue Mar 17 9:10 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,11,TBD,11,First Four,R64,Wed Mar 18 6:40 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,16,TBD,16,First Four,R64,Wed Mar 18 9:10 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,1,TBD,16,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,8,TBD,9,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,5,TBD,12,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,4,TBD,13,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,6,TBD,11,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,3,TBD,14,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,7,TBD,10,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,2,TBD,15,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,1,TBD,16,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,8,TBD,9,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,5,TBD,12,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,4,TBD,13,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,6,TBD,11,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,3,TBD,14,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,7,TBD,10,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,2,TBD,15,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,1,TBD,16,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,8,TBD,9,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,5,TBD,12,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,4,TBD,13,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,6,TBD,11,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,3,TBD,14,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,7,TBD,10,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,2,TBD,15,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,1,TBD,16,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,8,TBD,9,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,5,TBD,12,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,4,TBD,13,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,6,TBD,11,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,3,TBD,14,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,7,TBD,10,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+TBD,2,TBD,15,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
