@@ -1,37 +1,37 @@
 team1,seed1,team2,seed2,region,round,game_time,status,winner,score1,score2,ml_pick,ml_confidence,ml_odds,spread,ats_pick,ats_confidence,result,ml_result,ats_result
-TBD,11,TBD,11,First Four,R64,Tue Mar 17 6:40 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,16,TBD,16,First Four,R64,Tue Mar 17 9:10 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,11,TBD,11,First Four,R64,Wed Mar 18 6:40 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,16,TBD,16,First Four,R64,Wed Mar 18 9:10 PM ET,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,South,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,East,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,West,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,1,TBD,16,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,8,TBD,9,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,5,TBD,12,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,4,TBD,13,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,6,TBD,11,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,3,TBD,14,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,7,TBD,10,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
-TBD,2,TBD,15,Midwest,R64,Fri Mar 20 TBD,upcoming,nan,,,TBD,50.0,,,,47.5,pending,pending,pending
+UMBC,16,Howard,16,First Four,R64,Tue Mar 17 TBD,upcoming,,,,UMBC,50.0,,,,47.5,pending,pending,pending
+Texas,11,N.C. State,11,First Four,R64,Tue Mar 17 TBD,upcoming,,,,Texas,50.0,,,,47.5,pending,pending,pending
+Miami OH,11,SMU,11,First Four,R64,Wed Mar 18 TBD,upcoming,,,,Miami OH,50.0,,,,47.5,pending,pending,pending
+Prairie View A&M,16,Lehigh,16,First Four,R64,Wed Mar 18 TBD,upcoming,,,,Prairie View A&M,50.0,+125,+2.5,Prairie View A&M +2.5,51.0,pending,pending,pending
+Duke,1,Siena,16,East,R64,Thu Mar 19 TBD,upcoming,,,,Duke,50.0,,,,47.5,pending,pending,pending
+Ohio St.,8,TCU,9,East,R64,Thu Mar 19 TBD,upcoming,,,,Ohio St.,50.0,,,,47.5,pending,pending,pending
+Louisville,6,South Florida,11,East,R64,Thu Mar 19 TBD,upcoming,,,,Louisville,50.0,-225,-5.5,Louisville -5.5,49.0,pending,pending,pending
+Michigan St.,3,North Dakota St.,14,East,R64,Thu Mar 19 TBD,upcoming,,,,Michigan St.,50.0,-1700,-16.5,Michigan St. -16.5,44.0,pending,pending,pending
+St. John's,5,Northern Iowa,12,East,R64,Fri Mar 20 7:10 PM ET,upcoming,,,,St. John's,50.0,,-11.0,,47.5,pending,pending,pending
+Kansas,4,Cal Baptist,13,East,R64,Fri Mar 20 9:45 PM ET,upcoming,,,,Kansas,50.0,,-14.5,,47.5,pending,pending,pending
+UCLA,7,UCF,10,East,R64,Fri Mar 20 7:25 PM ET,upcoming,,,,UCLA,50.0,,,,47.5,pending,pending,pending
+Connecticut,2,Furman,15,East,R64,Fri Mar 20 10:00 PM ET,upcoming,,,,Connecticut,50.0,,,,47.5,pending,pending,pending
+Arizona,1,LIU,16,West,R64,Thu Mar 19 TBD,upcoming,,,,Arizona,50.0,,,,47.5,pending,pending,pending
+Villanova,8,Utah St.,9,West,R64,Thu Mar 19 TBD,upcoming,,,,Villanova,50.0,,,,47.5,pending,pending,pending
+BYU,6,TBD,11,West,R64,Thu Mar 19 TBD,upcoming,,,,BYU,50.0,,,,47.5,pending,pending,pending
+Gonzaga,3,Kennesaw St.,14,West,R64,Thu Mar 19 TBD,upcoming,,,,Gonzaga,50.0,,-19.8,,47.5,pending,pending,pending
+Wisconsin,5,High Point,12,West,R64,Fri Mar 20 TBD,upcoming,,,,Wisconsin,50.0,,,,47.5,pending,pending,pending
+Arkansas,4,Hawaii,13,West,R64,Fri Mar 20 TBD,upcoming,,,,Arkansas,50.0,,,,47.5,pending,pending,pending
+Miami FL,7,Missouri,10,West,R64,Fri Mar 20 TBD,upcoming,,,,Miami FL,50.0,,,,47.5,pending,pending,pending
+Purdue,2,Queens,15,West,R64,Fri Mar 20 7:35 PM ET,upcoming,,,,Purdue,50.0,,,,47.5,pending,pending,pending
+Florida,1,TBD,16,South,R64,Fri Mar 20 9:25 PM ET,upcoming,,,,Florida,50.0,,,,47.5,pending,pending,pending
+Clemson,8,Iowa,9,South,R64,Fri Mar 20 6:50 PM ET,upcoming,,,,Clemson,50.0,,,,47.5,pending,pending,pending
+North Carolina,6,VCU,11,South,R64,Thu Mar 19 TBD,upcoming,,,,North Carolina,50.0,-150,-2.5,North Carolina -2.5,51.0,pending,pending,pending
+Nebraska,4,Troy,13,South,R64,Thu Mar 19 TBD,upcoming,,,,Nebraska,50.0,,,,47.5,pending,pending,pending
+Saint Mary's,7,Texas A&M,10,South,R64,Thu Mar 19 7:35 PM ET,upcoming,,,,Saint Mary's,50.0,-135,-2.5,Saint Mary's -2.5,51.0,pending,pending,pending
+Houston,2,Idaho,15,South,R64,Thu Mar 19 10:10 PM ET,upcoming,,,,Houston,50.0,,,,47.5,pending,pending,pending
+Vanderbilt,5,McNeese,12,South,R64,Thu Mar 19 TBD,upcoming,,,,Vanderbilt,50.0,-700,-11.5,Vanderbilt -11.5,47.0,pending,pending,pending
+Illinois,3,Penn,14,South,R64,Thu Mar 19 TBD,upcoming,,,,Illinois,50.0,,,,47.5,pending,pending,pending
+Michigan,1,TBD,16,Midwest,R64,Thu Mar 19 7:10 PM ET,upcoming,,,,Michigan,50.0,,,,47.5,pending,pending,pending
+Georgia,8,Saint Louis,9,Midwest,R64,Thu Mar 19 9:45 PM ET,upcoming,,,,Georgia,50.0,,-2.5,,47.5,pending,pending,pending
+Tennessee,6,TBD,11,Midwest,R64,Fri Mar 20 4:25 PM ET,upcoming,,,,Tennessee,50.0,,,,47.5,pending,pending,pending
+Virginia,3,Wright St.,14,Midwest,R64,Fri Mar 20 1:50 PM ET,upcoming,,,,Virginia,50.0,,,,47.5,pending,pending,pending
+Texas Tech,5,Akron,12,Midwest,R64,Fri Mar 20 12:40 PM ET,upcoming,,,,Texas Tech,50.0,,,,47.5,pending,pending,pending
+Alabama,4,Hofstra,13,Midwest,R64,Fri Mar 20 3:15 PM ET,upcoming,,,,Alabama,50.0,,,,47.5,pending,pending,pending
+Kentucky,7,Santa Clara,10,Midwest,R64,Fri Mar 20 12:15 PM ET,upcoming,,,,Kentucky,50.0,,-4.5,,47.5,pending,pending,pending
+Iowa St.,2,Tennessee St.,15,Midwest,R64,Fri Mar 20 2:50 PM ET,upcoming,,,,Iowa St.,50.0,,-25.0,,47.5,pending,pending,pending

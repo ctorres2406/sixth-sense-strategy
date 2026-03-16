@@ -2723,3 +2723,687 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,spreads,Missouri Tigers,-110,2.0
 20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,totals,Over,-102,148.5
 20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,totals,Under,-119,148.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,draftkings,h2h,Howard Bison,124,
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,draftkings,h2h,UMBC Retrievers,-148,
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,draftkings,spreads,Howard Bison,-110,2.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,draftkings,spreads,UMBC Retrievers,-110,-2.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,draftkings,totals,Over,-105,141.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,draftkings,totals,Under,-115,141.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,fanduel,h2h,Howard Bison,122,
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,fanduel,h2h,UMBC Retrievers,-146,
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,fanduel,spreads,Howard Bison,-110,2.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,fanduel,spreads,UMBC Retrievers,-110,-2.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,fanduel,totals,Over,-110,140.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,fanduel,totals,Under,-110,140.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,pinnacle,spreads,Howard Bison,-106,2.0
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,pinnacle,spreads,UMBC Retrievers,-110,-2.0
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,pinnacle,totals,Over,-103,141.5
+20260316,2026-03-17T22:40:00Z,Howard Bison,UMBC Retrievers,pinnacle,totals,Under,-118,141.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,draftkings,h2h,NC State Wolfpack,-105,
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,draftkings,h2h,Texas Longhorns,-115,
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,draftkings,spreads,NC State Wolfpack,-125,1.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,draftkings,spreads,Texas Longhorns,105,-1.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,draftkings,totals,Over,-115,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,draftkings,totals,Under,-105,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,fanduel,h2h,NC State Wolfpack,-108,
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,fanduel,h2h,Texas Longhorns,-111,
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,fanduel,spreads,NC State Wolfpack,-124,1.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,fanduel,spreads,Texas Longhorns,102,-1.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,fanduel,totals,Over,-115,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,fanduel,totals,Under,-105,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,betmgm,h2h,NC State Wolfpack,-110,
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,betmgm,h2h,Texas Longhorns,-110,
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,betmgm,spreads,NC State Wolfpack,-125,1.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,betmgm,spreads,Texas Longhorns,105,-1.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,betmgm,totals,Over,-110,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,betmgm,totals,Under,-110,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,pinnacle,spreads,NC State Wolfpack,-118,1.0
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,pinnacle,spreads,Texas Longhorns,101,-1.0
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,pinnacle,totals,Over,-111,159.5
+20260316,2026-03-18T01:15:00Z,Texas Longhorns,NC State Wolfpack,pinnacle,totals,Under,-109,159.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,draftkings,h2h,Lehigh Mountain Hawks,-155,
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,draftkings,h2h,Prairie View Panthers,130,
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,draftkings,spreads,Lehigh Mountain Hawks,-110,-2.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,draftkings,spreads,Prairie View Panthers,-110,2.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,draftkings,totals,Over,-110,143.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,draftkings,totals,Under,-110,143.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,fanduel,h2h,Lehigh Mountain Hawks,-150,
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,fanduel,h2h,Prairie View Panthers,125,
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,fanduel,spreads,Lehigh Mountain Hawks,-115,-2.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,fanduel,spreads,Prairie View Panthers,-105,2.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,fanduel,totals,Over,-110,143.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,fanduel,totals,Under,-110,143.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,pinnacle,spreads,Lehigh Mountain Hawks,-108,-2.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,pinnacle,spreads,Prairie View Panthers,-108,2.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,pinnacle,totals,Over,-106,144.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,pinnacle,totals,Under,-114,144.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,betmgm,h2h,Lehigh Mountain Hawks,-150,
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,betmgm,h2h,Prairie View Panthers,125,
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,betmgm,totals,Over,-105,143.5
+20260316,2026-03-18T22:40:00Z,Lehigh Mountain Hawks,Prairie View Panthers,betmgm,totals,Under,-115,143.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,h2h,Miami (OH) RedHawks,235,
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,h2h,SMU Mustangs,-290,
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,spreads,Miami (OH) RedHawks,-112,7.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,spreads,SMU Mustangs,-108,-7.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,totals,Over,-105,164.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,totals,Under,-115,164.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,h2h,Miami (OH) RedHawks,235,
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,h2h,SMU Mustangs,-295,
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,spreads,Miami (OH) RedHawks,-114,7.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,spreads,SMU Mustangs,-106,-7.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,totals,Over,-115,163.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,totals,Under,-105,163.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,pinnacle,spreads,Miami (OH) RedHawks,-115,7.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,pinnacle,spreads,SMU Mustangs,-101,-7.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,pinnacle,totals,Over,-111,163.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,pinnacle,totals,Under,-109,163.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,betmgm,h2h,Miami (OH) RedHawks,240,
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,betmgm,h2h,SMU Mustangs,-300,
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,betmgm,totals,Over,-110,163.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,betmgm,totals,Under,-110,163.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,h2h,Ohio State Buckeyes,-142,
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,h2h,TCU Horned Frogs,120,
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,spreads,Ohio State Buckeyes,-105,-2.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,spreads,TCU Horned Frogs,-115,2.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,totals,Over,-105,146.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,totals,Under,-115,146.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,h2h,Ohio State Buckeyes,-140,
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,h2h,TCU Horned Frogs,116,
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,spreads,Ohio State Buckeyes,-112,-2.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,spreads,TCU Horned Frogs,-108,2.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,totals,Over,-110,146.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,totals,Under,-110,146.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,h2h,Ohio State Buckeyes,-145,
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,h2h,TCU Horned Frogs,118,
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,totals,Over,-105,146.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,totals,Under,-115,146.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,spreads,Ohio State Buckeyes,-110,-2.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,spreads,TCU Horned Frogs,-106,2.5
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,totals,Over,-110,146.0
+20260316,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,totals,Under,-110,146.0
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,h2h,Nebraska Cornhuskers,-1200,
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,h2h,Troy Trojans,750,
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,spreads,Nebraska Cornhuskers,-105,-13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,spreads,Troy Trojans,-115,13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,totals,Over,-108,137.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,totals,Under,-112,137.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,h2h,Nebraska Cornhuskers,-1000,
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,h2h,Troy Trojans,640,
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,spreads,Nebraska Cornhuskers,-110,-13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,spreads,Troy Trojans,-110,13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,totals,Over,-110,138.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,totals,Under,-110,138.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,h2h,Nebraska Cornhuskers,-1200,
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,h2h,Troy Trojans,725,
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,spreads,Nebraska Cornhuskers,-105,-13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,spreads,Troy Trojans,-115,13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,totals,Over,-105,137.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,totals,Under,-115,137.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,pinnacle,spreads,Nebraska Cornhuskers,-102,-13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,pinnacle,spreads,Troy Trojans,-115,13.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,pinnacle,totals,Over,-118,137.5
+20260316,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,pinnacle,totals,Under,-103,137.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,draftkings,h2h,Louisville Cardinals,-225,
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,draftkings,h2h,South Florida Bulls,185,
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,draftkings,spreads,Louisville Cardinals,-108,-5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,draftkings,spreads,South Florida Bulls,-112,5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,draftkings,totals,Over,-110,165.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,draftkings,totals,Under,-110,165.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,fanduel,h2h,Louisville Cardinals,-235,
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,fanduel,h2h,South Florida Bulls,190,
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,fanduel,spreads,Louisville Cardinals,-120,-5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,fanduel,spreads,South Florida Bulls,-102,5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,fanduel,totals,Over,-115,165.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,fanduel,totals,Under,-105,165.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,betmgm,h2h,Louisville Cardinals,-225,
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,betmgm,h2h,South Florida Bulls,185,
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,betmgm,spreads,Louisville Cardinals,-110,-5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,betmgm,spreads,South Florida Bulls,-110,5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,betmgm,totals,Over,-110,165.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,betmgm,totals,Under,-110,165.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,pinnacle,spreads,Louisville Cardinals,-104,-5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,pinnacle,spreads,South Florida Bulls,-112,5.5
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,pinnacle,totals,Over,-116,165.0
+20260316,2026-03-19T17:30:00Z,Louisville Cardinals,South Florida Bulls,pinnacle,totals,Under,-104,165.0
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,h2h,High Point Panthers,410,
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,h2h,Wisconsin Badgers,-550,
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,spreads,High Point Panthers,-102,9.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,spreads,Wisconsin Badgers,-118,-9.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,totals,Over,-112,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,totals,Under,-108,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,h2h,High Point Panthers,340,
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,h2h,Wisconsin Badgers,-450,
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,spreads,High Point Panthers,-102,9.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,spreads,Wisconsin Badgers,-120,-9.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,totals,Over,-110,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,totals,Under,-110,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,betmgm,h2h,High Point Panthers,375,
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,betmgm,h2h,Wisconsin Badgers,-500,
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,betmgm,spreads,High Point Panthers,-105,9.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,betmgm,spreads,Wisconsin Badgers,-115,-9.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,betmgm,totals,Over,-110,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,betmgm,totals,Under,-110,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,pinnacle,spreads,High Point Panthers,-109,10.0
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,pinnacle,spreads,Wisconsin Badgers,-107,-10.0
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,pinnacle,totals,Over,-116,164.5
+20260316,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,pinnacle,totals,Under,-105,164.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,fanduel,h2h,Duke Blue Devils,-30000,
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,fanduel,h2h,Siena Saints,5000,
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,fanduel,spreads,Duke Blue Devils,-110,-29.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,fanduel,spreads,Siena Saints,-110,29.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,fanduel,totals,Over,-110,136.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,fanduel,totals,Under,-110,136.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,betmgm,spreads,Duke Blue Devils,-110,-29.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,betmgm,spreads,Siena Saints,-110,29.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,betmgm,totals,Over,-105,136.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,betmgm,totals,Under,-115,136.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,pinnacle,spreads,Duke Blue Devils,-112,-29.0
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,pinnacle,spreads,Siena Saints,-108,29.0
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,pinnacle,totals,Over,-110,136.0
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,pinnacle,totals,Under,-110,136.0
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,draftkings,h2h,Duke Blue Devils,-20000,
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,draftkings,h2h,Siena Saints,3500,
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,draftkings,spreads,Duke Blue Devils,-110,-29.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,draftkings,spreads,Siena Saints,-110,29.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,draftkings,totals,Over,-110,135.5
+20260316,2026-03-19T18:50:50Z,Duke Blue Devils,Siena Saints,draftkings,totals,Under,-110,135.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,draftkings,h2h,McNeese Cowboys,500,
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,draftkings,h2h,Vanderbilt Commodores,-700,
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,draftkings,spreads,McNeese Cowboys,-112,11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,draftkings,spreads,Vanderbilt Commodores,-108,-11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,draftkings,totals,Over,-115,150.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,draftkings,totals,Under,-105,150.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,fanduel,h2h,McNeese Cowboys,490,
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,fanduel,h2h,Vanderbilt Commodores,-720,
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,fanduel,spreads,McNeese Cowboys,-102,11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,fanduel,spreads,Vanderbilt Commodores,-120,-11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,fanduel,totals,Over,-110,150.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,fanduel,totals,Under,-110,150.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,betmgm,h2h,McNeese Cowboys,475,
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,betmgm,h2h,Vanderbilt Commodores,-650,
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,betmgm,spreads,McNeese Cowboys,-115,11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,betmgm,spreads,Vanderbilt Commodores,-105,-11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,betmgm,totals,Over,-110,150.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,betmgm,totals,Under,-110,150.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,pinnacle,spreads,McNeese Cowboys,-116,11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,pinnacle,spreads,Vanderbilt Commodores,-101,-11.5
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,pinnacle,totals,Over,-111,150.0
+20260316,2026-03-19T19:15:00Z,Vanderbilt Commodores,McNeese Cowboys,pinnacle,totals,Under,-109,150.0
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,fanduel,h2h,Michigan St Spartans,-1700,
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,fanduel,h2h,North Dakota St Bison,890,
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,fanduel,spreads,Michigan St Spartans,-102,-16.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,fanduel,spreads,North Dakota St Bison,-120,16.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,fanduel,totals,Over,-110,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,fanduel,totals,Under,-110,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,draftkings,h2h,Michigan St Spartans,-1650,
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,draftkings,h2h,North Dakota St Bison,950,
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,draftkings,spreads,Michigan St Spartans,-110,-16.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,draftkings,spreads,North Dakota St Bison,-110,16.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,draftkings,totals,Over,-110,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,draftkings,totals,Under,-110,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,h2h,Michigan St Spartans,-2000,
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,h2h,North Dakota St Bison,950,
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,spreads,Michigan St Spartans,-110,-16.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,spreads,North Dakota St Bison,-110,16.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,totals,Over,-105,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,totals,Under,-115,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,spreads,Michigan St Spartans,-112,-16.0
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,spreads,North Dakota St Bison,-104,16.0
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,totals,Over,-110,143.5
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,totals,Under,-110,143.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,h2h,Arkansas Razorbacks,-1400,
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,h2h,Hawai'i Rainbow Warriors,800,
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,spreads,Arkansas Razorbacks,-110,-15.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,spreads,Hawai'i Rainbow Warriors,-110,15.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,totals,Over,-115,160.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,totals,Under,-105,160.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,draftkings,h2h,Arkansas Razorbacks,-1600,
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,draftkings,h2h,Hawai'i Rainbow Warriors,900,
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,draftkings,spreads,Arkansas Razorbacks,-108,-15.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,draftkings,spreads,Hawai'i Rainbow Warriors,-112,15.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,draftkings,totals,Over,-105,161.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,draftkings,totals,Under,-115,161.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,betmgm,h2h,Arkansas Razorbacks,-1600,
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,betmgm,h2h,Hawai'i Rainbow Warriors,850,
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,betmgm,spreads,Arkansas Razorbacks,-110,-15.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,betmgm,spreads,Hawai'i Rainbow Warriors,-110,15.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,betmgm,totals,Over,-105,161.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,betmgm,totals,Under,-115,161.5
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,pinnacle,spreads,Arkansas Razorbacks,-110,-15.0
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,pinnacle,spreads,Hawai'i Rainbow Warriors,-106,15.0
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,pinnacle,totals,Over,-111,161.0
+20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,pinnacle,totals,Under,-109,161.0
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,draftkings,h2h,North Carolina Tar Heels,-155,
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,draftkings,h2h,VCU Rams,130,
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,draftkings,spreads,North Carolina Tar Heels,-110,-2.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,draftkings,spreads,VCU Rams,-110,2.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,draftkings,totals,Over,-110,153.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,draftkings,totals,Under,-110,153.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,fanduel,h2h,North Carolina Tar Heels,-140,
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,fanduel,h2h,VCU Rams,116,
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,fanduel,spreads,North Carolina Tar Heels,-110,-2.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,fanduel,spreads,VCU Rams,-110,2.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,fanduel,totals,Over,-115,153.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,fanduel,totals,Under,-105,153.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,h2h,North Carolina Tar Heels,-150,
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,h2h,VCU Rams,125,
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,spreads,North Carolina Tar Heels,-110,-2.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,spreads,VCU Rams,-110,2.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,totals,Over,-110,153.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,totals,Under,-110,153.5
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,spreads,North Carolina Tar Heels,-108,-2.0
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,spreads,VCU Rams,-108,2.0
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,totals,Over,-110,154.0
+20260316,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,totals,Under,-110,154.0
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,draftkings,h2h,Saint Mary's Gaels,-135,
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,draftkings,h2h,Texas A&M Aggies,114,
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,draftkings,spreads,Saint Mary's Gaels,-108,-2.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,draftkings,spreads,Texas A&M Aggies,-112,2.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,draftkings,totals,Over,-108,147.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,draftkings,totals,Under,-112,147.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,fanduel,h2h,Saint Mary's Gaels,-126,
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,fanduel,h2h,Texas A&M Aggies,105,
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,fanduel,spreads,Saint Mary's Gaels,-102,-2.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,fanduel,spreads,Texas A&M Aggies,-120,2.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,fanduel,totals,Over,-110,146.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,fanduel,totals,Under,-110,146.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,betmgm,h2h,Saint Mary's Gaels,-140,
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,betmgm,h2h,Texas A&M Aggies,115,
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,betmgm,totals,Over,-105,147.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,betmgm,totals,Under,-115,147.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,spreads,Saint Mary's Gaels,-119,-2.0
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,spreads,Texas A&M Aggies,102,2.0
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,totals,Over,-109,147.5
+20260316,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,totals,Under,-111,147.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,h2h,Illinois Fighting Illini,-10000,
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,h2h,Pennsylvania Quakers,3000,
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,spreads,Illinois Fighting Illini,-110,-24.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,spreads,Pennsylvania Quakers,-110,24.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,totals,Over,-115,148.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,totals,Under,-105,148.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,fanduel,h2h,Illinois Fighting Illini,-10000,
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,fanduel,h2h,Pennsylvania Quakers,2200,
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,fanduel,spreads,Illinois Fighting Illini,-115,-23.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,fanduel,spreads,Pennsylvania Quakers,-105,23.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,fanduel,totals,Over,-110,149.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,fanduel,totals,Under,-110,149.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,betmgm,h2h,Illinois Fighting Illini,-10000,
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,betmgm,h2h,Pennsylvania Quakers,2500,
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,betmgm,spreads,Illinois Fighting Illini,-110,-24.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,betmgm,spreads,Pennsylvania Quakers,-110,24.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,betmgm,totals,Over,-110,149.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,betmgm,totals,Under,-110,149.5
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,pinnacle,spreads,Illinois Fighting Illini,-116,-24.0
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,pinnacle,spreads,Pennsylvania Quakers,-105,24.0
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,pinnacle,totals,Over,-110,151.0
+20260316,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,pinnacle,totals,Under,-114,151.0
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,draftkings,h2h,Georgia Bulldogs,-142,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,draftkings,h2h,Saint Louis Billikens,120,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,draftkings,spreads,Georgia Bulldogs,-105,-2.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,draftkings,spreads,Saint Louis Billikens,-115,2.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,draftkings,totals,Over,-105,171.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,draftkings,totals,Under,-115,171.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,h2h,Georgia Bulldogs,-134,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,h2h,Saint Louis Billikens,112,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,spreads,Georgia Bulldogs,-110,-2.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,spreads,Saint Louis Billikens,-110,2.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,totals,Over,-110,169.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,totals,Under,-110,169.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,h2h,Georgia Bulldogs,-145,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,h2h,Saint Louis Billikens,120,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,spreads,Georgia Bulldogs,-110,-2.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,spreads,Saint Louis Billikens,-110,2.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,totals,Over,-105,170.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,totals,Under,-115,170.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,spreads,Georgia Bulldogs,-116,-2.0
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,spreads,Saint Louis Billikens,100,2.0
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,totals,Over,-113,169.0
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,totals,Under,-107,169.0
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,draftkings,h2h,Gonzaga Bulldogs,-5000,
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,draftkings,h2h,Kennesaw St Owls,1800,
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,draftkings,spreads,Gonzaga Bulldogs,-118,-19.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,draftkings,spreads,Kennesaw St Owls,-102,19.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,draftkings,totals,Over,-110,157.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,draftkings,totals,Under,-110,157.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,fanduel,h2h,Gonzaga Bulldogs,-3500,
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,fanduel,h2h,Kennesaw St Owls,1280,
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,fanduel,spreads,Gonzaga Bulldogs,-108,-19.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,fanduel,spreads,Kennesaw St Owls,-112,19.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,fanduel,totals,Over,-110,157.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,fanduel,totals,Under,-110,157.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,betmgm,h2h,Gonzaga Bulldogs,-5000,
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,betmgm,h2h,Kennesaw St Owls,1400,
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,betmgm,spreads,Gonzaga Bulldogs,-110,-20.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,betmgm,spreads,Kennesaw St Owls,-110,20.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,betmgm,totals,Over,-110,156.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,betmgm,totals,Under,-110,156.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,pinnacle,spreads,Gonzaga Bulldogs,-106,-20.0
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,pinnacle,spreads,Kennesaw St Owls,-114,20.0
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,pinnacle,totals,Over,-109,157.5
+20260316,2026-03-20T02:00:00Z,Gonzaga Bulldogs,Kennesaw St Owls,pinnacle,totals,Under,-111,157.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,h2h,Houston Cougars,-10000,
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,h2h,Idaho Vandals,3000,
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,spreads,Houston Cougars,-102,-24.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,spreads,Idaho Vandals,-118,24.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,totals,Over,-110,135.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,totals,Under,-110,135.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,h2h,Houston Cougars,-7000,
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,h2h,Idaho Vandals,2000,
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,spreads,Houston Cougars,-115,-22.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,spreads,Idaho Vandals,-105,22.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,totals,Over,-106,136.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,totals,Under,-114,136.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,h2h,Houston Cougars,-10000,
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,h2h,Idaho Vandals,2500,
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,spreads,Houston Cougars,-115,-23.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,spreads,Idaho Vandals,-105,23.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,totals,Over,-115,135.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,totals,Under,-105,135.5
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,pinnacle,spreads,Houston Cougars,-117,-23.0
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,pinnacle,spreads,Idaho Vandals,-104,23.0
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,pinnacle,totals,Over,-113,136.0
+20260316,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,pinnacle,totals,Under,-111,136.0
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,h2h,Kentucky Wildcats,-162,
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,h2h,Santa Clara Broncos,136,
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,spreads,Kentucky Wildcats,-105,-4.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,spreads,Santa Clara Broncos,-115,4.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,totals,Over,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,totals,Under,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,h2h,Kentucky Wildcats,-166,
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,h2h,Santa Clara Broncos,138,
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,spreads,Kentucky Wildcats,-115,-3.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,spreads,Santa Clara Broncos,-105,3.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,totals,Over,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,totals,Under,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,h2h,Kentucky Wildcats,-180,
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,h2h,Santa Clara Broncos,145,
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,spreads,Kentucky Wildcats,-110,-4.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,spreads,Santa Clara Broncos,-110,4.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,totals,Over,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,totals,Under,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,pinnacle,spreads,Kentucky Wildcats,-103,-4.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,pinnacle,spreads,Santa Clara Broncos,-113,4.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,pinnacle,totals,Over,-110,160.5
+20260316,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,pinnacle,totals,Under,-110,160.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,h2h,Akron Zips,270,
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,h2h,Texas Tech Red Raiders,-340,
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,spreads,Akron Zips,-110,7.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,spreads,Texas Tech Red Raiders,-110,-7.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,totals,Over,-110,156.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,totals,Under,-110,156.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,h2h,Akron Zips,235,
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,h2h,Texas Tech Red Raiders,-295,
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,spreads,Akron Zips,-110,7.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,spreads,Texas Tech Red Raiders,-110,-7.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,totals,Over,-115,156.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,totals,Under,-105,156.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,h2h,Akron Zips,260,
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,h2h,Texas Tech Red Raiders,-325,
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,spreads,Akron Zips,-115,7.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,spreads,Texas Tech Red Raiders,-105,-7.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,totals,Over,-110,156.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,totals,Under,-110,156.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,pinnacle,spreads,Akron Zips,-109,7.0
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,pinnacle,spreads,Texas Tech Red Raiders,-107,-7.0
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,pinnacle,totals,Over,-109,155.5
+20260316,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,pinnacle,totals,Under,-111,155.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,h2h,Arizona Wildcats,-100000,
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,h2h,LIU Sharks,6500,
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,spreads,Arizona Wildcats,-110,-31.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,spreads,LIU Sharks,-110,31.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,totals,Over,-110,152.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,totals,Under,-110,152.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betmgm,spreads,Arizona Wildcats,-110,-31.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betmgm,spreads,LIU Sharks,-110,31.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betmgm,totals,Over,-115,151.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betmgm,totals,Under,-105,151.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,pinnacle,spreads,Arizona Wildcats,-117,-31.0
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,pinnacle,spreads,LIU Sharks,-104,31.0
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,pinnacle,totals,Over,-103,152.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,pinnacle,totals,Under,-122,152.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,h2h,Arizona Wildcats,-20000,
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,h2h,LIU Sharks,3500,
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,spreads,Arizona Wildcats,-110,-31.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,spreads,LIU Sharks,-110,31.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,totals,Over,-105,152.5
+20260316,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,totals,Under,-115,152.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,h2h,Virginia Cavaliers,-3500,
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,h2h,Wright St Raiders,1280,
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,spreads,Virginia Cavaliers,-110,-18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,spreads,Wright St Raiders,-110,18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,totals,Over,-110,145.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,totals,Under,-110,145.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,h2h,Virginia Cavaliers,-3600,
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,h2h,Wright St Raiders,1500,
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,spreads,Virginia Cavaliers,-110,-18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,spreads,Wright St Raiders,-110,18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,totals,Over,-110,145.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,totals,Under,-110,145.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,h2h,Virginia Cavaliers,-3000,
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,h2h,Wright St Raiders,1200,
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,spreads,Virginia Cavaliers,-110,-18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,spreads,Wright St Raiders,-110,18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,totals,Over,-110,145.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,totals,Under,-110,145.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,pinnacle,spreads,Virginia Cavaliers,-102,-18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,pinnacle,spreads,Wright St Raiders,-114,18.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,pinnacle,totals,Over,-106,146.5
+20260316,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,pinnacle,totals,Under,-115,146.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,h2h,Iowa State Cyclones,-8000,
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,h2h,Tennessee St Tigers,2200,
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,spreads,Iowa State Cyclones,-105,-25.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,spreads,Tennessee St Tigers,-115,25.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,totals,Over,-115,148.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,totals,Under,-105,148.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,h2h,Iowa State Cyclones,-10000,
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,h2h,Tennessee St Tigers,2400,
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,spreads,Iowa State Cyclones,-115,-24.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,spreads,Tennessee St Tigers,-105,24.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,totals,Over,-110,149.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,totals,Under,-110,149.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,h2h,Iowa State Cyclones,-10000,
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,h2h,Tennessee St Tigers,3000,
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,spreads,Iowa State Cyclones,-110,-25.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,spreads,Tennessee St Tigers,-110,25.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,totals,Over,-115,148.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,totals,Under,-105,148.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,pinnacle,spreads,Iowa State Cyclones,-116,-24.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,pinnacle,spreads,Tennessee St Tigers,-104,24.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,pinnacle,totals,Over,-104,149.5
+20260316,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,pinnacle,totals,Under,-121,149.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,h2h,Alabama Crimson Tide,-900,
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,h2h,Hofstra Pride,590,
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,spreads,Alabama Crimson Tide,-110,-13.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,spreads,Hofstra Pride,-110,13.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,totals,Over,-110,161.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,totals,Under,-110,161.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,h2h,Alabama Crimson Tide,-1000,
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,h2h,Hofstra Pride,625,
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,spreads,Alabama Crimson Tide,-118,-13.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,spreads,Hofstra Pride,-102,13.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,totals,Over,-110,161.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,totals,Under,-110,161.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,pinnacle,spreads,Alabama Crimson Tide,-108,-14.0
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,pinnacle,spreads,Hofstra Pride,-108,14.0
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,pinnacle,totals,Over,-110,161.0
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,pinnacle,totals,Under,-110,161.0
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,h2h,Alabama Crimson Tide,-900,
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,h2h,Hofstra Pride,600,
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,spreads,Alabama Crimson Tide,-118,-13.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,spreads,Hofstra Pride,-102,13.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,totals,Over,-110,161.5
+20260316,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,totals,Under,-110,161.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,h2h,Utah State Aggies,-146,
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,h2h,Villanova Wildcats,122,
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,spreads,Utah State Aggies,-110,-2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,spreads,Villanova Wildcats,-110,2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,totals,Over,-115,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,totals,Under,-105,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,h2h,Utah State Aggies,-142,
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,h2h,Villanova Wildcats,120,
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,spreads,Utah State Aggies,-110,-2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,spreads,Villanova Wildcats,-110,2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,totals,Over,-110,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,totals,Under,-110,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,h2h,Utah State Aggies,-145,
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,h2h,Villanova Wildcats,120,
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,spreads,Utah State Aggies,-115,-2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,spreads,Villanova Wildcats,-105,2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,totals,Over,-105,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,totals,Under,-115,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,spreads,Utah State Aggies,-117,-2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,spreads,Villanova Wildcats,100,2.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,totals,Over,-110,147.5
+20260316,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,totals,Under,-110,147.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,h2h,Clemson Tigers,120,
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,h2h,Iowa Hawkeyes,-142,
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,spreads,Clemson Tigers,-110,2.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,spreads,Iowa Hawkeyes,-110,-2.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,totals,Over,-110,131.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,totals,Under,-110,131.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,h2h,Clemson Tigers,118,
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,h2h,Iowa Hawkeyes,-142,
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,spreads,Clemson Tigers,-110,2.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,spreads,Iowa Hawkeyes,-110,-2.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,totals,Over,-106,130.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,totals,Under,-114,130.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,h2h,Clemson Tigers,120,
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,h2h,Iowa Hawkeyes,-145,
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,spreads,Clemson Tigers,-115,2.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,spreads,Iowa Hawkeyes,-105,-2.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,totals,Over,-110,130.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,totals,Under,-110,130.5
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,pinnacle,spreads,Clemson Tigers,-114,3.0
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,pinnacle,spreads,Iowa Hawkeyes,-102,-3.0
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,pinnacle,totals,Over,-107,131.0
+20260316,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,pinnacle,totals,Under,-113,131.0
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,h2h,Northern Iowa Panthers,440,
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,h2h,St. John's Red Storm,-610,
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,spreads,Northern Iowa Panthers,-105,10.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,spreads,St. John's Red Storm,-115,-10.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,totals,Over,-110,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,totals,Under,-110,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betmgm,h2h,Northern Iowa Panthers,450,
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betmgm,h2h,St. John's Red Storm,-625,
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betmgm,totals,Over,-110,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betmgm,totals,Under,-110,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,pinnacle,spreads,Northern Iowa Panthers,-112,11.0
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,pinnacle,spreads,St. John's Red Storm,-104,-11.0
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,pinnacle,totals,Over,-104,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,pinnacle,totals,Under,-117,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,h2h,Northern Iowa Panthers,410,
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,h2h,St. John's Red Storm,-550,
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,spreads,Northern Iowa Panthers,-110,11.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,spreads,St. John's Red Storm,-110,-11.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,totals,Over,-110,132.5
+20260316,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,totals,Under,-110,132.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,h2h,UCF Knights,185,
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,h2h,UCLA Bruins,-225,
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,spreads,UCF Knights,-115,6.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,spreads,UCLA Bruins,-105,-6.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,totals,Over,-115,152.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,totals,Under,-105,152.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,h2h,UCF Knights,188,
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,h2h,UCLA Bruins,-230,
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,spreads,UCF Knights,-105,5.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,spreads,UCLA Bruins,-115,-5.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,totals,Over,-110,153.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,totals,Under,-110,153.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,h2h,UCF Knights,195,
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,h2h,UCLA Bruins,-235,
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,spreads,UCF Knights,-110,6.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,spreads,UCLA Bruins,-110,-6.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,totals,Over,-110,152.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,totals,Under,-110,152.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,pinnacle,spreads,UCF Knights,-107,6.0
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,pinnacle,spreads,UCLA Bruins,-109,-6.0
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,pinnacle,totals,Over,-110,152.5
+20260316,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,pinnacle,totals,Under,-110,152.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,fanduel,h2h,Purdue Boilermakers,-10000,
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,fanduel,h2h,Queens University Royals,2400,
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,fanduel,spreads,Purdue Boilermakers,-110,-24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,fanduel,spreads,Queens University Royals,-110,24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,fanduel,totals,Over,-110,163.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,fanduel,totals,Under,-110,163.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,draftkings,h2h,Purdue Boilermakers,-10000,
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,draftkings,h2h,Queens University Royals,3000,
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,draftkings,spreads,Purdue Boilermakers,-110,-24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,draftkings,spreads,Queens University Royals,-110,24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,draftkings,totals,Over,-110,163.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,draftkings,totals,Under,-110,163.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,pinnacle,spreads,Purdue Boilermakers,-117,-24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,pinnacle,spreads,Queens University Royals,-104,24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,pinnacle,totals,Over,-109,163.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,pinnacle,totals,Under,-115,163.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,betmgm,h2h,Purdue Boilermakers,-10000,
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,betmgm,h2h,Queens University Royals,2500,
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,betmgm,spreads,Purdue Boilermakers,-110,-24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,betmgm,spreads,Queens University Royals,-110,24.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,betmgm,totals,Over,-110,162.5
+20260316,2026-03-20T23:35:04Z,Purdue Boilermakers,Queens University Royals,betmgm,totals,Under,-110,162.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,h2h,Cal Baptist Lancers,680,
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,h2h,Kansas Jayhawks,-1200,
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,spreads,Cal Baptist Lancers,-120,14.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,spreads,Kansas Jayhawks,-102,-14.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,totals,Over,-110,136.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,totals,Under,-110,136.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,h2h,Cal Baptist Lancers,700,
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,h2h,Kansas Jayhawks,-1100,
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,spreads,Cal Baptist Lancers,-110,14.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,spreads,Kansas Jayhawks,-110,-14.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,totals,Over,-110,136.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,totals,Under,-110,136.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,h2h,Cal Baptist Lancers,700,
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,h2h,Kansas Jayhawks,-1100,
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,spreads,Cal Baptist Lancers,-110,14.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,spreads,Kansas Jayhawks,-110,-14.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,totals,Over,-105,137.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,totals,Under,-115,137.5
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,pinnacle,spreads,Cal Baptist Lancers,100,14.0
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,pinnacle,spreads,Kansas Jayhawks,-117,-14.0
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,pinnacle,totals,Over,-105,137.0
+20260316,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,pinnacle,totals,Under,-116,137.0
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,h2h,Furman Paladins,1400,
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,h2h,UConn Huskies,-4000,
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,spreads,Furman Paladins,-110,20.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,spreads,UConn Huskies,-110,-20.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,totals,Over,-110,136.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,totals,Under,-110,136.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,h2h,Furman Paladins,2200,
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,h2h,UConn Huskies,-8000,
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,spreads,Furman Paladins,-102,20.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,spreads,UConn Huskies,-118,-20.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,totals,Over,-110,137.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,totals,Under,-110,137.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,h2h,Furman Paladins,1500,
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,h2h,UConn Huskies,-5000,
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,spreads,Furman Paladins,-110,20.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,spreads,UConn Huskies,-110,-20.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,totals,Over,-105,137.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,totals,Under,-115,137.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,pinnacle,spreads,Furman Paladins,-111,21.0
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,pinnacle,spreads,UConn Huskies,-109,-21.0
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,pinnacle,totals,Over,-113,136.5
+20260316,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,pinnacle,totals,Under,-111,136.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,h2h,Miami Hurricanes,-135,
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,h2h,Missouri Tigers,114,
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,spreads,Miami Hurricanes,-102,-2.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,spreads,Missouri Tigers,-118,2.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,totals,Over,-110,148.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,totals,Under,-110,148.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,h2h,Miami Hurricanes,-138,
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,h2h,Missouri Tigers,115,
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,spreads,Miami Hurricanes,-120,-1.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,spreads,Missouri Tigers,-102,1.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,totals,Over,-115,147.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,totals,Under,-105,147.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,h2h,Miami Hurricanes,-145,
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,h2h,Missouri Tigers,118,
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,spreads,Miami Hurricanes,-110,-2.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,spreads,Missouri Tigers,-110,2.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,totals,Over,-110,147.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,totals,Under,-110,147.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,spreads,Miami Hurricanes,-106,-2.0
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,spreads,Missouri Tigers,-110,2.0
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,totals,Over,-102,148.5
+20260316,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,pinnacle,totals,Under,-119,148.5

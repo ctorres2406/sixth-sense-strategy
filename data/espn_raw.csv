@@ -25,3 +25,8 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260315,401851437,Pennsylvania Quakers at Yale Bulldogs,Pennsylvania Quakers,PENN,Yale Bulldogs,YALE,88,84,4,True,True,True,,,18-11,24-6,45.3,50.0,100.0,43.7,37.5,76.5
 20260315,401851277,Dayton Flyers at VCU Rams,VCU Rams,VCU,Dayton Flyers,DAY,70,62,8,True,True,True,,,27-7,23-11,40.4,45.8,68.4,43.4,33.3,52.9
 20260315,401851229,Wichita State Shockers at South Florida Bulls,South Florida Bulls,USF,Wichita State Shockers,WICH,70,55,15,True,True,True,,,25-8,22-11,37.7,27.3,78.3,33.9,21.1,65.0
+20260315,401851388,Purdue Boilermakers at Michigan Wolverines,Purdue Boilermakers,PUR,Michigan Wolverines,MICH,80,72,8,True,True,True,,,27-8,31-3,52.6,28.6,72.7,46.9,29.2,83.3
+20260315,401851571,Vanderbilt Commodores at Arkansas Razorbacks,Arkansas Razorbacks,ARK,Vanderbilt Commodores,VAN,86,75,11,True,True,True,,,26-8,26-8,51.7,62.5,73.3,37.9,41.7,100.0
+20260315,401851437,Pennsylvania Quakers at Yale Bulldogs,Pennsylvania Quakers,PENN,Yale Bulldogs,YALE,88,84,4,True,True,True,,,18-11,24-6,45.3,50.0,100.0,43.7,37.5,76.5
+20260315,401851277,Dayton Flyers at VCU Rams,VCU Rams,VCU,Dayton Flyers,DAY,70,62,8,True,True,True,,,27-7,23-11,40.4,45.8,68.4,43.4,33.3,52.9
+20260315,401851229,Wichita State Shockers at South Florida Bulls,South Florida Bulls,USF,Wichita State Shockers,WICH,70,55,15,True,True,True,,,25-8,22-11,37.7,27.3,78.3,33.9,21.1,65.0
