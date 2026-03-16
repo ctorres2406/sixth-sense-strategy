@@ -2785,8 +2785,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,h2h,SMU Mustangs,-290,
 20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,spreads,Miami (OH) RedHawks,-112,7.5
 20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,spreads,SMU Mustangs,-108,-7.5
-20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,totals,Over,-105,164.5
-20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,totals,Under,-115,164.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,totals,Over,-110,163.5
+20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,draftkings,totals,Under,-110,163.5
 20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,h2h,Miami (OH) RedHawks,235,
 20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,h2h,SMU Mustangs,-295,
 20260316,2026-03-19T01:15:00Z,SMU Mustangs,Miami (OH) RedHawks,fanduel,spreads,Miami (OH) RedHawks,-114,7.5
@@ -2947,8 +2947,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,spreads,North Dakota St Bison,-110,16.5
 20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,totals,Over,-105,143.5
 20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,betmgm,totals,Under,-115,143.5
-20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,spreads,Michigan St Spartans,-112,-16.0
-20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,spreads,North Dakota St Bison,-104,16.0
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,spreads,Michigan St Spartans,-115,-16.0
+20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,spreads,North Dakota St Bison,-102,16.0
 20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,totals,Over,-110,143.5
 20260316,2026-03-19T20:05:59Z,Michigan St Spartans,North Dakota St Bison,pinnacle,totals,Under,-110,143.5
 20260316,2026-03-19T20:25:05Z,Arkansas Razorbacks,Hawai'i Rainbow Warriors,fanduel,h2h,Arkansas Razorbacks,-1400,
@@ -3050,11 +3050,11 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,totals,Over,-110,169.5
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,fanduel,totals,Under,-110,169.5
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,h2h,Georgia Bulldogs,-145,
-20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,h2h,Saint Louis Billikens,120,
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,h2h,Saint Louis Billikens,118,
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,spreads,Georgia Bulldogs,-110,-2.5
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,spreads,Saint Louis Billikens,-110,2.5
-20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,totals,Over,-105,170.5
-20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,totals,Under,-115,170.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,totals,Over,-110,170.5
+20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,betmgm,totals,Under,-110,170.5
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,spreads,Georgia Bulldogs,-116,-2.0
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,spreads,Saint Louis Billikens,100,2.0
 20260316,2026-03-20T01:45:00Z,Georgia Bulldogs,Saint Louis Billikens,pinnacle,totals,Over,-113,169.0
