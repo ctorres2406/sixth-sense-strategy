@@ -29,7 +29,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests pandas beautifulsoup4 lxml
+        run: pip install requests pandas beautifulsoup4 lxml scikit-learn numpy
 
       - name: Fetch ESPN scores + odds + momentum
         env:
