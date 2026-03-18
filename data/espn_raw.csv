@@ -25,8 +25,13 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260315,401851437,Pennsylvania Quakers at Yale Bulldogs,Pennsylvania Quakers,PENN,Yale Bulldogs,YALE,88,84,4,True,True,True,,,18-11,24-6,45.3,50.0,100.0,43.7,37.5,76.5
 20260315,401851277,Dayton Flyers at VCU Rams,VCU Rams,VCU,Dayton Flyers,DAY,70,62,8,True,True,True,,,27-7,23-11,40.4,45.8,68.4,43.4,33.3,52.9
 20260315,401851229,Wichita State Shockers at South Florida Bulls,South Florida Bulls,USF,Wichita State Shockers,WICH,70,55,15,True,True,True,,,25-8,22-11,37.7,27.3,78.3,33.9,21.1,65.0
-20260315,401851388,Purdue Boilermakers at Michigan Wolverines,Purdue Boilermakers,PUR,Michigan Wolverines,MICH,80,72,8,True,True,True,,,27-8,31-3,52.6,28.6,72.7,46.9,29.2,83.3
-20260315,401851571,Vanderbilt Commodores at Arkansas Razorbacks,Arkansas Razorbacks,ARK,Vanderbilt Commodores,VAN,86,75,11,True,True,True,,,26-8,26-8,51.7,62.5,73.3,37.9,41.7,100.0
-20260315,401851437,Pennsylvania Quakers at Yale Bulldogs,Pennsylvania Quakers,PENN,Yale Bulldogs,YALE,88,84,4,True,True,True,,,18-11,24-6,45.3,50.0,100.0,43.7,37.5,76.5
-20260315,401851277,Dayton Flyers at VCU Rams,VCU Rams,VCU,Dayton Flyers,DAY,70,62,8,True,True,True,,,27-7,23-11,40.4,45.8,68.4,43.4,33.3,52.9
-20260315,401851229,Wichita State Shockers at South Florida Bulls,South Florida Bulls,USF,Wichita State Shockers,WICH,70,55,15,True,True,True,,,25-8,22-11,37.7,27.3,78.3,33.9,21.1,65.0
+20260317,401856434,Texas Longhorns at NC State Wolfpack,Texas Longhorns,TEX,NC State Wolfpack,NCSU,68,66,2,True,True,False,,,19-14,20-14,36.8,29.4,72.4,39.0,37.5,77.8
+20260317,401856435,UMBC Retrievers at Howard Bison,Howard Bison,HOW,UMBC Retrievers,UMBC,86,83,3,True,True,False,,,24-10,24-9,47.5,47.6,72.0,51.8,40.9,66.7
+20260317,401858195,Liberty Flames at George Mason Patriots,Liberty Flames,LIB,George Mason Patriots,GMU,77,71,6,True,False,False,,,26-7,23-10,49.1,35.3,85.0,39.0,29.4,83.3
+20260317,401858340,UNC Wilmington Seahawks at Yale Bulldogs,UNC Wilmington Seahawks,UNCW,Yale Bulldogs,YALE,68,67,1,True,False,False,,,27-6,24-7,36.2,38.5,57.1,37.3,29.6,40.9
+20260317,401858338,Wyoming Cowboys at Wichita State Shockers,Wichita State Shockers,WICH,Wyoming Cowboys,WYO,74,70,4,True,False,False,,,23-11,18-15,43.1,27.8,56.5,38.5,35.7,50.0
+20260317,401858339,Davidson Wildcats at Oklahoma State Cowboys,Oklahoma State Cowboys,OKST,Davidson Wildcats,DAV,84,80,4,True,False,False,,,20-14,20-14,50.0,46.7,70.0,42.9,37.5,71.4
+20260317,401858196,Stephen F. Austin Lumberjacks at Tulsa Golden Hurricane,Tulsa Golden Hurricane,TLSA,Stephen F. Austin Lumberjacks,SFA,89,84,5,True,False,False,,,27-7,28-6,35.8,27.3,78.0,45.7,31.3,62.5
+20260317,401858194,St. Thomas-Minnesota Tommies at Seattle U Redhawks,Seattle U Redhawks,SEA,St. Thomas-Minnesota Tommies,STMN,67,52,15,True,False,False,,,21-13,24-10,37.0,42.9,81.8,37.5,22.7,62.5
+20260317,401858193,South Alabama Jaguars at Auburn Tigers,Auburn Tigers,AUB,South Alabama Jaguars,USA,78,67,11,True,False,False,,,18-16,21-12,39.3,36.4,82.4,45.0,35.0,54.5
+20260317,401858197,UNLV Rebels at UC Irvine Anteaters,UNLV Rebels,UNLV,UC Irvine Anteaters,UCI,75,72,3,True,False,False,,,18-16,23-12,53.7,45.8,46.2,40.3,23.1,76.0
