@@ -44,13 +44,14 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260318,401858346,Dayton Flyers at Bradley Braves,Dayton Flyers,DAY,Bradley Braves,BRAD,80,66,14,True,False,False,,,24-11,21-13,52.1,50.0,84.0,45.1,45.5,71.4
 20260318,401858342,Sam Houston Bearkats at New Mexico Lobos,New Mexico Lobos,UNM,Sam Houston Bearkats,SHSU,107,83,24,True,False,False,,,24-10,22-12,52.7,38.2,80.0,48.5,31.8,55.6
 20260318,401858347,UIC Flames at California Golden Bears,California Golden Bears,CAL,UIC Flames,UIC,91,73,18,True,False,False,,,22-11,19-16,56.1,53.6,100.0,50.9,26.7,68.8
+20260318,401858348,Saint Joseph's Hawks at Colorado State Rams,Saint Joseph's Hawks,JOES,Colorado State Rams,CSU,69,64,5,True,False,False,,,23-11,21-13,39.7,30.4,80.0,36.2,23.3,75.0
 20260318,401856436,Miami (OH) RedHawks at SMU Mustangs,Miami (OH) RedHawks,M-OH,SMU Mustangs,SMU,89,79,10,True,True,False,,,32-1,20-14,45.3,39.0,68.2,47.7,23.8,80.0
 20260318,401856437,Prairie View A&M Panthers at Lehigh Mountain Hawks,Prairie View A&M Panthers,PV,Lehigh Mountain Hawks,LEH,67,55,12,True,True,False,,,19-17,18-17,47.4,33.3,83.3,36.2,25.0,58.3
-20260318,401858348,Saint Joseph's Hawks at Colorado State Rams,Saint Joseph's Hawks,JOES,Colorado State Rams,CSU,69,64,5,True,False,False,,,23-11,21-13,39.7,30.4,80.0,36.2,23.3,75.0
 20260318,401858344,Navy Midshipmen at Wake Forest Demon Deacons,Wake Forest Demon Deacons,WAKE,Navy Midshipmen,NAVY,82,72,10,True,False,False,,,18-16,26-8,48.2,26.7,95.2,43.1,31.8,69.2
 20260318,401858345,Kent State Golden Flashes at Illinois State Redbirds,Illinois State Redbirds,ILST,Kent State Golden Flashes,KENT,79,58,21,True,False,False,,,21-12,24-10,42.2,37.1,66.7,32.8,25.0,75.0
 20260318,401858343,George Washington Revolutionaries at Utah Valley Wolverines,George Washington Revolutionaries,GW,Utah Valley Wolverines,UVU,79,78,1,True,False,False,,,19-15,25-9,49.1,44.0,84.2,44.8,36.4,78.3
 20260318,401858346,Dayton Flyers at Bradley Braves,Dayton Flyers,DAY,Bradley Braves,BRAD,80,66,14,True,False,False,,,24-11,21-13,52.1,50.0,84.0,45.1,45.5,71.4
 20260318,401858342,Sam Houston Bearkats at New Mexico Lobos,New Mexico Lobos,UNM,Sam Houston Bearkats,SHSU,107,83,24,True,False,False,,,24-10,22-12,52.7,38.2,80.0,48.5,31.8,55.6
 20260318,401858341,Murray State Racers at Nevada Wolf Pack,Nevada Wolf Pack,NEV,Murray State Racers,MUR,89,75,14,True,False,False,,,23-12,20-13,50.7,33.3,88.9,47.5,40.7,61.5
+20260318,401858348,Saint Joseph's Hawks at Colorado State Rams,Saint Joseph's Hawks,JOES,Colorado State Rams,CSU,69,64,5,True,False,False,,,23-11,21-13,39.7,30.4,80.0,36.2,23.3,75.0
 20260318,401858347,UIC Flames at California Golden Bears,California Golden Bears,CAL,UIC Flames,UIC,91,73,18,True,False,False,,,22-11,19-16,56.1,53.6,100.0,50.9,26.7,68.8

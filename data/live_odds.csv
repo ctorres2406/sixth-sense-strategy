@@ -4469,14 +4469,6 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betmgm,h2h,Tennessee Volunteers,-625,
 20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betmgm,totals,Over,-105,149.5
 20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betmgm,totals,Under,-115,149.5
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,fanduel,h2h,Colorado St Rams,300,
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,fanduel,h2h,Saint Joseph's Hawks,-430,
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,fanduel,spreads,Colorado St Rams,200,1.5
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,fanduel,spreads,Saint Joseph's Hawks,-280,-1.5
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,betmgm,h2h,Colorado St Rams,1000,
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,betmgm,h2h,Saint Joseph's Hawks,-3000,
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,draftkings,h2h,Colorado St Rams,1100,
-20260319,2026-03-19T03:08:00Z,Colorado St Rams,Saint Joseph's Hawks,draftkings,h2h,Saint Joseph's Hawks,-2500,
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,h2h,Ohio State Buckeyes,-142,
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,h2h,TCU Horned Frogs,120,
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,spreads,Ohio State Buckeyes,-110,-2.5
@@ -4505,10 +4497,10 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,spreads,Troy Trojans,-115,13.5
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,totals,Over,-105,138.5
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,totals,Under,-115,138.5
-20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,h2h,Nebraska Cornhuskers,-1400,
-20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,h2h,Troy Trojans,800,
-20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,spreads,Nebraska Cornhuskers,-120,-12.5
-20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,spreads,Troy Trojans,-102,12.5
+20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,h2h,Nebraska Cornhuskers,-1200,
+20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,h2h,Troy Trojans,720,
+20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,spreads,Nebraska Cornhuskers,-118,-12.5
+20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,spreads,Troy Trojans,-104,12.5
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,totals,Over,-110,137.5
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,fanduel,totals,Under,-110,137.5
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,betmgm,h2h,Nebraska Cornhuskers,-1100,
@@ -4685,16 +4677,16 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,spreads,VCU Rams,-110,2.5
 20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,totals,Over,-115,151.5
 20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,betmgm,totals,Under,-105,151.5
-20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,h2h,North Carolina Tar Heels,-146,
-20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,h2h,VCU Rams,129,
-20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,spreads,North Carolina Tar Heels,-110,-2.5
-20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,spreads,VCU Rams,-102,2.5
+20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,h2h,North Carolina Tar Heels,-144,
+20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,h2h,VCU Rams,128,
+20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,spreads,North Carolina Tar Heels,-108,-2.5
+20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,spreads,VCU Rams,-104,2.5
 20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,totals,Over,100,152.0
 20260319,2026-03-19T22:50:00Z,North Carolina Tar Heels,VCU Rams,pinnacle,totals,Under,-117,152.0
-20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,h2h,Howard Bison,7000,
+20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,h2h,Howard Bison,8000,
 20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,h2h,Michigan Wolverines,-100000,
-20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,spreads,Howard Bison,-102,30.5
-20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,spreads,Michigan Wolverines,-120,-30.5
+20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,spreads,Howard Bison,-115,31.5
+20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,spreads,Michigan Wolverines,-105,-31.5
 20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,totals,Over,-115,151.5
 20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,fanduel,totals,Under,-105,151.5
 20260319,2026-03-19T23:10:42Z,Michigan Wolverines,Howard Bison,draftkings,h2h,Howard Bison,3500,
