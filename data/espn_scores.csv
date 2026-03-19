@@ -2,11 +2,11 @@ team1,seed1,team2,seed2,region,round,game_time,status,winner,score1,score2,ml_pi
 UMBC,16,Howard,16,First Four,R64,Tue Mar 17 TBD,upcoming,nan,,,Howard,55.1,,,,52.3,pending,pending,pending
 Texas,11,N.C. State,11,First Four,R64,Tue Mar 17 TBD,upcoming,nan,,,Texas,54.6,,,,51.9,pending,pending,pending
 Miami OH,11,SMU,11,First Four,R64,Wed Mar 18 TBD,upcoming,nan,,,Miami OH,51.4,,,,48.8,pending,pending,pending
-Prairie View A&M,16,Lehigh,16,First Four,R64,Wed Mar 18 TBD,upcoming,nan,,,Lehigh,55.1,,+3.5,Lehigh -3.5,54.0,pending,pending,pending
+Prairie View A&M,16,Lehigh,16,First Four,R64,Wed Mar 18 TBD,upcoming,nan,,,Lehigh,55.1,,+35.5,Lehigh -35.5,48.5,pending,pending,pending
 Duke,1,Siena,16,East,R64,Thu Mar 19 TBD,upcoming,nan,,,Duke,77.2,,,,73.3,pending,pending,pending
 Ohio St.,8,TCU,9,East,R64,Thu Mar 19 TBD,upcoming,nan,,,Ohio St.,57.7,,,,54.8,pending,pending,pending
-Louisville,6,South Florida,11,East,R64,Thu Mar 19 TBD,upcoming,nan,,,Louisville,70.8,-194,-4.5,Louisville -4.5,69.4,pending,pending,pending
-Michigan St.,3,North Dakota St.,14,East,R64,Thu Mar 19 TBD,upcoming,nan,,,Michigan St.,70.1,-1900,-16.5,Michigan St. -16.5,61.7,pending,pending,pending
+Louisville,6,South Florida,11,East,R64,Thu Mar 19 TBD,upcoming,nan,,,Louisville,70.8,-199,-4.5,Louisville -4.5,69.4,pending,pending,pending
+Michigan St.,3,North Dakota St.,14,East,R64,Thu Mar 19 TBD,upcoming,nan,,,Michigan St.,70.1,-1900,-15.8,Michigan St. -15.8,61.7,pending,pending,pending
 St. John's,5,Northern Iowa,12,East,R64,Fri Mar 20 7:10 PM ET,upcoming,nan,,,St. John's,65.8,,-9.5,,62.5,pending,pending,pending
 Kansas,4,Cal Baptist,13,East,R64,Fri Mar 20 9:45 PM ET,upcoming,nan,,,Kansas,73.1,,-14.5,,69.4,pending,pending,pending
 UCLA,7,UCF,10,East,R64,Fri Mar 20 7:25 PM ET,upcoming,nan,,,UCLA,58.4,,,,55.5,pending,pending,pending
@@ -14,7 +14,7 @@ Connecticut,2,Furman,15,East,R64,Fri Mar 20 10:00 PM ET,upcoming,nan,,,Connectic
 Arizona,1,LIU,16,West,R64,Thu Mar 19 TBD,upcoming,nan,,,Arizona,82.7,,,,78.6,pending,pending,pending
 Villanova,8,Utah St.,9,West,R64,Thu Mar 19 TBD,upcoming,nan,,,Utah St.,59.5,,,,56.5,pending,pending,pending
 BYU,6,TBD,11,West,R64,Thu Mar 19 TBD,upcoming,nan,,,TBD,63.3,,,,60.1,pending,pending,pending
-Gonzaga,3,Kennesaw St.,14,West,R64,Thu Mar 19 TBD,upcoming,nan,,,Gonzaga,74.7,,-21.2,,71.0,pending,pending,pending
+Gonzaga,3,Kennesaw St.,14,West,R64,Thu Mar 19 TBD,upcoming,nan,,,Gonzaga,74.7,,-21.5,,71.0,pending,pending,pending
 Wisconsin,5,High Point,12,West,R64,Fri Mar 20 TBD,upcoming,nan,,,Wisconsin,73.1,,,,69.4,pending,pending,pending
 Arkansas,4,Hawaii,13,West,R64,Fri Mar 20 TBD,upcoming,nan,,,Arkansas,83.3,,,,79.1,pending,pending,pending
 Miami FL,7,Missouri,10,West,R64,Fri Mar 20 TBD,upcoming,nan,,,Miami FL,64.6,,,,61.4,pending,pending,pending
@@ -33,5 +33,5 @@ Tennessee,6,TBD,11,Midwest,R64,Fri Mar 20 4:25 PM ET,upcoming,nan,,,TBD,51.9,,,,
 Virginia,3,Wright St.,14,Midwest,R64,Fri Mar 20 1:50 PM ET,upcoming,nan,,,Virginia,70.8,,,,67.3,pending,pending,pending
 Texas Tech,5,Akron,12,Midwest,R64,Fri Mar 20 12:40 PM ET,upcoming,nan,,,Texas Tech,70.6,,,,67.1,pending,pending,pending
 Alabama,4,Hofstra,13,Midwest,R64,Fri Mar 20 3:15 PM ET,upcoming,nan,,,Alabama,70.1,,,,66.6,pending,pending,pending
-Kentucky,7,Santa Clara,10,Midwest,R64,Fri Mar 20 12:15 PM ET,upcoming,nan,,,Santa Clara,57.6,+131,-3.2,Santa Clara +3.2,56.4,pending,pending,pending
+Kentucky,7,Santa Clara,10,Midwest,R64,Fri Mar 20 12:15 PM ET,upcoming,nan,,,Santa Clara,57.6,+132,-3.5,Santa Clara +3.5,56.4,pending,pending,pending
 Iowa St.,2,Tennessee St.,15,Midwest,R64,Fri Mar 20 2:50 PM ET,upcoming,nan,,,Iowa St.,73.1,,-24.5,,69.4,pending,pending,pending
