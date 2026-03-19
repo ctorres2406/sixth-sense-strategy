@@ -1,4 +1,4 @@
-## “””
+"""
 generate_picks.py
 
 Runs the v7 GBM model on every matchup in the current bracket and writes
@@ -27,8 +27,8 @@ Fixes vs original:
   so scorekeeping and record-tracking work on the dashboard
 - game_time passed through from bracket.csv to output
 - espn_raw.csv (not espn_scores.csv) used as the scores source, since
-  fetch_data.py now writes raw ESPN data there
-  “””
+  fetch_data.py now writes raw ESPN data ””
+"""
 
 import os
 import pickle
