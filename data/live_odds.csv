@@ -4485,10 +4485,10 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,h2h,TCU Horned Frogs,125,
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,totals,Over,-105,146.5
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,betmgm,totals,Under,-115,146.5
-20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,h2h,Ohio State Buckeyes,-139,
-20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,h2h,TCU Horned Frogs,123,
-20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,spreads,Ohio State Buckeyes,-104,-2.5
-20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,spreads,TCU Horned Frogs,-108,2.5
+20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,h2h,Ohio State Buckeyes,-141,
+20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,h2h,TCU Horned Frogs,125,
+20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,spreads,Ohio State Buckeyes,-106,-2.5
+20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,spreads,TCU Horned Frogs,-106,2.5
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,totals,Over,-118,146.0
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,pinnacle,totals,Under,101,146.0
 20260319,2026-03-19T16:40:00Z,Nebraska Cornhuskers,Troy Trojans,draftkings,h2h,Nebraska Cornhuskers,-1000,
@@ -4831,8 +4831,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,draftkings,totals,Under,-115,138.5
 20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,h2h,Houston Cougars,-10000,
 20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,h2h,Idaho Vandals,3000,
-20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,spreads,Houston Cougars,-110,-23.5
-20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,spreads,Idaho Vandals,-110,23.5
+20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,spreads,Houston Cougars,-114,-23.5
+20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,spreads,Idaho Vandals,-106,23.5
 20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,totals,Over,-115,137.5
 20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,fanduel,totals,Under,-105,137.5
 20260319,2026-03-20T02:10:00Z,Houston Cougars,Idaho Vandals,betmgm,h2h,Houston Cougars,-10000,
