@@ -4475,8 +4475,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,spreads,TCU Horned Frogs,-110,2.5
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,totals,Over,-112,145.5
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,draftkings,totals,Under,-108,145.5
-20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,h2h,Ohio State Buckeyes,-154,
-20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,h2h,TCU Horned Frogs,128,
+20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,h2h,Ohio State Buckeyes,-146,
+20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,h2h,TCU Horned Frogs,122,
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,spreads,Ohio State Buckeyes,-110,-2.5
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,spreads,TCU Horned Frogs,-110,2.5
 20260319,2026-03-19T16:15:00Z,Ohio State Buckeyes,TCU Horned Frogs,fanduel,totals,Over,-105,146.5
@@ -4545,8 +4545,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,spreads,Wisconsin Badgers,-102,-10.5
 20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,totals,Over,-110,162.5
 20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,draftkings,totals,Under,-110,162.5
-20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,h2h,High Point Panthers,360,
-20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,h2h,Wisconsin Badgers,-480,
+20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,h2h,High Point Panthers,390,
+20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,h2h,Wisconsin Badgers,-530,
 20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,spreads,High Point Panthers,-118,10.5
 20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,spreads,Wisconsin Badgers,-104,-10.5
 20260319,2026-03-19T17:50:00Z,Wisconsin Badgers,High Point Panthers,fanduel,totals,Over,-105,163.5
@@ -4747,8 +4747,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,betmgm,totals,Under,-110,147.5
 20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,h2h,Saint Mary's Gaels,-150,
 20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,h2h,Texas A&M Aggies,133,
-20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,spreads,Saint Mary's Gaels,-117,-2.5
-20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,spreads,Texas A&M Aggies,104,2.5
+20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,spreads,Saint Mary's Gaels,-108,-3.0
+20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,spreads,Texas A&M Aggies,-104,3.0
 20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,totals,Over,-113,147.5
 20260319,2026-03-19T23:35:00Z,Saint Mary's Gaels,Texas A&M Aggies,pinnacle,totals,Under,-103,147.5
 20260319,2026-03-20T01:25:00Z,Illinois Fighting Illini,Pennsylvania Quakers,draftkings,h2h,Illinois Fighting Illini,-8000,
@@ -5015,8 +5015,8 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260319,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,spreads,Villanova Wildcats,-110,2.0
 20260319,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,totals,Over,-104,147.5
 20260319,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,pinnacle,totals,Under,-112,147.5
-20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,h2h,Miami (OH) RedHawks,440,
-20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,h2h,Tennessee Volunteers,-610,
+20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,h2h,Miami (OH) RedHawks,450,
+20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,h2h,Tennessee Volunteers,-630,
 20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,spreads,Miami (OH) RedHawks,-110,11.5
 20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,spreads,Tennessee Volunteers,-110,-11.5
 20260319,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,totals,Over,-110,149.5
