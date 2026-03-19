@@ -25,7 +25,7 @@ North Carolina,6,VCU,11,South,R64,Thu Mar 19 TBD,upcoming,nan,,,VCU,68.8,,-2.5,V
 Nebraska,4,Troy,13,South,R64,Thu Mar 19 TBD,upcoming,nan,,,Nebraska,81.7,,,,77.6,pending,pending,pending
 Saint Mary's,7,Texas A&M,10,South,R64,Thu Mar 19 7:35 PM ET,upcoming,nan,,,Texas A&M,54.6,,-3.0,Texas A&M +3.0,55.7,pending,pending,pending
 Houston,2,Idaho,15,South,R64,Thu Mar 19 10:10 PM ET,upcoming,nan,,,Houston,68.9,,,,65.5,pending,pending,pending
-Vanderbilt,5,McNeese,12,South,R64,Thu Mar 19 TBD,upcoming,nan,,,Vanderbilt,73.1,-733,-11.5,Vanderbilt -11.5,68.7,pending,pending,pending
+Vanderbilt,5,McNeese,12,South,R64,Thu Mar 19 TBD,upcoming,nan,,,Vanderbilt,73.1,-725,-11.5,Vanderbilt -11.5,68.7,pending,pending,pending
 Illinois,3,Penn,14,South,R64,Thu Mar 19 TBD,upcoming,nan,,,Illinois,82.9,,,,78.8,pending,pending,pending
 Michigan,1,Howard,16,Midwest,R64,Thu Mar 19 7:10 PM ET,upcoming,nan,,,Michigan,87.3,,,,82.9,pending,pending,pending
 Georgia,8,Saint Louis,9,Midwest,R64,Thu Mar 19 9:45 PM ET,upcoming,nan,,,Georgia,51.5,,-2.5,,48.9,pending,pending,pending
@@ -35,3 +35,37 @@ Texas Tech,5,Akron,12,Midwest,R64,Fri Mar 20 12:40 PM ET,upcoming,nan,,,Texas Te
 Alabama,4,Hofstra,13,Midwest,R64,Fri Mar 20 3:15 PM ET,upcoming,nan,,,Alabama,70.1,,,,66.6,pending,pending,pending
 Kentucky,7,Santa Clara,10,Midwest,R64,Fri Mar 20 12:15 PM ET,upcoming,nan,,,Santa Clara,57.6,+132,-3.5,Santa Clara +3.5,56.4,pending,pending,pending
 Iowa St.,2,Tennessee St.,15,Midwest,R64,Fri Mar 20 2:50 PM ET,upcoming,nan,,,Iowa St.,73.1,,-24.5,,69.4,pending,pending,pending
+Duke,1,Ohio St.,8,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Duke,70.8,,,,67.3,pending,pending,pending
+Louisville,6,Michigan St.,3,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Michigan St.,59.0,-1900,-4.5,Michigan St. -15.8,51.9,pending,pending,pending
+St. John's,5,Kansas,4,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Kansas,55.1,,,,52.3,pending,pending,pending
+UCLA,7,Connecticut,2,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Connecticut,71.4,,,,67.8,pending,pending,pending
+Howard,16,Texas,11,First Four,R32,Sat/Sun Mar 21-22,upcoming,,,,Texas,66.4,,,,63.1,pending,pending,pending
+Miami OH,11,Lehigh,16,First Four,R32,Sat/Sun Mar 21-22,upcoming,,,,Miami OH,70.6,,,,67.1,pending,pending,pending
+Florida,1,Iowa,9,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Florida,54.6,,,,51.9,pending,pending,pending
+VCU,11,Nebraska,4,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Nebraska,72.8,,,,69.2,pending,pending,pending
+Texas A&M,10,Houston,2,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Houston,82.0,,,,77.9,pending,pending,pending
+Vanderbilt,5,Illinois,3,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Illinois,68.8,,-11.5,Illinois +11.5,64.7,pending,pending,pending
+Michigan,1,Georgia,8,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Michigan,73.1,,,,69.4,pending,pending,pending
+Miami OH,11,Virginia,3,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Virginia,77.7,,,,73.8,pending,pending,pending
+Texas Tech,5,Alabama,4,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Alabama,53.2,,,,50.5,pending,pending,pending
+Santa Clara,10,Iowa St.,2,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Iowa St.,70.2,,+3.5,Iowa St. -3.5,68.8,pending,pending,pending
+Arizona,1,Utah St.,9,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Arizona,76.4,,,,72.6,pending,pending,pending
+Texas,11,Gonzaga,3,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Gonzaga,58.9,,,,56.0,pending,pending,pending
+Wisconsin,5,Arkansas,4,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Arkansas,71.9,,,,68.3,pending,pending,pending
+Miami FL,7,Purdue,2,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Purdue,72.7,,,,69.1,pending,pending,pending
+Duke,1,Michigan St.,3,East,S16,Thu/Fri Mar 26-27,upcoming,,,,Duke,66.5,,+15.8,,63.2,pending,pending,pending
+Kansas,4,Connecticut,2,East,S16,Thu/Fri Mar 26-27,upcoming,,,,Connecticut,68.8,,,,65.4,pending,pending,pending
+Texas,11,Miami OH,11,First Four,S16,Thu/Fri Mar 26-27,upcoming,,,,Texas,62.6,,,,59.5,pending,pending,pending
+Florida,1,Nebraska,4,South,S16,Thu/Fri Mar 26-27,upcoming,,,,Nebraska,57.2,,,,54.3,pending,pending,pending
+Houston,2,Illinois,3,South,S16,Thu/Fri Mar 26-27,upcoming,,,,Illinois,65.6,,,,62.3,pending,pending,pending
+Michigan,1,Virginia,3,Midwest,S16,Thu/Fri Mar 26-27,upcoming,,,,Michigan,69.1,,,,65.6,pending,pending,pending
+Alabama,4,Iowa St.,2,Midwest,S16,Thu/Fri Mar 26-27,upcoming,,,,Iowa St.,67.0,,,,63.6,pending,pending,pending
+Arizona,1,Gonzaga,3,West,S16,Thu/Fri Mar 26-27,upcoming,,,,Arizona,66.9,,,,63.6,pending,pending,pending
+Arkansas,4,Purdue,2,West,S16,Thu/Fri Mar 26-27,upcoming,,,,Purdue,57.8,,,,54.9,pending,pending,pending
+Duke,1,Connecticut,2,East,E8,Sat/Sun Mar 28-29,upcoming,,,,Connecticut,58.9,,,,56.0,pending,pending,pending
+Nebraska,4,Illinois,3,South,E8,Sat/Sun Mar 28-29,upcoming,,,,Illinois,73.8,,,,70.1,pending,pending,pending
+Michigan,1,Iowa St.,2,Midwest,E8,Sat/Sun Mar 28-29,upcoming,,,,Michigan,56.4,,,,53.6,pending,pending,pending
+Arizona,1,Purdue,2,West,E8,Sat/Sun Mar 28-29,upcoming,,,,Arizona,61.0,,,,57.9,pending,pending,pending
+Illinois,3,Arizona,1,Final Four,FF,Sat Apr 4,upcoming,,,,Arizona,66.7,,,,63.4,pending,pending,pending
+Connecticut,2,Michigan,1,Final Four,FF,Sat Apr 4,upcoming,,,,Michigan,65.6,,,,62.3,pending,pending,pending
+Arizona,1,Michigan,1,Championship,CHAMP,Mon Apr 6,upcoming,,,,Michigan,65.6,,,,62.3,pending,pending,pending
