@@ -1,9 +1,9 @@
 team,conf_wins,conf_losses,conf_games,conf_champ,avg_win_margin,avg_loss_margin,momentum_score,hot,cold,last_updated
+Illinois,2,0,2,True,21.0,0.0,42.0,True,False,20260319
 South Florida,2,0,2,True,18.5,0.0,37.0,True,False,20260319
-Illinois,1,0,1,False,21.0,0.0,21.0,False,False,20260319
+Prairie View A&M,3,0,3,True,10.0,0.0,30.0,True,False,20260319
 VCU,2,0,2,True,10.5,0.0,21.0,True,False,20260319
 St. John's,1,0,1,False,20.0,0.0,20.0,False,False,20260319
-Prairie View A&M,2,0,2,True,9.0,0.0,18.0,False,False,20260319
 Purdue,2,0,2,True,7.5,0.0,15.0,False,False,20260319
 Kansas,2,0,2,True,7.0,0.0,14.0,False,False,20260319
 Arkansas,2,0,2,True,7.0,0.0,14.0,False,False,20260319
@@ -63,7 +63,7 @@ Virginia,0,1,1,False,0.0,4.0,-8.0,False,False,20260319
 Michigan,1,1,2,False,3.0,8.0,-13.0,False,False,20260319
 UCLA,0,1,1,False,0.0,7.0,-14.0,False,False,20260319
 North Carolina,0,1,1,False,0.0,7.0,-14.0,False,False,20260319
-SMU,0,1,1,False,0.0,10.0,-20.0,False,True,20260319
 Alabama,0,1,1,False,0.0,11.0,-22.0,False,True,20260319
-Lehigh,0,1,1,False,0.0,12.0,-24.0,False,True,20260319
-Houston,0,2,2,False,0.0,14.5,-58.0,False,True,20260319
+SMU,0,2,2,False,0.0,10.0,-40.0,False,True,20260319
+Lehigh,0,2,2,False,0.0,12.0,-48.0,False,True,20260319
+Houston,0,3,3,False,0.0,17.7,-106.0,False,True,20260319
