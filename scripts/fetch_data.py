@@ -3,11 +3,11 @@ fetch_data.py
 Pulls ESPN scoreboard + odds data daily and saves to /data folder.
 Runs via GitHub Actions on a schedule.
 
-Changes from original:
-  - Raw ESPN scores written to espn_raw.csv (not espn_scores.csv)
-    so generate_picks.py owns espn_scores.csv exclusively
-  - TOURNEY_TEAMS built dynamically from data/bracket.csv when available,
-    falls back to a static list so momentum profiles always have data
+Outputs:
+  espn_raw.csv         — completed games (all D1, used for momentum profiles)
+  tourney_schedule.csv — upcoming + live NCAA tournament games (feed for generate_picks.py)
+  live_odds.csv        — current odds from The-Odds-API
+  momentum_profiles.csv
 """
 
 import json
@@ -23,51 +23,57 @@ DATA_DIR.mkdir(exist_ok=True)
 TODAY     = datetime.utcnow().strftime("%Y%m%d")
 YESTERDAY = (datetime.utcnow() - timedelta(days=1)).strftime("%Y%m%d")
 
+ROUND_LABEL = {
+    "First Round":        "R64",
+    "Second Round":       "R32",
+    "Sweet 16":           "S16",
+    "Elite Eight":        "E8",
+    "Final Four":         "FF",
+    "National Championship": "CHAMP",
+    # ESPN sometimes uses these variants
+    "1st Round":          "R64",
+    "2nd Round":          "R32",
+}
+
 
 # ─────────────────────────────────────────────
 # TOURNEY TEAMS — dynamic from bracket.csv
 # ─────────────────────────────────────────────
-def load_tourney_teams() -> list[str]:
-    """
-    Load team names from data/bracket.csv if it exists (post-Selection Sunday).
-    Falls back to a static list so momentum profiles still run pre-bracket.
-    """
+def load_tourney_teams() -> list:
     bracket_path = DATA_DIR / "bracket.csv"
     if bracket_path.exists():
         try:
             df = pd.read_csv(bracket_path)
             teams = set()
-            if "team1" in df.columns:
-                teams.update(df["team1"].dropna().astype(str).tolist())
-            if "team2" in df.columns:
-                teams.update(df["team2"].dropna().astype(str).tolist())
-            teams = [t for t in teams if t and t.lower() not in ("nan", "tbd", "")]
+            if "team1" in df.columns: teams.update(df["team1"].dropna().astype(str))
+            if "team2" in df.columns: teams.update(df["team2"].dropna().astype(str))
+            teams = [t for t in teams if t and t.lower() not in ("nan","tbd","")]
             if teams:
                 print(f"  Loaded {len(teams)} teams from bracket.csv")
                 return sorted(teams)
         except Exception as e:
-            print(f"  Warning: could not read bracket.csv for team list: {e}")
+            print(f"  Warning: could not read bracket.csv: {e}")
 
-    # Static fallback — update after Selection Sunday if bracket.csv not yet committed
-    print("  bracket.csv not found — using static team list for momentum profiles")
+    print("  bracket.csv not found — using static team list")
     return [
-        "Auburn", "Alabama", "Florida", "Tennessee", "Duke", "Houston",
-        "Iowa State", "St. John's", "Michigan State", "Texas Tech", "Wisconsin",
-        "Kentucky", "Arizona", "Marquette", "Purdue", "Connecticut",
-        "Gonzaga", "Kansas", "Maryland", "Missouri", "BYU", "Texas A&M",
-        "Mississippi State", "Baylor", "Saint Mary's", "VCU", "Vanderbilt",
-        "North Carolina", "Ole Miss", "Memphis", "Colorado State", "Drake",
-        "Arkansas", "New Mexico", "Utah State", "Georgia", "Creighton",
-        "Oklahoma", "UCLA", "Cincinnati", "Louisville", "TCU", "Illinois",
-        "Michigan", "Oregon", "Clemson",
+        "Auburn","Alabama","Florida","Tennessee","Duke","Houston",
+        "Iowa State","St. John's","Michigan State","Texas Tech","Wisconsin",
+        "Kentucky","Arizona","Marquette","Purdue","Connecticut",
+        "Gonzaga","Kansas","Maryland","Missouri","BYU","Texas A&M",
+        "Mississippi State","Baylor","Saint Mary's","VCU","Vanderbilt",
+        "North Carolina","Ole Miss","Memphis","Colorado State","Drake",
+        "Arkansas","New Mexico","Utah State","Georgia","Creighton",
+        "Oklahoma","UCLA","Cincinnati","Louisville","TCU","Illinois",
+        "Michigan","Oregon","Clemson","Virginia","Iowa","Nebraska",
+        "Texas","Miami FL","Villanova","Wisconsin","Akron","SMU",
     ]
 
 
 # ─────────────────────────────────────────────
-# 1. ESPN SCOREBOARD
+# 1a. COMPLETED GAMES  (espn_raw.csv)
 # ─────────────────────────────────────────────
-def fetch_espn_scores(date_str: str) -> list[dict]:
-    """Fetch all D1 NCAAB games for a given date (YYYYMMDD)."""
+def fetch_espn_scores(date_str: str) -> list:
+    """Fetch completed D1 NCAAB games for a given date."""
     url = (
         "https://site.api.espn.com/apis/site/v2/sports/basketball"
         f"/mens-college-basketball/scoreboard?limit=200&dates={date_str}&groups=50"
@@ -79,15 +85,11 @@ def fetch_espn_scores(date_str: str) -> list[dict]:
     games = []
     for event in data.get("events", []):
         comp = event["competitions"][0]
-
-        # Skip unfinished games
         if not comp["status"]["type"].get("completed", False):
             continue
-
         teams = comp["competitors"]
         if len(teams) != 2:
             continue
-
         t1, t2 = teams[0], teams[1]
         winner = t1 if t1.get("winner") else t2
         loser  = t2 if t1.get("winner") else t1
@@ -134,50 +136,187 @@ def fetch_espn_scores(date_str: str) -> list[dict]:
             "loser_3p_pct":    stat(loser,  "threePointFieldGoalPct"),
             "loser_ft_pct":    stat(loser,  "freeThrowPct"),
         })
-
     return games
 
 
 def update_scores():
-    """
-    Fetch yesterday + today, append to espn_raw.csv.
-    NOTE: Raw ESPN data goes to espn_raw.csv.
-          espn_scores.csv is owned exclusively by generate_picks.py.
-    """
-    master_path = DATA_DIR / "espn_raw.csv"   # ← renamed from espn_scores.csv
-    existing = pd.read_csv(master_path) if master_path.exists() else pd.DataFrame()
+    """Fetch yesterday + today completed games, append to espn_raw.csv."""
+    master_path = DATA_DIR / "espn_raw.csv"
+    existing    = pd.read_csv(master_path) if master_path.exists() else pd.DataFrame()
 
-    new_rows = []
+    rows = []
     for date in [YESTERDAY, TODAY]:
         try:
-            rows = fetch_espn_scores(date)
-            new_rows.extend(rows)
-            print(f"  ESPN {date}: {len(rows)} games fetched")
+            rows.extend(fetch_espn_scores(date))
         except Exception as e:
-            print(f"  ESPN {date} ERROR: {e}")
+            print(f"  ESPN scores ERROR for {date}: {e}")
 
-    if new_rows:
-        new_df   = pd.DataFrame(new_rows)
+    if rows:
+        new_df   = pd.DataFrame(rows)
         combined = pd.concat([existing, new_df], ignore_index=True)
-        combined = combined.drop_duplicates(subset=["game_id", "date"])
+        combined = combined.drop_duplicates(subset=["game_id"])
         combined.to_csv(master_path, index=False)
-        print(f"  Raw scores master (espn_raw.csv): {len(combined)} total rows")
-
-    return master_path
+        print(f"  Raw scores (espn_raw.csv): {len(combined)} total rows, {len(rows)} new")
+    else:
+        print("  No new completed games fetched")
 
 
 # ─────────────────────────────────────────────
-# 2. ODDS — THE-ODDS-API
+# 1b. UPCOMING TOURNAMENT GAMES (tourney_schedule.csv)
 # ─────────────────────────────────────────────
-def fetch_odds(api_key: str) -> list[dict]:
-    """Fetch current NCAAB odds from The-Odds-API."""
+def fetch_upcoming_tourney(date_str: str) -> list:
+    """
+    Fetch ALL games (completed + scheduled) for a date and return
+    NCAA tournament games with their status, teams, seeds, round, region.
+    """
+    url = (
+        "https://site.api.espn.com/apis/site/v2/sports/basketball"
+        f"/mens-college-basketball/scoreboard?limit=200&dates={date_str}&groups=50"
+    )
+    resp = requests.get(url, timeout=15)
+    resp.raise_for_status()
+    data = resp.json()
+
+    games = []
+    for event in data.get("events", []):
+        comp   = event["competitions"][0]
+        status = comp["status"]["type"]
+
+        # Only care about NCAA tournament games
+        is_tourney = comp["type"].get("abbreviation") == "TRNMNT"
+        notes = event.get("notes", [])
+        note_text = notes[0].get("headline", "") if notes else ""
+        if not is_tourney and "NCAA" not in note_text:
+            continue
+
+        teams = comp.get("competitors", [])
+        if len(teams) != 2:
+            continue
+
+        # Parse team info
+        def parse_team(t):
+            team_obj = t.get("team", {})
+            seed = None
+            # seed is sometimes in curatedRank or in notes
+            if "curatedRank" in t:
+                seed = t["curatedRank"].get("current")
+            if seed is None:
+                # try the order attribute as fallback
+                try:
+                    seed = int(t.get("order", 0)) or None
+                except:
+                    seed = None
+            return {
+                "name":  team_obj.get("displayName", ""),
+                "abbr":  team_obj.get("abbreviation", ""),
+                "score": t.get("score", ""),
+                "seed":  seed,
+                "winner": t.get("winner", False),
+            }
+
+        ta = parse_team(teams[0])
+        tb = parse_team(teams[1])
+
+        # Determine round from ESPN headline/note
+        round_str = "R64"
+        for key, val in ROUND_LABEL.items():
+            if key.lower() in note_text.lower():
+                round_str = val
+                break
+
+        # Region from note text (e.g. "NCAA Men's Basketball Tournament - East Regional")
+        region = ""
+        for r in ["East","West","South","Midwest","Final Four","National"]:
+            if r.lower() in note_text.lower():
+                region = r if r not in ("Final Four","National") else ("Final Four" if r=="Final Four" else "Championship")
+                break
+
+        # Status
+        state = status.get("name", "").lower()  # scheduled, in_progress, final
+        completed = status.get("completed", False)
+        game_time = event.get("date", "")  # ISO 8601
+
+        # Score info
+        score_a = ta["score"]
+        score_b = tb["score"]
+        winner_name = ""
+        if completed:
+            winner_name = ta["name"] if ta["winner"] else tb["name"]
+
+        games.append({
+            "game_id":    event["id"],
+            "date":       date_str,
+            "game_time":  game_time,
+            "status":     state,            # 'scheduled', 'in_progress', 'final'
+            "completed":  completed,
+            "round":      round_str,
+            "region":     region,
+            "team1":      ta["name"],
+            "seed1":      ta["seed"],
+            "score1":     score_a if completed else "",
+            "team2":      tb["name"],
+            "seed2":      tb["seed"],
+            "score2":     score_b if completed else "",
+            "winner":     winner_name,
+            "note":       note_text,
+        })
+
+    return games
+
+
+def update_tourney_schedule():
+    """
+    Fetch upcoming + live + recent NCAA tournament games.
+    Looks at yesterday, today, and next 4 days to capture full tournament windows.
+    Writes tourney_schedule.csv — the feed for generate_picks.py.
+    """
+    master_path = DATA_DIR / "tourney_schedule.csv"
+    existing    = pd.read_csv(master_path) if master_path.exists() else pd.DataFrame()
+
+    all_games = []
+    base = datetime.utcnow()
+    # Check -1 to +4 days to capture games already played and coming up
+    for delta in range(-1, 5):
+        date_str = (base + timedelta(days=delta)).strftime("%Y%m%d")
+        try:
+            games = fetch_upcoming_tourney(date_str)
+            if games:
+                print(f"    {date_str}: {len(games)} tournament games")
+            all_games.extend(games)
+        except Exception as e:
+            print(f"    ESPN tourney fetch ERROR for {date_str}: {e}")
+
+    if not all_games:
+        print("  No tournament games found in schedule window")
+        return
+
+    new_df = pd.DataFrame(all_games)
+
+    # Merge with existing: prefer new data (has fresher scores/status)
+    if not existing.empty:
+        combined = pd.concat([new_df, existing], ignore_index=True)
+        combined = combined.drop_duplicates(subset=["game_id"], keep="first")
+    else:
+        combined = new_df
+
+    combined = combined.sort_values(["round", "region", "game_time"])
+    combined.to_csv(master_path, index=False)
+    total = len(combined)
+    upcoming = len(combined[~combined["completed"].astype(bool)])
+    done = len(combined[combined["completed"].astype(bool)])
+    print(f"  tourney_schedule.csv: {total} total games ({done} final, {upcoming} upcoming/live)")
+
+
+# ─────────────────────────────────────────────
+# 2. ODDS
+# ─────────────────────────────────────────────
+def fetch_odds(api_key: str) -> list:
     url = "https://api.the-odds-api.com/v4/sports/basketball_ncaab/odds"
     params = {
         "apiKey":     api_key,
         "regions":    "us",
-        "markets":    "h2h,spreads,totals",
+        "markets":    "h2h,spreads",
         "oddsFormat": "american",
-        "bookmakers": "pinnacle,draftkings,fanduel,betmgm,caesars",
     }
     resp = requests.get(url, params=params, timeout=15)
     resp.raise_for_status()
@@ -185,48 +324,38 @@ def fetch_odds(api_key: str) -> list[dict]:
 
     rows = []
     for game in data:
-        home     = game["home_team"]
-        away     = game["away_team"]
-        commence = game["commence_time"]
-
-        for book in game.get("bookmakers", []):
-            book_name = book["key"]
-            for market in book.get("markets", []):
-                mkt = market["key"]
+        for bk in game.get("bookmakers", []):
+            for market in bk.get("markets", []):
                 for outcome in market.get("outcomes", []):
                     rows.append({
                         "fetched_at":    TODAY,
-                        "commence_time": commence,
-                        "home_team":     home,
-                        "away_team":     away,
-                        "bookmaker":     book_name,
-                        "market":        mkt,
+                        "commence_time": game.get("commence_time"),
+                        "home_team":     game.get("home_team"),
+                        "away_team":     game.get("away_team"),
+                        "bookmaker":     bk["key"],
+                        "market":        market["key"],
                         "team":          outcome["name"],
                         "price":         outcome["price"],
                         "point":         outcome.get("point"),
                     })
-
     return rows
 
 
 def update_odds(api_key: str):
-    """Fetch current odds and append to master CSV."""
     if not api_key:
         print("  No ODDS_API_KEY set — skipping odds fetch")
         return
-
     master_path = DATA_DIR / "live_odds.csv"
     existing    = pd.read_csv(master_path) if master_path.exists() else pd.DataFrame()
-
     try:
         rows     = fetch_odds(api_key)
         new_df   = pd.DataFrame(rows)
         combined = pd.concat([existing, new_df], ignore_index=True)
         combined = combined.drop_duplicates(
-            subset=["fetched_at", "commence_time", "home_team", "away_team", "bookmaker", "market", "team"]
+            subset=["fetched_at","commence_time","home_team","away_team","bookmaker","market","team"]
         )
         combined.to_csv(master_path, index=False)
-        print(f"  Odds master: {len(combined)} total rows, {len(rows)} new today")
+        print(f"  Odds (live_odds.csv): {len(combined)} rows, {len(rows)} new")
     except Exception as e:
         print(f"  Odds ERROR: {e}")
 
@@ -234,15 +363,13 @@ def update_odds(api_key: str):
 # ─────────────────────────────────────────────
 # 3. MOMENTUM PROFILES
 # ─────────────────────────────────────────────
-def build_momentum_profiles() -> pd.DataFrame:
-    """Build per-team conf tournament momentum from raw scores master."""
-    scores_path = DATA_DIR / "espn_raw.csv"   # ← updated to match new raw file name
+def build_momentum_profiles():
+    scores_path = DATA_DIR / "espn_raw.csv"
     if not scores_path.exists():
         print("  No espn_raw.csv yet — skipping momentum")
         return pd.DataFrame()
 
     tourney_teams = load_tourney_teams()
-
     df         = pd.read_csv(scores_path)
     conf_games = df[df["is_tournament"] == True].copy()
 
@@ -250,15 +377,10 @@ def build_momentum_profiles() -> pd.DataFrame:
     for team in tourney_teams:
         wins   = conf_games[conf_games["winner"].str.contains(team, case=False, na=False)]
         losses = conf_games[conf_games["loser"].str.contains(team,  case=False, na=False)]
-
-        n_w = len(wins)
-        n_l = len(losses)
-
-        avg_win_margin  = wins["margin"].mean()  if n_w > 0 else 0.0
+        n_w = len(wins); n_l = len(losses)
+        avg_win_margin  = wins["margin"].mean()   if n_w > 0 else 0.0
         avg_loss_margin = losses["margin"].mean() if n_l > 0 else 0.0
-
         momentum = (n_w * avg_win_margin) - (n_l * avg_loss_margin * 2)
-
         profiles.append({
             "team":            team,
             "conf_wins":       n_w,
@@ -276,7 +398,7 @@ def build_momentum_profiles() -> pd.DataFrame:
     out_df   = pd.DataFrame(profiles).sort_values("momentum_score", ascending=False)
     out_path = DATA_DIR / "momentum_profiles.csv"
     out_df.to_csv(out_path, index=False)
-    print(f"  Momentum profiles saved: {out_path} ({len(profiles)} teams)")
+    print(f"  Momentum profiles: {len(profiles)} teams")
     return out_df
 
 
@@ -284,18 +406,21 @@ def build_momentum_profiles() -> pd.DataFrame:
 # MAIN
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
-    print(f"\n{'='*50}")
+    print(f"\n{'='*52}")
     print(f"March Madness Data Fetcher — {TODAY}")
-    print(f"{'='*50}")
+    print(f"{'='*52}")
 
-    print("\n[1/3] Fetching ESPN scores...")
+    print("\n[1/4] Fetching completed ESPN scores...")
     update_scores()
 
-    print("\n[2/3] Fetching live odds...")
+    print("\n[2/4] Fetching tournament schedule (upcoming + live)...")
+    update_tourney_schedule()
+
+    print("\n[3/4] Fetching live odds...")
     api_key = os.environ.get("ODDS_API_KEY", "")
     update_odds(api_key)
 
-    print("\n[3/3] Building momentum profiles...")
+    print("\n[4/4] Building momentum profiles...")
     profiles = build_momentum_profiles()
     if not profiles.empty:
         print("\nTop 10 by momentum:")
