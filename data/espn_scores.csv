@@ -1,68 +1,45 @@
-team1,seed1,team2,seed2,region,round,game_time,status,winner,score1,score2,ml_pick,ml_confidence,ml_odds,spread,ats_pick,ats_confidence,result,ml_result,ats_result
-UMBC,16,Howard,16,First Four,R64,Tue Mar 17 TBD,upcoming,,,,Howard,55.1,,,,52.3,pending,pending,pending
-Texas,11,N.C. State,11,First Four,R64,Tue Mar 17 TBD,upcoming,,,,Texas,54.6,,,,51.9,pending,pending,pending
-Miami OH,11,SMU,11,First Four,R64,Wed Mar 18 TBD,upcoming,,,,Miami OH,51.4,,,,48.8,pending,pending,pending
-Prairie View A&M,16,Lehigh,16,First Four,R64,Wed Mar 18 TBD,upcoming,,,,Lehigh,55.1,,+35.5,Lehigh -35.5,48.5,pending,pending,pending
-Duke,1,Siena,16,East,R64,Thu Mar 19 TBD,upcoming,,,,Duke,77.2,,,,73.3,pending,pending,pending
-Ohio St.,8,TCU,9,East,R64,Thu Mar 19 TBD,upcoming,,,,Ohio St.,57.7,,,,54.8,pending,pending,pending
-Louisville,6,South Florida,11,East,R64,Thu Mar 19 TBD,upcoming,,,,Louisville,70.8,-191,-4.5,Louisville -4.5,69.4,pending,pending,pending
-Michigan St.,3,North Dakota St.,14,East,R64,Thu Mar 19 TBD,upcoming,,,,Michigan St.,70.1,-1900,-15.8,Michigan St. -15.8,61.7,pending,pending,pending
-St. John's,5,Northern Iowa,12,East,R64,Fri Mar 20 7:10 PM ET,upcoming,,,,St. John's,65.8,,-9.5,,62.5,pending,pending,pending
-Kansas,4,Cal Baptist,13,East,R64,Fri Mar 20 9:45 PM ET,upcoming,,,,Kansas,73.1,,-14.5,,69.4,pending,pending,pending
-UCLA,7,UCF,10,East,R64,Fri Mar 20 7:25 PM ET,upcoming,,,,UCLA,58.4,,,,55.5,pending,pending,pending
-Connecticut,2,Furman,15,East,R64,Fri Mar 20 10:00 PM ET,upcoming,,,,Connecticut,88.3,,,,83.9,pending,pending,pending
-Arizona,1,LIU,16,West,R64,Thu Mar 19 TBD,upcoming,,,,Arizona,82.7,,,,78.6,pending,pending,pending
-Villanova,8,Utah St.,9,West,R64,Thu Mar 19 TBD,upcoming,,,,Utah St.,59.5,,,,56.5,pending,pending,pending
-BYU,6,Texas,11,West,R64,Thu Mar 19 TBD,upcoming,,,,Texas,61.8,,,,58.7,pending,pending,pending
-Gonzaga,3,Kennesaw St.,14,West,R64,Thu Mar 19 TBD,upcoming,,,,Gonzaga,74.7,,-21.5,,71.0,pending,pending,pending
-Wisconsin,5,High Point,12,West,R64,Fri Mar 20 TBD,upcoming,,,,Wisconsin,73.1,,,,69.4,pending,pending,pending
-Arkansas,4,Hawaii,13,West,R64,Fri Mar 20 TBD,upcoming,,,,Arkansas,83.3,,,,79.1,pending,pending,pending
-Miami FL,7,Missouri,10,West,R64,Fri Mar 20 TBD,upcoming,,,,Miami FL,64.6,,,,61.4,pending,pending,pending
-Purdue,2,Queens,15,West,R64,Fri Mar 20 7:35 PM ET,upcoming,,,,Purdue,91.4,,,,86.8,pending,pending,pending
-Florida,1,Prairie View A&M,16,South,R64,Fri Mar 20 9:25 PM ET,upcoming,,,,Florida,69.6,,-35.5,,66.1,pending,pending,pending
-Clemson,8,Iowa,9,South,R64,Fri Mar 20 6:50 PM ET,upcoming,,,,Iowa,58.0,,,,55.1,pending,pending,pending
-North Carolina,6,VCU,11,South,R64,Thu Mar 19 TBD,upcoming,,,,VCU,68.8,,-2.5,VCU +2.5,70.2,pending,pending,pending
-Nebraska,4,Troy,13,South,R64,Thu Mar 19 TBD,upcoming,,,,Nebraska,81.7,,,,77.6,pending,pending,pending
-Saint Mary's,7,Texas A&M,10,South,R64,Thu Mar 19 7:35 PM ET,upcoming,,,,Texas A&M,54.6,,-3.2,Texas A&M +3.2,53.5,pending,pending,pending
-Houston,2,Idaho,15,South,R64,Thu Mar 19 10:10 PM ET,upcoming,,,,Houston,68.9,,,,65.5,pending,pending,pending
-Vanderbilt,5,McNeese,12,South,R64,Thu Mar 19 TBD,upcoming,,,,Vanderbilt,73.1,-750,-11.8,Vanderbilt -11.8,68.7,pending,pending,pending
-Illinois,3,Penn,14,South,R64,Thu Mar 19 TBD,upcoming,,,,Illinois,82.9,,,,78.8,pending,pending,pending
-Michigan,1,Howard,16,Midwest,R64,Thu Mar 19 7:10 PM ET,upcoming,,,,Michigan,87.3,,,,82.9,pending,pending,pending
-Georgia,8,Saint Louis,9,Midwest,R64,Thu Mar 19 9:45 PM ET,upcoming,,,,Georgia,51.5,,-2.5,,48.9,pending,pending,pending
-Tennessee,6,Miami OH,11,Midwest,R64,Fri Mar 20 4:25 PM ET,upcoming,,,,Miami OH,51.0,,,,48.4,pending,pending,pending
-Virginia,3,Wright St.,14,Midwest,R64,Fri Mar 20 1:50 PM ET,upcoming,,,,Virginia,70.8,,,,67.3,pending,pending,pending
-Texas Tech,5,Akron,12,Midwest,R64,Fri Mar 20 12:40 PM ET,upcoming,,,,Texas Tech,70.6,,,,67.1,pending,pending,pending
-Alabama,4,Hofstra,13,Midwest,R64,Fri Mar 20 3:15 PM ET,upcoming,,,,Alabama,70.1,,,,66.6,pending,pending,pending
-Kentucky,7,Santa Clara,10,Midwest,R64,Fri Mar 20 12:15 PM ET,upcoming,,,,Santa Clara,57.6,+132,-3.5,Santa Clara +3.5,56.4,pending,pending,pending
-Iowa St.,2,Tennessee St.,15,Midwest,R64,Fri Mar 20 2:50 PM ET,upcoming,,,,Iowa St.,73.1,,-24.5,,69.4,pending,pending,pending
-Duke,1,Ohio St.,8,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Duke,70.8,,,,67.3,pending,pending,pending
-St. John's,5,Kansas,4,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Kansas,55.1,,,,52.3,pending,pending,pending
-Louisville,6,Michigan St.,3,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Michigan St.,59.0,-1900,-4.5,Michigan St. -15.8,51.9,pending,pending,pending
-UCLA,7,Connecticut,2,East,R32,Sat/Sun Mar 21-22,upcoming,,,,Connecticut,71.4,,,,67.8,pending,pending,pending
-Arizona,1,Utah St.,9,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Arizona,76.4,,,,72.6,pending,pending,pending
-Wisconsin,5,Arkansas,4,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Arkansas,71.9,,,,68.3,pending,pending,pending
-Texas,11,Gonzaga,3,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Gonzaga,58.9,,,,56.0,pending,pending,pending
-Miami FL,7,Purdue,2,West,R32,Sat/Sun Mar 21-22,upcoming,,,,Purdue,72.7,,,,69.1,pending,pending,pending
-Florida,1,Iowa,9,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Florida,54.6,,,,51.9,pending,pending,pending
-Vanderbilt,5,Nebraska,4,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Nebraska,56.1,,-11.8,Nebraska +11.8,52.7,pending,pending,pending
-VCU,11,Illinois,3,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Illinois,85.4,,,,81.1,pending,pending,pending
-Texas A&M,10,Houston,2,South,R32,Sat/Sun Mar 21-22,upcoming,,,,Houston,82.0,,,,77.9,pending,pending,pending
-Michigan,1,Georgia,8,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Michigan,73.1,,,,69.4,pending,pending,pending
-Texas Tech,5,Alabama,4,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Alabama,53.2,,,,50.5,pending,pending,pending
-Miami OH,11,Virginia,3,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Virginia,77.7,,,,73.8,pending,pending,pending
-Santa Clara,10,Iowa St.,2,Midwest,R32,Sat/Sun Mar 21-22,upcoming,,,,Iowa St.,70.2,,+3.5,Iowa St. -3.5,68.8,pending,pending,pending
-Duke,1,Kansas,4,East,S16,Thu/Fri Mar 26-27,upcoming,,,,Duke,69.1,,,,65.6,pending,pending,pending
-Michigan St.,3,Connecticut,2,East,S16,Thu/Fri Mar 26-27,upcoming,,,,Connecticut,69.6,,-15.8,Connecticut +15.8,61.2,pending,pending,pending
-Arizona,1,Arkansas,4,West,S16,Thu/Fri Mar 26-27,upcoming,,,,Arizona,62.7,,,,59.6,pending,pending,pending
-Gonzaga,3,Purdue,2,West,S16,Thu/Fri Mar 26-27,upcoming,,,,Purdue,65.6,,,,62.3,pending,pending,pending
-Florida,1,Nebraska,4,South,S16,Thu/Fri Mar 26-27,upcoming,,,,Nebraska,57.2,,,,54.3,pending,pending,pending
-Illinois,3,Houston,2,South,S16,Thu/Fri Mar 26-27,upcoming,,,,Houston,55.1,,,,52.3,pending,pending,pending
-Michigan,1,Alabama,4,Midwest,S16,Thu/Fri Mar 26-27,upcoming,,,,Michigan,65.8,,,,62.5,pending,pending,pending
-Virginia,3,Iowa St.,2,Midwest,S16,Thu/Fri Mar 26-27,upcoming,,,,Iowa St.,67.0,,,,63.6,pending,pending,pending
-Duke,1,Connecticut,2,East,E8,Sat/Sun Mar 28-29,upcoming,,,,Connecticut,58.9,,,,56.0,pending,pending,pending
-Arizona,1,Purdue,2,West,E8,Sat/Sun Mar 28-29,upcoming,,,,Arizona,61.0,,,,57.9,pending,pending,pending
-Nebraska,4,Houston,2,South,E8,Sat/Sun Mar 28-29,upcoming,,,,Houston,61.4,,,,58.3,pending,pending,pending
-Michigan,1,Iowa St.,2,Midwest,E8,Sat/Sun Mar 28-29,upcoming,,,,Michigan,56.4,,,,53.6,pending,pending,pending
-Houston,2,Arizona,1,Final Four,FF,Sat Apr 4,upcoming,,,,Arizona,76.5,,,,72.7,pending,pending,pending
-Connecticut,2,Michigan,1,Final Four,FF,Sat Apr 4,upcoming,,,,Michigan,65.6,,,,62.3,pending,pending,pending
-Arizona,1,Michigan,1,Championship,CHAMP,Mon Apr 6,upcoming,,,,Michigan,65.6,,,,62.3,pending,pending,pending
+round,region,team1,seed1,team2,seed2,ml_pick,ml_confidence,ml_odds,ats_pick,ats_confidence,spread,result,ml_result,ats_result,score1,score2,time
+R64,nan,Alabama Crimson Tide,4,Hofstra Pride,13,Alabama Crimson Tide,87.6,-909,Alabama Crimson Tide -11.5,76.2,-11.5,pending,pending,pending,,,2026-03-20T19:15Z
+R64,nan,Arizona Wildcats,1,Long Island University Sharks,16,Arizona Wildcats,97.0,-100000,Arizona Wildcats -30.5,84.9,-30.5,pending,pending,pending,,,2026-03-20T17:35Z
+R64,nan,Arkansas Razorbacks,4,High Point Panthers,12,Arkansas Razorbacks,86.2,-625,Arkansas Razorbacks -11.0,76.2,-11.0,pending,pending,pending,,,2026-03-21T04:00Z
+R64,nan,Arkansas Razorbacks,4,Hawai'i Rainbow Warriors,13,Arkansas Razorbacks,94.0,,Arkansas Razorbacks -11.0,82.7,-11.0,win,win,loss,97.0,78.0,2026-03-19T20:27Z
+R64,nan,Auburn Tigers,99,Seattle U Redhawks,99,Auburn Tigers,68.6,270,Auburn Tigers -13.0,61.3,-13.0,pending,pending,pending,,,2026-03-22T22:30Z
+R64,nan,BYU Cougars,6,Texas Longhorns,11,BYU Cougars,70.0,375,BYU Cougars +5.5,62.4,+5.5,pending,pending,pending,,,2026-03-19T23:35Z
+R64,nan,California Golden Bears,99,Saint Joseph's Hawks,99,California Golden Bears,51.8,-187,California Golden Bears -6.0,45.9,-6.0,pending,pending,pending,,,2026-03-23T01:00Z
+R64,nan,Clemson Tigers,8,Iowa Hawkeyes,9,Clemson Tigers,54.0,110,Clemson Tigers +2.0,48.3,+2.0,pending,pending,pending,,,2026-03-20T22:50Z
+R64,nan,Duke Blue Devils,1,TCU Horned Frogs,9,Duke Blue Devils,82.0,-625,Duke Blue Devils -11.0,73.0,-11.0,pending,pending,pending,,,2026-03-21T04:00Z
+R64,nan,Duke Blue Devils,1,Siena Saints,16,Duke Blue Devils,91.6,,Duke Blue Devils -11.0,80.6,-11.0,win,win,win,71.0,65.0,2026-03-19T19:00Z
+R64,nan,Florida Gators,1,Prairie View A&M Panthers,16,Florida Gators,96.4,-25000,Florida Gators -35.5,84.0,-35.5,pending,pending,pending,,,2026-03-21T01:25Z
+R64,nan,Georgia Bulldogs,8,Saint Louis Billikens,9,Georgia Bulldogs,62.2,-130,Georgia Bulldogs -1.5,55.1,-1.5,pending,pending,pending,,,2026-03-20T02:10Z
+R64,nan,Gonzaga Bulldogs,3,Kennesaw State Owls,14,Gonzaga Bulldogs,90.6,-5000,Gonzaga Bulldogs -20.5,79.7,-20.5,pending,pending,pending,,,2026-03-20T02:00Z
+R64,nan,Houston Cougars,2,Idaho Vandals,15,Houston Cougars,97.0,-10000,Houston Cougars -24.0,84.6,-24.0,pending,pending,pending,,,2026-03-20T02:10Z
+R64,nan,Illinois Fighting Illini,3,Pennsylvania Quakers,14,Illinois Fighting Illini,94.0,-10000,Illinois Fighting Illini -25.5,83.1,-25.5,pending,pending,pending,,,2026-03-20T01:55Z
+R64,nan,Iowa State Cyclones,2,Tennessee State Tigers,15,Iowa State Cyclones,94.3,-10000,Iowa State Cyclones -24.5,82.8,-24.5,pending,pending,pending,,,2026-03-20T18:50Z
+R64,nan,Kansas Jayhawks,4,California Baptist Lancers,13,Kansas Jayhawks,85.5,-1429,Kansas Jayhawks -14.0,75.0,-14.0,pending,pending,pending,,,2026-03-21T01:45Z
+R64,nan,Kentucky Wildcats,7,Santa Clara Broncos,10,Kentucky Wildcats,54.1,-159,Kentucky Wildcats -3.0,46.7,-3.0,pending,pending,pending,,,2026-03-20T16:15Z
+R64,nan,Louisville Cardinals,6,South Florida Bulls,11,Louisville,70.8,-191.0,Louisville -4.5,69.4,-4.5,win,win,loss,83.0,79.0,2026-03-19T17:30Z
+R64,nan,Miami Hurricanes,7,Missouri Tigers,10,Miami Hurricanes,62.0,-137,Miami Hurricanes -2.0,55.0,-2.0,pending,pending,pending,,,2026-03-21T02:10Z
+R64,nan,Michigan State Spartans,3,Louisville Cardinals,6,Michigan State Spartans,67.7,-200,Michigan State Spartans -4.0,60.0,-4.0,pending,pending,pending,,,2026-03-21T04:00Z
+R64,nan,Michigan State Spartans,3,North Dakota State Bison,14,Michigan St.,70.1,-1900.0,Michigan St. -15.8,61.7,-15.8,win,win,loss,92.0,67.0,2026-03-19T20:27Z
+R64,nan,Michigan Wolverines,1,Howard Bison,16,Michigan Wolverines,94.7,-40051,Michigan Wolverines -29.0,82.6,-29.0,pending,pending,pending,,,2026-03-19T23:30Z
+R64,nan,Nebraska Cornhuskers,4,Vanderbilt Commodores,5,Nebraska Cornhuskers,50.6,112,Nebraska Cornhuskers +2.5,44.3,+2.5,pending,pending,pending,,,2026-03-21T04:00Z
+R64,nan,Nebraska Cornhuskers,4,Troy Trojans,13,Nebraska Cornhuskers,78.8,,Nebraska Cornhuskers +2.5,69.3,+2.5,win,win,loss,76.0,47.0,2026-03-19T16:40Z
+R64,nan,Nevada Wolf Pack,99,Liberty Flames,99,Nevada Wolf Pack,59.4,-4371,Nevada Wolf Pack -7.5,53.1,-7.5,pending,pending,pending,,,2026-03-22T01:00Z
+R64,nan,New Mexico Lobos,99,George Washington Revolutionaries,99,New Mexico Lobos,54.6,-727,New Mexico Lobos -6.5,47.8,-6.5,pending,pending,pending,,,2026-03-23T00:00Z
+R64,nan,North Carolina Tar Heels,6,VCU Rams,11,North Carolina Tar Heels,67.8,,North Carolina Tar Heels -2.5,59.7,-2.5,loss,loss,win,78.0,82.0,2026-03-19T22:50Z
+R64,nan,Ohio State Buckeyes,8,TCU Horned Frogs,9,Ohio State Buckeyes,55.2,,Ohio State Buckeyes -2.5,48.6,-2.5,loss,loss,win,64.0,66.0,2026-03-19T16:15Z
+R64,nan,Oklahoma State Cowboys,99,Wichita State Shockers,99,Oklahoma State Cowboys,51.3,,Oklahoma State Cowboys -3.5,45.7,-3.5,pending,pending,pending,,,2026-03-23T00:30Z
+R64,nan,Purdue Boilermakers,2,Queens University Royals,15,Purdue Boilermakers,94.6,-10000,Purdue Boilermakers -25.5,84.1,-25.5,pending,pending,pending,,,2026-03-20T23:35Z
+R64,nan,Saint Mary's Gaels,7,Texas A&M Aggies,10,Saint Mary's Gaels,62.6,-153,Saint Mary's Gaels +12.5,55.2,+12.5,pending,pending,pending,,,2026-03-19T23:35Z
+R64,nan,St. John's Red Storm,5,Northern Iowa Panthers,12,St. John's Red Storm,86.2,-625,St. John's Red Storm -9.5,75.5,-9.5,pending,pending,pending,,,2026-03-20T23:10Z
+R64,nan,Tennessee Volunteers,6,Miami (OH) RedHawks,11,Tennessee Volunteers,70.0,-550,Tennessee Volunteers -11.0,61.7,-11.0,pending,pending,pending,,,2026-03-20T20:25Z
+R64,nan,Texas Tech Red Raiders,5,Akron Zips,12,Texas Tech Red Raiders,78.0,-323,Texas Tech Red Raiders -7.5,68.4,-7.5,pending,pending,pending,,,2026-03-20T16:40Z
+R64,nan,Tulsa Golden Hurricane,99,UNLV Rebels,99,Tulsa Golden Hurricane,51.0,,Tulsa Golden Hurricane -4.0,44.1,-4.0,pending,pending,pending,,,2026-03-22T23:00Z
+R64,nan,UCLA Bruins,7,UCF Knights,10,UCLA Bruins,62.0,-238,UCLA Bruins -5.5,55.4,-5.5,pending,pending,pending,,,2026-03-20T23:25Z
+R64,nan,UConn Huskies,2,Furman Paladins,15,UConn Huskies,97.0,-5000,UConn Huskies -20.5,85.5,-20.5,pending,pending,pending,,,2026-03-21T02:00Z
+R64,nan,UNC Wilmington Seahawks,99,Dayton Flyers,99,Dayton Flyers,59.9,-126,Dayton Flyers +2.5,52.9,+2.5,pending,pending,pending,,,2026-03-21T23:00Z
+R64,nan,Vanderbilt Commodores,5,McNeese Cowboys,12,Vanderbilt Commodores,77.5,,Vanderbilt Commodores -2.5,68.2,-2.5,win,win,win,78.0,68.0,2026-03-19T19:15Z
+R64,nan,Villanova Wildcats,8,Utah State Aggies,9,Villanova Wildcats,57.4,105,Villanova Wildcats +1.5,50.7,+1.5,pending,pending,pending,,,2026-03-20T20:10Z
+R64,nan,Virginia Cavaliers,3,Wright State Raiders,14,Virginia Cavaliers,89.5,-5049,Virginia Cavaliers -18.0,79.4,-18.0,pending,pending,pending,,,2026-03-20T17:50Z
+R64,nan,Wake Forest Demon Deacons,99,Illinois State Redbirds,99,Wake Forest Demon Deacons,55.1,-773,Wake Forest Demon Deacons -7.5,47.7,-7.5,pending,pending,pending,,,2026-03-22T20:30Z
+R64,nan,Wisconsin Badgers,5,High Point Panthers,12,Wisconsin Badgers,85.8,,Wisconsin Badgers -10.0,75.5,-10.0,loss,loss,win,82.0,83.0,2026-03-19T17:50Z
