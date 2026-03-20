@@ -5355,3 +5355,771 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,betonlineag,spreads,Saint Joseph's Hawks,-115,6.0
 20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,lowvig,spreads,California Golden Bears,-101,-6.0
 20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,lowvig,spreads,Saint Joseph's Hawks,-111,6.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,h2h,Kentucky Wildcats,-155,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,h2h,Santa Clara Broncos,130,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,spreads,Kentucky Wildcats,-102,-3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,draftkings,spreads,Santa Clara Broncos,-118,3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,h2h,Kentucky Wildcats,-156,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,h2h,Santa Clara Broncos,130,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,spreads,Kentucky Wildcats,-102,-3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,fanduel,spreads,Santa Clara Broncos,-120,3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,h2h,Kentucky Wildcats,-155,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,h2h,Santa Clara Broncos,125,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,spreads,Kentucky Wildcats,-105,-3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betmgm,spreads,Santa Clara Broncos,-115,3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betonlineag,h2h,Kentucky Wildcats,-159,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betonlineag,h2h,Santa Clara Broncos,139,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betonlineag,spreads,Kentucky Wildcats,-112,-3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betonlineag,spreads,Santa Clara Broncos,-108,3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,lowvig,h2h,Kentucky Wildcats,-159,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,lowvig,h2h,Santa Clara Broncos,139,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,lowvig,spreads,Kentucky Wildcats,-108,-3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,lowvig,spreads,Santa Clara Broncos,-104,3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betus,h2h,Kentucky Wildcats,-147,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betus,h2h,Santa Clara Broncos,127,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betus,spreads,Kentucky Wildcats,-110,-3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betus,spreads,Santa Clara Broncos,-110,3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betrivers,h2h,Kentucky Wildcats,-155,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betrivers,h2h,Santa Clara Broncos,125,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betrivers,spreads,Kentucky Wildcats,-106,-3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,betrivers,spreads,Santa Clara Broncos,-118,3.5
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,bovada,h2h,Kentucky Wildcats,-150,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,bovada,h2h,Santa Clara Broncos,130,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,bovada,spreads,Kentucky Wildcats,-110,-3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,bovada,spreads,Santa Clara Broncos,-110,3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,mybookieag,h2h,Kentucky Wildcats,-159,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,mybookieag,h2h,Santa Clara Broncos,128,
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,mybookieag,spreads,Kentucky Wildcats,-110,-3.0
+20260320,2026-03-20T16:15:00Z,Kentucky Wildcats,Santa Clara Broncos,mybookieag,spreads,Santa Clara Broncos,-110,3.0
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,h2h,Akron Zips,260,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,h2h,Texas Tech Red Raiders,-325,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,spreads,Akron Zips,-115,8.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,draftkings,spreads,Texas Tech Red Raiders,-105,-8.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,h2h,Akron Zips,250,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,h2h,Texas Tech Red Raiders,-315,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,spreads,Akron Zips,-110,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,fanduel,spreads,Texas Tech Red Raiders,-110,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,lowvig,h2h,Akron Zips,249,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,lowvig,h2h,Texas Tech Red Raiders,-305,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,lowvig,spreads,Akron Zips,-103,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,lowvig,spreads,Texas Tech Red Raiders,-109,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betonlineag,h2h,Akron Zips,249,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betonlineag,h2h,Texas Tech Red Raiders,-305,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betonlineag,spreads,Akron Zips,-107,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betonlineag,spreads,Texas Tech Red Raiders,-113,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,h2h,Akron Zips,260,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,h2h,Texas Tech Red Raiders,-325,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,spreads,Akron Zips,-105,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betmgm,spreads,Texas Tech Red Raiders,-115,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betus,h2h,Akron Zips,253,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betus,h2h,Texas Tech Red Raiders,-305,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betus,spreads,Akron Zips,-105,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betus,spreads,Texas Tech Red Raiders,-115,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betrivers,h2h,Akron Zips,245,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betrivers,h2h,Texas Tech Red Raiders,-315,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betrivers,spreads,Akron Zips,-112,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,betrivers,spreads,Texas Tech Red Raiders,-112,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,bovada,h2h,Akron Zips,265,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,bovada,h2h,Texas Tech Red Raiders,-330,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,bovada,spreads,Akron Zips,-105,7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,bovada,spreads,Texas Tech Red Raiders,-115,-7.5
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,mybookieag,h2h,Akron Zips,265,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,mybookieag,h2h,Texas Tech Red Raiders,-345,
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,mybookieag,spreads,Akron Zips,-110,8.0
+20260320,2026-03-20T16:40:00Z,Texas Tech Red Raiders,Akron Zips,mybookieag,spreads,Texas Tech Red Raiders,-110,-8.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,h2h,Arizona Wildcats,-100000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,h2h,LIU Sharks,8000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,spreads,Arizona Wildcats,-115,-30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,fanduel,spreads,LIU Sharks,-105,30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betmgm,spreads,Arizona Wildcats,-110,-30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betmgm,spreads,LIU Sharks,-110,30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betonlineag,spreads,Arizona Wildcats,-105,-31.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betonlineag,spreads,LIU Sharks,-115,31.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,lowvig,spreads,Arizona Wildcats,-101,-31.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,lowvig,spreads,LIU Sharks,-111,31.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betrivers,h2h,Arizona Wildcats,-10000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betrivers,h2h,LIU Sharks,5000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betrivers,spreads,Arizona Wildcats,-110,-30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betrivers,spreads,LIU Sharks,-113,30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betus,spreads,Arizona Wildcats,-110,-30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,betus,spreads,LIU Sharks,-110,30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,bovada,h2h,Arizona Wildcats,-20000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,bovada,h2h,LIU Sharks,1700,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,bovada,spreads,Arizona Wildcats,100,-31.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,bovada,spreads,LIU Sharks,-120,31.0
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,h2h,Arizona Wildcats,-100000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,h2h,LIU Sharks,5000,
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,spreads,Arizona Wildcats,-112,-30.5
+20260320,2026-03-20T17:35:00Z,Arizona Wildcats,LIU Sharks,draftkings,spreads,LIU Sharks,-108,30.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,h2h,Virginia Cavaliers,-4000,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,h2h,Wright St Raiders,1400,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,spreads,Virginia Cavaliers,-120,-17.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,fanduel,spreads,Wright St Raiders,-102,17.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,h2h,Virginia Cavaliers,-2800,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,h2h,Wright St Raiders,1300,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,spreads,Virginia Cavaliers,-105,-18.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,draftkings,spreads,Wright St Raiders,-115,18.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,h2h,Virginia Cavaliers,-3000,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,h2h,Wright St Raiders,1150,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,spreads,Virginia Cavaliers,-118,-17.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betmgm,spreads,Wright St Raiders,-102,17.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,lowvig,h2h,Virginia Cavaliers,-2700,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,lowvig,h2h,Wright St Raiders,1196,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,lowvig,spreads,Virginia Cavaliers,-106,-18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,lowvig,spreads,Wright St Raiders,-106,18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betonlineag,h2h,Virginia Cavaliers,-2700,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betonlineag,h2h,Wright St Raiders,1196,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betonlineag,spreads,Virginia Cavaliers,-110,-18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betonlineag,spreads,Wright St Raiders,-110,18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betus,h2h,Virginia Cavaliers,-2600,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betus,h2h,Wright St Raiders,1200,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betus,spreads,Virginia Cavaliers,-110,-18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betus,spreads,Wright St Raiders,-110,18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betrivers,h2h,Virginia Cavaliers,-3335,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betrivers,h2h,Wright St Raiders,1150,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betrivers,spreads,Virginia Cavaliers,-106,-18.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,betrivers,spreads,Wright St Raiders,-118,18.5
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,bovada,h2h,Virginia Cavaliers,-2200,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,bovada,h2h,Wright St Raiders,1000,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,bovada,spreads,Virginia Cavaliers,-105,-18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,bovada,spreads,Wright St Raiders,-115,18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,mybookieag,h2h,Virginia Cavaliers,-5049,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,mybookieag,h2h,Wright St Raiders,1320,
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,mybookieag,spreads,Virginia Cavaliers,-110,-18.0
+20260320,2026-03-20T17:50:03Z,Virginia Cavaliers,Wright St Raiders,mybookieag,spreads,Wright St Raiders,-110,18.0
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,h2h,Iowa State Cyclones,-8000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,h2h,Tennessee St Tigers,2200,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,spreads,Iowa State Cyclones,-110,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,draftkings,spreads,Tennessee St Tigers,-110,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,h2h,Tennessee St Tigers,3000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,spreads,Iowa State Cyclones,-110,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,fanduel,spreads,Tennessee St Tigers,-110,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betrivers,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betrivers,h2h,Tennessee St Tigers,2000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betrivers,spreads,Iowa State Cyclones,-109,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betrivers,spreads,Tennessee St Tigers,-114,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,h2h,Tennessee St Tigers,2500,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,spreads,Iowa State Cyclones,-110,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betmgm,spreads,Tennessee St Tigers,-110,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betonlineag,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betonlineag,h2h,Tennessee St Tigers,2000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betonlineag,spreads,Iowa State Cyclones,-110,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betonlineag,spreads,Tennessee St Tigers,-110,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,lowvig,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,lowvig,h2h,Tennessee St Tigers,2000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,lowvig,spreads,Iowa State Cyclones,-106,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,lowvig,spreads,Tennessee St Tigers,-106,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betus,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betus,h2h,Tennessee St Tigers,2000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betus,spreads,Iowa State Cyclones,-110,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,betus,spreads,Tennessee St Tigers,-110,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,bovada,h2h,Iowa State Cyclones,-7500,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,bovada,h2h,Tennessee St Tigers,1400,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,bovada,spreads,Iowa State Cyclones,-115,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,bovada,spreads,Tennessee St Tigers,-105,24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,mybookieag,h2h,Iowa State Cyclones,-10000,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,mybookieag,h2h,Tennessee St Tigers,1516,
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,mybookieag,spreads,Iowa State Cyclones,-110,-24.5
+20260320,2026-03-20T18:50:00Z,Iowa State Cyclones,Tennessee St Tigers,mybookieag,spreads,Tennessee St Tigers,-110,24.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,h2h,Alabama Crimson Tide,-800,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,h2h,Hofstra Pride,540,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,spreads,Alabama Crimson Tide,-110,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,fanduel,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,lowvig,h2h,Alabama Crimson Tide,-820,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,lowvig,h2h,Hofstra Pride,571,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,lowvig,spreads,Alabama Crimson Tide,-108,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,lowvig,spreads,Hofstra Pride,-104,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betonlineag,h2h,Alabama Crimson Tide,-820,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betonlineag,h2h,Hofstra Pride,571,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betonlineag,spreads,Alabama Crimson Tide,-112,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betonlineag,spreads,Hofstra Pride,-108,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,h2h,Alabama Crimson Tide,-750,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,h2h,Hofstra Pride,525,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,spreads,Alabama Crimson Tide,-110,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betmgm,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betus,h2h,Alabama Crimson Tide,-820,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betus,h2h,Hofstra Pride,560,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betus,spreads,Alabama Crimson Tide,-110,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betus,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betrivers,h2h,Alabama Crimson Tide,-715,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betrivers,h2h,Hofstra Pride,440,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betrivers,spreads,Alabama Crimson Tide,-113,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,betrivers,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,bovada,h2h,Alabama Crimson Tide,-800,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,bovada,h2h,Hofstra Pride,525,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,bovada,spreads,Alabama Crimson Tide,-110,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,bovada,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,h2h,Alabama Crimson Tide,-800,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,h2h,Hofstra Pride,550,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,spreads,Alabama Crimson Tide,-110,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,draftkings,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,mybookieag,h2h,Alabama Crimson Tide,-833,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,mybookieag,h2h,Hofstra Pride,533,
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,mybookieag,spreads,Alabama Crimson Tide,-110,-11.5
+20260320,2026-03-20T19:15:56Z,Alabama Crimson Tide,Hofstra Pride,mybookieag,spreads,Hofstra Pride,-110,11.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,h2h,Utah State Aggies,-120,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,h2h,Villanova Wildcats,100,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,spreads,Utah State Aggies,-110,-1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,fanduel,spreads,Villanova Wildcats,-110,1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,h2h,Utah State Aggies,-125,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,h2h,Villanova Wildcats,105,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,spreads,Utah State Aggies,-115,-1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,draftkings,spreads,Villanova Wildcats,-105,1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,h2h,Utah State Aggies,-135,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,h2h,Villanova Wildcats,110,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,spreads,Utah State Aggies,-115,-1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betmgm,spreads,Villanova Wildcats,-105,1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betonlineag,h2h,Utah State Aggies,-133,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betonlineag,h2h,Villanova Wildcats,113,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betonlineag,spreads,Utah State Aggies,-110,-2.0
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betonlineag,spreads,Villanova Wildcats,-110,2.0
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,lowvig,h2h,Utah State Aggies,-133,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,lowvig,h2h,Villanova Wildcats,113,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,lowvig,spreads,Utah State Aggies,-106,-2.0
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,lowvig,spreads,Villanova Wildcats,-106,2.0
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betus,h2h,Utah State Aggies,-130,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betus,h2h,Villanova Wildcats,110,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betus,spreads,Utah State Aggies,-110,-1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betus,spreads,Villanova Wildcats,-110,1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betrivers,h2h,Utah State Aggies,-129,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betrivers,h2h,Villanova Wildcats,102,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betrivers,spreads,Utah State Aggies,-113,-1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,betrivers,spreads,Villanova Wildcats,-110,1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,bovada,h2h,Utah State Aggies,-130,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,bovada,h2h,Villanova Wildcats,110,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,bovada,spreads,Utah State Aggies,-105,-2.0
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,bovada,spreads,Villanova Wildcats,-115,2.0
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,mybookieag,h2h,Utah State Aggies,-127,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,mybookieag,h2h,Villanova Wildcats,104,
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,mybookieag,spreads,Utah State Aggies,-110,-1.5
+20260320,2026-03-20T20:10:00Z,Villanova Wildcats,Utah State Aggies,mybookieag,spreads,Villanova Wildcats,-110,1.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,h2h,Miami (OH) RedHawks,470,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,h2h,Tennessee Volunteers,-670,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,spreads,Miami (OH) RedHawks,-115,11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,fanduel,spreads,Tennessee Volunteers,-105,-11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,draftkings,h2h,Miami (OH) RedHawks,410,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,draftkings,h2h,Tennessee Volunteers,-550,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,draftkings,spreads,Miami (OH) RedHawks,-115,11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,draftkings,spreads,Tennessee Volunteers,-105,-11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,lowvig,h2h,Miami (OH) RedHawks,415,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,lowvig,h2h,Tennessee Volunteers,-550,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,lowvig,spreads,Miami (OH) RedHawks,-110,11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,lowvig,spreads,Tennessee Volunteers,-102,-11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betonlineag,h2h,Miami (OH) RedHawks,415,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betonlineag,h2h,Tennessee Volunteers,-550,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betonlineag,spreads,Miami (OH) RedHawks,-114,11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betonlineag,spreads,Tennessee Volunteers,-106,-11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,mybookieag,h2h,Miami (OH) RedHawks,456,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,mybookieag,h2h,Tennessee Volunteers,-667,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,mybookieag,spreads,Miami (OH) RedHawks,-110,11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,mybookieag,spreads,Tennessee Volunteers,-110,-11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betmgm,h2h,Miami (OH) RedHawks,425,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betmgm,h2h,Tennessee Volunteers,-600,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betrivers,h2h,Miami (OH) RedHawks,410,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betrivers,h2h,Tennessee Volunteers,-590,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betrivers,spreads,Miami (OH) RedHawks,-115,11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betrivers,spreads,Tennessee Volunteers,-108,-11.5
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,bovada,h2h,Miami (OH) RedHawks,430,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,bovada,h2h,Tennessee Volunteers,-625,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,bovada,spreads,Miami (OH) RedHawks,-110,11.0
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,bovada,spreads,Tennessee Volunteers,-110,-11.0
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betus,h2h,Miami (OH) RedHawks,425,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betus,h2h,Tennessee Volunteers,-550,
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betus,spreads,Miami (OH) RedHawks,-110,11.0
+20260320,2026-03-20T20:25:38Z,Tennessee Volunteers,Miami (OH) RedHawks,betus,spreads,Tennessee Volunteers,-110,-11.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,h2h,Clemson Tigers,110,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,h2h,Iowa Hawkeyes,-130,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,spreads,Clemson Tigers,-118,2.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,draftkings,spreads,Iowa Hawkeyes,-102,-2.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,h2h,Clemson Tigers,115,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,h2h,Iowa Hawkeyes,-138,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,spreads,Clemson Tigers,-115,2.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,fanduel,spreads,Iowa Hawkeyes,-105,-2.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,h2h,Clemson Tigers,110,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,h2h,Iowa Hawkeyes,-135,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,spreads,Clemson Tigers,-115,2.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betmgm,spreads,Iowa Hawkeyes,-105,-2.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,lowvig,h2h,Clemson Tigers,112,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,lowvig,h2h,Iowa Hawkeyes,-132,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,lowvig,spreads,Clemson Tigers,-101,2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,lowvig,spreads,Iowa Hawkeyes,-111,-2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betonlineag,h2h,Clemson Tigers,112,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betonlineag,h2h,Iowa Hawkeyes,-132,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betonlineag,spreads,Clemson Tigers,-105,2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betonlineag,spreads,Iowa Hawkeyes,-115,-2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betus,h2h,Clemson Tigers,110,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betus,h2h,Iowa Hawkeyes,-130,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betus,spreads,Clemson Tigers,-110,2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betus,spreads,Iowa Hawkeyes,-110,-2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betrivers,h2h,Clemson Tigers,108,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betrivers,h2h,Iowa Hawkeyes,-136,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betrivers,spreads,Clemson Tigers,-106,1.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,betrivers,spreads,Iowa Hawkeyes,-122,-1.5
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,bovada,h2h,Clemson Tigers,110,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,bovada,h2h,Iowa Hawkeyes,-130,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,bovada,spreads,Clemson Tigers,-110,2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,bovada,spreads,Iowa Hawkeyes,-110,-2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,mybookieag,h2h,Clemson Tigers,110,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,mybookieag,h2h,Iowa Hawkeyes,-135,
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,mybookieag,spreads,Clemson Tigers,-110,2.0
+20260320,2026-03-20T22:50:00Z,Clemson Tigers,Iowa Hawkeyes,mybookieag,spreads,Iowa Hawkeyes,-110,-2.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,h2h,Northern Iowa Panthers,390,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,h2h,St. John's Red Storm,-530,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,spreads,Northern Iowa Panthers,-104,9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,fanduel,spreads,St. John's Red Storm,-118,-9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betrivers,h2h,Northern Iowa Panthers,360,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betrivers,h2h,St. John's Red Storm,-530,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betrivers,spreads,Northern Iowa Panthers,-109,9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betrivers,spreads,St. John's Red Storm,-114,-9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betonlineag,h2h,Northern Iowa Panthers,415,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betonlineag,h2h,St. John's Red Storm,-550,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betonlineag,spreads,Northern Iowa Panthers,-110,10.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betonlineag,spreads,St. John's Red Storm,-110,-10.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,lowvig,h2h,Northern Iowa Panthers,415,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,lowvig,h2h,St. John's Red Storm,-550,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,lowvig,spreads,Northern Iowa Panthers,-106,10.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,lowvig,spreads,St. John's Red Storm,-106,-10.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betmgm,h2h,Northern Iowa Panthers,400,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betmgm,h2h,St. John's Red Storm,-550,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betus,h2h,Northern Iowa Panthers,425,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betus,h2h,St. John's Red Storm,-550,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betus,spreads,Northern Iowa Panthers,-110,9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,betus,spreads,St. John's Red Storm,-110,-9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,bovada,h2h,Northern Iowa Panthers,390,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,bovada,h2h,St. John's Red Storm,-550,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,bovada,spreads,Northern Iowa Panthers,-115,10.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,bovada,spreads,St. John's Red Storm,-105,-10.0
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,h2h,Northern Iowa Panthers,400,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,h2h,St. John's Red Storm,-535,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,spreads,Northern Iowa Panthers,-108,9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,draftkings,spreads,St. John's Red Storm,-112,-9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,mybookieag,h2h,Northern Iowa Panthers,424,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,mybookieag,h2h,St. John's Red Storm,-625,
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,mybookieag,spreads,Northern Iowa Panthers,-110,9.5
+20260320,2026-03-20T23:10:00Z,St. John's Red Storm,Northern Iowa Panthers,mybookieag,spreads,St. John's Red Storm,-110,-9.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,h2h,UCF Knights,200,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,h2h,UCLA Bruins,-245,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,spreads,UCF Knights,-108,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,draftkings,spreads,UCLA Bruins,-112,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,h2h,UCF Knights,202,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,h2h,UCLA Bruins,-250,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,spreads,UCF Knights,-110,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,fanduel,spreads,UCLA Bruins,-110,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betrivers,h2h,UCF Knights,180,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betrivers,h2h,UCLA Bruins,-235,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betrivers,spreads,UCF Knights,-114,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betrivers,spreads,UCLA Bruins,-109,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,h2h,UCF Knights,195,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,h2h,UCLA Bruins,-235,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,spreads,UCF Knights,-110,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betmgm,spreads,UCLA Bruins,-110,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betonlineag,h2h,UCF Knights,200,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betonlineag,h2h,UCLA Bruins,-240,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betonlineag,spreads,UCF Knights,-108,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betonlineag,spreads,UCLA Bruins,-112,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,lowvig,h2h,UCF Knights,200,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,lowvig,h2h,UCLA Bruins,-240,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,lowvig,spreads,UCF Knights,-104,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,lowvig,spreads,UCLA Bruins,-108,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betus,h2h,UCF Knights,203,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betus,h2h,UCLA Bruins,-240,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betus,spreads,UCF Knights,-110,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,betus,spreads,UCLA Bruins,-110,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,bovada,h2h,UCF Knights,195,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,bovada,h2h,UCLA Bruins,-235,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,bovada,spreads,UCF Knights,-105,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,bovada,spreads,UCLA Bruins,-115,-5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,mybookieag,h2h,UCF Knights,187,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,mybookieag,h2h,UCLA Bruins,-233,
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,mybookieag,spreads,UCF Knights,-110,5.5
+20260320,2026-03-20T23:25:00Z,UCLA Bruins,UCF Knights,mybookieag,spreads,UCLA Bruins,-110,-5.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,fanduel,h2h,Purdue Boilermakers,-30000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,fanduel,h2h,Queens University Royals,4000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,fanduel,spreads,Purdue Boilermakers,-110,-25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,fanduel,spreads,Queens University Royals,-110,25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,draftkings,h2h,Purdue Boilermakers,-8000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,draftkings,h2h,Queens University Royals,2200,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,draftkings,spreads,Purdue Boilermakers,-110,-25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,draftkings,spreads,Queens University Royals,-110,25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betonlineag,h2h,Purdue Boilermakers,-15000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betonlineag,h2h,Queens University Royals,2250,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betonlineag,spreads,Purdue Boilermakers,-115,-25.0
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betonlineag,spreads,Queens University Royals,-105,25.0
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,lowvig,h2h,Purdue Boilermakers,-15000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,lowvig,h2h,Queens University Royals,2250,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,lowvig,spreads,Purdue Boilermakers,-111,-25.0
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,lowvig,spreads,Queens University Royals,-101,25.0
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betrivers,h2h,Purdue Boilermakers,-10000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betrivers,h2h,Queens University Royals,2000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betrivers,spreads,Purdue Boilermakers,-115,-25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betrivers,spreads,Queens University Royals,-108,25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betus,spreads,Purdue Boilermakers,-110,-25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betus,spreads,Queens University Royals,-110,25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,bovada,h2h,Purdue Boilermakers,-20000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,bovada,h2h,Queens University Royals,1700,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,bovada,spreads,Purdue Boilermakers,-110,-25.0
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,bovada,spreads,Queens University Royals,-110,25.0
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betmgm,h2h,Purdue Boilermakers,-10000,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betmgm,h2h,Queens University Royals,2800,
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betmgm,spreads,Purdue Boilermakers,-110,-25.5
+20260320,2026-03-20T23:35:00Z,Purdue Boilermakers,Queens University Royals,betmgm,spreads,Queens University Royals,-110,25.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,draftkings,spreads,Florida Gators,-105,-35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,draftkings,spreads,Prairie View Panthers,-115,35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,fanduel,h2h,Florida Gators,-100000,
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,fanduel,h2h,Prairie View Panthers,8000,
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,fanduel,spreads,Florida Gators,-108,-35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,fanduel,spreads,Prairie View Panthers,-112,35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,betonlineag,spreads,Florida Gators,-110,-35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,betonlineag,spreads,Prairie View Panthers,-110,35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,lowvig,spreads,Florida Gators,-106,-35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,lowvig,spreads,Prairie View Panthers,-106,35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,betrivers,spreads,Florida Gators,-117,-34.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,betrivers,spreads,Prairie View Panthers,-107,34.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,bovada,h2h,Florida Gators,-25000,
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,bovada,h2h,Prairie View Panthers,1800,
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,bovada,spreads,Florida Gators,-115,-35.0
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,bovada,spreads,Prairie View Panthers,-105,35.0
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,betus,spreads,Florida Gators,-110,-35.5
+20260320,2026-03-21T01:25:00Z,Florida Gators,Prairie View Panthers,betus,spreads,Prairie View Panthers,-110,35.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,h2h,Cal Baptist Lancers,810,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,h2h,Kansas Jayhawks,-1700,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,spreads,Cal Baptist Lancers,-115,14.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,fanduel,spreads,Kansas Jayhawks,-105,-14.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,h2h,Cal Baptist Lancers,800,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,h2h,Kansas Jayhawks,-1350,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,spreads,Cal Baptist Lancers,100,13.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,draftkings,spreads,Kansas Jayhawks,-120,-13.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,h2h,Cal Baptist Lancers,775,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,h2h,Kansas Jayhawks,-1400,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,spreads,Cal Baptist Lancers,-102,13.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betmgm,spreads,Kansas Jayhawks,-118,-13.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betonlineag,h2h,Cal Baptist Lancers,776,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betonlineag,h2h,Kansas Jayhawks,-1250,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betonlineag,spreads,Cal Baptist Lancers,-110,14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betonlineag,spreads,Kansas Jayhawks,-110,-14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,lowvig,h2h,Cal Baptist Lancers,776,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,lowvig,h2h,Kansas Jayhawks,-1250,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,lowvig,spreads,Cal Baptist Lancers,-106,14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,lowvig,spreads,Kansas Jayhawks,-106,-14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betus,h2h,Cal Baptist Lancers,800,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betus,h2h,Kansas Jayhawks,-1250,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betus,spreads,Cal Baptist Lancers,-110,14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betus,spreads,Kansas Jayhawks,-110,-14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betrivers,h2h,Cal Baptist Lancers,700,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betrivers,h2h,Kansas Jayhawks,-1250,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betrivers,spreads,Cal Baptist Lancers,-117,14.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,betrivers,spreads,Kansas Jayhawks,-107,-14.5
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,bovada,h2h,Cal Baptist Lancers,650,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,bovada,h2h,Kansas Jayhawks,-1100,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,bovada,spreads,Cal Baptist Lancers,-110,14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,bovada,spreads,Kansas Jayhawks,-110,-14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,mybookieag,h2h,Cal Baptist Lancers,738,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,mybookieag,h2h,Kansas Jayhawks,-1429,
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,mybookieag,spreads,Cal Baptist Lancers,-110,14.0
+20260320,2026-03-21T01:45:00Z,Kansas Jayhawks,Cal Baptist Lancers,mybookieag,spreads,Kansas Jayhawks,-110,-14.0
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,h2h,Furman Paladins,2000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,h2h,UConn Huskies,-7000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,spreads,Furman Paladins,-115,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,fanduel,spreads,UConn Huskies,-105,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,h2h,Furman Paladins,1700,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,h2h,UConn Huskies,-4500,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,spreads,Furman Paladins,-112,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,draftkings,spreads,UConn Huskies,-108,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,h2h,Furman Paladins,1450,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,h2h,UConn Huskies,-5000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,spreads,Furman Paladins,-110,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betmgm,spreads,UConn Huskies,-110,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betonlineag,h2h,Furman Paladins,1550,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betonlineag,h2h,UConn Huskies,-5000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betonlineag,spreads,Furman Paladins,-110,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betonlineag,spreads,UConn Huskies,-110,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,lowvig,h2h,Furman Paladins,1550,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,lowvig,h2h,UConn Huskies,-5000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,lowvig,spreads,Furman Paladins,-106,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,lowvig,spreads,UConn Huskies,-106,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betrivers,h2h,Furman Paladins,1600,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betrivers,h2h,UConn Huskies,-5000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betrivers,spreads,Furman Paladins,-108,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betrivers,spreads,UConn Huskies,-115,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betus,h2h,Furman Paladins,1625,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betus,h2h,UConn Huskies,-5000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betus,spreads,Furman Paladins,-110,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,betus,spreads,UConn Huskies,-110,-20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,bovada,h2h,Furman Paladins,1100,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,bovada,h2h,UConn Huskies,-3500,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,bovada,spreads,Furman Paladins,-115,21.0
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,bovada,spreads,UConn Huskies,-105,-21.0
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,mybookieag,h2h,Furman Paladins,1305,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,mybookieag,h2h,UConn Huskies,-5000,
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,mybookieag,spreads,Furman Paladins,-110,20.5
+20260320,2026-03-21T02:00:00Z,UConn Huskies,Furman Paladins,mybookieag,spreads,UConn Huskies,-110,-20.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,h2h,Miami Hurricanes,-130,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,h2h,Missouri Tigers,110,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,spreads,Miami Hurricanes,-115,-1.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,draftkings,spreads,Missouri Tigers,-105,1.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,h2h,Miami Hurricanes,-130,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,h2h,Missouri Tigers,108,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,spreads,Miami Hurricanes,-114,-1.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,fanduel,spreads,Missouri Tigers,-106,1.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,h2h,Miami Hurricanes,-135,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,h2h,Missouri Tigers,110,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,spreads,Miami Hurricanes,-105,-2.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betmgm,spreads,Missouri Tigers,-115,2.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betonlineag,h2h,Miami Hurricanes,-130,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betonlineag,h2h,Missouri Tigers,110,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betonlineag,spreads,Miami Hurricanes,-110,-2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betonlineag,spreads,Missouri Tigers,-110,2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,lowvig,h2h,Miami Hurricanes,-130,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,lowvig,h2h,Missouri Tigers,110,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,lowvig,spreads,Miami Hurricanes,-106,-2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,lowvig,spreads,Missouri Tigers,-106,2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betus,h2h,Miami Hurricanes,-130,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betus,h2h,Missouri Tigers,110,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betus,spreads,Miami Hurricanes,-110,-2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betus,spreads,Missouri Tigers,-110,2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betrivers,h2h,Miami Hurricanes,-137,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betrivers,h2h,Missouri Tigers,105,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betrivers,spreads,Miami Hurricanes,-117,-1.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,betrivers,spreads,Missouri Tigers,-107,1.5
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,bovada,h2h,Miami Hurricanes,-130,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,bovada,h2h,Missouri Tigers,110,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,bovada,spreads,Miami Hurricanes,-105,-2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,bovada,spreads,Missouri Tigers,-115,2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,mybookieag,h2h,Miami Hurricanes,-137,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,mybookieag,h2h,Missouri Tigers,111,
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,mybookieag,spreads,Miami Hurricanes,-110,-2.0
+20260320,2026-03-21T02:10:00Z,Miami Hurricanes,Missouri Tigers,mybookieag,spreads,Missouri Tigers,-110,2.0
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,draftkings,h2h,Michigan Wolverines,-1100,
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,draftkings,h2h,Saint Louis Billikens,700,
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,draftkings,spreads,Michigan Wolverines,-110,-13.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,draftkings,spreads,Saint Louis Billikens,-110,13.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,fanduel,h2h,Michigan Wolverines,-850,
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,fanduel,h2h,Saint Louis Billikens,570,
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,fanduel,spreads,Michigan Wolverines,-120,-12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,fanduel,spreads,Saint Louis Billikens,-102,12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,betonlineag,spreads,Michigan Wolverines,-110,-12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,betonlineag,spreads,Saint Louis Billikens,-110,12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,lowvig,spreads,Michigan Wolverines,-106,-12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,lowvig,spreads,Saint Louis Billikens,-106,12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,betmgm,spreads,Michigan Wolverines,-110,-12.5
+20260320,2026-03-21T16:10:00Z,Michigan Wolverines,Saint Louis Billikens,betmgm,spreads,Saint Louis Billikens,-110,12.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,draftkings,h2h,Louisville Cardinals,154,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,draftkings,h2h,Michigan St Spartans,-185,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,draftkings,spreads,Louisville Cardinals,-115,4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,draftkings,spreads,Michigan St Spartans,-105,-4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,fanduel,h2h,Louisville Cardinals,146,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,fanduel,h2h,Michigan St Spartans,-178,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,fanduel,spreads,Louisville Cardinals,-110,4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,fanduel,spreads,Michigan St Spartans,-110,-4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betonlineag,h2h,Louisville Cardinals,157,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betonlineag,h2h,Michigan St Spartans,-180,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betonlineag,spreads,Louisville Cardinals,-115,4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betonlineag,spreads,Michigan St Spartans,-105,-4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,lowvig,h2h,Louisville Cardinals,157,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,lowvig,h2h,Michigan St Spartans,-180,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,lowvig,spreads,Louisville Cardinals,-111,4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,lowvig,spreads,Michigan St Spartans,-101,-4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,mybookieag,h2h,Louisville Cardinals,149,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,mybookieag,h2h,Michigan St Spartans,-185,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,mybookieag,spreads,Louisville Cardinals,-110,4.0
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,mybookieag,spreads,Michigan St Spartans,-110,-4.0
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betmgm,h2h,Louisville Cardinals,154,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betmgm,h2h,Michigan St Spartans,-190,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betmgm,spreads,Louisville Cardinals,-115,4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betmgm,spreads,Michigan St Spartans,-105,-4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betrivers,h2h,Louisville Cardinals,155,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betrivers,h2h,Michigan St Spartans,-200,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betrivers,spreads,Louisville Cardinals,-110,4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betrivers,spreads,Michigan St Spartans,-113,-4.5
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betus,h2h,Louisville Cardinals,155,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betus,h2h,Michigan St Spartans,-180,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betus,spreads,Louisville Cardinals,-110,4.0
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,betus,spreads,Michigan St Spartans,-110,-4.0
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,bovada,h2h,Louisville Cardinals,150,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,bovada,h2h,Michigan St Spartans,-175,
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,bovada,spreads,Louisville Cardinals,-110,4.0
+20260320,2026-03-21T18:45:00Z,Michigan St Spartans,Louisville Cardinals,bovada,spreads,Michigan St Spartans,-110,-4.0
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,draftkings,h2h,Duke Blue Devils,-650,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,draftkings,h2h,TCU Horned Frogs,470,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,draftkings,spreads,Duke Blue Devils,-118,-10.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,draftkings,spreads,TCU Horned Frogs,-102,10.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,fanduel,h2h,Duke Blue Devils,-630,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,fanduel,h2h,TCU Horned Frogs,450,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,fanduel,spreads,Duke Blue Devils,-110,-11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,fanduel,spreads,TCU Horned Frogs,-110,11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,lowvig,h2h,Duke Blue Devils,-640,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,lowvig,h2h,TCU Horned Frogs,469,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,lowvig,spreads,Duke Blue Devils,-101,-11.0
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,lowvig,spreads,TCU Horned Frogs,-111,11.0
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betonlineag,h2h,Duke Blue Devils,-640,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betonlineag,h2h,TCU Horned Frogs,469,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betonlineag,spreads,Duke Blue Devils,-105,-11.0
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betonlineag,spreads,TCU Horned Frogs,-115,11.0
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,bovada,h2h,Duke Blue Devils,-750,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,bovada,h2h,TCU Horned Frogs,500,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,bovada,spreads,Duke Blue Devils,-105,-11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,bovada,spreads,TCU Horned Frogs,-115,11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,mybookieag,h2h,Duke Blue Devils,-714,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,mybookieag,h2h,TCU Horned Frogs,484,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,mybookieag,spreads,Duke Blue Devils,-110,-11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,mybookieag,spreads,TCU Horned Frogs,-110,11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betrivers,h2h,Duke Blue Devils,-590,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betrivers,h2h,TCU Horned Frogs,400,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betrivers,spreads,Duke Blue Devils,-105,-11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betrivers,spreads,TCU Horned Frogs,-120,11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betmgm,h2h,Duke Blue Devils,-650,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betmgm,h2h,TCU Horned Frogs,475,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betmgm,spreads,Duke Blue Devils,-115,-10.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betmgm,spreads,TCU Horned Frogs,-105,10.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betus,h2h,Duke Blue Devils,-640,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betus,h2h,TCU Horned Frogs,470,
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betus,spreads,Duke Blue Devils,-110,-11.5
+20260320,2026-03-21T21:15:00Z,Duke Blue Devils,TCU Horned Frogs,betus,spreads,TCU Horned Frogs,-110,11.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,draftkings,h2h,Houston Cougars,-455,
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,draftkings,h2h,Texas A&M Aggies,350,
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,draftkings,spreads,Houston Cougars,-110,-9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,draftkings,spreads,Texas A&M Aggies,-110,9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,fanduel,h2h,Houston Cougars,-430,
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,fanduel,h2h,Texas A&M Aggies,330,
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,fanduel,spreads,Houston Cougars,-120,-9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,fanduel,spreads,Texas A&M Aggies,-102,9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,betonlineag,spreads,Houston Cougars,-110,-9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,betonlineag,spreads,Texas A&M Aggies,-110,9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,lowvig,spreads,Houston Cougars,-106,-9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,lowvig,spreads,Texas A&M Aggies,-106,9.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,betmgm,spreads,Houston Cougars,-110,-10.5
+20260320,2026-03-21T22:10:00Z,Houston Cougars,Texas A&M Aggies,betmgm,spreads,Texas A&M Aggies,-110,10.5
+20260320,2026-03-21T23:00:00Z,UNC Wilmington Seahawks,Dayton Flyers,betonlineag,spreads,Dayton Flyers,-110,-2.5
+20260320,2026-03-21T23:00:00Z,UNC Wilmington Seahawks,Dayton Flyers,betonlineag,spreads,UNC Wilmington Seahawks,-110,2.5
+20260320,2026-03-21T23:00:00Z,UNC Wilmington Seahawks,Dayton Flyers,lowvig,spreads,Dayton Flyers,-106,-2.5
+20260320,2026-03-21T23:00:00Z,UNC Wilmington Seahawks,Dayton Flyers,lowvig,spreads,UNC Wilmington Seahawks,-106,2.5
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,draftkings,h2h,Gonzaga Bulldogs,-225,
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,draftkings,h2h,Texas Longhorns,185,
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,draftkings,spreads,Gonzaga Bulldogs,-110,-5.5
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,draftkings,spreads,Texas Longhorns,-110,5.5
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,lowvig,spreads,Gonzaga Bulldogs,-106,-6.0
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,lowvig,spreads,Texas Longhorns,-106,6.0
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,betonlineag,spreads,Gonzaga Bulldogs,-110,-6.0
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,betonlineag,spreads,Texas Longhorns,-110,6.0
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,betmgm,spreads,Gonzaga Bulldogs,-110,-7.5
+20260320,2026-03-21T23:10:00Z,Gonzaga Bulldogs,Texas Longhorns,betmgm,spreads,Texas Longhorns,-110,7.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,draftkings,h2h,Illinois Fighting Illini,-575,
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,draftkings,h2h,VCU Rams,425,
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,draftkings,spreads,Illinois Fighting Illini,-110,-10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,draftkings,spreads,VCU Rams,-110,10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,fanduel,h2h,Illinois Fighting Illini,-520,
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,fanduel,h2h,VCU Rams,385,
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,fanduel,spreads,Illinois Fighting Illini,-110,-10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,fanduel,spreads,VCU Rams,-110,10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,lowvig,spreads,Illinois Fighting Illini,-106,-10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,lowvig,spreads,VCU Rams,-106,10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betonlineag,spreads,Illinois Fighting Illini,-110,-10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betonlineag,spreads,VCU Rams,-110,10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betmgm,spreads,Illinois Fighting Illini,-110,-10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betmgm,spreads,VCU Rams,-110,10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betrivers,h2h,Illinois Fighting Illini,-530,
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betrivers,h2h,VCU Rams,375,
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betrivers,spreads,Illinois Fighting Illini,-118,-10.5
+20260320,2026-03-21T23:50:00Z,Illinois Fighting Illini,VCU Rams,betrivers,spreads,VCU Rams,-106,10.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,draftkings,h2h,Nebraska Cornhuskers,120,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,draftkings,h2h,Vanderbilt Commodores,-142,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,draftkings,spreads,Nebraska Cornhuskers,-108,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,draftkings,spreads,Vanderbilt Commodores,-112,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,fanduel,h2h,Nebraska Cornhuskers,132,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,fanduel,h2h,Vanderbilt Commodores,-160,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,fanduel,spreads,Nebraska Cornhuskers,-120,3.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,fanduel,spreads,Vanderbilt Commodores,-102,-3.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,lowvig,h2h,Nebraska Cornhuskers,122,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,lowvig,h2h,Vanderbilt Commodores,-142,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,lowvig,spreads,Nebraska Cornhuskers,-104,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,lowvig,spreads,Vanderbilt Commodores,-108,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,mybookieag,h2h,Nebraska Cornhuskers,121,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,mybookieag,h2h,Vanderbilt Commodores,-149,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,mybookieag,spreads,Nebraska Cornhuskers,-110,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,mybookieag,spreads,Vanderbilt Commodores,-110,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betonlineag,h2h,Nebraska Cornhuskers,122,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betonlineag,h2h,Vanderbilt Commodores,-142,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betonlineag,spreads,Nebraska Cornhuskers,-108,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betonlineag,spreads,Vanderbilt Commodores,-112,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betmgm,h2h,Nebraska Cornhuskers,118,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betmgm,h2h,Vanderbilt Commodores,-145,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betmgm,spreads,Nebraska Cornhuskers,-110,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betmgm,spreads,Vanderbilt Commodores,-110,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betrivers,h2h,Nebraska Cornhuskers,115,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betrivers,h2h,Vanderbilt Commodores,-143,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betrivers,spreads,Nebraska Cornhuskers,-112,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betrivers,spreads,Vanderbilt Commodores,-112,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betus,h2h,Nebraska Cornhuskers,120,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betus,h2h,Vanderbilt Commodores,-140,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betus,spreads,Nebraska Cornhuskers,-110,2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,betus,spreads,Vanderbilt Commodores,-110,-2.5
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,bovada,h2h,Nebraska Cornhuskers,130,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,bovada,h2h,Vanderbilt Commodores,-150,
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,bovada,spreads,Nebraska Cornhuskers,-115,3.0
+20260320,2026-03-22T00:45:00Z,Nebraska Cornhuskers,Vanderbilt Commodores,bovada,spreads,Vanderbilt Commodores,-105,-3.0
+20260320,2026-03-22T01:00:00Z,Nevada Wolf Pack,Liberty Flames,betonlineag,spreads,Liberty Flames,-110,7.5
+20260320,2026-03-22T01:00:00Z,Nevada Wolf Pack,Liberty Flames,betonlineag,spreads,Nevada Wolf Pack,-110,-7.5
+20260320,2026-03-22T01:00:00Z,Nevada Wolf Pack,Liberty Flames,lowvig,spreads,Liberty Flames,-106,7.5
+20260320,2026-03-22T01:00:00Z,Nevada Wolf Pack,Liberty Flames,lowvig,spreads,Nevada Wolf Pack,-106,-7.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,draftkings,h2h,Arkansas Razorbacks,-650,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,draftkings,h2h,High Point Panthers,470,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,draftkings,spreads,Arkansas Razorbacks,-102,-11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,draftkings,spreads,High Point Panthers,-118,11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betonlineag,h2h,Arkansas Razorbacks,-650,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betonlineag,h2h,High Point Panthers,476,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betonlineag,spreads,Arkansas Razorbacks,-110,-11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betonlineag,spreads,High Point Panthers,-110,11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,lowvig,h2h,Arkansas Razorbacks,-650,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,lowvig,h2h,High Point Panthers,476,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,lowvig,spreads,Arkansas Razorbacks,-106,-11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,lowvig,spreads,High Point Panthers,-106,11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,mybookieag,h2h,Arkansas Razorbacks,-667,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,mybookieag,h2h,High Point Panthers,446,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,mybookieag,spreads,Arkansas Razorbacks,-110,-10.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,mybookieag,spreads,High Point Panthers,-110,10.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,fanduel,h2h,Arkansas Razorbacks,-580,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,fanduel,h2h,High Point Panthers,420,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,fanduel,spreads,Arkansas Razorbacks,-106,-11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,fanduel,spreads,High Point Panthers,-114,11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betmgm,h2h,Arkansas Razorbacks,-650,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betmgm,h2h,High Point Panthers,475,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betmgm,spreads,Arkansas Razorbacks,-105,-11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betmgm,spreads,High Point Panthers,-115,11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betrivers,h2h,Arkansas Razorbacks,-590,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betrivers,h2h,High Point Panthers,400,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betrivers,spreads,Arkansas Razorbacks,-115,-11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betrivers,spreads,High Point Panthers,-108,11.5
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betus,h2h,Arkansas Razorbacks,-650,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betus,h2h,High Point Panthers,475,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betus,spreads,Arkansas Razorbacks,-110,-11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,betus,spreads,High Point Panthers,-110,11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,bovada,h2h,Arkansas Razorbacks,-700,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,bovada,h2h,High Point Panthers,475,
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,bovada,spreads,Arkansas Razorbacks,-110,-11.0
+20260320,2026-03-22T01:45:00Z,Arkansas Razorbacks,High Point Panthers,bovada,spreads,High Point Panthers,-110,11.0
+20260320,2026-03-22T20:30:00Z,Wake Forest Demon Deacons,Illinois St Redbirds,betonlineag,spreads,Illinois St Redbirds,-110,7.5
+20260320,2026-03-22T20:30:00Z,Wake Forest Demon Deacons,Illinois St Redbirds,betonlineag,spreads,Wake Forest Demon Deacons,-110,-7.5
+20260320,2026-03-22T20:30:00Z,Wake Forest Demon Deacons,Illinois St Redbirds,lowvig,spreads,Illinois St Redbirds,-106,7.5
+20260320,2026-03-22T20:30:00Z,Wake Forest Demon Deacons,Illinois St Redbirds,lowvig,spreads,Wake Forest Demon Deacons,-106,-7.5
+20260320,2026-03-22T22:30:00Z,Auburn Tigers,Seattle Redhawks,betonlineag,spreads,Auburn Tigers,-110,-13.0
+20260320,2026-03-22T22:30:00Z,Auburn Tigers,Seattle Redhawks,betonlineag,spreads,Seattle Redhawks,-110,13.0
+20260320,2026-03-22T22:30:00Z,Auburn Tigers,Seattle Redhawks,lowvig,spreads,Auburn Tigers,-106,-13.0
+20260320,2026-03-22T22:30:00Z,Auburn Tigers,Seattle Redhawks,lowvig,spreads,Seattle Redhawks,-106,13.0
+20260320,2026-03-22T23:00:00Z,Tulsa Golden Hurricane,UNLV Rebels,betonlineag,spreads,Tulsa Golden Hurricane,-110,-4.0
+20260320,2026-03-22T23:00:00Z,Tulsa Golden Hurricane,UNLV Rebels,betonlineag,spreads,UNLV Rebels,-110,4.0
+20260320,2026-03-22T23:00:00Z,Tulsa Golden Hurricane,UNLV Rebels,lowvig,spreads,Tulsa Golden Hurricane,-106,-4.0
+20260320,2026-03-22T23:00:00Z,Tulsa Golden Hurricane,UNLV Rebels,lowvig,spreads,UNLV Rebels,-106,4.0
+20260320,2026-03-23T00:00:00Z,New Mexico Lobos,GW Revolutionaries,betonlineag,spreads,GW Revolutionaries,-110,7.5
+20260320,2026-03-23T00:00:00Z,New Mexico Lobos,GW Revolutionaries,betonlineag,spreads,New Mexico Lobos,-110,-7.5
+20260320,2026-03-23T00:00:00Z,New Mexico Lobos,GW Revolutionaries,lowvig,spreads,GW Revolutionaries,-106,7.5
+20260320,2026-03-23T00:00:00Z,New Mexico Lobos,GW Revolutionaries,lowvig,spreads,New Mexico Lobos,-106,-7.5
+20260320,2026-03-23T00:30:00Z,Oklahoma St Cowboys,Wichita St Shockers,betonlineag,spreads,Oklahoma St Cowboys,-110,-3.5
+20260320,2026-03-23T00:30:00Z,Oklahoma St Cowboys,Wichita St Shockers,betonlineag,spreads,Wichita St Shockers,-110,3.5
+20260320,2026-03-23T00:30:00Z,Oklahoma St Cowboys,Wichita St Shockers,lowvig,spreads,Oklahoma St Cowboys,-106,-3.5
+20260320,2026-03-23T00:30:00Z,Oklahoma St Cowboys,Wichita St Shockers,lowvig,spreads,Wichita St Shockers,-106,3.5
+20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,betonlineag,spreads,California Golden Bears,-105,-6.0
+20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,betonlineag,spreads,Saint Joseph's Hawks,-115,6.0
+20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,lowvig,spreads,California Golden Bears,-101,-6.0
+20260320,2026-03-23T01:00:00Z,California Golden Bears,Saint Joseph's Hawks,lowvig,spreads,Saint Joseph's Hawks,-111,6.0
