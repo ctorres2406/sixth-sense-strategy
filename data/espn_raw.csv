@@ -76,19 +76,14 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260320,401856518,Missouri Tigers at Miami Hurricanes,Miami Hurricanes,MIA,Missouri Tigers,MIZ,80,66,14,True,True,False,,,26-8,20-13,43.3,45.8,58.6,35.1,35.7,88.9
 20260320,401856528,Utah State Aggies at Villanova Wildcats,Utah State Aggies,USU,Villanova Wildcats,VILL,86,76,10,True,True,False,,,29-6,24-9,54.9,12.5,77.8,44.4,46.7,46.2
 20260320,401856522,Iowa Hawkeyes at Clemson Tigers,Iowa Hawkeyes,IOWA,Clemson Tigers,CLEM,67,61,6,True,True,False,,,22-12,24-11,38.3,28.0,77.4,40.7,34.6,66.7
-20260320,401856529,Long Island University Sharks at Arizona Wildcats,Arizona Wildcats,ARIZ,Long Island University Sharks,LIU,92,58,34,True,True,False,,,33-2,24-11,53.3,46.2,66.7,32.4,29.6,60.0
-20260320,401856523,Prairie View A&M Panthers at Florida Gators,Florida Gators,FLA,Prairie View A&M Panthers,PV,114,55,59,True,True,False,,,27-7,19-18,64.3,45.5,77.8,27.0,27.3,88.2
-20260320,401856524,Tennessee State Tigers at Iowa State Cyclones,Iowa State Cyclones,ISU,Tennessee State Tigers,TNST,108,74,34,True,True,False,,,28-7,23-10,52.8,45.8,77.8,43.1,23.8,68.4
-20260320,401856519,Queens University Royals at Purdue Boilermakers,Purdue Boilermakers,PUR,Queens University Royals,QUC,104,71,33,True,True,False,,,28-8,21-14,63.1,58.3,66.7,46.2,28.0,80.0
 20260320,401856497,Furman Paladins at UConn Huskies,UConn Huskies,CONN,Furman Paladins,FUR,82,71,11,True,True,False,,,30-5,22-13,49.2,20.0,72.2,44.7,37.5,76.9
-20260320,401856526,Wright State Raiders at Virginia Cavaliers,Virginia Cavaliers,UVA,Wright State Raiders,WRST,82,73,9,True,True,False,,,30-5,23-12,51.9,50.0,92.9,41.0,41.9,90.9
-20260320,401856521,Hofstra Pride at Alabama Crimson Tide,Alabama Crimson Tide,ALA,Hofstra Pride,HOF,90,70,20,True,True,False,,,24-9,24-11,47.8,33.3,73.7,40.6,45.8,60.0
-20260320,401856495,California Baptist Lancers at Kansas Jayhawks,Kansas Jayhawks,KU,California Baptist Lancers,CBU,68,60,8,True,True,False,,,24-10,25-9,40.0,21.1,85.7,35.9,23.5,52.6
-20260320,401856520,Akron Zips at Texas Tech Red Raiders,Texas Tech Red Raiders,TTU,Akron Zips,AKR,91,71,20,True,True,False,,,23-10,29-6,64.2,55.0,63.2,43.1,26.3,80.0
-20260320,401856494,Northern Iowa Panthers at St. John's Red Storm,St. John's Red Storm,SJU,Northern Iowa Panthers,UNI,79,53,26,True,True,False,,,29-6,23-13,47.4,34.5,68.2,38.6,21.4,50.0
-20260320,401856527,Miami (OH) RedHawks at Tennessee Volunteers,Tennessee Volunteers,TENN,Miami (OH) RedHawks,M-OH,78,56,22,True,True,False,,,23-11,32-2,52.5,45.0,70.0,35.2,24.1,78.6
-20260320,401856525,Santa Clara Broncos at Kentucky Wildcats,Kentucky Wildcats,UK,Santa Clara Broncos,SCU,89,84,5,True,True,False,,,22-13,26-9,50.8,35.7,71.4,41.1,36.4,92.3
-20260320,401856496,UCF Knights at UCLA Bruins,UCLA Bruins,UCLA,UCF Knights,UCF,75,71,4,True,True,False,,,24-11,21-12,39.7,28.6,72.2,37.5,37.5,31.3
-20260320,401856518,Missouri Tigers at Miami Hurricanes,Miami Hurricanes,MIA,Missouri Tigers,MIZ,80,66,14,True,True,False,,,26-8,20-13,43.3,45.8,58.6,35.1,35.7,88.9
-20260320,401856528,Utah State Aggies at Villanova Wildcats,Utah State Aggies,USU,Villanova Wildcats,VILL,86,76,10,True,True,False,,,29-6,24-9,54.9,12.5,77.8,44.4,46.7,46.2
-20260320,401856522,Iowa Hawkeyes at Clemson Tigers,Iowa Hawkeyes,IOWA,Clemson Tigers,CLEM,67,61,6,True,True,False,,,22-12,24-11,38.3,28.0,77.4,40.7,34.6,66.7
+20260321,401856532,Saint Louis Billikens at Michigan Wolverines,Michigan Wolverines,MICH,Saint Louis Billikens,SLU,95,72,23,True,True,False,,,33-3,29-6,55.7,47.8,69.6,44.3,31.3,53.3
+20260321,401856530,TCU Horned Frogs at Duke Blue Devils,Duke Blue Devils,DUKE,TCU Horned Frogs,TCU,81,58,23,True,True,False,,,34-2,23-12,55.1,33.3,87.0,33.3,29.2,50.0
+20260321,401856535,Texas A&M Aggies at Houston Cougars,Houston Cougars,HOU,Texas A&M Aggies,TA&M,88,57,31,True,True,False,,,30-6,22-12,44.1,25.8,80.0,34.6,25.0,78.9
+20260321,401856531,Louisville Cardinals at Michigan State Spartans,Michigan State Spartans,MSU,Louisville Cardinals,LOU,77,69,8,True,True,False,,,27-7,24-11,47.3,42.3,73.7,41.3,35.1,66.7
+20260321,401856537,Texas Longhorns at Gonzaga Bulldogs,Texas Longhorns,TEX,Gonzaga Bulldogs,GONZ,74,68,6,True,True,False,,,21-14,31-4,51.7,33.3,77.8,45.0,25.0,83.3
+20260321,401856533,VCU Rams at Illinois Fighting Illini,Illinois Fighting Illini,ILL,VCU Rams,VCU,76,55,21,True,True,False,,,26-8,28-8,48.3,37.5,64.7,34.8,21.9,33.3
+20260321,401856534,Vanderbilt Commodores at Nebraska Cornhuskers,Nebraska Cornhuskers,NEB,Vanderbilt Commodores,VAN,74,72,2,True,True,False,,,28-6,27-9,55.8,47.4,70.0,41.4,35.1,57.9
+20260321,401856536,High Point Panthers at Arkansas Razorbacks,Arkansas Razorbacks,ARK,High Point Panthers,HPU,94,88,6,True,True,False,,,28-8,31-5,51.5,56.3,75.0,45.3,26.3,90.9
+20260321,401858350,Dayton Flyers at UNC Wilmington Seahawks,Dayton Flyers,DAY,UNC Wilmington Seahawks,UNCW,80,61,19,True,False,False,,,25-11,27-7,51.8,36.0,81.3,42.1,14.3,62.5
+20260321,401858349,Liberty Flames at Nevada Wolf Pack,Nevada Wolf Pack,NEV,Liberty Flames,LIB,73,63,10,True,False,False,,,24-12,26-8,46.3,23.5,95.0,40.4,22.7,75.0
