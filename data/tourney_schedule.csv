@@ -81,3 +81,5 @@ game_id,date,game_time,status,completed,round,region,team1,seed1,score1,team2,se
 401856572,20260327,2026-03-27T23:35Z,status_scheduled,False,R64,,Michigan Wolverines,1,,Alabama Crimson Tide,4,,,
 401856571,20260327,2026-03-28T01:45Z,status_scheduled,False,R64,,UConn Huskies,2,,Michigan State Spartans,3,,,
 401856573,20260327,2026-03-28T02:10Z,status_scheduled,False,R64,,Iowa State Cyclones,2,,Tennessee Volunteers,6,,,
+401856575,20260328,2026-03-28T04:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
+401856574,20260328,2026-03-28T04:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
