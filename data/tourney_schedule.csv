@@ -1,6 +1,6 @@
 game_id,date,game_time,status,completed,round,region,team1,seed1,score1,team2,seed2,score2,winner,note
-401858357,20260324,2026-03-24T23:00Z,status_scheduled,False,R64,,Tulsa Golden Hurricane,99,,Wichita State Shockers,99,,,
-401858358,20260324,2026-03-25T01:00Z,status_scheduled,False,R64,,New Mexico Lobos,99,,Saint Joseph's Hawks,99,,,
+401858357,20260324,2026-03-24T23:00Z,status_final,True,R64,,Tulsa Golden Hurricane,99,83,Wichita State Shockers,99,79,Tulsa Golden Hurricane,
+401858358,20260324,2026-03-25T01:00Z,status_final,True,R64,,New Mexico Lobos,99,84,Saint Joseph's Hawks,99,69,New Mexico Lobos,
 401858359,20260325,2026-03-25T23:00Z,status_scheduled,False,R64,,Dayton Flyers,99,,Illinois State Redbirds,99,,,
 401858360,20260325,2026-03-26T01:00Z,status_scheduled,False,R64,,Auburn Tigers,99,,Nevada Wolf Pack,99,,,
 401856568,20260326,2026-03-26T23:10Z,status_scheduled,False,R64,,Purdue Boilermakers,2,,Texas Longhorns,11,,,
@@ -13,6 +13,8 @@ game_id,date,game_time,status,completed,round,region,team1,seed1,score1,team2,se
 401856573,20260327,2026-03-28T02:10Z,status_scheduled,False,R64,,Iowa State Cyclones,2,,Tennessee Volunteers,6,,,
 401856575,20260328,2026-03-28T04:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
 401856574,20260328,2026-03-28T04:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
+401856577,20260329,2026-03-29T04:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
+401856576,20260329,2026-03-29T04:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
 401856479,20260319,2026-03-19T16:15Z,status_final,True,R64,,Ohio State Buckeyes,8,64.0,TCU Horned Frogs,9,66.0,TCU Horned Frogs,
 401856489,20260319,2026-03-19T16:40Z,status_final,True,R64,,Nebraska Cornhuskers,4,76.0,Troy Trojans,13,47.0,Nebraska Cornhuskers,
 401856482,20260319,2026-03-19T17:30Z,status_final,True,R64,,Louisville Cardinals,6,83.0,South Florida Bulls,11,79.0,Louisville Cardinals,

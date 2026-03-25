@@ -101,17 +101,5 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260322,401858353,George Washington Revolutionaries at New Mexico Lobos,New Mexico Lobos,UNM,George Washington Revolutionaries,GW,86,61,25,True,False,False,,,25-10,19-16,47.7,40.7,65.0,33.9,31.4,88.9
 20260322,401858356,Wichita State Shockers at Oklahoma State Cowboys,Wichita State Shockers,WICH,Oklahoma State Cowboys,OKST,96,70,26,True,False,False,,,24-11,20-15,49.3,53.8,62.5,41.5,30.0,55.6
 20260322,401858354,Saint Joseph's Hawks at California Golden Bears,Saint Joseph's Hawks,JOES,California Golden Bears,CAL,76,75,1,True,False,False,,,24-11,22-12,44.1,34.6,53.8,41.8,37.5,58.3
-20260322,401856563,Iowa Hawkeyes at Florida Gators,Iowa Hawkeyes,IOWA,Florida Gators,FLA,73,72,1,True,True,False,,,23-12,27-8,51.0,29.2,63.6,50.0,31.6,74.1
-20260322,401856565,Utah State Aggies at Arizona Wildcats,Arizona Wildcats,ARIZ,Utah State Aggies,USU,78,66,12,True,True,False,,,34-2,29-7,39.3,41.2,69.2,39.1,25.0,72.7
-20260322,401856564,Miami Hurricanes at Purdue Boilermakers,Purdue Boilermakers,PUR,Miami Hurricanes,MIA,79,69,10,True,True,False,,,29-8,26-9,53.2,57.1,95.5,44.4,26.3,80.0
-20260322,401856561,Kentucky Wildcats at Iowa State Cyclones,Iowa State Cyclones,ISU,Kentucky Wildcats,UK,82,63,19,True,True,False,,,29-7,22-14,45.9,32.1,70.8,46.7,36.0,70.6
-20260322,401856559,UCLA Bruins at UConn Huskies,UConn Huskies,CONN,UCLA Bruins,UCLA,73,57,16,True,True,False,,,31-5,24-12,46.9,33.3,90.5,38.8,38.5,66.7
-20260322,401856562,Tennessee Volunteers at Virginia Cavaliers,Tennessee Volunteers,TENN,Virginia Cavaliers,UVA,79,72,7,True,True,False,,,24-11,30-6,47.3,42.1,76.0,39.1,34.3,54.5
-20260322,401856558,St. John's Red Storm at Kansas Jayhawks,St. John's Red Storm,SJU,Kansas Jayhawks,KU,67,65,2,True,True,False,,,30-6,24-11,36.2,31.4,54.5,44.4,35.7,70.6
-20260322,401856560,Texas Tech Red Raiders at Alabama Crimson Tide,Alabama Crimson Tide,ALA,Texas Tech Red Raiders,TTU,90,65,25,True,True,False,,,25-9,23-11,44.1,45.2,73.3,34.4,16.0,79.2
-20260322,401858352,Illinois State Redbirds at Wake Forest Demon Deacons,Illinois State Redbirds,ILST,Wake Forest Demon Deacons,WAKE,78,75,3,True,False,False,,,22-12,18-17,41.0,30.3,85.7,50.0,31.3,66.7
-20260322,401858351,Seattle U Redhawks at Auburn Tigers,Auburn Tigers,AUB,Seattle U Redhawks,SEA,91,85,6,True,False,False,,,19-16,21-14,50.0,34.6,75.0,51.7,51.6,63.6
-20260322,401858355,UNLV Rebels at Tulsa Golden Hurricane,Tulsa Golden Hurricane,TLSA,UNLV Rebels,UNLV,77,66,11,True,False,False,,,28-7,18-17,46.6,35.7,59.1,45.8,23.1,46.2
-20260322,401858353,George Washington Revolutionaries at New Mexico Lobos,New Mexico Lobos,UNM,George Washington Revolutionaries,GW,86,61,25,True,False,False,,,25-10,19-16,47.7,40.7,65.0,33.9,31.4,88.9
-20260322,401858356,Wichita State Shockers at Oklahoma State Cowboys,Wichita State Shockers,WICH,Oklahoma State Cowboys,OKST,96,70,26,True,False,False,,,24-11,20-15,49.3,53.8,62.5,41.5,30.0,55.6
-20260322,401858354,Saint Joseph's Hawks at California Golden Bears,Saint Joseph's Hawks,JOES,California Golden Bears,CAL,76,75,1,True,False,False,,,24-11,22-12,44.1,34.6,53.8,41.8,37.5,58.3
+20260324,401858357,Wichita State Shockers at Tulsa Golden Hurricane,Tulsa Golden Hurricane,TLSA,Wichita State Shockers,WICH,83,79,4,True,False,False,,,29-7,24-12,38.5,41.4,87.5,37.5,10.5,93.5
+20260324,401858358,Saint Joseph's Hawks at New Mexico Lobos,New Mexico Lobos,UNM,Saint Joseph's Hawks,JOES,84,69,15,True,False,False,,,26-10,24-12,47.5,30.0,78.6,40.0,27.3,72.7
