@@ -105,3 +105,5 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260324,401858358,Saint Joseph's Hawks at New Mexico Lobos,New Mexico Lobos,UNM,Saint Joseph's Hawks,JOES,84,69,15,True,False,False,,,26-10,24-12,47.5,30.0,78.6,40.0,27.3,72.7
 20260325,401858359,Illinois State Redbirds at Dayton Flyers,Illinois State Redbirds,ILST,Dayton Flyers,DAY,61,55,6,True,False,False,,,23-12,25-12,55.0,37.5,61.1,30.2,12.0,73.7
 20260325,401858360,Nevada Wolf Pack at Auburn Tigers,Auburn Tigers,AUB,Nevada Wolf Pack,NEV,75,69,6,True,False,False,,,20-16,24-13,49.2,25.0,64.3,46.3,35.0,70.6
+20260325,401858359,Illinois State Redbirds at Dayton Flyers,Illinois State Redbirds,ILST,Dayton Flyers,DAY,61,55,6,True,False,False,,,23-12,25-12,55.0,37.5,61.1,30.2,12.0,73.7
+20260325,401858360,Nevada Wolf Pack at Auburn Tigers,Auburn Tigers,AUB,Nevada Wolf Pack,NEV,75,69,6,True,False,False,,,20-16,24-13,49.2,25.0,64.3,46.3,35.0,70.6
