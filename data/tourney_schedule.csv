@@ -1,8 +1,6 @@
 game_id,date,game_time,status,completed,round,region,team1,seed1,score1,team2,seed2,score2,winner,note
-401858357,20260324,2026-03-24T23:00Z,status_final,True,R64,,Tulsa Golden Hurricane,99,83,Wichita State Shockers,99,79,Tulsa Golden Hurricane,
-401858358,20260324,2026-03-25T01:00Z,status_final,True,R64,,New Mexico Lobos,99,84,Saint Joseph's Hawks,99,69,New Mexico Lobos,
-401858359,20260325,2026-03-25T23:00Z,status_scheduled,False,R64,,Dayton Flyers,99,,Illinois State Redbirds,99,,,
-401858360,20260325,2026-03-26T01:00Z,status_scheduled,False,R64,,Auburn Tigers,99,,Nevada Wolf Pack,99,,,
+401858359,20260325,2026-03-25T23:00Z,status_final,True,R64,,Dayton Flyers,99,55,Illinois State Redbirds,99,61,Illinois State Redbirds,
+401858360,20260325,2026-03-26T01:00Z,status_final,True,R64,,Auburn Tigers,99,75,Nevada Wolf Pack,99,69,Auburn Tigers,
 401856568,20260326,2026-03-26T23:10Z,status_scheduled,False,R64,,Purdue Boilermakers,2,,Texas Longhorns,11,,,
 401856567,20260326,2026-03-26T23:30Z,status_scheduled,False,R64,,Nebraska Cornhuskers,4,,Iowa Hawkeyes,9,,,
 401856569,20260326,2026-03-27T01:45Z,status_scheduled,False,R64,,Arizona Wildcats,1,,Arkansas Razorbacks,4,,,
