@@ -1,69 +1,69 @@
 team,conf_wins,conf_losses,conf_games,conf_champ,avg_win_margin,avg_loss_margin,momentum_score,hot,cold,last_updated
-Illinois,7,0,7,True,15.1,0.0,106.0,True,False,20260327
-Arizona,5,0,5,True,18.6,0.0,93.0,True,False,20260327
-Michigan,5,1,6,False,16.0,8.0,64.0,True,False,20260327
-Purdue,6,0,6,True,10.3,0.0,62.0,True,False,20260327
-Iowa St.,2,0,2,True,26.5,0.0,53.0,True,False,20260327
-Florida,3,3,6,False,32.0,7.3,52.0,True,False,20260327
-St. John's,3,0,3,True,16.0,0.0,48.0,True,False,20260327
-Duke,3,0,3,True,11.0,0.0,33.0,True,False,20260327
-Michigan St.,2,0,2,True,16.5,0.0,33.0,True,False,20260327
-South Florida,2,1,3,False,18.5,4.0,29.0,True,False,20260327
-Alabama,2,1,3,False,22.5,11.0,23.0,True,True,20260327
-Iowa,6,1,7,False,12.0,26.0,20.0,True,True,20260327
-UMBC,1,1,2,False,15.0,3.0,9.0,False,False,20260327
-Nebraska,2,2,4,False,15.5,6.0,7.0,True,False,20260327
-Vanderbilt,2,2,4,False,13.5,6.5,1.0,True,False,20260327
-Connecticut,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-Hawaii,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-N.C. State,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-Miami FL,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-LIU,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-Miami OH,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-Cal Baptist,0,0,0,False,0.0,0.0,0.0,False,False,20260327
-Utah St.,2,1,3,False,10.5,12.0,-3.0,True,True,20260327
-Gonzaga,1,1,2,False,9.0,6.0,-3.0,False,False,20260327
-Ohio St.,0,1,1,False,0.0,2.0,-4.0,False,False,20260327
-Kennesaw St.,1,1,2,False,11.0,9.0,-7.0,False,False,20260327
-UCF,0,1,1,False,0.0,4.0,-8.0,False,False,20260327
-Wisconsin,0,2,2,False,0.0,2.0,-8.0,False,False,20260327
-Santa Clara,0,1,1,False,0.0,5.0,-10.0,False,False,20260327
-High Point,1,1,2,False,1.0,6.0,-11.0,False,False,20260327
-Louisville,1,1,2,False,4.0,8.0,-12.0,False,False,20260327
-Siena,0,1,1,False,0.0,6.0,-12.0,False,False,20260327
-Clemson,0,1,1,False,0.0,6.0,-12.0,False,False,20260327
-Virginia,1,2,3,False,9.0,5.5,-13.0,False,False,20260327
-BYU,0,1,1,False,0.0,8.0,-16.0,False,False,20260327
-VCU,3,1,4,False,8.3,21.0,-17.0,False,True,20260327
-Wright St.,0,1,1,False,0.0,9.0,-18.0,False,False,20260327
-Villanova,0,1,1,False,0.0,10.0,-20.0,False,True,20260327
-SMU,0,1,1,False,0.0,10.0,-20.0,False,True,20260327
-McNeese,0,1,1,False,0.0,10.0,-20.0,False,True,20260327
-North Carolina,0,2,2,False,0.0,5.5,-22.0,False,False,20260327
-Furman,0,1,1,False,0.0,11.0,-22.0,False,True,20260327
-Saint Louis,1,2,3,False,25.0,12.0,-23.0,False,True,20260327
-Lehigh,0,1,1,False,0.0,12.0,-24.0,False,True,20260327
-Saint Mary's,0,1,1,False,0.0,13.0,-26.0,False,True,20260327
-Missouri,0,1,1,False,0.0,14.0,-28.0,False,True,20260327
-Texas Tech,1,1,2,False,20.0,25.0,-30.0,False,True,20260327
-Howard,2,1,3,False,5.0,21.0,-32.0,False,True,20260327
-Kentucky,1,1,2,False,5.0,19.0,-33.0,False,True,20260327
-Houston,2,4,6,False,31.0,12.2,-36.0,True,True,20260327
-Akron,1,1,2,False,3.0,20.0,-37.0,False,True,20260327
-Tennessee,2,1,3,False,14.5,34.0,-39.0,True,True,20260327
-Hofstra,0,1,1,False,0.0,20.0,-40.0,False,True,20260327
-Kansas,5,3,8,False,9.4,14.7,-41.0,False,True,20260327
-UCLA,1,2,3,False,4.0,11.5,-42.0,False,True,20260327
-TCU,1,1,2,False,2.0,23.0,-44.0,False,True,20260327
-Arkansas,4,2,6,False,9.8,21.0,-45.0,False,True,20260327
-Texas A&M,1,1,2,False,13.0,31.0,-49.0,False,True,20260327
-North Dakota St.,0,1,1,False,0.0,25.0,-50.0,False,True,20260327
-Georgia,0,1,1,False,0.0,25.0,-50.0,False,True,20260327
-Northern Iowa,0,1,1,False,0.0,26.0,-52.0,False,True,20260327
-Troy,0,1,1,False,0.0,29.0,-58.0,False,True,20260327
-Idaho,0,1,1,False,0.0,31.0,-62.0,False,True,20260327
-Penn,2,1,3,False,3.0,35.0,-64.0,False,True,20260327
-Queens,0,1,1,False,0.0,33.0,-66.0,False,True,20260327
-Tennessee St.,0,1,1,False,0.0,34.0,-68.0,False,True,20260327
-Texas,5,4,9,False,9.8,15.0,-71.0,False,True,20260327
-Prairie View A&M,2,1,3,False,9.0,59.0,-100.0,False,True,20260327
+Illinois,6,0,6,True,16.0,0.0,96.0,True,False,20260328
+Arizona,4,0,4,True,18.0,0.0,72.0,True,False,20260328
+Michigan,6,2,8,False,15.5,6.0,69.0,True,False,20260328
+Purdue,5,0,5,True,12.0,0.0,60.0,True,False,20260328
+Florida,3,3,6,False,32.0,7.3,52.0,True,False,20260328
+St. John's,3,1,4,False,16.0,5.0,38.0,True,False,20260328
+Duke,4,0,4,True,9.5,0.0,38.0,False,False,20260328
+South Florida,2,1,3,False,18.5,4.0,29.0,True,False,20260328
+Michigan St.,2,1,3,False,16.5,4.0,25.0,True,False,20260328
+Iowa St.,2,1,3,False,26.5,14.0,25.0,True,True,20260328
+Nebraska,2,1,3,False,15.5,6.0,19.0,True,False,20260328
+UMBC,1,1,2,False,15.0,3.0,9.0,False,False,20260328
+Kansas,5,2,7,False,9.4,11.5,1.0,False,True,20260328
+Vanderbilt,2,2,4,False,13.5,6.5,1.0,True,False,20260328
+Miami OH,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+Connecticut,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+Hawaii,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+N.C. State,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+Miami FL,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+LIU,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+Cal Baptist,0,0,0,False,0.0,0.0,0.0,False,False,20260328
+Utah St.,2,1,3,False,10.5,12.0,-3.0,True,True,20260328
+Alabama,2,2,4,False,22.5,12.0,-3.0,True,True,20260328
+Arkansas,4,1,5,False,9.8,21.0,-3.0,False,True,20260328
+Gonzaga,1,1,2,False,9.0,6.0,-3.0,False,False,20260328
+Ohio St.,0,1,1,False,0.0,2.0,-4.0,False,False,20260328
+Kennesaw St.,1,1,2,False,11.0,9.0,-7.0,False,False,20260328
+UCF,0,1,1,False,0.0,4.0,-8.0,False,False,20260328
+Wisconsin,0,2,2,False,0.0,2.0,-8.0,False,False,20260328
+Santa Clara,0,1,1,False,0.0,5.0,-10.0,False,False,20260328
+High Point,1,1,2,False,1.0,6.0,-11.0,False,False,20260328
+Louisville,1,1,2,False,4.0,8.0,-12.0,False,False,20260328
+Clemson,0,1,1,False,0.0,6.0,-12.0,False,False,20260328
+Siena,0,1,1,False,0.0,6.0,-12.0,False,False,20260328
+Virginia,1,2,3,False,9.0,5.5,-13.0,False,False,20260328
+Iowa,5,2,7,False,13.2,20.0,-14.0,True,True,20260328
+BYU,0,1,1,False,0.0,8.0,-16.0,False,False,20260328
+Houston,2,3,5,False,31.0,13.0,-16.0,True,True,20260328
+VCU,3,1,4,False,8.3,21.0,-17.0,False,True,20260328
+Wright St.,0,1,1,False,0.0,9.0,-18.0,False,False,20260328
+SMU,0,1,1,False,0.0,10.0,-20.0,False,True,20260328
+McNeese,0,1,1,False,0.0,10.0,-20.0,False,True,20260328
+Villanova,0,1,1,False,0.0,10.0,-20.0,False,True,20260328
+North Carolina,0,2,2,False,0.0,5.5,-22.0,False,False,20260328
+Furman,0,1,1,False,0.0,11.0,-22.0,False,True,20260328
+Saint Louis,1,2,3,False,25.0,12.0,-23.0,False,True,20260328
+Lehigh,0,1,1,False,0.0,12.0,-24.0,False,True,20260328
+Tennessee,3,1,4,False,14.3,34.0,-25.0,True,True,20260328
+Saint Mary's,0,1,1,False,0.0,13.0,-26.0,False,True,20260328
+Missouri,0,1,1,False,0.0,14.0,-28.0,False,True,20260328
+Texas Tech,1,1,2,False,20.0,25.0,-30.0,False,True,20260328
+Howard,2,1,3,False,5.0,21.0,-32.0,False,True,20260328
+Kentucky,1,1,2,False,5.0,19.0,-33.0,False,True,20260328
+Akron,1,1,2,False,3.0,20.0,-37.0,False,True,20260328
+Hofstra,0,1,1,False,0.0,20.0,-40.0,False,True,20260328
+UCLA,1,2,3,False,4.0,11.5,-42.0,False,True,20260328
+TCU,1,1,2,False,2.0,23.0,-44.0,False,True,20260328
+Texas A&M,1,1,2,False,13.0,31.0,-49.0,False,True,20260328
+North Dakota St.,0,1,1,False,0.0,25.0,-50.0,False,True,20260328
+Georgia,0,1,1,False,0.0,25.0,-50.0,False,True,20260328
+Northern Iowa,0,1,1,False,0.0,26.0,-52.0,False,True,20260328
+Troy,0,1,1,False,0.0,29.0,-58.0,False,True,20260328
+Idaho,0,1,1,False,0.0,31.0,-62.0,False,True,20260328
+Penn,2,1,3,False,3.0,35.0,-64.0,False,True,20260328
+Queens,0,1,1,False,0.0,33.0,-66.0,False,True,20260328
+Texas,5,3,8,False,9.8,19.3,-67.0,False,True,20260328
+Tennessee St.,0,1,1,False,0.0,34.0,-68.0,False,True,20260328
+Prairie View A&M,2,1,3,False,9.0,59.0,-100.0,False,True,20260328
