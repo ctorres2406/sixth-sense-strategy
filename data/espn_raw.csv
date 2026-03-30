@@ -117,3 +117,5 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260328,401856574,Iowa Hawkeyes at Illinois Fighting Illini,Illinois Fighting Illini,ILL,Iowa Hawkeyes,IOWA,71,59,12,True,True,False,,,28-8,24-13,47.2,17.6,85.7,38.3,36.7,85.7
 20260329,401856576,Tennessee Volunteers at Michigan Wolverines,Michigan Wolverines,MICH,Tennessee Volunteers,TENN,95,62,33,True,True,False,,,35-3,25-12,51.8,37.0,73.0,31.6,19.2,52.9
 20260329,401856577,UConn Huskies at Duke Blue Devils,UConn Huskies,CONN,Duke Blue Devils,DUKE,73,72,1,True,True,False,,,33-5,35-3,43.8,21.7,70.6,52.1,40.0,72.7
+20260329,401856576,Tennessee Volunteers at Michigan Wolverines,Michigan Wolverines,MICH,Tennessee Volunteers,TENN,95,62,33,True,True,False,,,35-3,25-12,51.8,37.0,73.0,31.6,19.2,52.9
+20260329,401856577,UConn Huskies at Duke Blue Devils,UConn Huskies,CONN,Duke Blue Devils,DUKE,73,72,1,True,True,False,,,33-5,35-3,43.8,21.7,70.6,52.1,40.0,72.7
