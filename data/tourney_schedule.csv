@@ -93,3 +93,5 @@ game_id,date,game_time,status,completed,round,region,team1,seed1,score1,team2,se
 401858384,20260404,2026-04-04T20:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
 401856598,20260404,2026-04-04T22:09Z,status_scheduled,False,R64,,UConn Huskies,2,,Illinois Fighting Illini,3,,,
 401856599,20260404,2026-04-05T00:49Z,status_scheduled,False,R64,,Arizona Wildcats,1,,Michigan Wolverines,1,,,
+401858385,20260405,2026-04-05T21:30Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
+401858363,20260405,2026-04-06T00:00Z,status_scheduled,False,R64,,TBD,99,,TBD,99,,,
