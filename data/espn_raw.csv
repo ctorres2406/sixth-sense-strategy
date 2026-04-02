@@ -118,3 +118,5 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260329,401856576,Tennessee Volunteers at Michigan Wolverines,Michigan Wolverines,MICH,Tennessee Volunteers,TENN,95,62,33,True,True,False,,,35-3,25-12,51.8,37.0,73.0,31.6,19.2,52.9
 20260329,401856577,UConn Huskies at Duke Blue Devils,UConn Huskies,CONN,Duke Blue Devils,DUKE,73,72,1,True,True,False,,,33-5,35-3,43.8,21.7,70.6,52.1,40.0,72.7
 20260401,401858379,Oklahoma Sooners at Colorado Buffaloes,Oklahoma Sooners,OU,Colorado Buffaloes,COLO,90,86,4,True,True,False,,,20-15,17-16,36.6,27.0,87.5,38.3,30.4,84.6
+20260401,401858379,Oklahoma Sooners at Colorado Buffaloes,Oklahoma Sooners,OU,Colorado Buffaloes,COLO,90,86,4,True,True,False,,,20-15,17-16,36.6,27.0,87.5,38.3,30.4,84.6
+20260401,401858380,Baylor Bears at Minnesota Golden Gophers,Baylor Bears,BAY,Minnesota Golden Gophers,MINN,67,48,19,True,True,False,,,17-16,15-18,46.6,31.6,87.5,38.8,13.0,46.7

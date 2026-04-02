@@ -10019,3 +10019,199 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,spreads,UConn Huskies,-110,6.0
 20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,spreads,Michigan Wolverines,-106,-6.0
 20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,spreads,UConn Huskies,-106,6.0
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betonlineag,h2h,New Mexico Lobos,-180,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betonlineag,h2h,Tulsa Golden Hurricane,157,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betonlineag,spreads,New Mexico Lobos,-110,-3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betonlineag,spreads,Tulsa Golden Hurricane,-110,3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,lowvig,h2h,New Mexico Lobos,-180,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,lowvig,h2h,Tulsa Golden Hurricane,157,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,lowvig,spreads,New Mexico Lobos,-106,-3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,lowvig,spreads,Tulsa Golden Hurricane,-106,3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,fanduel,h2h,New Mexico Lobos,-178,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,fanduel,h2h,Tulsa Golden Hurricane,146,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,fanduel,spreads,New Mexico Lobos,-118,-3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,fanduel,spreads,Tulsa Golden Hurricane,-104,3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,draftkings,h2h,New Mexico Lobos,-185,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,draftkings,h2h,Tulsa Golden Hurricane,154,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,draftkings,spreads,New Mexico Lobos,-115,-3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,draftkings,spreads,Tulsa Golden Hurricane,-105,3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betmgm,h2h,New Mexico Lobos,-185,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betmgm,h2h,Tulsa Golden Hurricane,150,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betmgm,spreads,New Mexico Lobos,-115,-3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betmgm,spreads,Tulsa Golden Hurricane,-105,3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betus,h2h,New Mexico Lobos,-180,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betus,h2h,Tulsa Golden Hurricane,155,
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betus,spreads,New Mexico Lobos,-110,-3.5
+20260402,2026-04-02T23:00:00Z,Tulsa Golden Hurricane,New Mexico Lobos,betus,spreads,Tulsa Golden Hurricane,-110,3.5
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betonlineag,h2h,Stanford Cardinal,-118,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betonlineag,h2h,West Virginia Mountaineers,-102,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betonlineag,spreads,Stanford Cardinal,-110,-1.0
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betonlineag,spreads,West Virginia Mountaineers,-110,1.0
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,lowvig,h2h,Stanford Cardinal,-118,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,lowvig,h2h,West Virginia Mountaineers,-102,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,lowvig,spreads,Stanford Cardinal,-106,-1.0
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,lowvig,spreads,West Virginia Mountaineers,-106,1.0
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,fanduel,h2h,Stanford Cardinal,-115,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,fanduel,h2h,West Virginia Mountaineers,-104,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,fanduel,spreads,Stanford Cardinal,100,-1.5
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,fanduel,spreads,West Virginia Mountaineers,-122,1.5
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betus,h2h,Stanford Cardinal,-120,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betus,h2h,West Virginia Mountaineers,100,
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betus,spreads,Stanford Cardinal,-110,-1.0
+20260402,2026-04-03T00:00:00Z,West Virginia Mountaineers,Stanford Cardinal,betus,spreads,West Virginia Mountaineers,-110,1.0
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betonlineag,h2h,Auburn Tigers,-300,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betonlineag,h2h,Illinois St Redbirds,245,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betonlineag,spreads,Auburn Tigers,-110,-6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betonlineag,spreads,Illinois St Redbirds,-110,6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,lowvig,h2h,Auburn Tigers,-300,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,lowvig,h2h,Illinois St Redbirds,245,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,lowvig,spreads,Auburn Tigers,-106,-6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,lowvig,spreads,Illinois St Redbirds,-106,6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,fanduel,h2h,Auburn Tigers,-300,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,fanduel,h2h,Illinois St Redbirds,240,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,fanduel,spreads,Auburn Tigers,-115,-6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,fanduel,spreads,Illinois St Redbirds,-105,6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betmgm,h2h,Auburn Tigers,-285,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betmgm,h2h,Illinois St Redbirds,230,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betmgm,spreads,Auburn Tigers,-110,-6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betmgm,spreads,Illinois St Redbirds,-110,6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,draftkings,h2h,Auburn Tigers,-298,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,draftkings,h2h,Illinois St Redbirds,240,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,draftkings,spreads,Auburn Tigers,-110,-6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,draftkings,spreads,Illinois St Redbirds,-110,6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betus,h2h,Auburn Tigers,-300,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betus,h2h,Illinois St Redbirds,250,
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betus,spreads,Auburn Tigers,-110,-6.5
+20260402,2026-04-03T01:30:00Z,Auburn Tigers,Illinois St Redbirds,betus,spreads,Illinois St Redbirds,-110,6.5
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betonlineag,h2h,Creighton Bluejays,-180,
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betonlineag,h2h,Rutgers Scarlet Knights,157,
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betonlineag,spreads,Creighton Bluejays,-115,-4.0
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betonlineag,spreads,Rutgers Scarlet Knights,-105,4.0
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,lowvig,h2h,Creighton Bluejays,-180,
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,lowvig,h2h,Rutgers Scarlet Knights,157,
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,lowvig,spreads,Creighton Bluejays,-111,-4.0
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,lowvig,spreads,Rutgers Scarlet Knights,-101,4.0
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betus,h2h,Creighton Bluejays,-180,
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betus,h2h,Rutgers Scarlet Knights,155,
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betus,spreads,Creighton Bluejays,-110,-4.0
+20260402,2026-04-03T02:30:00Z,Creighton Bluejays,Rutgers Scarlet Knights,betus,spreads,Rutgers Scarlet Knights,-110,4.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,fanduel,h2h,Illinois Fighting Illini,-130,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,fanduel,h2h,UConn Huskies,108,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,fanduel,spreads,Illinois Fighting Illini,100,-2.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,fanduel,spreads,UConn Huskies,-122,2.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,draftkings,h2h,Illinois Fighting Illini,-130,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,draftkings,h2h,UConn Huskies,110,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,draftkings,spreads,Illinois Fighting Illini,-118,-1.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,draftkings,spreads,UConn Huskies,-102,1.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betonlineag,h2h,Illinois Fighting Illini,-135,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betonlineag,h2h,UConn Huskies,115,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betonlineag,spreads,Illinois Fighting Illini,-110,-2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betonlineag,spreads,UConn Huskies,-110,2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,lowvig,h2h,Illinois Fighting Illini,-135,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,lowvig,h2h,UConn Huskies,115,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,lowvig,spreads,Illinois Fighting Illini,-106,-2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,lowvig,spreads,UConn Huskies,-106,2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,bovada,h2h,Illinois Fighting Illini,-135,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,bovada,h2h,UConn Huskies,115,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,bovada,spreads,Illinois Fighting Illini,-110,-2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,bovada,spreads,UConn Huskies,-110,2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,mybookieag,h2h,Illinois Fighting Illini,-135,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,mybookieag,h2h,UConn Huskies,111,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,mybookieag,spreads,Illinois Fighting Illini,-110,-2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,mybookieag,spreads,UConn Huskies,-110,2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betmgm,h2h,Illinois Fighting Illini,-135,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betmgm,h2h,UConn Huskies,110,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betmgm,spreads,Illinois Fighting Illini,-115,-1.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betmgm,spreads,UConn Huskies,-105,1.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betrivers,h2h,Illinois Fighting Illini,-129,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betrivers,h2h,UConn Huskies,104,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betrivers,spreads,Illinois Fighting Illini,-113,-1.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betrivers,spreads,UConn Huskies,-110,1.5
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betus,h2h,Illinois Fighting Illini,-135,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betus,h2h,UConn Huskies,115,
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betus,spreads,Illinois Fighting Illini,-110,-2.0
+20260402,2026-04-04T22:09:00Z,UConn Huskies,Illinois Fighting Illini,betus,spreads,UConn Huskies,-110,2.0
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,fanduel,h2h,Arizona Wildcats,102,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,fanduel,h2h,Michigan Wolverines,-122,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,fanduel,spreads,Arizona Wildcats,-112,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,fanduel,spreads,Michigan Wolverines,-108,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betonlineag,h2h,Arizona Wildcats,102,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betonlineag,h2h,Michigan Wolverines,-122,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betonlineag,spreads,Arizona Wildcats,-111,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betonlineag,spreads,Michigan Wolverines,-109,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,lowvig,h2h,Arizona Wildcats,102,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,lowvig,h2h,Michigan Wolverines,-122,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,lowvig,spreads,Arizona Wildcats,-107,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,lowvig,spreads,Michigan Wolverines,-105,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betrivers,h2h,Arizona Wildcats,102,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betrivers,h2h,Michigan Wolverines,-125,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betrivers,spreads,Arizona Wildcats,-110,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betrivers,spreads,Michigan Wolverines,-113,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,draftkings,h2h,Arizona Wildcats,105,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,draftkings,h2h,Michigan Wolverines,-125,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,draftkings,spreads,Arizona Wildcats,-112,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,draftkings,spreads,Michigan Wolverines,-108,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,bovada,h2h,Arizona Wildcats,100,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,bovada,h2h,Michigan Wolverines,-120,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,bovada,spreads,Arizona Wildcats,-110,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,bovada,spreads,Michigan Wolverines,-110,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betmgm,h2h,Arizona Wildcats,-102,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betmgm,h2h,Michigan Wolverines,-118,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betmgm,spreads,Arizona Wildcats,-118,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betmgm,spreads,Michigan Wolverines,-102,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,mybookieag,h2h,Arizona Wildcats,102,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,mybookieag,h2h,Michigan Wolverines,-125,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,mybookieag,spreads,Arizona Wildcats,-110,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,mybookieag,spreads,Michigan Wolverines,-110,-1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betus,h2h,Arizona Wildcats,100,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betus,h2h,Michigan Wolverines,-120,
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betus,spreads,Arizona Wildcats,-110,1.5
+20260402,2026-04-05T00:49:00Z,Arizona Wildcats,Michigan Wolverines,betus,spreads,Michigan Wolverines,-110,-1.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,draftkings,h2h,Arizona Wildcats,-175,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,draftkings,h2h,Illinois Fighting Illini,145,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,draftkings,spreads,Arizona Wildcats,-110,-3.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,draftkings,spreads,Illinois Fighting Illini,-110,3.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,fanduel,h2h,Arizona Wildcats,-196,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,fanduel,h2h,Illinois Fighting Illini,160,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,fanduel,spreads,Arizona Wildcats,-112,-4.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,fanduel,spreads,Illinois Fighting Illini,-108,4.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,betonlineag,spreads,Arizona Wildcats,-115,-4.0
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,betonlineag,spreads,Illinois Fighting Illini,-105,4.0
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,lowvig,spreads,Arizona Wildcats,-111,-4.0
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,Illinois Fighting Illini,lowvig,spreads,Illinois Fighting Illini,-101,4.0
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,draftkings,h2h,Arizona Wildcats,-218,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,draftkings,h2h,UConn Huskies,180,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,draftkings,spreads,Arizona Wildcats,-110,-5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,draftkings,spreads,UConn Huskies,-110,5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,fanduel,h2h,Arizona Wildcats,-245,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,fanduel,h2h,UConn Huskies,198,
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,fanduel,spreads,Arizona Wildcats,-115,-5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,fanduel,spreads,UConn Huskies,-105,5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,lowvig,spreads,Arizona Wildcats,-111,-5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,lowvig,spreads,UConn Huskies,-101,5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,betonlineag,spreads,Arizona Wildcats,-115,-5.5
+20260402,2026-04-07T01:00:00Z,Arizona Wildcats,UConn Huskies,betonlineag,spreads,UConn Huskies,-105,5.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,draftkings,h2h,Illinois Fighting Illini,150,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,draftkings,h2h,Michigan Wolverines,-180,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,draftkings,spreads,Illinois Fighting Illini,-108,3.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,draftkings,spreads,Michigan Wolverines,-112,-3.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,fanduel,h2h,Illinois Fighting Illini,162,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,fanduel,h2h,Michigan Wolverines,-196,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,fanduel,spreads,Illinois Fighting Illini,-106,4.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,fanduel,spreads,Michigan Wolverines,-114,-4.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,betonlineag,spreads,Illinois Fighting Illini,-110,4.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,betonlineag,spreads,Michigan Wolverines,-110,-4.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,lowvig,spreads,Illinois Fighting Illini,-106,4.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,Illinois Fighting Illini,lowvig,spreads,Michigan Wolverines,-106,-4.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,h2h,Michigan Wolverines,-230,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,h2h,UConn Huskies,190,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,spreads,Michigan Wolverines,-112,-5.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,spreads,UConn Huskies,-108,5.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,h2h,Michigan Wolverines,-260,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,h2h,UConn Huskies,210,
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,spreads,Michigan Wolverines,-105,-6.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,spreads,UConn Huskies,-115,6.5
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,spreads,Michigan Wolverines,-110,-6.0
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,spreads,UConn Huskies,-110,6.0
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,spreads,Michigan Wolverines,-106,-6.0
+20260402,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,spreads,UConn Huskies,-106,6.0
