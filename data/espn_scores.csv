@@ -1,26 +1,27 @@
 round,region,team1,seed1,team2,seed2,ml_pick,ml_confidence,ml_odds,ats_pick,ats_confidence,spread,result,ml_result,ats_result,score1,score2,time
 R64,nan,Alabama Crimson Tide,4,Hofstra Pride,13,Alabama Crimson Tide,87.6,-833.0,Alabama Crimson Tide -11.5,78.0,-11.5,win,win,loss,90.0,70.0,2026-03-20T19:15Z
 R64,nan,Alabama Crimson Tide,4,Texas Tech Red Raiders,5,Texas Tech Red Raiders,53.5,-120.0,Texas Tech Red Raiders +1.0,47.9,1.0,loss,loss,loss,90.0,65.0,2026-03-23T02:08Z
-R64,nan,Arizona Wildcats,1,Michigan Wolverines,1,Michigan Wolverines,53.6,-260,Michigan Wolverines -5.5,47.9,-5.5,pending,pending,pending,,,2026-04-05T00:49Z
-R64,nan,Arizona Wildcats,1,Michigan Wolverines,1,Michigan Wolverines,53.6,-260,Michigan Wolverines -5.5,47.4,-5.5,pending,pending,pending,,,2026-04-05T00:49Z
+R64,nan,Arizona Wildcats,1,Michigan Wolverines,1,Michigan Wolverines,53.6,-260,Michigan Wolverines -5.5,47.5,-5.5,pending,pending,pending,,,2026-04-05T00:49Z
+R64,nan,Arizona Wildcats,1,Michigan Wolverines,1,Michigan Wolverines,53.6,-260,Michigan Wolverines -5.5,46.8,-5.5,pending,pending,pending,,,2026-04-05T00:49Z
 R64,nan,Arizona Wildcats,1,Long Island University Sharks,16,Arizona Wildcats,97.0,-100000.0,Arizona Wildcats -30.5,86.0,-30.5,win,win,loss,92.0,58.0,2026-03-20T17:35Z
 R64,nan,Arizona Wildcats,1,Utah State Aggies,9,Arizona Wildcats,83.6,-800.0,Arizona Wildcats -12.0,73.5,-12.0,win,win,push,78.0,66.0,2026-03-23T00:11Z
 R64,nan,Arizona Wildcats,1,Arkansas Razorbacks,4,Arizona Wildcats,67.3,-465.0,Arizona Wildcats -10.5,60.1,-10.5,win,win,loss,109.0,88.0,2026-03-27T02:06Z
 R64,nan,Arizona Wildcats,1,Purdue Boilermakers,2,Purdue Boilermakers,52.2,230.0,Purdue Boilermakers -6.0,46.3,-6.0,loss,loss,loss,79.0,64.0,2026-03-29T00:59Z
 R64,nan,Arkansas Razorbacks,4,Hawai'i Rainbow Warriors,13,Arkansas Razorbacks,94.0,nan,Arkansas Razorbacks -11.0,82.7,-11.0,win,win,loss,97.0,78.0,2026-03-19T20:27Z
 R64,nan,Arkansas Razorbacks,4,High Point Panthers,12,Arkansas Razorbacks,86.2,-750.0,Arkansas Razorbacks -11.5,76.6,-11.5,win,win,win,94.0,88.0,2026-03-22T01:45Z
-R64,nan,Auburn Tigers,99,Illinois State Redbirds,99,Auburn Tigers,74.2,-300,Auburn Tigers -6.5,65.2,-6.5,pending,pending,pending,,,2026-04-03T01:30Z
-R64,nan,Auburn Tigers,99,Illinois State Redbirds,99,Auburn Tigers,74.2,-300,Auburn Tigers -6.5,64.4,-6.5,pending,pending,pending,,,2026-04-03T01:30Z
+R64,nan,Auburn Tigers,99,Tulsa Golden Hurricane,99,Auburn Tigers,51.0,-300,Auburn Tigers -6.5,45.9,-6.5,pending,pending,pending,,,2026-04-06T00:00Z
+R64,nan,Auburn Tigers,99,Illinois State Redbirds,99,Auburn Tigers,74.2,-300,Auburn Tigers -6.5,64.3,-6.5,pending,pending,pending,,,2026-04-03T01:30Z
+R64,nan,Auburn Tigers,99,Illinois State Redbirds,99,Auburn Tigers,74.2,-300.0,Auburn Tigers -6.5,64.4,-6.5,win,win,loss,88.0,66.0,2026-04-03T01:47Z
 R64,nan,Auburn Tigers,99,Seattle U Redhawks,99,Auburn Tigers,68.6,-1200.0,Auburn Tigers -12.5,61.3,-12.5,win,win,win,91.0,85.0,2026-03-22T22:30Z
 R64,nan,Auburn Tigers,99,Nevada Wolf Pack,99,Auburn Tigers,56.1,-485.0,Auburn Tigers -9.5,48.7,-9.5,win,win,win,75.0,69.0,2026-03-26T01:00Z
 R64,nan,BYU Cougars,6,Texas Longhorns,11,BYU Cougars,70.0,375.0,BYU Cougars +5.5,62.4,5.5,loss,loss,win,71.0,79.0,2026-03-19T23:35Z
-R64,nan,Baylor Bears,99,Oklahoma Sooners,99,Oklahoma Sooners,52.4,-420,Oklahoma Sooners -18.5,45.9,-18.5,pending,pending,pending,,,2026-04-04T17:30Z
+R64,nan,Baylor Bears,99,Oklahoma Sooners,99,Oklahoma Sooners,52.4,-115,Oklahoma Sooners +1.0,46.6,+1.0,pending,pending,pending,,,2026-04-04T17:30Z
+R64,nan,Baylor Bears,99,Oklahoma Sooners,99,Oklahoma Sooners,52.4,-115,Oklahoma Sooners +1.0,45.1,+1.0,pending,pending,pending,,,2026-04-04T17:30Z
 R64,nan,California Golden Bears,99,Saint Joseph's Hawks,99,California Golden Bears,51.8,-230.0,California Golden Bears -5.5,46.2,-5.5,loss,loss,loss,75.0,76.0,2026-03-23T01:00Z
 R64,nan,Clemson Tigers,8,Iowa Hawkeyes,9,Clemson Tigers,54.0,109.0,Clemson Tigers +2.0,48.4,2.0,loss,loss,win,61.0,67.0,2026-03-20T22:50Z
 R64,nan,Colorado Buffaloes,99,Oklahoma Sooners,99,Oklahoma Sooners,54.2,-450.0,Oklahoma Sooners +10.0,47.4,10.0,win,win,loss,86.0,90.0,2026-04-02T00:00Z
-R64,nan,Colorado Buffaloes,99,Oklahoma Sooners,99,Oklahoma Sooners,54.2,-450.0,Oklahoma Sooners +10.0,47.4,10.0,win,win,loss,86.0,90.0,2026-04-02T00:00Z
-R64,nan,Creighton Bluejays,99,Rutgers Scarlet Knights,99,Rutgers Scarlet Knights,51.3,155,Rutgers Scarlet Knights -4.0,44.7,-4.0,pending,pending,pending,,,2026-04-03T02:30Z
-R64,nan,Creighton Bluejays,99,Rutgers Scarlet Knights,99,Rutgers Scarlet Knights,51.3,155,Rutgers Scarlet Knights -4.0,45.4,-4.0,pending,pending,pending,,,2026-04-03T02:30Z
+R64,nan,Creighton Bluejays,99,Rutgers Scarlet Knights,99,Rutgers Scarlet Knights,51.3,155,Rutgers Scarlet Knights -4.0,46.0,-4.0,pending,pending,pending,,,2026-04-03T02:30Z
+R64,nan,Creighton Bluejays,99,Rutgers Scarlet Knights,99,Rutgers Scarlet Knights,51.3,155.0,Rutgers Scarlet Knights -4.0,45.4,-4.0,loss,loss,loss,82.0,69.0,2026-04-03T02:54Z
 R64,nan,Dayton Flyers,99,Illinois State Redbirds,99,Dayton Flyers,53.0,-340.0,Dayton Flyers -7.5,46.3,-7.5,loss,loss,win,55.0,61.0,2026-03-25T23:00Z
 R64,nan,Duke Blue Devils,1,Siena Saints,16,Duke Blue Devils,91.6,nan,Duke Blue Devils -11.0,80.6,-11.0,win,win,win,71.0,65.0,2026-03-19T19:00Z
 R64,nan,Duke Blue Devils,1,TCU Horned Frogs,9,Duke Blue Devils,82.0,-770.0,Duke Blue Devils -11.5,72.1,-11.5,win,win,loss,81.0,58.0,2026-03-21T21:25Z
@@ -51,12 +52,12 @@ R64,nan,Michigan Wolverines,1,Howard Bison,16,Michigan Wolverines,94.7,-40051.0,
 R64,nan,Michigan Wolverines,1,Saint Louis Billikens,9,Michigan Wolverines,85.4,-850.0,Michigan Wolverines -12.5,74.7,-12.5,win,win,loss,95.0,72.0,2026-03-21T16:10Z
 R64,nan,Michigan Wolverines,1,Alabama Crimson Tide,4,Michigan Wolverines,65.9,-335.0,Michigan Wolverines -8.5,57.3,-8.5,win,win,loss,90.0,77.0,2026-03-27T23:35Z
 R64,nan,Michigan Wolverines,1,Tennessee Volunteers,6,Michigan Wolverines,78.5,-350.0,Michigan Wolverines -7.5,69.8,-7.5,win,win,loss,95.0,62.0,2026-03-29T18:15Z
-R64,nan,Minnesota Golden Gophers,99,Baylor Bears,99,Baylor Bears,54.5,-185,Baylor Bears +18.5,48.6,+18.5,pending,pending,pending,,,2026-04-02T03:15Z
 R64,nan,Minnesota Golden Gophers,99,Baylor Bears,99,Baylor Bears,54.5,-185.0,Baylor Bears +18.5,47.6,18.5,win,win,win,48.0,67.0,2026-04-02T03:15Z
 R64,nan,Nebraska Cornhuskers,4,Troy Trojans,13,Nebraska Cornhuskers,78.8,nan,Nebraska Cornhuskers +2.5,69.3,2.5,win,win,loss,76.0,47.0,2026-03-19T16:40Z
 R64,nan,Nebraska Cornhuskers,4,Vanderbilt Commodores,5,Nebraska Cornhuskers,50.6,100.0,Nebraska Cornhuskers +1.5,43.6,1.5,win,win,loss,74.0,72.0,2026-03-22T01:02Z
 R64,nan,Nebraska Cornhuskers,4,Iowa Hawkeyes,9,Nebraska Cornhuskers,70.0,160.0,Nebraska Cornhuskers +4.5,62.6,4.5,loss,loss,win,71.0,77.0,2026-03-26T23:30Z
 R64,nan,Nevada Wolf Pack,99,Liberty Flames,99,Nevada Wolf Pack,59.4,-400.0,Nevada Wolf Pack -7.5,52.5,-7.5,win,win,loss,73.0,63.0,2026-03-22T01:00Z
+R64,nan,New Mexico Lobos,99,Tulsa Golden Hurricane,99,New Mexico Lobos,50.7,,New Mexico Lobos -3.5,44.6,-3.5,loss,loss,win,69.0,74.0,2026-04-02T23:00Z
 R64,nan,New Mexico Lobos,99,George Washington Revolutionaries,99,New Mexico Lobos,54.6,-360.0,New Mexico Lobos -7.5,47.3,-7.5,win,win,loss,86.0,61.0,2026-03-23T00:00Z
 R64,nan,New Mexico Lobos,99,Saint Joseph's Hawks,99,New Mexico Lobos,58.5,-625.0,New Mexico Lobos -10.5,52.4,-10.5,win,win,loss,84.0,69.0,2026-03-25T01:00Z
 R64,nan,North Carolina Tar Heels,6,VCU Rams,11,North Carolina Tar Heels,67.8,nan,North Carolina Tar Heels -2.5,59.7,-2.5,loss,loss,win,78.0,82.0,2026-03-19T22:50Z
@@ -69,13 +70,12 @@ R64,nan,Saint Mary's Gaels,7,Texas A&M Aggies,10,Saint Mary's Gaels,62.6,-153.0,
 R64,nan,St. John's Red Storm,5,Northern Iowa Panthers,12,St. John's Red Storm,86.2,-588.0,St. John's Red Storm -9.5,76.5,-9.5,win,win,loss,79.0,53.0,2026-03-20T23:25Z
 R64,nan,Tennessee Volunteers,6,Miami (OH) RedHawks,11,Tennessee Volunteers,70.0,-600.0,Tennessee Volunteers -11.5,60.6,-11.5,win,win,loss,78.0,56.0,2026-03-20T20:25Z
 R64,nan,Texas Tech Red Raiders,5,Akron Zips,12,Texas Tech Red Raiders,78.0,-345.0,Texas Tech Red Raiders -7.5,67.8,-7.5,win,win,loss,91.0,71.0,2026-03-20T16:40Z
-R64,nan,Tulsa Golden Hurricane,99,New Mexico Lobos,99,Tulsa Golden Hurricane,51.0,155,Tulsa Golden Hurricane +3.5,44.0,+3.5,pending,pending,pending,,,2026-04-02T23:00Z
-R64,nan,Tulsa Golden Hurricane,99,New Mexico Lobos,99,Tulsa Golden Hurricane,51.0,155,Tulsa Golden Hurricane +3.5,44.3,+3.5,pending,pending,pending,,,2026-04-02T23:00Z
+R64,nan,Tulsa Golden Hurricane,99,New Mexico Lobos,99,Tulsa Golden Hurricane,51.0,155,Tulsa Golden Hurricane +3.5,44.5,+3.5,pending,pending,pending,,,2026-04-02T23:00Z
 R64,nan,Tulsa Golden Hurricane,99,UNLV Rebels,99,Tulsa Golden Hurricane,51.0,-192.0,Tulsa Golden Hurricane -4.5,44.4,-4.5,win,win,loss,77.0,66.0,2026-03-22T23:00Z
 R64,nan,Tulsa Golden Hurricane,99,Wichita State Shockers,99,Tulsa Golden Hurricane,51.0,-175.0,Tulsa Golden Hurricane -3.5,43.9,-3.5,win,win,loss,83.0,79.0,2026-03-24T23:00Z
 R64,nan,UCLA Bruins,7,UCF Knights,10,UCLA Bruins,62.0,-238.0,UCLA Bruins -5.5,54.0,-5.5,win,win,win,75.0,71.0,2026-03-20T23:31Z
-R64,nan,UConn Huskies,2,Illinois Fighting Illini,3,UConn Huskies,54.0,210,UConn Huskies +6.0,47.3,+6.0,pending,pending,pending,,,2026-04-04T22:09Z
-R64,nan,UConn Huskies,2,Illinois Fighting Illini,3,UConn Huskies,54.0,210,UConn Huskies +6.0,47.4,+6.0,pending,pending,pending,,,2026-04-04T22:09Z
+R64,nan,UConn Huskies,2,Illinois Fighting Illini,3,UConn Huskies,54.0,210,UConn Huskies +6.0,47.1,+6.0,pending,pending,pending,,,2026-04-04T22:09Z
+R64,nan,UConn Huskies,2,Illinois Fighting Illini,3,UConn Huskies,54.0,210,UConn Huskies +6.0,47.0,+6.0,pending,pending,pending,,,2026-04-04T22:09Z
 R64,nan,UConn Huskies,2,Furman Paladins,15,UConn Huskies,97.0,-3333.0,UConn Huskies -8.5,85.2,-8.5,win,win,loss,82.0,71.0,2026-03-21T02:31Z
 R64,nan,UConn Huskies,2,UCLA Bruins,7,UConn Huskies,70.0,-200.0,UConn Huskies -4.5,60.7,-4.5,win,win,loss,73.0,57.0,2026-03-23T01:10Z
 R64,nan,UConn Huskies,2,Michigan State Spartans,3,UConn Huskies,54.0,-120.0,UConn Huskies -1.5,46.7,-1.5,win,win,loss,67.0,63.0,2026-03-28T01:55Z
@@ -85,6 +85,6 @@ R64,nan,Villanova Wildcats,8,Utah State Aggies,9,Villanova Wildcats,57.4,106.0,V
 R64,nan,Virginia Cavaliers,3,Wright State Raiders,14,Virginia Cavaliers,89.5,-3366.0,Virginia Cavaliers -18.0,79.4,-18.0,win,win,win,82.0,73.0,2026-03-20T17:50Z
 R64,nan,Virginia Cavaliers,3,Tennessee Volunteers,6,Virginia Cavaliers,61.0,100.0,Virginia Cavaliers +1.0,54.3,1.0,loss,loss,win,72.0,79.0,2026-03-22T22:10Z
 R64,nan,Wake Forest Demon Deacons,99,Illinois State Redbirds,99,Wake Forest Demon Deacons,55.1,-320.0,Wake Forest Demon Deacons -7.5,48.1,-7.5,loss,loss,win,75.0,78.0,2026-03-22T20:30Z
-R64,nan,West Virginia Mountaineers,99,Stanford Cardinal,99,Stanford Cardinal,52.0,-120,Stanford Cardinal +1.0,45.9,+1.0,pending,pending,pending,,,2026-04-03T00:00Z
-R64,nan,West Virginia Mountaineers,99,Stanford Cardinal,99,Stanford Cardinal,52.0,-120,Stanford Cardinal +1.0,46.0,+1.0,pending,pending,pending,,,2026-04-03T00:00Z
+R64,nan,West Virginia Mountaineers,99,Stanford Cardinal,99,Stanford Cardinal,52.0,-120,Stanford Cardinal +1.0,45.7,+1.0,pending,pending,pending,,,2026-04-03T00:00Z
+R64,nan,West Virginia Mountaineers,99,Stanford Cardinal,99,Stanford Cardinal,52.0,-120.0,Stanford Cardinal +1.0,46.0,1.0,loss,loss,loss,82.0,77.0,2026-04-03T00:00Z
 R64,nan,Wisconsin Badgers,5,High Point Panthers,12,Wisconsin Badgers,85.8,nan,Wisconsin Badgers -10.0,75.5,-10.0,loss,loss,win,82.0,83.0,2026-03-19T17:50Z
