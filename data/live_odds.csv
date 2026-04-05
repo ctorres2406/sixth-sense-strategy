@@ -10411,3 +10411,83 @@ fetched_at,commence_time,home_team,away_team,bookmaker,market,team,price,point
 20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,h2h,UConn Huskies,265,
 20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,spreads,Michigan Wolverines,-115,-7.0
 20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,spreads,UConn Huskies,-105,7.0
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betonlineag,h2h,Oklahoma Sooners,-165,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betonlineag,h2h,West Virginia Mountaineers,145,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betonlineag,spreads,Oklahoma Sooners,-110,-3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betonlineag,spreads,West Virginia Mountaineers,-110,3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,lowvig,h2h,Oklahoma Sooners,-165,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,lowvig,h2h,West Virginia Mountaineers,145,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,lowvig,spreads,Oklahoma Sooners,-106,-3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,lowvig,spreads,West Virginia Mountaineers,-106,3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betus,h2h,Oklahoma Sooners,-170,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betus,h2h,West Virginia Mountaineers,146,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betus,spreads,Oklahoma Sooners,-110,-3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,betus,spreads,West Virginia Mountaineers,-110,3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,fanduel,h2h,Oklahoma Sooners,-172,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,fanduel,h2h,West Virginia Mountaineers,142,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,fanduel,spreads,Oklahoma Sooners,-114,-3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,fanduel,spreads,West Virginia Mountaineers,-106,3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,draftkings,h2h,Oklahoma Sooners,-170,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,draftkings,h2h,West Virginia Mountaineers,142,
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,draftkings,spreads,Oklahoma Sooners,-115,-3.5
+20260405,2026-04-05T21:30:00Z,West Virginia Mountaineers,Oklahoma Sooners,draftkings,spreads,West Virginia Mountaineers,-105,3.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betonlineag,h2h,Auburn Tigers,-225,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betonlineag,h2h,Tulsa Golden Hurricane,189,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betonlineag,spreads,Auburn Tigers,-115,-5.0
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betonlineag,spreads,Tulsa Golden Hurricane,-105,5.0
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,lowvig,h2h,Auburn Tigers,-225,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,lowvig,h2h,Tulsa Golden Hurricane,189,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,lowvig,spreads,Auburn Tigers,-111,-5.0
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,lowvig,spreads,Tulsa Golden Hurricane,-101,5.0
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,fanduel,h2h,Auburn Tigers,-220,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,fanduel,h2h,Tulsa Golden Hurricane,180,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,fanduel,spreads,Auburn Tigers,-110,-5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,fanduel,spreads,Tulsa Golden Hurricane,-110,5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betmgm,h2h,Auburn Tigers,-235,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betmgm,h2h,Tulsa Golden Hurricane,195,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betmgm,spreads,Auburn Tigers,-110,-5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betmgm,spreads,Tulsa Golden Hurricane,-110,5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,draftkings,h2h,Auburn Tigers,-230,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,draftkings,h2h,Tulsa Golden Hurricane,190,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,draftkings,spreads,Auburn Tigers,-108,-5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,draftkings,spreads,Tulsa Golden Hurricane,-112,5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betus,h2h,Auburn Tigers,-225,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betus,h2h,Tulsa Golden Hurricane,190,
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betus,spreads,Auburn Tigers,-110,-5.5
+20260405,2026-04-06T00:00:00Z,Auburn Tigers,Tulsa Golden Hurricane,betus,spreads,Tulsa Golden Hurricane,-110,5.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,h2h,Michigan Wolverines,-325,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,h2h,UConn Huskies,260,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,spreads,Michigan Wolverines,-108,-7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,draftkings,spreads,UConn Huskies,-112,7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,h2h,Michigan Wolverines,-320,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,h2h,UConn Huskies,255,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,spreads,Michigan Wolverines,-106,-7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,fanduel,spreads,UConn Huskies,-114,7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,h2h,Michigan Wolverines,-325,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,h2h,UConn Huskies,263,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,spreads,Michigan Wolverines,-114,-7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betonlineag,spreads,UConn Huskies,-106,7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,h2h,Michigan Wolverines,-325,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,h2h,UConn Huskies,263,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,spreads,Michigan Wolverines,-110,-7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,lowvig,spreads,UConn Huskies,-102,7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betrivers,h2h,Michigan Wolverines,-315,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betrivers,h2h,UConn Huskies,240,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betrivers,spreads,Michigan Wolverines,-109,-7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betrivers,spreads,UConn Huskies,-114,7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betmgm,h2h,Michigan Wolverines,-325,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betmgm,h2h,UConn Huskies,260,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betmgm,spreads,Michigan Wolverines,-105,-7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betmgm,spreads,UConn Huskies,-115,7.5
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,bovada,h2h,Michigan Wolverines,-300,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,bovada,h2h,UConn Huskies,250,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,bovada,spreads,Michigan Wolverines,-110,-7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,bovada,spreads,UConn Huskies,-110,7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,mybookieag,h2h,Michigan Wolverines,-313,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,mybookieag,h2h,UConn Huskies,243,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,mybookieag,spreads,Michigan Wolverines,-110,-7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,mybookieag,spreads,UConn Huskies,-110,7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,h2h,Michigan Wolverines,-325,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,h2h,UConn Huskies,265,
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,spreads,Michigan Wolverines,-115,-7.0
+20260405,2026-04-07T01:00:00Z,Michigan Wolverines,UConn Huskies,betus,spreads,UConn Huskies,-105,7.0
