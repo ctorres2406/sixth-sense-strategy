@@ -127,7 +127,5 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260404,401858384,West Virginia Mountaineers at Creighton Bluejays,West Virginia Mountaineers,WVU,Creighton Bluejays,CREI,87,70,17,True,True,False,,,20-14,16-18,53.0,40.0,45.5,43.4,24.0,78.3
 20260404,401856599,Michigan Wolverines at Arizona Wildcats,Michigan Wolverines,MICH,Arizona Wildcats,ARIZ,91,73,18,True,True,False,,,36-3,36-3,47.8,44.4,81.3,36.6,35.3,68.2
 20260404,401856598,Illinois Fighting Illini at UConn Huskies,UConn Huskies,CONN,Illinois Fighting Illini,ILL,71,62,9,True,True,False,,,34-5,28-9,35.5,36.4,88.2,33.9,23.1,78.3
-20260404,401858383,Oklahoma Sooners at Baylor Bears,Oklahoma Sooners,OU,Baylor Bears,BAY,82,69,13,True,True,False,,,21-15,17-17,50.0,36.4,87.5,38.7,20.0,75.0
-20260404,401858384,West Virginia Mountaineers at Creighton Bluejays,West Virginia Mountaineers,WVU,Creighton Bluejays,CREI,87,70,17,True,True,False,,,20-14,16-18,53.0,40.0,45.5,43.4,24.0,78.3
-20260404,401856599,Michigan Wolverines at Arizona Wildcats,Michigan Wolverines,MICH,Arizona Wildcats,ARIZ,91,73,18,True,True,False,,,36-3,36-3,47.8,44.4,81.3,36.6,35.3,68.2
-20260404,401856598,Illinois Fighting Illini at UConn Huskies,UConn Huskies,CONN,Illinois Fighting Illini,ILL,71,62,9,True,True,False,,,34-5,28-9,35.5,36.4,88.2,33.9,23.1,78.3
+20260405,401858385,Oklahoma Sooners at West Virginia Mountaineers,West Virginia Mountaineers,WVU,Oklahoma Sooners,OU,89,82,7,True,True,False,,,21-14,21-16,46.7,45.5,78.3,53.3,40.0,83.3
+20260405,401858363,Tulsa Golden Hurricane at Auburn Tigers,Auburn Tigers,AUB,Tulsa Golden Hurricane,TLSA,92,86,6,True,True,False,,,22-16,30-8,44.8,40.7,75.0,43.5,23.1,81.3
