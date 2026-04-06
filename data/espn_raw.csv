@@ -129,3 +129,5 @@ date,game_id,game_name,winner,winner_abbr,loser,loser_abbr,winner_score,loser_sc
 20260404,401856598,Illinois Fighting Illini at UConn Huskies,UConn Huskies,CONN,Illinois Fighting Illini,ILL,71,62,9,True,True,False,,,34-5,28-9,35.5,36.4,88.2,33.9,23.1,78.3
 20260405,401858385,Oklahoma Sooners at West Virginia Mountaineers,West Virginia Mountaineers,WVU,Oklahoma Sooners,OU,89,82,7,True,True,False,,,21-14,21-16,46.7,45.5,78.3,53.3,40.0,83.3
 20260405,401858363,Tulsa Golden Hurricane at Auburn Tigers,Auburn Tigers,AUB,Tulsa Golden Hurricane,TLSA,92,86,6,True,True,False,,,22-16,30-8,44.8,40.7,75.0,43.5,23.1,81.3
+20260405,401858385,Oklahoma Sooners at West Virginia Mountaineers,West Virginia Mountaineers,WVU,Oklahoma Sooners,OU,89,82,7,True,True,False,,,21-14,21-16,46.7,45.5,78.3,53.3,40.0,83.3
+20260405,401858363,Tulsa Golden Hurricane at Auburn Tigers,Auburn Tigers,AUB,Tulsa Golden Hurricane,TLSA,92,86,6,True,True,False,,,22-16,30-8,44.8,40.7,75.0,43.5,23.1,81.3
