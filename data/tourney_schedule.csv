@@ -84,4 +84,4 @@ game_id,date,game_time,status,completed,round,region,team1,seed1,score1,team2,se
 401856599,20260404,2026-04-05T01:19Z,status_final,True,R64,,Arizona Wildcats,1,73.0,Michigan Wolverines,1,91.0,Michigan Wolverines,
 401858385,20260405,2026-04-05T21:30Z,status_final,True,R64,,West Virginia Mountaineers,99,89.0,Oklahoma Sooners,99,82.0,West Virginia Mountaineers,
 401858363,20260405,2026-04-06T00:00Z,status_final,True,R64,,Auburn Tigers,99,92.0,Tulsa Golden Hurricane,99,86.0,Auburn Tigers,
-401856600,20260406,2026-04-07T00:50Z,status_scheduled,False,R64,,Michigan Wolverines,1,,UConn Huskies,2,,,
+401856600,20260406,2026-04-07T00:50Z,status_final,True,R64,,Michigan Wolverines,1,69.0,UConn Huskies,2,63.0,Michigan Wolverines,

@@ -1,5 +1,5 @@
 team,conf_wins,conf_losses,conf_games,conf_champ,avg_win_margin,avg_loss_margin,momentum_score,hot,cold,last_updated
-Michigan,9,2,11,False,16.7,6.0,126.0,True,False,20260407
+Michigan,10,2,12,False,15.6,6.0,132.0,True,False,20260407
 Florida,3,3,6,False,32.0,7.3,52.0,True,False,20260407
 Arizona,5,1,6,False,17.4,18.0,51.0,True,True,20260407
 Illinois,7,2,9,False,15.4,15.5,46.0,True,True,20260407
